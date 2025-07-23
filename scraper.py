@@ -2,13 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
+import json # Χρειαζόμαστε τη βιβλιοθήκη json
 
 BASE_URL = "https://www.skai.gr"
 CINEMA_URL = f"{BASE_URL}/tv/cinema"
 OUTPUT_FILE = "skai_playlist.m3u8"
 
-# --- ΣΗΜΑΝΤΙΚΗ ΠΡΟΣΘΗΚΗ ---
-# Αυτά τα headers κάνουν το script μας να μοιάζει με πραγματικό browser.
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
@@ -16,9 +15,8 @@ HEADERS = {
 def make_request(url):
     """Κάνει μια HTTP GET αίτηση χρησιμοποιώντας τα απαραίτητα headers."""
     try:
-        # Χρησιμοποιούμε τα headers σε κάθε αίτηση
         response = requests.get(url, headers=HEADERS, timeout=20)
-        response.raise_for_status()  # Σταματάει αν η απάντηση είναι σφάλμα (π.χ. 404, 403)
+        response.raise_for_status()
         return response
     except requests.RequestException as e:
         print(f"  -> ERROR during request for {url}: {e}")
@@ -52,27 +50,37 @@ def get_movie_list():
     return movies
 
 def get_episode_url(movie_page_url):
-    """Βρίσκει το URL του player από τη σελίδα της ταινίας."""
+    """
+    ΑΛΛΑΓΗ ΤΕΛΙΚΗΣ ΣΤΡΑΤΗΓΙΚΗΣ: Εξάγει το JSON από το <script> tag της σελίδας.
+    Αυτή είναι η πιο αξιόπιστη μέθοδος.
+    """
     full_url = f"{BASE_URL}{movie_page_url}"
-    print(f"  -> Searching for episode link on page: {full_url}")
+    print(f"  -> Searching for JSON data on page: {full_url}")
     
     response = make_request(full_url)
     if not response:
         return None
 
-    soup = BeautifulSoup(response.content, 'html.parser')
+    # Χρησιμοποιούμε Regular Expression για να βρούμε το JavaScript block που περιέχει 'var data = ...'
+    match = re.search(r'var data = (\{.*?\});', response.text, re.DOTALL)
     
-    # Επιστρέφουμε στην πιο στοχευμένη λογική, που βασίζεται στο δικό σας παράδειγμα HTML.
-    # Τώρα που μοιάζουμε με browser, είναι πιθανό να υπάρχει.
-    list_item_div = soup.find('div', class_=re.compile(r'\blist-item\b'))
-    
-    if list_item_div:
-        episode_link = list_item_div.find('a', href=re.compile(r'/tv/episode/'))
-        if episode_link and episode_link.has_attr('href'):
-            print(f"  -> SUCCESS: Found episode link: {episode_link['href']}")
-            return episode_link['href']
+    if match:
+        json_text = match.group(1)
+        try:
+            # Μετατρέπουμε το κείμενο JSON σε Python dictionary
+            data_dict = json.loads(json_text)
+            
+            # Παίρνουμε τον σύνδεσμο από το πρώτο επεισόδιο στη λίστα
+            if 'episodes' in data_dict and len(data_dict['episodes']) > 0:
+                episode_link = data_dict['episodes'][0].get('link')
+                if episode_link:
+                    print(f"  -> SUCCESS: Found episode link via JSON: {episode_link}")
+                    return episode_link
+        except json.JSONDecodeError:
+            print("  -> FAILED: Could not decode JSON data.")
+            return None
 
-    print("  -> FAILED: Episode link not found inside a 'list-item' div. The page structure may have changed.")
+    print("  -> FAILED: Could not find 'var data = {...};' script block.")
     return None
 
 def get_m3u8_url(episode_page_url):
@@ -83,7 +91,6 @@ def get_m3u8_url(episode_page_url):
     if not response:
         return None
 
-    # Το m3u8 link βρίσκεται συνήθως μέσα στο javascript του player
     match = re.search(r'file\s*:\s*"([^"]+\.m3u8)"', response.text)
     if match:
         return match.group(1)
@@ -96,8 +103,6 @@ def main():
     all_movies = get_movie_list()
     if not all_movies:
         print("No movies found or initial page failed to load. Exiting.")
-        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write("#EXTM3U\n")
         return
 
     playlist_entries = []
