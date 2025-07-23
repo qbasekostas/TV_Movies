@@ -50,7 +50,7 @@ def get_movie_list():
     return movies
 
 def get_episode_url(movie_page_url):
-    """Εξάγει το JSON από το <script> tag της σελίδας της ταινίας."""
+    """Εξάγει το link του player από το JSON της σελίδας της ταινίας."""
     full_url = f"{BASE_URL}{movie_page_url}"
     print(f"  -> Searching for episode data on page: {full_url}")
     
@@ -70,50 +70,32 @@ def get_episode_url(movie_page_url):
                     print(f"  -> SUCCESS: Found episode link: {episode_link}")
                     return episode_link
         except json.JSONDecodeError:
-            pass # Αποτυχία, θα συνεχίσει παρακάτω
+            print("  -> FAILED: Could not decode JSON data.")
+            return None
 
-    print("  -> FAILED: Could not find episode link.")
+    print("  -> FAILED: Could not find 'var data = {...};' script block.")
     return None
 
 def get_m3u8_url(episode_page_url):
     """
-    Δοκιμάζει πολλαπλές μεθόδους για να εξάγει το m3u8 URL.
-    Μέθοδος Α: Ανάλυση του JSON 'var data'. (Κύρια)
-    Μέθοδος Β: Αναζήτηση για 'file: "...m3u8"'. (Εναλλακτική)
+    Βρίσκει το 'καθαρό' m3u8 link, αγνοώντας τα DRM/MPD.
+    Αναζητά μόνο την απλή δήλωση 'file:' μέσα στο HTML.
     """
     full_url = f"{BASE_URL}/tv{episode_page_url}"
-    print(f"  -> Searching for m3u8 data on page: {full_url}")
+    print(f"  -> Searching for PLAIN m3u8 stream on: {full_url}")
 
     response = make_request(full_url)
     if not response:
         return None
 
-    # --- Μέθοδος Α: Προσπάθεια για JSON ---
-    print("    -> Trying Method A (JSON parsing)...")
-    match_json = re.search(r'var data = (\{.*?\});', response.text, re.DOTALL)
-    if match_json:
-        json_text = match_json.group(1)
-        try:
-            data_dict = json.loads(json_text)
-            if 'episode' in data_dict and len(data_dict['episode']) > 0:
-                m3u8_link = data_dict['episode'][0].get('drm')
-                if m3u8_link:
-                    print(f"    -> SUCCESS (Method A): Found m3u8 link via JSON: {m3u8_link}")
-                    return m3u8_link
-        except json.JSONDecodeError:
-             print("    -> INFO (Method A): Found JSON block, but failed to parse.")
-    else:
-        print("    -> INFO (Method A): 'var data' JSON block not found.")
-
-    # --- Μέθοδος Β: Εναλλακτική αναζήτηση ---
-    print("    -> Trying Method B (Regex on 'file:')...")
+    # Απλή και στοχευμένη αναζήτηση μόνο για non-DRM m3u8 streams.
     match_file = re.search(r'file\s*:\s*"([^"]+\.m3u8)"', response.text)
     if match_file:
         m3u8_link = match_file.group(1)
-        print(f"    -> SUCCESS (Method B): Found m3u8 link via file regex: {m3u8_link}")
+        print(f"  -> SUCCESS: Found plain m3u8 link: {m3u8_link}")
         return m3u8_link
 
-    print("    -> FAILED (Method B): Could not find 'file:' pattern.")
+    print("  -> INFO: No plain (non-DRM) m3u8 stream found on this page.")
     return None
 
 def main():
@@ -126,7 +108,7 @@ def main():
     playlist_entries = []
     found_count = 0
     for movie in all_movies:
-        print(f"Processing: {movie['title']}")
+        print(f"\nProcessing: {movie['title']}")
         
         episode_url = get_episode_url(movie['url'])
         if not episode_url:
@@ -134,11 +116,11 @@ def main():
             
         m3u8_url = get_m3u8_url(episode_url)
         if not m3u8_url:
-            print(f"  -> FINAL FAILURE: Could not find m3u8 for {movie['title']}.\n")
+            print(f"  -> FINAL RESULT: Skipping movie (likely DRM-protected or unavailable).")
             continue
         
         found_count += 1
-        print(f"  -> FINAL SUCCESS: Found M3U8 for {movie['title']}\n")
+        print(f"  -> FINAL RESULT: Found playable stream for '{movie['title']}'!")
         entry = f'#EXTINF:-1 tvg-logo="{movie["image"]}",{movie["title"]}\n{m3u8_url}'
         playlist_entries.append(entry)
 
@@ -147,7 +129,7 @@ def main():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(playlist_content)
         
-    print(f"\n>>>>>>>>> Successfully created playlist '{OUTPUT_FILE}' with {found_count} out of {len(all_movies)} movies. <<<<<<<<<")
+    print(f"\n>>>>>>>>> Successfully created playlist '{OUTPUT_FILE}' with {found_count} playable movies out of {len(all_movies)} total. <<<<<<<<<")
 
 if __name__ == "__main__":
     main()
