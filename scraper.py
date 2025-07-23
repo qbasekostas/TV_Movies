@@ -4,7 +4,7 @@ import re
 import os
 import json
 
-BASE_URL = "https://www.skai.gr" # Επιστροφή στη σωστή, απλή μορφή
+BASE_URL = "https://www.skai.gr"
 CINEMA_URL = f"{BASE_URL}/tv/cinema"
 OUTPUT_FILE = "skai_playlist.m3u8"
 
@@ -51,7 +51,6 @@ def get_movie_list():
 
 def get_episode_url(movie_page_url):
     """Εξάγει το JSON από το <script> tag της σελίδας της ταινίας."""
-    # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε το απλό BASE_URL γιατί το movie_page_url περιέχει ήδη το /tv/
     full_url = f"{BASE_URL}{movie_page_url}"
     print(f"  -> Searching for episode data on page: {full_url}")
     
@@ -79,8 +78,9 @@ def get_episode_url(movie_page_url):
 
 def get_m3u8_url(episode_page_url):
     """Εξάγει το m3u8 URL από το JSON data της σελίδας του player."""
-    # ΔΙΟΡΘΩΣΗ: Το ίδιο και εδώ.
-    full_url = f"{BASE_URL}{episode_page_url}"
+    # --- Η ΤΕΛΙΚΗ ΔΙΟΡΘΩΣΗ ΕΙΝΑΙ ΕΔΩ ---
+    # Το link που παίρνουμε είναι του τύπου /episode/... ενώ πρέπει να είναι /tv/episode/...
+    full_url = f"{BASE_URL}/tv{episode_page_url}"
     print(f"  -> Searching for m3u8 data on page: {full_url}")
 
     response = make_request(full_url)
