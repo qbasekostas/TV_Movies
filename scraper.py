@@ -43,29 +43,33 @@ def get_movie_list():
 
 def get_episode_url(movie_page_url):
     """
-    Βρίσκει το URL του επεισοδίου/player από τη σελίδα της ταινίας.
-    ΑΛΛΑΓΗ: Πιο αξιόπιστη μέθοδος που ψάχνει για σύνδεσμο που περιέχει '/tv/episode/'.
+    ΑΛΛΑΓΗ: Βρίσκει το URL του player στοχεύοντας στο div 'list-item'
+    που επιβεβαιώθηκε από το παράδειγμα του χρήστη.
     """
     full_url = f"{BASE_URL}{movie_page_url}"
-    print(f"  -> Searching for episode link on: {full_url}")
+    print(f"  -> Searching for episode link on page: {full_url}")
     try:
         response = requests.get(full_url, timeout=20)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         
-        # Ψάξε για οποιονδήποτε σύνδεσμο 'a' του οποίου το 'href' περιέχει '/tv/episode/'
-        episode_link = soup.find('a', href=re.compile(r'/tv/episode/'))
+        # Στοχεύουμε στο div που περιέχει τη λέξη 'list-item' στην κλάση του.
+        # Αυτό είναι το κλειδί από το HTML που στείλατε.
+        list_item_div = soup.find('div', class_=re.compile(r'\blist-item\b'))
         
-        if episode_link and episode_link.has_attr('href'):
-            print(f"  -> Found episode link: {episode_link['href']}")
-            return episode_link['href']
-        else:
-            print("  -> Episode link not found with new method.")
-            return None
+        if list_item_div:
+            # Μέσα σε αυτό το div, βρίσκουμε τον σύνδεσμο που οδηγεί στο player.
+            episode_link = list_item_div.find('a', href=re.compile(r'/tv/episode/'))
+            if episode_link and episode_link.has_attr('href'):
+                print(f"  -> SUCCESS: Found episode link: {episode_link['href']}")
+                return episode_link['href']
+
+        print("  -> FAILED: Episode link not found inside a 'list-item' div.")
+        return None
 
     except requests.RequestException as e:
-        print(f"  -> Error fetching episode URL from {full_url}: {e}")
-    return None
+        print(f"  -> ERROR fetching episode URL from {full_url}: {e}")
+        return None
 
 def get_m3u8_url(episode_page_url):
     """Εξάγει το m3u8 URL από τη σελίδα του player."""
@@ -91,7 +95,9 @@ def main():
     all_movies = get_movie_list()
     if not all_movies:
         print("No movies found. Exiting.")
-        open(OUTPUT_FILE, 'a').close() # Create empty file if not exists
+        # Δημιουργεί ένα κενό αρχείο για να μη σκάσει το commit step
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            f.write("#EXTM3U\n")
         return
 
     playlist_entries = []
@@ -100,21 +106,17 @@ def main():
         
         episode_url = get_episode_url(movie['url'])
         if not episode_url:
-            print(f"  -> FAILED to find episode link for {movie['title']}.")
-            continue
+            continue # Προχωράμε στην επόμενη ταινία
             
         m3u8_url = get_m3u8_url(episode_url)
         if not m3u8_url:
             print(f"  -> FAILED to find m3u8 stream for {movie['title']}.")
             continue
         
-        print(f"  -> SUCCESS: Found M3U8: {m3u8_url}")
+        print(f"  -> FINAL SUCCESS: Found M3U8 for {movie['title']}")
         entry = f'#EXTINF:-1 tvg-logo="{movie["image"]}",{movie["title"]}\n{m3u8_url}'
         playlist_entries.append(entry)
 
-    if not playlist_entries:
-        print("No valid streams found. Playlist will not be updated.")
-    
     playlist_content = "#EXTM3U\n\n" + "\n\n".join(playlist_entries)
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
