@@ -4,9 +4,8 @@ import re
 import os
 import json
 
-BASE_URL = "https://www.skai.gr"
-TV_BASE_URL = f"{BASE_URL}/tv" # <--- ΝΕΑ ΜΕΤΑΒΛΗΤΗ ΓΙΑ ΝΑ ΜΗ ΓΙΝΕΙ ΞΑΝΑ ΛΑΘΟΣ
-CINEMA_URL = f"{TV_BASE_URL}/cinema"
+BASE_URL = "https://www.skai.gr" # Επιστροφή στη σωστή, απλή μορφή
+CINEMA_URL = f"{BASE_URL}/tv/cinema"
 OUTPUT_FILE = "skai_playlist.m3u8"
 
 HEADERS = {
@@ -52,7 +51,8 @@ def get_movie_list():
 
 def get_episode_url(movie_page_url):
     """Εξάγει το JSON από το <script> tag της σελίδας της ταινίας."""
-    full_url = f"{TV_BASE_URL}{movie_page_url}" # <--- Διορθώθηκε για να χρησιμοποιεί το TV_BASE_URL
+    # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε το απλό BASE_URL γιατί το movie_page_url περιέχει ήδη το /tv/
+    full_url = f"{BASE_URL}{movie_page_url}"
     print(f"  -> Searching for episode data on page: {full_url}")
     
     response = make_request(full_url)
@@ -78,29 +78,24 @@ def get_episode_url(movie_page_url):
     return None
 
 def get_m3u8_url(episode_page_url):
-    """
-    Εξάγει το m3u8 URL από το JSON data της σελίδας του player.
-    """
-    # ΔΙΟΡΘΩΣΗ: Προσθέτουμε το /tv/ που έλειπε
-    full_url = f"{TV_BASE_URL}{episode_page_url}"
+    """Εξάγει το m3u8 URL από το JSON data της σελίδας του player."""
+    # ΔΙΟΡΘΩΣΗ: Το ίδιο και εδώ.
+    full_url = f"{BASE_URL}{episode_page_url}"
     print(f"  -> Searching for m3u8 data on page: {full_url}")
 
     response = make_request(full_url)
     if not response:
         return None
 
-    # Χρησιμοποιούμε την ίδια μέθοδο για να βρούμε τα δεδομένα του player
     match = re.search(r'var data = (\{.*?\});', response.text, re.DOTALL)
     
     if match:
         json_text = match.group(1)
         try:
             data_dict = json.loads(json_text)
-            # Το m3u8 link βρίσκεται στο πεδίο 'drm' του πρώτου επεισοδίου
             if 'episode' in data_dict and len(data_dict['episode']) > 0:
                 m3u8_link = data_dict['episode'][0].get('drm')
                 if m3u8_link:
-                    # Το link μπορεί να έχει DRM, αλλά το βασικό stream συνήθως παίζει.
                     print(f"  -> SUCCESS: Found m3u8 link via JSON: {m3u8_link}")
                     return m3u8_link
         except json.JSONDecodeError as e:
