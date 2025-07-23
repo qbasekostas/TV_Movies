@@ -1,11 +1,13 @@
 name: Scrape Skai TV Movies
 
 on:
-  # Εκτελείται αυτόματα κάθε μέρα στις 03:00 UTC (06:00 ώρα Ελλάδας το καλοκαίρι)
   schedule:
     - cron: '0 3 * * *'
-  # Επιτρέπει τη χειροκίνητη εκτέλεση από το tab "Actions" του GitHub
   workflow_dispatch:
+
+# ΝΕΑ ΠΡΟΣΘΗΚΗ: Δίνει στο action άδεια να κάνει commit στο repository
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -32,6 +34,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add skai_playlist.m3u8
-          # Κάνε commit μόνο αν υπάρχουν αλλαγές στο αρχείο
           git diff --staged --quiet || git commit -m "Update movie playlist"
           git push
