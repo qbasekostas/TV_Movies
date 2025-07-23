@@ -2,10 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-import json # Χρειαζόμαστε τη βιβλιοθήκη json
+import json
 
 BASE_URL = "https://www.skai.gr"
-CINEMA_URL = f"{BASE_URL}/tv/cinema"
+TV_BASE_URL = f"{BASE_URL}/tv" # <--- ΝΕΑ ΜΕΤΑΒΛΗΤΗ ΓΙΑ ΝΑ ΜΗ ΓΙΝΕΙ ΞΑΝΑ ΛΑΘΟΣ
+CINEMA_URL = f"{TV_BASE_URL}/cinema"
 OUTPUT_FILE = "skai_playlist.m3u8"
 
 HEADERS = {
@@ -50,27 +51,20 @@ def get_movie_list():
     return movies
 
 def get_episode_url(movie_page_url):
-    """
-    ΑΛΛΑΓΗ ΤΕΛΙΚΗΣ ΣΤΡΑΤΗΓΙΚΗΣ: Εξάγει το JSON από το <script> tag της σελίδας.
-    Αυτή είναι η πιο αξιόπιστη μέθοδος.
-    """
-    full_url = f"{BASE_URL}{movie_page_url}"
-    print(f"  -> Searching for JSON data on page: {full_url}")
+    """Εξάγει το JSON από το <script> tag της σελίδας της ταινίας."""
+    full_url = f"{TV_BASE_URL}{movie_page_url}" # <--- Διορθώθηκε για να χρησιμοποιεί το TV_BASE_URL
+    print(f"  -> Searching for episode data on page: {full_url}")
     
     response = make_request(full_url)
     if not response:
         return None
 
-    # Χρησιμοποιούμε Regular Expression για να βρούμε το JavaScript block που περιέχει 'var data = ...'
     match = re.search(r'var data = (\{.*?\});', response.text, re.DOTALL)
     
     if match:
         json_text = match.group(1)
         try:
-            # Μετατρέπουμε το κείμενο JSON σε Python dictionary
             data_dict = json.loads(json_text)
-            
-            # Παίρνουμε τον σύνδεσμο από το πρώτο επεισόδιο στη λίστα
             if 'episodes' in data_dict and len(data_dict['episodes']) > 0:
                 episode_link = data_dict['episodes'][0].get('link')
                 if episode_link:
@@ -84,18 +78,36 @@ def get_episode_url(movie_page_url):
     return None
 
 def get_m3u8_url(episode_page_url):
-    """Εξάγει το m3u8 URL από τη σελίδα του player."""
-    full_url = f"{BASE_URL}{episode_page_url}"
-    
+    """
+    Εξάγει το m3u8 URL από το JSON data της σελίδας του player.
+    """
+    # ΔΙΟΡΘΩΣΗ: Προσθέτουμε το /tv/ που έλειπε
+    full_url = f"{TV_BASE_URL}{episode_page_url}"
+    print(f"  -> Searching for m3u8 data on page: {full_url}")
+
     response = make_request(full_url)
     if not response:
         return None
 
-    match = re.search(r'file\s*:\s*"([^"]+\.m3u8)"', response.text)
+    # Χρησιμοποιούμε την ίδια μέθοδο για να βρούμε τα δεδομένα του player
+    match = re.search(r'var data = (\{.*?\});', response.text, re.DOTALL)
+    
     if match:
-        return match.group(1)
-        
-    print(f"  -> FAILED: m3u8 link not found in the player page.")
+        json_text = match.group(1)
+        try:
+            data_dict = json.loads(json_text)
+            # Το m3u8 link βρίσκεται στο πεδίο 'drm' του πρώτου επεισοδίου
+            if 'episode' in data_dict and len(data_dict['episode']) > 0:
+                m3u8_link = data_dict['episode'][0].get('drm')
+                if m3u8_link:
+                    # Το link μπορεί να έχει DRM, αλλά το βασικό stream συνήθως παίζει.
+                    print(f"  -> SUCCESS: Found m3u8 link via JSON: {m3u8_link}")
+                    return m3u8_link
+        except json.JSONDecodeError as e:
+            print(f"  -> FAILED: Could not decode player JSON data. Error: {e}")
+            return None
+            
+    print("  -> FAILED: Could not find player's 'var data = {...};' script block.")
     return None
 
 def main():
