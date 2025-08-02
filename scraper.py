@@ -3,22 +3,27 @@ import os
 import json
 import re
 
-# Το μοναδικό, σωστό URL.
-PAGE_URL = "https://www.ertflix.gr/show/movies"
+# =================================================================================
+# ΟΡΙΣΤΙΚΗ ΛΥΣΗ:
+# Στοχεύουμε απευθείας στο URL που περιέχει το JSON με ΟΛΑ τα δεδομένα.
+# Αυτό το URL επιβεβαιώθηκε από εσάς.
+# =================================================================================
+MOVIE_LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1&tileCount=300"
+
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
-def extract_movies_from_page():
+def get_all_movies_data():
     """
-    Κατεβάζει την κεντρική σελίδα ταινιών και εξάγει ΟΛΕΣ τις ταινίες
-    από το ενσωματωμένο JSON του ___INITIAL_STATE___.
+    Κατεβάζει την κεντρική σελίδα και εξάγει το ενσωματωμένο JSON
+    που περιέχει ΟΛΕΣ τις πληροφορίες για τις ταινίες, από το ___INITIAL_STATE___.
     """
-    print(f"Fetching page to extract embedded data from: {PAGE_URL}")
+    print(f"Fetching page to extract embedded data from: {MOVIE_LIST_URL}")
     try:
-        response = requests.get(PAGE_URL, headers=HEADERS, timeout=30)
+        response = requests.get(MOVIE_LIST_URL, headers=HEADERS, timeout=30)
         response.raise_for_status()
         
         match = re.search(r'<script>var ___INITIAL_STATE__ = (\{.*?\});<\/script>', response.text)
@@ -28,26 +33,17 @@ def extract_movies_from_page():
             
         initial_data = json.loads(match.group(1))
         
-        all_movies = []
-        # Σαρώνουμε όλα τα 'components' (λίστες) της σελίδας
+        # ΟΡΙΣΤΙΚΗ ΔΙΟΡΘΩΣΗ:
+        # Σε αυτή τη σελίδα, η λίστα ταινιών είναι το πρώτο (και μοναδικό) "component".
+        # Παίρνουμε τα 'tiles' απευθείας από εκεί, χωρίς να ψάχνουμε για τίτλο.
         components = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [])
         
-        print(f"Found {len(components)} content lists on the page. Searching for movies in each...")
-        
-        for component in components:
-            # Παίρνουμε τα 'tiles' (ταινίες/σειρές) από κάθε component
-            tiles = component.get('tiles', [])
-            if tiles:
-                print(f" -> Found {len(tiles)} items in list titled '{component.get('title', 'Untitled')}'")
-                all_movies.extend(tiles)
-        
-        if all_movies:
-            # Αφαιρούμε τυχόν διπλότυπα
-            unique_movies = {movie['id']: movie for movie in all_movies}.values()
-            print(f"\nSUCCESS: Extracted data for {len(unique_movies)} unique movies from the page.")
-            return list(unique_movies)
+        if components and 'tiles' in components[0]:
+            tiles = components[0]['tiles']
+            print(f"SUCCESS: Extracted data for {len(tiles)} movies from the page.")
+            return tiles
         else:
-            print("FAILURE: Could not extract any movie items from the page components.")
+            print("FAILURE: Found the INITIAL_STATE block, but could not find the movie list inside.")
             return []
 
     except Exception as e:
@@ -56,7 +52,7 @@ def extract_movies_from_page():
 
 def main():
     """Κύρια συνάρτηση του script."""
-    movies_data = extract_movies_from_page()
+    movies_data = get_all_movies_data()
     playlist_entries = []
     
     if movies_data:
@@ -66,7 +62,7 @@ def main():
                 if movie.get('type') != 'vod' or movie.get('isEpisode'):
                     continue
                     
-                title = movie['title']
+                title = movie.get('title')
                 m3u8_url = None
                 image_url = ""
 
@@ -80,20 +76,21 @@ def main():
                         if m3u8_url:
                             break
                 
-                # Αν δεν βρέθηκε m3u8, το προσπερνάμε
                 if not m3u8_url:
-                    print(f"  -> Skipped '{title}' (No m3u8 stream available).")
-                    continue
+                    # Αν δεν υπάρχει m3u8, ίσως υπάρχει στο βασικό αντικείμενο (για παλαιότερες ταινίες)
+                    if movie.get('mediafile', '').endswith('.m3u8'):
+                         m3u8_url = movie.get('mediafile')
 
-                # Βρίσκουμε μια κατάλληλη εικόνα
+                # Βρίσκουμε μια κατάλληλη εικόνα (poster)
                 for img in movie.get('images', []):
                     if img.get('role') == 'poster':
                         image_url = img.get('url')
                         break
                 
-                print(f"  -> Found: {title}")
-                entry = f'#EXTINF:-1 tvg-logo="{image_url}",{title}\n{m3u8_url}'
-                playlist_entries.append(entry)
+                if all([title, image_url, m3u8_url]):
+                    print(f"  -> Found: {title}")
+                    entry = f'#EXTINF:-1 tvg-logo="{image_url}",{title}\n{m3u8_url}'
+                    playlist_entries.append(entry)
 
             except (KeyError, IndexError, TypeError):
                 continue
