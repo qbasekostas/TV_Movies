@@ -3,9 +3,7 @@ import os
 import json
 import re
 
-# Το μοναδικό, σωστό URL που χρειαζόμαστε.
 MOVIE_LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1&tileCount=300"
-
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 
 HEADERS = {
@@ -22,7 +20,6 @@ def get_all_movies_data():
         response = requests.get(MOVIE_LIST_URL, headers=HEADERS, timeout=30)
         response.raise_for_status()
         
-        # Οριστική μέθοδος: Ψάχνουμε για το <script> που περιέχει τα αρχικά δεδομένα.
         match = re.search(r'<script>var ___INITIAL_STATE__ = (\{.*?\});<\/script>', response.text)
         if not match:
             print("FATAL: Could not find the ___INITIAL_STATE___ data block in the page source.")
@@ -30,15 +27,20 @@ def get_all_movies_data():
             
         initial_data = json.loads(match.group(1))
         
-        # Πλοηγούμαστε στο περίπλοκο JSON για να βρούμε τη λίστα με τις ταινίες ("tiles")
-        tiles = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [{}])[0].get('tiles', [])
+        # --- Η ΟΡΙΣΤΙΚΗ ΔΙΟΡΘΩΣΗ ΕΙΝΑΙ ΕΔΩ ---
+        # Πλοηγούμαστε στο σημείο που περιέχει τις λίστες περιεχομένου της σελίδας
+        components = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [])
         
-        if tiles:
-            print(f"SUCCESS: Extracted data for {len(tiles)} movies from the page.")
-            return tiles
-        else:
-            print("FAILURE: Found the INITIAL_STATE block, but the path to movie tiles was incorrect or empty.")
-            return []
+        # Ψάχνουμε σε όλες τις λίστες για αυτήν με τον τίτλο "Όλες οι ταινίες"
+        for component in components:
+            if component.get('title') == 'Όλες οι Ταινίες':
+                tiles = component.get('tiles', [])
+                if tiles:
+                    print(f"SUCCESS: Found the 'Όλες οι Ταινίες' list with {len(tiles)} movies.")
+                    return tiles
+        
+        print("FAILURE: Could not find a component with the title 'Όλες οι Ταινίες' that contains movies.")
+        return []
 
     except requests.RequestException as e:
         print(f"Error fetching the main page: {e}")
@@ -56,25 +58,19 @@ def main():
         for movie in movies_data:
             try:
                 title = movie['title']
-                # Το m3u8 link βρίσκεται απευθείας εδώ!
                 m3u8_url = movie['mediafiles'][0]['url']
-                # Η εικόνα είναι επίσης εδώ.
                 image_url = movie['images']['cover']['url']
                 
-                # Φιλτράρουμε μόνο τα m3u8 για να αποφύγουμε τυχόν DRM/MPD
                 if m3u8_url.endswith('.m3u8'):
                     print(f"  -> Found: {title}")
                     entry = f'#EXTINF:-1 tvg-logo="{image_url}",{title}\n{m3u8_url}'
                     playlist_entries.append(entry)
                 else:
                     print(f"  -> Skipped: {title} (Stream is not m3u8)")
-
             except (KeyError, IndexError):
-                # Αγνοούμε ταινίες που δεν έχουν όλα τα απαραίτητα πεδία
                 print(f"  -> Skipped an item due to missing/incomplete data.")
                 continue
 
-    # Δημιουργούμε το αρχείο, ακόμα και αν είναι κενό, για να μη σκάσει το Action.
     print(f"\nCreating playlist file '{OUTPUT_FILE}'...")
     playlist_content = "#EXTM3U\n\n" + "\n\n".join(playlist_entries)
     
