@@ -36,8 +36,8 @@ def get_movie_ids_from_page():
         initial_data = json.loads(match.group(1))
         # Εκτύπωσε όλο το JSON για να δεις τη δομή
         with open("ertflix_initial_data.json", "w", encoding="utf-8") as f:
-    json.dump(initial_data, f, indent=2, ensure_ascii=False)
-print("Αποθηκεύτηκε το αρχικό JSON στο ertflix_initial_data.json")
+           json.dump(initial_data, f, indent=2, ensure_ascii=False)
+           print("Αποθηκεύτηκε το αρχικό JSON στο ertflix_initial_data.json")
 
         components = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [])
         movie_ids = []
