@@ -23,7 +23,6 @@ API_HEADERS = {
 }
 
 def get_movie_ids_from_page():
-    """Παίρνει τη λίστα με τα IDs των ταινιών από το αρχικό HTML."""
     print(f"Step 1: Fetching page to get movie IDs from: {INITIAL_PAGE_URL}")
     try:
         response = requests.get(INITIAL_PAGE_URL, headers=GENERAL_HEADERS, timeout=30)
@@ -35,14 +34,17 @@ def get_movie_ids_from_page():
             return []
             
         initial_data = json.loads(match.group(1))
-        
+        # Εκτύπωσε όλο το JSON για να δεις τη δομή
+        print(json.dumps(initial_data, indent=2, ensure_ascii=False))
+
         components = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [])
-        if components and 'tiles' in components[0]:
-            tiles = components[0].get('tiles', [])
-            movie_ids = [tile.get('id') for tile in tiles if tile.get('id')]
-            if movie_ids:
-                print(f"  -> SUCCESS: Found {len(movie_ids)} movie IDs.")
-                return movie_ids
+        movie_ids = []
+        for comp in components:
+            if 'tiles' in comp:
+                movie_ids += [tile.get('id') for tile in comp.get('tiles', []) if tile.get('id')]
+        if movie_ids:
+            print(f"  -> SUCCESS: Found {len(movie_ids)} movie IDs.")
+            return movie_ids
         
         print("  -> FAILURE: Could not find the movie list inside the initial data.")
         return []
