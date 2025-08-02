@@ -1,90 +1,89 @@
 import requests
 import os
 import json
-import re
 
-MOVIE_LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1&tileCount=300"
+# =================================================================================
+# ΟΡΙΣΤΙΚΗ ΛΥΣΗ:
+# Βήμα 1: Παίρνουμε τα IDs των ταινιών από αυτό το API.
+# Βήμα 2: Ζητάμε τις πλήρεις πληροφορίες (μαζί με τα m3u8) από το δεύτερο API.
+# =================================================================================
+API_GET_IDS_URL = "https://api.app.ertflix.gr/v2/list/section/oles-oi-tainies-1?page=0&tileCount=300"
+API_GET_DETAILS_URL = "https://api.app.ertflix.gr/v2/tile/list"
+
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
-def find_movie_list_recursively(data_node):
-    """
-    Μια 'έξυπνη' αναδρομική συνάρτηση που ψάχνει σε ολόκληρο το JSON
-    για να βρει μια λίστα που μοιάζει με τη λίστα ταινιών.
-    """
-    # Αν ο κόμβος είναι λίστα...
-    if isinstance(data_node, list) and data_node:
-        # ...ελέγχουμε αν το πρώτο της στοιχείο μοιάζει με ταινία.
-        # Μια ταινία πρέπει να έχει 'title', 'mediafiles', και 'images'.
-        first_item = data_node[0]
-        if isinstance(first_item, dict) and all(k in first_item for k in ['title', 'mediafiles', 'images']):
-            return data_node # Βρήκαμε τη λίστα!
-
-    # Αν ο κόμβος είναι dictionary, ψάχνουμε σε όλες τις τιμές του.
-    if isinstance(data_node, dict):
-        for key, value in data_node.items():
-            result = find_movie_list_recursively(value)
-            if result:
-                return result
-
-    # Αν ο κόμβος είναι λίστα, ψάχνουμε σε όλα τα στοιχεία του.
-    if isinstance(data_node, list):
-        for item in data_node:
-            result = find_movie_list_recursively(item)
-            if result:
-                return result
-    
-    # Αν δεν βρεθεί τίποτα, επιστρέφουμε None.
-    return None
-
-def get_all_movies_data():
-    """
-    Κατεβάζει τη σελίδα και χρησιμοποιεί την αναδρομική συνάρτηση
-    για να βρει τη λίστα των ταινιών μέσα στο ___INITIAL_STATE___.
-    """
-    print(f"Fetching page to extract embedded data from: {MOVIE_LIST_URL}")
+def get_movie_ids():
+    """Βήμα 1: Παίρνει τη λίστα με τα IDs όλων των ταινιών."""
+    print(f"Fetching movie IDs from: {API_GET_IDS_URL}")
     try:
-        response = requests.get(MOVIE_LIST_URL, headers=HEADERS, timeout=30)
+        response = requests.get(API_GET_IDS_URL, headers=HEADERS, timeout=20)
         response.raise_for_status()
+        data = response.json()
         
-        match = re.search(r'<script>var ___INITIAL_STATE__ = (\{.*?\});<\/script>', response.text)
-        if not match:
-            print("FATAL: Could not find the ___INITIAL_STATE___ data block.")
+        movie_ids = [item['id'] for item in data.get('data', []) if 'id' in item]
+        
+        if movie_ids:
+            print(f"SUCCESS: Found {len(movie_ids)} movie IDs.")
+            return movie_ids
+        else:
+            print("FAILURE: No movie IDs found in the response.")
             return []
             
-        initial_data = json.loads(match.group(1))
-        
-        print("Searching for movie list within the data block...")
-        movie_list = find_movie_list_recursively(initial_data)
-        
-        if movie_list:
-            print(f"SUCCESS: Found the movie list with {len(movie_list)} items.")
-            return movie_list
-        else:
-            print("FAILURE: Could not find a valid movie list anywhere in the data block.")
-            return []
-
     except requests.RequestException as e:
-        print(f"Error fetching the main page: {e}")
+        print(f"Error fetching movie IDs: {e}")
         return []
-    except (json.JSONDecodeError, AttributeError, IndexError) as e:
-        print(f"Error parsing the page's embedded data: {e}")
+
+def get_movies_details(movie_ids):
+    """Βήμα 2: Παίρνει τις πλήρεις λεπτομέρειες για μια λίστα από IDs."""
+    print(f"Fetching details for {len(movie_ids)} movies from: {API_GET_DETAILS_URL}")
+    
+    # Το payload που στέλνουμε στο API, όπως το είδαμε στα δεδομένα σας
+    payload = {
+        "platformCodename": "www",
+        "requestedTiles": [{"id": movie_id} for movie_id in movie_ids]
+    }
+    
+    try:
+        # Χρησιμοποιούμε POST request για να στείλουμε τα IDs
+        response = requests.post(API_GET_DETAILS_URL, headers=HEADERS, json=payload, timeout=45)
+        response.raise_for_status()
+        data = response.json()
+        
+        if 'tiles' in data:
+            print(f"SUCCESS: Received details for {len(data['tiles'])} movies.")
+            return data['tiles']
+        else:
+            print("FAILURE: 'tiles' key not found in the details response.")
+            return []
+            
+    except requests.RequestException as e:
+        print(f"Error fetching movie details: {e}")
         return []
 
 def main():
     """Κύρια συνάρτηση του script."""
-    movies_data = get_all_movies_data()
+    movie_ids = get_movie_ids()
+    
+    if not movie_ids:
+        print("No movie IDs found. Aborting.")
+        # Δημιουργούμε κενό αρχείο για να μη σκάσει το Action
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            f.write("#EXTM3U\n")
+        return
+
+    movies_data = get_movies_details(movie_ids)
     playlist_entries = []
     
     if movies_data:
         for movie in movies_data:
             try:
                 title = movie['title']
-                m3u8_url = movie['mediafiles'][0]['url']
-                image_url = movie['images']['cover']['url']
+                m3u8_url = movie['mediaFiles'][0]['formats'][2]['url'] # Βασισμένο στη δομή που στείλατε
+                image_url = movie['images'][2]['url'] # Το ίδιο και εδώ
                 
                 if m3u8_url.endswith('.m3u8'):
                     print(f"  -> Found: {title}")
@@ -92,8 +91,10 @@ def main():
                     playlist_entries.append(entry)
                 else:
                     print(f"  -> Skipped: {title} (Stream is not m3u8)")
+
             except (KeyError, IndexError):
-                print(f"  -> Skipped an item due to missing/incomplete data.")
+                # Αγνοούμε ταινίες που δεν έχουν την αναμενόμενη δομή
+                print(f"  -> Skipped '{movie.get('title', 'Unknown')}' due to unexpected data structure.")
                 continue
 
     print(f"\nCreating playlist file '{OUTPUT_FILE}'...")
