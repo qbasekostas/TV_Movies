@@ -28,6 +28,11 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
+      - uses: actions/upload-artifact@v4
+          with:
+          name: ertflix-json
+          path: ertflix_initial_data.json
+
       - name: Commit and push if there are changes
         run: |
           git config --global user.name "github-actions[bot]"
