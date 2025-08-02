@@ -2,111 +2,115 @@ import requests
 import os
 import json
 
-# API endpoints του ERTFlix
-API_LIST_URL = "https://api.ertflix.gr/v2/list/section/oles-oi-tainies-1?page=0&tileCount=200"
-API_VOD_URL_TEMPLATE = "https://api.ertflix.gr/v2/vod/tile/{movie_id}"
+# Βασικοί API endpoints
+API_PAGE_URL = "https://api.ertflix.gr/v2/page/movies" # Γενική σελίδα ταινιών
+API_LIST_TEMPLATE = "https://api.ertflix.gr/v2/list/{list_id}?page=0&tileCount=250"
+API_VOD_TEMPLATE = "https://api.ertflix.gr/v2/vod/tile/{movie_id}"
 
-OUTPUT_FILE = "ertflix_playlist.m3u8" # Αλλάζουμε το όνομα του αρχείου εξόδου
+OUTPUT_FILE = "ertflix_playlist.m3u8"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
-def get_movie_list():
-    """Παίρνει τη λίστα των ταινιών απευθείας από το API του ERTFlix."""
-    print("Fetching movie list from ERTFlix API...")
+def get_movies_list_id():
+    """Βρίσκει το δυναμικό ID της λίστας 'Όλες οι ταινίες'."""
+    print("Fetching the main movies page to find the list ID...")
     try:
-        response = requests.get(API_LIST_URL, headers=HEADERS, timeout=20)
+        response = requests.get(API_PAGE_URL, headers=HEADERS, timeout=20)
         response.raise_for_status()
         data = response.json()
         
-        # Τα δεδομένα των ταινιών βρίσκονται μέσα στο 'data' key
+        # Ψάχνουμε στα components της σελίδας για τη σωστή λίστα
+        for component in data.get('data', {}).get('components', []):
+            if component.get('title') == 'Όλες οι ταινίες':
+                list_id = component.get('listId')
+                if list_id:
+                    print(f"SUCCESS: Found list ID: {list_id}")
+                    return list_id
+        
+        print("FAILURE: Could not find the 'Όλες οι ταινίες' component on the page.")
+        return None
+        
+    except requests.RequestException as e:
+        print(f"Error fetching page data: {e}")
+        return None
+
+def get_all_movies_from_list(list_id):
+    """Παίρνει όλες τις ταινίες από ένα συγκεκριμένο list ID."""
+    list_url = API_LIST_TEMPLATE.format(list_id=list_id)
+    print(f"Fetching all movies from list URL: {list_url}")
+    try:
+        response = requests.get(list_url, headers=HEADERS, timeout=20)
+        response.raise_for_status()
+        data = response.json()
+        
         if 'data' in data and data['data']:
             print(f"Found {len(data['data'])} movies in the list.")
             return data['data']
-        else:
-            print("Could not find movie data in the API response.")
-            return []
-            
+        
+        return []
     except requests.RequestException as e:
         print(f"Error fetching movie list from API: {e}")
         return []
-    except json.JSONDecodeError:
-        print("Failed to parse JSON from API response.")
-        return []
 
 def get_movie_stream_details(movie_id):
-    """Παίρνει το .m3u8 link για μια συγκεκριμένη ταινία μέσω του API."""
-    vod_url = API_VOD_URL_TEMPLATE.format(movie_id=movie_id)
-    print(f"  -> Fetching stream details from: {vod_url}")
+    """Παίρνει το .m3u8 link για μια συγκεκριμένη ταινία."""
+    vod_url = API_VOD_TEMPLATE.format(movie_id=movie_id)
+    print(f"  -> Fetching stream details for movie ID: {movie_id}")
     try:
         response = requests.get(vod_url, headers=HEADERS, timeout=15)
         response.raise_for_status()
         data = response.json()
         
-        # Το m3u8 link συνήθως είναι το πρώτο στη λίστα mediafiles
         if 'data' in data and 'mediafiles' in data['data'] and data['data']['mediafiles']:
             stream_url = data['data']['mediafiles'][0].get('url')
             if stream_url and stream_url.endswith('.m3u8'):
-                print(f"  -> SUCCESS: Found m3u8 stream: {stream_url}")
                 return stream_url
-            else:
-                print(f"  -> INFO: Found a stream but it's not a .m3u8 link.")
-        
         return None
-        
-    except requests.RequestException as e:
-        print(f"  -> ERROR fetching stream details: {e}")
-        return None
-    except json.JSONDecodeError:
-        print("  -> FAILED to parse stream details JSON.")
+    except requests.RequestException:
+        # Αγνοούμε σφάλματα εδώ, π.χ. αν μια ταινία έχει λήξει (404)
         return None
 
 def main():
     """Κύρια συνάρτηση του script."""
-    movies = get_movie_list()
-    if not movies:
-        print("No movies found. Exiting.")
-        return
-
     playlist_entries = []
-    found_count = 0
-    total_movies = len(movies)
+    
+    list_id = get_movies_list_id()
+    if list_id:
+        movies = get_all_movies_from_list(list_id)
+        
+        if movies:
+            for movie in movies:
+                title = movie.get('title')
+                movie_id = movie.get('id')
+                try:
+                    image_url = movie['images']['cover']['url']
+                except (KeyError, TypeError):
+                    image_url = ""
 
-    for movie in movies:
-        title = movie.get('title')
-        movie_id = movie.get('id')
-        
-        # Η εικόνα είναι μέσα σε ένα nested dictionary
-        try:
-            image_url = movie['images']['cover']['url']
-        except (KeyError, TypeError):
-            image_url = "" # Βάζουμε κενό string αν δεν υπάρχει εικόνα
+                if not all([title, movie_id]):
+                    continue
+                
+                print(f"\nProcessing: {title}")
+                m3u8_url = get_movie_stream_details(movie_id)
+                
+                if m3u8_url:
+                    print(f"  -> SUCCESS: Found playable stream for '{title}'.")
+                    entry = f'#EXTINF:-1 tvg-logo="{image_url}",{title}\n{m3u8_url}'
+                    playlist_entries.append(entry)
+                else:
+                    print(f"  -> SKIPPED: No playable stream found for '{title}'.")
 
-        if not all([title, movie_id]):
-            print("Skipping an item due to missing title or id.")
-            continue
-        
-        print(f"\nProcessing: {title} (ID: {movie_id})")
-        
-        m3u8_url = get_movie_stream_details(movie_id)
-        
-        if m3u8_url:
-            found_count += 1
-            entry = f'#EXTINF:-1 tvg-logo="{image_url}",{title}\n{m3u8_url}'
-            playlist_entries.append(entry)
-        else:
-            print(f"  -> FINAL RESULT: No playable stream found for '{title}'.")
-
-    # Δημιουργία του περιεχομένου του αρχείου
+    # ΑΣΦΑΛΕΙΑ: Δημιουργούμε το αρχείο ακόμα και αν είναι κενό
+    # για να μην αποτύχει το GitHub Action.
+    print(f"\nCreating playlist file '{OUTPUT_FILE}'...")
     playlist_content = "#EXTM3U\n\n" + "\n\n".join(playlist_entries)
     
-    # Εγγραφή στο αρχείο
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(playlist_content)
         
-    print(f"\n>>>>>>>>> Successfully created playlist '{OUTPUT_FILE}' with {found_count} out of {total_movies} movies. <<<<<<<<<")
-
+    print(f"\n>>>>>>>>> Finished. Created playlist with {len(playlist_entries)} movies. <<<<<<<<<")
 
 if __name__ == "__main__":
     main()
