@@ -10,10 +10,40 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
+def find_movie_list_recursively(data_node):
+    """
+    Μια 'έξυπνη' αναδρομική συνάρτηση που ψάχνει σε ολόκληρο το JSON
+    για να βρει μια λίστα που μοιάζει με τη λίστα ταινιών.
+    """
+    # Αν ο κόμβος είναι λίστα...
+    if isinstance(data_node, list) and data_node:
+        # ...ελέγχουμε αν το πρώτο της στοιχείο μοιάζει με ταινία.
+        # Μια ταινία πρέπει να έχει 'title', 'mediafiles', και 'images'.
+        first_item = data_node[0]
+        if isinstance(first_item, dict) and all(k in first_item for k in ['title', 'mediafiles', 'images']):
+            return data_node # Βρήκαμε τη λίστα!
+
+    # Αν ο κόμβος είναι dictionary, ψάχνουμε σε όλες τις τιμές του.
+    if isinstance(data_node, dict):
+        for key, value in data_node.items():
+            result = find_movie_list_recursively(value)
+            if result:
+                return result
+
+    # Αν ο κόμβος είναι λίστα, ψάχνουμε σε όλα τα στοιχεία του.
+    if isinstance(data_node, list):
+        for item in data_node:
+            result = find_movie_list_recursively(item)
+            if result:
+                return result
+    
+    # Αν δεν βρεθεί τίποτα, επιστρέφουμε None.
+    return None
+
 def get_all_movies_data():
     """
-    Κατεβάζει την κεντρική σελίδα και εξάγει το ενσωματωμένο JSON
-    που περιέχει ΟΛΕΣ τις πληροφορίες για τις ταινίες, από το ___INITIAL_STATE___.
+    Κατεβάζει τη σελίδα και χρησιμοποιεί την αναδρομική συνάρτηση
+    για να βρει τη λίστα των ταινιών μέσα στο ___INITIAL_STATE___.
     """
     print(f"Fetching page to extract embedded data from: {MOVIE_LIST_URL}")
     try:
@@ -22,25 +52,20 @@ def get_all_movies_data():
         
         match = re.search(r'<script>var ___INITIAL_STATE__ = (\{.*?\});<\/script>', response.text)
         if not match:
-            print("FATAL: Could not find the ___INITIAL_STATE___ data block in the page source.")
+            print("FATAL: Could not find the ___INITIAL_STATE___ data block.")
             return []
             
         initial_data = json.loads(match.group(1))
         
-        # --- Η ΟΡΙΣΤΙΚΗ ΔΙΟΡΘΩΣΗ ΕΙΝΑΙ ΕΔΩ ---
-        # Πλοηγούμαστε στο σημείο που περιέχει τις λίστες περιεχομένου της σελίδας
-        components = initial_data.get('bootstrap', {}).get('page', {}).get('data', {}).get('components', [])
+        print("Searching for movie list within the data block...")
+        movie_list = find_movie_list_recursively(initial_data)
         
-        # Ψάχνουμε σε όλες τις λίστες για αυτήν με τον τίτλο "Όλες οι ταινίες"
-        for component in components:
-            if component.get('title') == 'Όλες οι Ταινίες':
-                tiles = component.get('tiles', [])
-                if tiles:
-                    print(f"SUCCESS: Found the 'Όλες οι Ταινίες' list with {len(tiles)} movies.")
-                    return tiles
-        
-        print("FAILURE: Could not find a component with the title 'Όλες οι Ταινίες' that contains movies.")
-        return []
+        if movie_list:
+            print(f"SUCCESS: Found the movie list with {len(movie_list)} items.")
+            return movie_list
+        else:
+            print("FAILURE: Could not find a valid movie list anywhere in the data block.")
+            return []
 
     except requests.RequestException as e:
         print(f"Error fetching the main page: {e}")
