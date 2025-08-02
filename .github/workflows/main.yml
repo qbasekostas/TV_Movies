@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # ΑΛΛΑΓΗ ΕΔΩ: Προσθέτουμε το σωστό όνομα αρχείου
-          git add ertflix_playlist.m3u8
-          git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
+          # Αλλάζουμε το όνομα αρχείου σε αυτό του debugging
+          git add debug_output.html
+          git diff --staged --quiet || git commit -m "Add debug output"
           git push
