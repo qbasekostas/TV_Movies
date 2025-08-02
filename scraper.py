@@ -5,7 +5,7 @@ import re
 
 # Το μοναδικό URL που χρειαζόμαστε, αυτό που δώσατε εσείς.
 # Αυξάνουμε το tileCount για να πιάσουμε όσο το δυνατόν περισσότερες ταινίες.
-MOVIE_LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies§ionCodename=oles-oi-tainies-1&tileCount=300"
+MOVIE_LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1"
 
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 
