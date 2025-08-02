@@ -4,7 +4,7 @@ import json
 import re
 
 # ΒΗΜΑ 1: Από εδώ παίρνουμε τα IDs
-INITIAL_PAGE_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies§ionCodename=oles-oi-tainies-1&tileCount=300"
+INITIAL_PAGE_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1&tileCount=300"
 # ΒΗΜΑ 2: Εδώ στέλνουμε τα IDs για να πάρουμε τα πάντα
 API_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
 
