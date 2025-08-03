@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-# --- API Endpoints (Όπως τα αποκαλύψατε εσείς) ---
+# --- API Endpoints (Η ΣΩΣΤΗ ΔΙΑΔΙΚΑΣΙΑ) ---
 PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
 TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
@@ -10,10 +10,11 @@ PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 # --- Σταθερές ---
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
+# Η ΜΙΑ ΓΡΑΜΜΗ ΠΟΥ ΕΛΕΙΠΕ: Το σωστό Header με το Referer
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Referer": "https://www.ertflix.gr/"
 }
-# Η κρίσιμη παράμετρος '$headers' που χρειάζονται τα API
 SPECIAL_HEADERS_PARAM = json.dumps({
     "X-Api-Date-Format": "iso",
     "X-Api-Camel-Case": "true"
@@ -31,7 +32,6 @@ def fetch_all_movie_details():
     while True:
         print(f"Λήψη σελίδας {current_page}...")
         
-        # Οι σωστές παράμετροι για τη λήψη των IDs, συμπεριλαμβανομένης της κρίσιμης '$headers'
         page_params = {
             'platformCodename': 'www',
             'sectionCodename': 'oles-oi-tainies-1',
@@ -46,19 +46,16 @@ def fetch_all_movie_details():
             response.raise_for_status()
             page_data = response.json()
 
-            # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε τα σωστά κεφαλαία keys: 'SectionContent' και 'TilesIds'
-            section_content = page_data.get('SectionContent', {})
-            tiles_with_ids = section_content.get('TilesIds', [])
+            section_content = page_data.get('sectionContent', {})
+            tiles_with_ids = section_content.get('tilesIds', [])
             
             if not tiles_with_ids:
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή.")
                 break
             
-            # Παίρνουμε τα IDs από αυτή τη σελίδα
             ids_to_fetch = [tile['Id'] for tile in tiles_with_ids if 'Id' in tile]
             print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται λήψη των λεπτομερειών τους...")
 
-            # --- Λήψη Τίτλων & Εικόνων για τη συγκεκριμένη σελίδα ---
             if ids_to_fetch:
                 details_payload = {"ids": ids_to_fetch}
                 details_params = {'$headers': SPECIAL_HEADERS_PARAM}
@@ -70,7 +67,6 @@ def fetch_all_movie_details():
                 else:
                     print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
             
-            # Αν η απάντηση έχει λιγότερες ταινίες από το όριο, πιθανότατα είναι η τελευταία σελίδα
             if len(tiles_with_ids) < 40:
                 print("Βρέθηκε η τελευταία σελίδα. Ολοκληρώθηκε η συλλογή.")
                 break
@@ -87,7 +83,6 @@ def fetch_all_movie_details():
 def main():
     final_playlist = []
     
-    # Βήμα 1 & 2 συνδυασμένα
     all_movies_with_details = fetch_all_movie_details()
     
     if not all_movies_with_details:
@@ -98,7 +93,6 @@ def main():
     print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
 
     for index, tile in enumerate(all_movies_with_details):
-        # Τα κλειδιά εδώ είναι με μικρά γράμματα λόγω του 'X-Api-Camel-Case': true στο GetTiles
         codename = tile.get('codename')
         title = tile.get('title', codename or "Unknown Title").strip()
         poster_url = tile.get('poster') or ""
@@ -115,13 +109,12 @@ def main():
             player_data = player_resp.json()
             
             stream_url = None
-            # Τα κλειδιά εδώ είναι με κεφαλαία
-            if player_data.get("MediaFiles"):
-                for media_file in player_data["MediaFiles"]:
-                    if media_file.get("Formats"):
-                        for file_format in media_file["Formats"]:
-                            if file_format.get("Url", "").endswith(".m3u8"):
-                                stream_url = file_format["Url"]
+            if player_data.get("mediaFiles"):
+                for media_file in player_data["mediaFiles"]:
+                    if media_file.get("formats"):
+                        for file_format in media_file["formats"]:
+                            if file_format.get("url", "").endswith(".m3u8"):
+                                stream_url = file_format["url"]
                                 break
                     if stream_url:
                         break
@@ -136,7 +129,10 @@ def main():
         
         time.sleep(0.05)
 
-    # Βήμα 3: Δημιουργία του αρχείου M3U
+    if not final_playlist:
+        print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
+        return
+
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
