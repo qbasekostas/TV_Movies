@@ -28,8 +28,11 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      - name: Upload playlist as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ertflix-playlist
-          path: ertflix_playlist.m3u8
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # ΑΛΛΑΓΗ ΕΔΩ: Προσθέτουμε το σωστό όνομα αρχείου
+          git add ertflix_playlist.m3u8
+          git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
+          git push
