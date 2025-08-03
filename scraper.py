@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-# --- API Endpoints (Όπως τα αποκαλύψατε εσείς) ---
+# --- API Endpoints (Η ΣΩΣΤΗ ΔΙΑΔΙΚΑΣΙΑ) ---
 PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
 TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
@@ -10,7 +10,6 @@ PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 # --- Σταθερές ---
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
-# Τα headers που χρησιμοποιεί ο browser και η κρίσιμη παράμετρος '$headers'
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
@@ -25,19 +24,18 @@ def fetch_all_movie_details():
     και μετά ζητάει μαζικά τις λεπτομέρειες (τίτλους, αφίσες).
     """
     all_movies = []
+    seen_ids = set() # Ασφάλεια για να μην κολλήσουμε ποτέ σε ατελείωτο βρόχο
     current_page = 1
 
     print("--- Φάση 1: Συλλογή IDs και Λεπτομερειών ανά σελίδα ---")
     while True:
         print(f"Λήψη σελίδας {current_page}...")
         
+        # Οι σωστές, ΑΠΛΕΣ παράμετροι για τη λήψη των IDs
         page_params = {
             'platformCodename': 'www',
             'sectionCodename': 'oles-oi-tainies-1',
-            'page': current_page,
-            'limit': 40,
-            'ignoreLimit': 'false',
-            '$headers': SPECIAL_HEADERS_PARAM
+            'page': current_page
         }
         
         try:
@@ -52,11 +50,22 @@ def fetch_all_movie_details():
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή.")
                 break
             
+            # Έλεγχος για επανάληψη
+            first_id_on_page = tiles_with_ids[0].get('Id')
+            if first_id_on_page in seen_ids:
+                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή με ασφάλεια.")
+                break
+            
+            # Παίρνουμε τα IDs από αυτή τη σελίδα
             ids_to_fetch = [tile['Id'] for tile in tiles_with_ids if 'Id' in tile]
-            print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται λήψη των λεπτομερειών τους...")
+            # Προσθέτουμε τα νέα IDs στο set για να τα θυμόμαστε
+            seen_ids.update(ids_to_fetch)
+            print(f"  -> Βρέθηκαν {len(ids_to_fetch)} νέα IDs. Γίνεται λήψη των λεπτομερειών τους...")
 
+            # --- Λήψη Τίτλων & Εικόνων για τη συγκεκριμένη σελίδα ---
             if ids_to_fetch:
                 details_payload = {"ids": ids_to_fetch}
+                # Εδώ χρησιμοποιούμε την κρίσιμη παράμετρο '$headers'
                 details_params = {'$headers': SPECIAL_HEADERS_PARAM}
                 details_response = requests.post(TILE_DETAILS_URL, params=details_params, json=details_payload, headers=HEADERS, timeout=20)
                 if details_response.status_code == 200:
@@ -66,11 +75,6 @@ def fetch_all_movie_details():
                 else:
                     print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
             
-            # Αν η απάντηση έχει λιγότερες ταινίες από το όριο, πιθανότατα είναι η τελευταία σελίδα
-            if len(tiles_with_ids) < 40:
-                print("Βρέθηκε η τελευταία σελίδα. Ολοκληρώθηκε η συλλογή.")
-                break
-
             current_page += 1
             time.sleep(0.2)
 
@@ -83,6 +87,7 @@ def fetch_all_movie_details():
 def main():
     final_playlist = []
     
+    # Βήμα 1 & 2 συνδυασμένα: Παίρνουμε μια πλήρη λίστα με όλες τις ταινίες και τις λεπτομέρειές τους
     all_movies_with_details = fetch_all_movie_details()
     
     if not all_movies_with_details:
@@ -93,6 +98,7 @@ def main():
     print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
 
     for index, tile in enumerate(all_movies_with_details):
+        # Τα κλειδιά είναι με μικρά γράμματα λόγω του 'X-Api-Camel-Case': true
         codename = tile.get('codename')
         title = tile.get('title', codename or "Unknown Title").strip()
         poster_url = tile.get('poster') or ""
@@ -138,7 +144,6 @@ def main():
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for movie in final_playlist:
-                # ΔΙΟΡΘΩΣΗ: Απλή και συμβατή μορφοποίηση
                 logo_tag = f'tvg-logo="{movie["poster_url"]}"' if movie["poster_url"] else ""
                 info_line = f'#EXTINF:-1 {logo_tag},{movie["title"]}\n'
                 url_line = f'{movie["stream_url"]}\n'
