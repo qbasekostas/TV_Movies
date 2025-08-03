@@ -4,7 +4,6 @@ import json
 
 # --- API Endpoints ---
 PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-# Χρησιμοποιούμε το API που παίρνει λεπτομέρειες για ΜΙΑ ταινία. Είναι αξιόπιστο.
 TILE_DETAIL_API_URL = "https://api.app.ertflix.gr/v1/tile/GetTile"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
@@ -14,20 +13,33 @@ OUTPUT_FILE = "ertflix_playlist.m3u8"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
+# Η κρίσιμη παράμετρος '$headers' που έλειπε
+SPECIAL_HEADERS_PARAM = json.dumps({
+    "X-Api-Date-Format": "iso",
+    "X-Api-Camel-Case": "true"
+})
 
 def fetch_all_movie_codenames():
     """
-    Μαζεύει ΟΛΑ τα codenames από όλες τις σελίδες, σταματώντας με ασφάλεια
-    όταν ανιχνεύσει ότι το API έχει αρχίσει να επαναλαμβάνεται.
+    Μαζεύει ΟΛΑ τα codenames, στέλνοντας τη σωστή παράμετρο '$headers'
+    και σταματώντας με ασφάλεια όταν ανιχνεύσει επανάληψη.
     """
     all_codenames = []
-    seen_ids = set() # Η "ασφάλεια" μας για να μην κολλήσουμε ποτέ
+    seen_ids = set()
     current_page = 1
 
-    print("--- Φάση 1: Συλλογή όλων των codenames (με ανίχνευση επανάληψης) ---")
+    print("--- Φάση 1: Συλλογή όλων των codenames (Σωστή Μέθοδος) ---")
     while True:
         print(f"Λήψη σελίδας {current_page}...")
-        page_params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page}
+        
+        page_params = {
+            'platformCodename': 'www',
+            'sectionCodename': 'oles-oi-tainies-1',
+            'page': current_page,
+            'limit': 40,
+            'ignoreLimit': 'false',
+            '$headers': SPECIAL_HEADERS_PARAM # Η κρίσιμη προσθήκη
+        }
         
         try:
             response = requests.get(PAGINATION_URL, params=page_params, headers=HEADERS, timeout=20)
@@ -41,13 +53,11 @@ def fetch_all_movie_codenames():
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή.")
                 break
             
-            # Έλεγχος για επανάληψη. Παίρνουμε το ID του πρώτου αντικειμένου.
             first_id_on_page = tiles_with_ids[0].get('Id')
             if first_id_on_page in seen_ids:
                 print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή με ασφάλεια.")
                 break
                 
-            # Προσθήκη των νέων codenames
             new_codenames_found = 0
             for tile in tiles_with_ids:
                 tile_id = tile.get('Id')
@@ -56,6 +66,11 @@ def fetch_all_movie_codenames():
                     seen_ids.add(tile_id)
                     all_codenames.append(codename)
                     new_codenames_found += 1
+            
+            # Αν δεν βρέθηκε κανένα νέο codename, τότε είναι επανάληψη
+            if new_codenames_found == 0:
+                print(f"Εντοπίστηκε επανάληψη (όλα τα IDs της σελίδας υπάρχουν ήδη). Ολοκληρώθηκε η συλλογή.")
+                break
 
             print(f"  -> Βρέθηκαν {new_codenames_found} νέα, μοναδικά codenames. Σύνολο: {len(all_codenames)}")
             current_page += 1
@@ -70,7 +85,6 @@ def fetch_all_movie_codenames():
 def main():
     final_playlist = []
     
-    # Βήμα 1: Παίρνουμε ΟΛΑ τα codenames
     all_codenames = fetch_all_movie_codenames()
     
     if not all_codenames:
@@ -78,38 +92,38 @@ def main():
         return
 
     total_movies = len(all_codenames)
-    print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών (Λήψη λεπτομερειών & stream) ---")
+    print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών ---")
 
     for index, codename in enumerate(all_codenames):
         print(f"Επεξεργασία {index + 1}/{total_movies}: {codename}")
-        title = codename # Προεπιλεγμένος τίτλος σε περίπτωση σφάλματος
+        title = codename
         poster_url = ""
 
         try:
-            # Βήμα 2α: Λήψη λεπτομερειών για ΚΑΘΕ ταινία ξεχωριστά (Αξιόπιστη Μέθοδος)
-            detail_params = {'platformCodename': 'www', 'codename': codename}
+            # Λήψη λεπτομερειών (Αξιόπιστη Μέθοδος)
+            detail_params = {'platformCodename': 'www', 'codename': codename, '$headers': SPECIAL_HEADERS_PARAM}
             detail_resp = requests.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=10)
             if detail_resp.status_code == 200:
                 detail_data = detail_resp.json()
-                title = detail_data.get('Title', codename).strip()
-                poster_url = detail_data.get('Poster', '')
+                title = detail_data.get('title', codename).strip() # Το API επιστρέφει μικρά γράμματα εδώ
+                poster_url = detail_data.get('poster', '')
                 print(f"  -> Βρέθηκε τίτλος: '{title}'")
             else:
-                 print(f"  -> Δεν βρέθηκαν λεπτομέρειες για τον τίτλο (Σφάλμα: {detail_resp.status_code}).")
+                 print(f"  -> Δεν βρέθηκαν λεπτομέρειες τίτλου (Σφάλμα: {detail_resp.status_code}).")
 
-            # Βήμα 2β: Λήψη του stream URL
-            player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
+            # Λήψη stream URL
+            player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000), '$headers': SPECIAL_HEADERS_PARAM}
             player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
             stream_url = None
-            if player_data.get("MediaFiles"):
-                for media_file in player_data["MediaFiles"]:
-                    if media_file.get("Formats"):
-                        for file_format in media_file["Formats"]:
-                            if file_format.get("Url", "").endswith(".m3u8"):
-                                stream_url = file_format["Url"]
+            if player_data.get("mediaFiles"):
+                for media_file in player_data["mediaFiles"]:
+                    if media_file.get("formats"):
+                        for file_format in media_file["formats"]:
+                            if file_format.get("url", "").endswith(".m3u8"):
+                                stream_url = file_format["url"]
                                 break
                     if stream_url:
                         break
@@ -124,7 +138,6 @@ def main():
         
         time.sleep(0.05)
 
-    # Βήμα 3: Δημιουργία του αρχείου M3U
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
