@@ -2,10 +2,10 @@ import requests
 import time
 import json
 
-# --- API Endpoints (Όπως τα βρήκατε εσείς) ---
-PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent" # Για τις σελίδες με τα IDs
-TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles" # Για τους ελληνικούς τίτλους & αφίσες
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent" # Για το τελικό stream
+# --- API Endpoints ---
+PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
+TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 # --- Σταθερές ---
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
@@ -18,13 +18,14 @@ HEADERS = {
 
 def fetch_all_movie_details():
     """
-    Μιμείται την πραγματική διαδικασία: παίρνει τις σελίδες με τα IDs και μετά
-    ζητάει μαζικά τις λεπτομέρειες (τίτλους, αφίσες).
+    Μαζεύει τα IDs από όλες τις σελίδες, αλλά σταματάει αμέσως μόλις
+    ανιχνεύσει ότι το API έχει αρχίσει να επαναλαμβάνεται.
     """
     all_movies = []
+    seen_ids = set() # Set για να θυμόμαστε τα IDs που έχουμε δει
     current_page = 1
 
-    print("--- Φάση 1: Συλλογή IDs από όλες τις σελίδες ---")
+    print("--- Φάση 1: Συλλογή IDs από όλες τις σελίδες (με ανίχνευση επανάληψης) ---")
     while True:
         print(f"Λήψη σελίδας {current_page}...")
         page_params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page}
@@ -41,21 +42,28 @@ def fetch_all_movie_details():
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή IDs.")
                 break
             
-            # Παίρνουμε τα IDs από αυτή τη σελίδα
-            ids_to_fetch = [tile['id'] for tile in tiles_with_ids if 'id' in tile]
-            print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται λήψη των λεπτομερειών τους...")
+            # Παίρνουμε τα IDs από αυτή τη σελίδα που ΔΕΝ έχουμε ξαναδεί
+            new_ids_on_page = [tile['id'] for tile in tiles_with_ids if 'id' in tile and tile['id'] not in seen_ids]
 
-            # --- Φάση 2: Λήψη Τίτλων & Εικόνων για τη συγκεκριμένη σελίδα ---
-            if ids_to_fetch:
-                details_payload = {"Ids": ids_to_fetch}
-                details_response = requests.post(TILE_DETAILS_URL, json=details_payload, headers=HEADERS, timeout=20)
-                if details_response.status_code == 200:
-                    detailed_tiles = details_response.json()
-                    all_movies.extend(detailed_tiles)
-                    print(f"  -> Επιτυχής λήψη λεπτομερειών. Σύνολο ταινιών μέχρι στιγμής: {len(all_movies)}")
-                else:
-                    print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
+            # Αν δεν βρέθηκε κανένα νέο ID, σημαίνει ότι η σελίδα είναι επανάληψη. Σταματάμε.
+            if not new_ids_on_page:
+                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή IDs.")
+                break
             
+            print(f"  -> Βρέθηκαν {len(new_ids_on_page)} νέα, μοναδικά IDs. Γίνεται λήψη των λεπτομερειών τους...")
+
+            # --- Φάση 2: Λήψη Τίτλων & Εικόνων για τα ΝΕΑ IDs ---
+            details_payload = {"Ids": new_ids_on_page}
+            details_response = requests.post(TILE_DETAILS_URL, json=details_payload, headers=HEADERS, timeout=20)
+            if details_response.status_code == 200:
+                detailed_tiles = details_response.json()
+                all_movies.extend(detailed_tiles)
+                # Προσθέτουμε τα νέα IDs στο set για να τα θυμόμαστε
+                seen_ids.update(new_ids_on_page)
+                print(f"  -> Επιτυχής λήψη λεπτομερειών. Σύνολο ταινιών μέχρι στιγμής: {len(all_movies)}")
+            else:
+                 print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
+
             current_page += 1
             time.sleep(0.2)
 
@@ -68,7 +76,7 @@ def fetch_all_movie_details():
 def main():
     final_playlist = []
     
-    # Βήμα 1 & 2 συνδυασμένα: Παίρνουμε μια πλήρη λίστα με όλες τις ταινίες και τις λεπτομέρειές τους
+    # Βήμα 1 & 2: Παίρνουμε μια πλήρη λίστα με όλες τις ταινίες και τις λεπτομέρειές τους
     all_movies_with_details = fetch_all_movie_details()
     
     if not all_movies_with_details:
