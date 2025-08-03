@@ -3,7 +3,9 @@ import requests
 import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
 # --- Σταθερές ---
@@ -18,62 +20,66 @@ HEADERS = {
 
 def get_all_movies_with_selenium():
     """
-    Χρησιμοποιεί το Selenium για να ανοίξει τη σελίδα, να κάνει scroll μέχρι το τέλος
-    και να επιστρέψει τον πλήρη HTML κώδικα.
+    Χρησιμοποιεί το Selenium για να ανοίξει τη σελίδα, να περιμένει να φορτώσει το περιεχόμενο,
+    να κάνει scroll μέχρι το τέλος και να επιστρέψει τον πλήρη HTML κώδικα.
     """
     print("--- Φάση 1: Εκκίνηση browser και scroll για φόρτωση όλων των ταινιών ---")
     
-    # Ρυθμίσεις για να τρέχει το Selenium χωρίς να ανοίγει παράθυρο (headless)
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("user-agent=" + HEADERS["User-Agent"])
 
-    # Προσπαθούμε να βρούμε αυτόματα το chromedriver, αν όχι, πρέπει να οριστεί η διαδρομή
     try:
         driver = webdriver.Chrome(options=chrome_options)
-    except Exception as e:
-        print(f"Σφάλμα εκκίνησης Selenium: {e}")
-        print("Βεβαιωθείτε ότι το chromedriver είναι εγκατεστημένο και προσβάσιμο στο PATH σας.")
-        return None
-
-    driver.get(URL)
-    time.sleep(5) # Περιμένουμε να φορτώσει η αρχική σελίδα
-
-    last_height = driver.execute_script("return document.body.scrollHeight")
-    
-    while True:
-        print("Κάνοντας scroll προς τα κάτω...")
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(3) # Περιμένουμε να φορτώσουν οι νέες ταινίες
+        driver.get(URL)
         
-        new_height = driver.execute_script("return document.body.scrollHeight")
-        if new_height == last_height:
-            print("Φτάσαμε στο τέλος της σελίδας. Ολοκληρώθηκε το scroll.")
-            break
-        last_height = new_height
+        # --- Η ΚΡΙΣΙΜΗ ΔΙΟΡΘΩΣΗ ---
+        # Περιμένουμε ΥΠΟΜΟΝΕΤΙΚΑ μέχρι 20 δευτερόλεπτα, μέχρι να εμφανιστεί
+        # τουλάχιστον ΕΝΑΣ σύνδεσμος ταινίας. Μόλις εμφανιστεί, προχωράμε.
+        print("Αναμονή για φόρτωση των πρώτων ταινιών...")
+        wait = WebDriverWait(driver, 20)
+        # Αυτός ο selector ψάχνει για <a href="..."> που περιέχει "/vod/vod."
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "a[href*='/vod/vod.']")))
+        print("Οι πρώτες ταινίες φορτώθηκαν. Έναρξη scroll.")
+        # --- ΤΕΛΟΣ ΔΙΟΡΘΩΣΗΣ ---
 
-    html_content = driver.page_source
-    driver.quit()
-    
-    return html_content
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        
+        while True:
+            print("Κάνοντας scroll προς τα κάτω...")
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(3) 
+            
+            new_height = driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                print("Φτάσαμε στο τέλος της σελίδας. Ολοκληρώθηκε το scroll.")
+                break
+            last_height = new_height
+
+        html_content = driver.page_source
+        driver.quit()
+        return html_content
+
+    except Exception as e:
+        print(f"Σφάλμα κατά τη διάρκεια της διαδικασίας του Selenium: {e}")
+        if 'driver' in locals():
+            driver.quit()
+        return None
 
 def main():
     final_playlist = []
 
-    # Βήμα 1: Παίρνουμε τον πλήρη HTML κώδικα
     full_html = get_all_movies_with_selenium()
     
     if not full_html:
         print("\nΑποτυχία λήψης του HTML. Τερματισμός.")
         return
 
-    # Βήμα 2: Επεξεργασία του HTML για να βρούμε τις ταινίες
     print("\n--- Φάση 2: Επεξεργασία HTML για εξαγωγή πληροφοριών ---")
     soup = BeautifulSoup(full_html, "html.parser")
     
-    # Βρίσκουμε όλους τους συνδέσμους που οδηγούν σε ταινίες
     movie_links = soup.select('a[href*="/vod/vod."]')
     total_movies = len(movie_links)
     print(f"Βρέθηκαν {total_movies} ταινίες στη σελίδα.")
@@ -82,23 +88,23 @@ def main():
         print("Δεν βρέθηκαν σύνδεσμοι ταινιών. Πιθανόν η δομή της σελίδας άλλαξε.")
         return
 
-    # Βήμα 3: Λήψη του stream URL για κάθε ταινία
     print(f"\n--- Φάση 3: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
     for index, link in enumerate(movie_links):
         try:
             img_tag = link.find("img")
-            if not img_tag:
-                continue
+            if not img_tag: continue
 
             title = img_tag.get("alt", "Unknown Title").strip()
             poster_url = img_tag.get("src", "")
             href = link.get("href", "")
             
-            # Εξαγωγή του codename από το href
             if "vod." in href and "-" in href:
-                codename = href.split("-", 1)[1]
+                codename_parts = href.split("vod.")[1].split("-", 1)
+                if len(codename_parts) > 1:
+                    codename = codename_parts[1]
+                else: continue
             else:
-                continue # Παράλειψη αν δεν βρεθεί σωστό codename
+                continue
             
             print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
@@ -132,7 +138,6 @@ def main():
         
         time.sleep(0.05)
 
-    # Βήμα 4: Δημιουργία αρχείου
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
