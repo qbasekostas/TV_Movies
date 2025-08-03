@@ -17,7 +17,8 @@ def main():
     # Πάρε τους τίτλους από το alt των <img>
     for img in soup.find_all("img", alt=True):
         title = img["alt"].strip()
-        if title:
+        # Βάζουμε φίλτρο για να μη βάζει logos/site names
+        if title and len(title) > 4 and title.lower() != "ertflix":
             movies.add(title)
 
     print("Βρέθηκαν τίτλοι:")
