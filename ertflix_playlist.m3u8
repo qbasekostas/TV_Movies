@@ -1,155 +1,141 @@
 #EXTM3U
-#EXTINF:-1 ,to-bankouber
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-vancouver-n/to-vancouver-n/index.m3u8
-#EXTINF:-1 ,e-summathetria
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/i-shmathitria/i-shmathitria/index.m3u8
-#EXTINF:-1 ,apostratos
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apostratos-n/apostratos-n/index.m3u8
-#EXTINF:-1 ,to-noema-tou-augoustou-mikres-istories
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-nohma-tou-augoustou-n/to-nohma-tou-augoustou-n/index.m3u8
-#EXTINF:-1 ,kalokairines-diakopes
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/diakopes-kalokairines/diakopes-kalokairines/index.m3u8
-#EXTINF:-1 ,ti-kolumpaei-kai-gelaei
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ti-kolympaei-kai-gelaei/ti-kolympaei-kai-gelaei/index.m3u8
-#EXTINF:-1 ,tzitzipogko
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tzitzipongo/tzitzipongo/index.m3u8
-#EXTINF:-1 ,einai-grousouzia-na-deis-te-nuphe-prin-ton-gamo
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/einai-grousouzia/einai-grousouzia/index.m3u8
-#EXTINF:-1 ,pilala
-https://mediaserve.ert.gr/bpk-vod/vodext/default/pilala-mikrofilm/pilala-mikrofilm/index.m3u8
-#EXTINF:-1 ,nouar-protzekt
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-noir-project/the-noir-project/index.m3u8
-#EXTINF:-1 ,khlorio-1
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/chlorio-chlorine-mikres-istories/chlorio-chlorine-mikres-istories/index.m3u8
-#EXTINF:-1 ,land
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/land-n/land-n/index.m3u8
-#EXTINF:-1 ,travel-express
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/travel-express/travel-express/index.m3u8
-#EXTINF:-1 ,to-dodekato-euaggelio
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-dodekato-evaggelio-mikres-istories-n/to-dodekato-evaggelio-mikres-istories-n/index.m3u8
-#EXTINF:-1 ,to-kalokairi-pou-parateresa-gia-prote-phora-ton-elio-na-duei
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/index.m3u8
-#EXTINF:-1 ,beautiful-people
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/beautiful-people/beautiful-people/index.m3u8
-#EXTINF:-1 ,the-drone
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-drone/the-drone/index.m3u8
-#EXTINF:-1 ,to-koritsi-me-ta-maura
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-koritsi-me-ta-mavra/to-koritsi-me-ta-mavra/index.m3u8
-#EXTINF:-1 ,sunoikia-to-oneiro
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/synoikia-to-oneiro/synoikia-to-oneiro/index.m3u8
-#EXTINF:-1 ,mia-italida-sten-ellada
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mia-italida-stin-ellada-new/mia-italida-stin-ellada-new/index.m3u8
-#EXTINF:-1 ,o-phanoures-kai-to-soi-tou
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-fanoyrhs-kai-to-soi-toy/o-fanoyrhs-kai-to-soi-toy/index.m3u8
-#EXTINF:-1 ,oi-gamproi-tes-eutukhias
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oi-gabroi-tis-eftixias/oi-gabroi-tis-eftixias/index.m3u8
-#EXTINF:-1 ,phouskothalassies
-https://mediaserve.ert.gr/bpk-vod/vodext/default/fouskothalassies/fouskothalassies/index.m3u8
-#EXTINF:-1 ,kakos-psukhros-kai-anapodos
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kakos-psyhros-anapodos/kakos-psyhros-anapodos/index.m3u8
-#EXTINF:-1 ,eutukhos-trelatheka-1
-https://mediaserve.ert.gr/bpk-vod/vodext/default/eutixws-trelathika/eutixws-trelathika/index.m3u8
-#EXTINF:-1 ,o-thalassolukos
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-thalassolykos-n/o-thalassolykos-n/index.m3u8
-#EXTINF:-1 ,etoimoi
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/etoimoi/etoimoi/index.m3u8
-#EXTINF:-1 ,enas-blakas-kai-misos-1
-https://mediaserve.ert.gr/bpk-vod/vodext/default/enas-vlakas-kai-misos/enas-vlakas-kai-misos/index.m3u8
-#EXTINF:-1 ,poios-thanases
-https://mediaserve.ert.gr/bpk-vod/vodext/default/poios-thanasis/poios-thanasis/index.m3u8
-#EXTINF:-1 ,kosmos-kai-kosmakes
-https://mediaserve.ert.gr/bpk-vod/vodext/default/kosmos-kai-kosmakis/kosmos-kai-kosmakis/index.m3u8
-#EXTINF:-1 ,otan-leipei-e-gata
-https://mediaserve.ert.gr/bpk-vod/vodext/default/otan-leipei-i-gata/otan-leipei-i-gata/index.m3u8
-#EXTINF:-1 ,o-gunaikas
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-ginaikas/o-ginaikas/index.m3u8
-#EXTINF:-1 ,ksupna-koroido
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/xypna-koroido/xypna-koroido/index.m3u8
-#EXTINF:-1 ,oikogeneia-papadopoulou
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oikogeneia-papadopoulou/oikogeneia-papadopoulou/index.m3u8
-#EXTINF:-1 ,klephtes-me-philotimo
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kleftis-me-filotimo/kleftis-me-filotimo/index.m3u8
-#EXTINF:-1 ,oikogeneia-khorapha
+#EXTINF:-1 group-title="Κωμωδίες" ,oikogeneia-khorapha
 https://mediaserve.ert.gr/bpk-vod/vodext/default/oikogeneia-chorafa/oikogeneia-chorafa/index.m3u8
-#EXTINF:-1 ,to-rantebou-tes-kuriakes
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-rantevou-tis-kyriakis/to-rantevou-tis-kyriakis/index.m3u8
-#EXTINF:-1 ,kathe-empodio-gia-kalo
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kathe-empodio-gia kalo/kathe-empodio-gia kalo/index.m3u8
-#EXTINF:-1 ,skhetika-me-ton-basile
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sxetika-me-ton-basilh/sxetika-me-ton-basilh/index.m3u8
-#EXTINF:-1 ,o-theios-tes-bioletas
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-theios-tis-violetas/o-theios-tis-violetas/index.m3u8
-#EXTINF:-1 ,palirroia
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/paliria-3n/paliria-3n/index.m3u8
-#EXTINF:-1 ,firebug
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/firebug-n/firebug-n/index.m3u8
-#EXTINF:-1 ,claw-machine
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/claw-maghine/claw-maghine/index.m3u8
-#EXTINF:-1 ,to-tukhero-panteloni
-https://mediaserve.ert.gr/bpk-vod/vodext/default/tyxero-panteloni/tyxero-panteloni/index.m3u8
-#EXTINF:-1 ,oi-uperephanoi
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oi-yperifanoi/oi-yperifanoi/index.m3u8
-#EXTINF:-1 ,karagkiozes-o-adikemenos-tes-zoes
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/karagiozis-oi-adikimenoi-tis-zwis/karagiozis-oi-adikimenoi-tis-zwis/index.m3u8
-#EXTINF:-1 ,eroika
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/eroika/eroika/index.m3u8
-#EXTINF:-1 ,oti-lampei-einai-khrusos
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos/index.m3u8
-#EXTINF:-1 ,e-skone-pou-pephtei
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/skoni-pou-peftei/skoni-pou-peftei/index.m3u8
-#EXTINF:-1 ,apallou
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apalloy-n/apalloy-n/index.m3u8
-#EXTINF:-1 ,kathemerine-ergasime
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kathimerini-ergasimi/kathimerini-ergasimi/index.m3u8
-#EXTINF:-1 ,khrusopsaro
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/gold-fish-xrusopsaro/gold-fish-xrusopsaro/index.m3u8
-#EXTINF:-1 ,phusarmonika-man-mikres-istories
-https://mediaserve.ert.gr/bpk-vod/vodext/default/harmonica-man/harmonica-man/index.m3u8
-#EXTINF:-1 ,roz-bouno-1
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/roz-vouno/roz-vouno/index.m3u8
-#EXTINF:-1 ,seawolf
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sea-wolf/sea-wolf/index.m3u8
-#EXTINF:-1 ,khartinoi-aetoi
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hartinoi-aetoi/hartinoi-aetoi/index.m3u8
-#EXTINF:-1 ,khera-strategou
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hira-stratigou/hira-stratigou/index.m3u8
-#EXTINF:-1 ,largo
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/largo/largo/index.m3u8
-#EXTINF:-1 ,memory-reloaded
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/memory-reloaded/memory-reloaded/index.m3u8
-#EXTINF:-1 ,kineta-stoikheia-tou-antrea-siadema
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kinita-stoixeia-microfilm/kinita-stoixeia-microfilm/index.m3u8
-#EXTINF:-1 ,apokhairetontas
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apoxairetontas/apoxairetontas/index.m3u8
-#EXTINF:-1 ,ela-na-sou-po
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ela-na-sou-pw/ela-na-sou-pw/index.m3u8
-#EXTINF:-1 ,ugraerio
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ygraerio-n/ygraerio-n/index.m3u8
-#EXTINF:-1 ,13-1-1
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dekatriamisi-n/dekatriamisi-n/index.m3u8
-#EXTINF:-1 ,lou-lena
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lou-kai-lena/lou-kai-lena/index.m3u8
-#EXTINF:-1 ,meden-thetiko
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miden-thetiko-n/miden-thetiko-n/index.m3u8
-#EXTINF:-1 ,to-perasma
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-perasma/to-perasma/index.m3u8
-#EXTINF:-1 ,lethe
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lithi/lithi/index.m3u8
-#EXTINF:-1 ,hotel-kentauros
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hotel-kentavos/hotel-kentavos/index.m3u8
-#EXTINF:-1 ,aerolin
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/aerolin/aerolin/index.m3u8
-#EXTINF:-1 ,e-poluthrona-sto-pezodromio-1
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mia-polythrona-sto-pezodromio/mia-polythrona-sto-pezodromio/index.m3u8
-#EXTINF:-1 ,man-wanted
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/man-wanted/man-wanted/index.m3u8
-#EXTINF:-1 ,enas-eroas-me-pantouphles
+#EXTINF:-1 group-title="Κωμωδίες" ,enas-eroas-me-pantouphles
 https://mediaserve.ert.gr/bpk-vod/vodext/default/enas-hrwas-me-pantoufes/enas-hrwas-me-pantoufes/index.m3u8
-#EXTINF:-1 ,lila
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lila/lila/index.m3u8
-#EXTINF:-1 ,phos-ek-photos-1
+#EXTINF:-1 group-title="Δραματικές" ,beautiful-people
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/beautiful-people/beautiful-people/index.m3u8
+#EXTINF:-1 group-title="Δραματικές" ,to-rantebou-tes-kuriakes
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-rantevou-tis-kyriakis/to-rantevou-tis-kyriakis/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,to-perasma
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-perasma/to-perasma/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,hotel-kentauros
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hotel-kentavos/hotel-kentavos/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,nouar-protzekt
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-noir-project/the-noir-project/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,memory-reloaded
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/memory-reloaded/memory-reloaded/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,land
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/land-n/land-n/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,khlorio-1
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/chlorio-chlorine-mikres-istories/chlorio-chlorine-mikres-istories/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,skhetika-me-ton-basile
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sxetika-me-ton-basilh/sxetika-me-ton-basilh/index.m3u8
+#EXTINF:-1 group-title="Σινεφίλ" ,phos-ek-photos-1
 https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/fws-ek-fwtos-new1/fws-ek-fwtos-new1/index.m3u8
-#EXTINF:-1 ,leophoros-patesion
-https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/leoforos-patision/leoforos-patision/index.m3u8
-#EXTINF:-1 ,iera-khnaria-1
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,to-tukhero-panteloni
+https://mediaserve.ert.gr/bpk-vod/vodext/default/tyxero-panteloni/tyxero-panteloni/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,e-skone-pou-pephtei
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/skoni-pou-peftei/skoni-pou-peftei/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,e-summathetria
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/i-shmathitria/i-shmathitria/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,to-koritsi-me-ta-maura
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-koritsi-me-ta-mavra/to-koritsi-me-ta-mavra/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,sunoikia-to-oneiro
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/synoikia-to-oneiro/synoikia-to-oneiro/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,mia-italida-sten-ellada
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mia-italida-stin-ellada-new/mia-italida-stin-ellada-new/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,o-phanoures-kai-to-soi-tou
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-fanoyrhs-kai-to-soi-toy/o-fanoyrhs-kai-to-soi-toy/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,oi-gamproi-tes-eutukhias
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oi-gabroi-tis-eftixias/oi-gabroi-tis-eftixias/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,phouskothalassies
+https://mediaserve.ert.gr/bpk-vod/vodext/default/fouskothalassies/fouskothalassies/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,eutukhos-trelatheka-1
+https://mediaserve.ert.gr/bpk-vod/vodext/default/eutixws-trelathika/eutixws-trelathika/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,enas-blakas-kai-misos-1
+https://mediaserve.ert.gr/bpk-vod/vodext/default/enas-vlakas-kai-misos/enas-vlakas-kai-misos/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,poios-thanases
+https://mediaserve.ert.gr/bpk-vod/vodext/default/poios-thanasis/poios-thanasis/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,kosmos-kai-kosmakes
+https://mediaserve.ert.gr/bpk-vod/vodext/default/kosmos-kai-kosmakis/kosmos-kai-kosmakis/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,otan-leipei-e-gata
+https://mediaserve.ert.gr/bpk-vod/vodext/default/otan-leipei-i-gata/otan-leipei-i-gata/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,o-gunaikas
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-ginaikas/o-ginaikas/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,klephtes-me-philotimo
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kleftis-me-filotimo/kleftis-me-filotimo/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,o-theios-tes-bioletas
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-theios-tis-violetas/o-theios-tis-violetas/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,oi-uperephanoi
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oi-yperifanoi/oi-yperifanoi/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,karagkiozes-o-adikemenos-tes-zoes
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/karagiozis-oi-adikimenoi-tis-zwis/karagiozis-oi-adikimenoi-tis-zwis/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,eroika
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/eroika/eroika/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,oti-lampei-einai-khrusos
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos/index.m3u8
+#EXTINF:-1 group-title="Ελληνικός Κινηματογράφος" ,iera-khnaria-1
 https://mediaserve.ert.gr/bpk-vod/vodext/default/iera-xnaria/iera-xnaria/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,kalokairines-diakopes
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/diakopes-kalokairines/diakopes-kalokairines/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,to-kalokairi-pou-parateresa-gia-prote-phora-ton-elio-na-duei
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,tzitzipogko
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tzitzipongo/tzitzipongo/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,ti-kolumpaei-kai-gelaei
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ti-kolympaei-kai-gelaei/ti-kolympaei-kai-gelaei/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,to-bankouber
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-vancouver-n/to-vancouver-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,to-noema-tou-augoustou-mikres-istories
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-nohma-tou-augoustou-n/to-nohma-tou-augoustou-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,einai-grousouzia-na-deis-te-nuphe-prin-ton-gamo
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/einai-grousouzia/einai-grousouzia/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,pilala
+https://mediaserve.ert.gr/bpk-vod/vodext/default/pilala-mikrofilm/pilala-mikrofilm/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,travel-express
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/travel-express/travel-express/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,to-dodekato-euaggelio
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-dodekato-evaggelio-mikres-istories-n/to-dodekato-evaggelio-mikres-istories-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,the-drone
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-drone/the-drone/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,etoimoi
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/etoimoi/etoimoi/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,palirroia
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/paliria-3n/paliria-3n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,firebug
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/firebug-n/firebug-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,claw-machine
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/claw-maghine/claw-maghine/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,apallou
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apalloy-n/apalloy-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,kathemerine-ergasime
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kathimerini-ergasimi/kathimerini-ergasimi/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,khrusopsaro
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/gold-fish-xrusopsaro/gold-fish-xrusopsaro/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,phusarmonika-man-mikres-istories
+https://mediaserve.ert.gr/bpk-vod/vodext/default/harmonica-man/harmonica-man/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,roz-bouno-1
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/roz-vouno/roz-vouno/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,seawolf
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sea-wolf/sea-wolf/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,khartinoi-aetoi
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hartinoi-aetoi/hartinoi-aetoi/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,khera-strategou
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hira-stratigou/hira-stratigou/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,largo
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/largo/largo/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,kineta-stoikheia-tou-antrea-siadema
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kinita-stoixeia-microfilm/kinita-stoixeia-microfilm/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,apokhairetontas
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apoxairetontas/apoxairetontas/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,ela-na-sou-po
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ela-na-sou-pw/ela-na-sou-pw/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,ugraerio
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ygraerio-n/ygraerio-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,13-1-1
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dekatriamisi-n/dekatriamisi-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,lou-lena
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lou-kai-lena/lou-kai-lena/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,meden-thetiko
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miden-thetiko-n/miden-thetiko-n/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,lethe
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lithi/lithi/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,aerolin
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/aerolin/aerolin/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,e-poluthrona-sto-pezodromio-1
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mia-polythrona-sto-pezodromio/mia-polythrona-sto-pezodromio/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,man-wanted
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/man-wanted/man-wanted/index.m3u8
+#EXTINF:-1 group-title="Μικρές Ιστορίες" ,leophoros-patesion
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/leoforos-patision/leoforos-patision/index.m3u8
