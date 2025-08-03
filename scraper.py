@@ -4,7 +4,7 @@ import json
 import re
 
 # ΒΗΜΑ 1: Από εδώ παίρνουμε τα IDs
-INITIAL_PAGE_URL = "https://o79880.ingest.sentry.io/api/5624559/envelope/?sentry_key=8664826760814892ab3492862c7d5662&sentry_version=7&sentry_client=sentry.javascript.browser/7.12.1"
+INITIAL_PAGE_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles?$headers={"Content-Type":"application/json;charset=utf-8","X-Api-Date-Format":"iso","X-Api-Camel-Case":true}"
 # ΒΗΜΑ 2: Εδώ στέλνουμε τα IDs για να πάρουμε τα πάντα
 API_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
 
