@@ -15,22 +15,18 @@ HEADERS = {
 
 def fetch_all_movies():
     """
-    Κάνει κλήση στο API σε έναν βρόχο, ζητώντας συνεχώς την επόμενη σελίδα
-    μέχρι το API να επιστρέψει μια κενή λίστα, εξασφαλίζοντας ότι παίρνουμε τα πάντα.
+    Κάνει κλήση στο API σε βρόχο, ανιχνεύοντας τις επαναλαμβανόμενες σελίδες
+    για να σταματήσει με ασφάλεια όταν τελειώσουν οι μοναδικές ταινίες.
     """
     all_movies_data = []
+    seen_codenames = set() # Set για να αποθηκεύουμε τα codenames που έχουμε δει
     current_page = 1
 
-    print("Έναρξη λήψης ταινιών από το API (μέθοδος συνεχόμενων σελίδων)...")
+    print("Έναρξη λήψης ταινιών (με ανίχνευση επανάληψης)...")
 
     while True:
         print(f"Λήψη σελίδας {current_page}...")
-        
-        params = {
-            'platformCodename': 'www',
-            'sectionCodename': 'oles-oi-tainies-1',
-            'page': current_page
-        }
+        params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page}
         
         try:
             response = requests.get(LIST_API_URL, params=params, headers=HEADERS, timeout=20)
@@ -38,17 +34,31 @@ def fetch_all_movies():
             data = response.json()
 
             section_content = data.get('SectionContent', {})
-            
-            # Βρίσκουμε τη λίστα ταινιών, όπου κι αν βρίσκεται
             tiles = section_content.get('Tiles') or section_content.get('TilesIds')
             
-            # Αν η σελίδα δεν έχει ταινίες (είναι κενή), σταματάμε τον βρόχο.
+            # Αν η σελίδα είναι κενή, σταματάμε (ασφαλής έλεγχος)
             if not tiles:
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η λήψη.")
                 break
+
+            # Παίρνουμε το codename της πρώτης ταινίας στη νέα σελίδα
+            first_tile_codename = tiles[0].get('Codename') or tiles[0].get('codename')
+
+            # Αν έχουμε ξαναδεί αυτό το codename, σημαίνει ότι το API επαναλαμβάνεται. Σταματάμε.
+            if first_tile_codename in seen_codenames:
+                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η λήψη.")
+                break
             
-            all_movies_data.extend(tiles)
-            print(f"  -> Βρέθηκαν {len(tiles)} ταινίες. Σύνολο μέχρι στιγμής: {len(all_movies_data)}")
+            # Προσθέτουμε τις νέες, μοναδικές ταινίες στη λίστα και τα codenames στο set
+            new_movies_on_page = []
+            for tile in tiles:
+                codename = tile.get('Codename') or tile.get('codename')
+                if codename not in seen_codenames:
+                    seen_codenames.add(codename)
+                    new_movies_on_page.append(tile)
+
+            all_movies_data.extend(new_movies_on_page)
+            print(f"  -> Βρέθηκαν {len(new_movies_on_page)} νέες ταινίες. Σύνολο: {len(all_movies_data)}")
             
             current_page += 1
             time.sleep(0.2) 
@@ -57,13 +67,11 @@ def fetch_all_movies():
             print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}. Διακοπή.")
             break 
 
-    print(f"\nΟλοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} εγγραφές ταινιών.")
+    print(f"\nΟλοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} μοναδικές ταινίες.")
     return all_movies_data
 
 def main():
     final_movies_list = []
-    
-    # Βήμα 1: Λήψη ΟΛΩΝ των ταινιών από όλες τις σελίδες
     all_movies_data = fetch_all_movies()
     
     if not all_movies_data:
@@ -71,7 +79,7 @@ def main():
         return
 
     total_movies = len(all_movies_data)
-    print(f"\nΒήμα 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL...")
+    print(f"\nΒήμα 2: Έναρξη επεξεργασίας {total_movies} ταινιών...")
 
     for index, tile in enumerate(all_movies_data):
         codename = tile.get('Codename') or tile.get('codename')
@@ -84,12 +92,7 @@ def main():
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title.strip()}")
 
         try:
-            player_params = {
-                "platformCodename": "www",
-                "deviceKey": DEVICE_KEY,
-                "codename": codename,
-                "t": int(time.time() * 1000)
-            }
+            player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
             player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
@@ -111,7 +114,7 @@ def main():
             else:
                 print(f"  -> Δεν βρέθηκε stream.")
         except Exception as e:
-            print(f"  -> Σφάλμα κατά τη λήψη του stream: {e}")
+            print(f"  -> Σφάλμα: {e}")
         
         time.sleep(0.05)
 
@@ -119,7 +122,6 @@ def main():
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
-    # Βήμα 3: Δημιουργία του αρχείου M3U
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
@@ -128,7 +130,7 @@ def main():
                 f.write(f'#EXTINF:-1 {logo_tag},{movie["title"]}\n{movie["stream_url"]}\n')
         print(f"\nΤο αρχείο {OUTPUT_FILE} δημιουργήθηκε με επιτυχία με {len(final_movies_list)} ταινίες!")
     except IOError as e:
-        print(f"\nΣφάλμα: Αποτυχία εγγραφής στο αρχείο: {e}")
+        print(f"\nΣφάλμα εγγραφής στο αρχείο: {e}")
 
 if __name__ == "__main__":
     main()
