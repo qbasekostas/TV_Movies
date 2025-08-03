@@ -20,7 +20,7 @@ def fetch_all_movies():
     """
     all_movies_data = []
     current_page = 1
-    total_pages = 1 # Αρχικοποιούμε με 1, θα ενημερωθεί στην πρώτη κλήση
+    total_pages = 1 
 
     print("Έναρξη λήψης ταινιών από το API (με υποστήριξη σελιδοποίησης)...")
 
@@ -38,27 +38,25 @@ def fetch_all_movies():
             response.raise_for_status()
             data = response.json()
 
-            # Βρίσκουμε τα περιεχόμενα και ενημερώνουμε το σύνολο των σελίδων
             section_content = data.get('SectionContent', {})
             
-            # Ενημέρωση του total_pages από το πεδίο pagination (μόνο μία φορά)
+            # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε 'pagination' και 'totalPages' με μικρά γράμματα
             if current_page == 1:
-                pagination = section_content.get('Pagination', {})
-                total_pages = pagination.get('TotalPages', 1)
+                pagination_info = section_content.get('pagination', {})
+                total_pages = pagination_info.get('totalPages', 1)
                 print(f"Εντοπίστηκαν συνολικά {total_pages} σελίδες.")
 
             # Το API είναι ασυνεπές, ψάχνουμε για 'Tiles' ή 'TilesIds'
-            if 'Tiles' in section_content and section_content['Tiles']:
-                all_movies_data.extend(section_content['Tiles'])
-            elif 'TilesIds' in section_content and section_content['TilesIds']:
-                 all_movies_data.extend(section_content['TilesIds'])
+            tiles = section_content.get('Tiles') or section_content.get('TilesIds')
+            if tiles:
+                all_movies_data.extend(tiles)
             
             current_page += 1
-            time.sleep(0.2) # Μικρή παύση μεταξύ των κλήσεων
+            time.sleep(0.2) 
 
         except requests.exceptions.RequestException as e:
             print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}")
-            break # Σταματάμε αν υπάρξει σφάλμα
+            break 
 
     print(f"Ολοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} εγγραφές ταινιών.")
     return all_movies_data
@@ -77,16 +75,15 @@ def main():
     print(f"\nΒήμα 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL...")
 
     for index, tile in enumerate(all_movies_data):
-        # Παίρνουμε τα δεδομένα με τρόπο που να χειρίζεται τις ασυνέπειες του API
         codename = tile.get('Codename') or tile.get('codename')
-        title = tile.get('Title') or codename # Αν δεν υπάρχει τίτλος, βάζει το codename
-        poster_url = tile.get('Poster') or "" # Παίρνουμε την αφίσα, αν υπάρχει
+        title = tile.get('Title') or codename or "Unknown Title"
+        poster_url = tile.get('Poster') or ""
 
         if not codename:
             print(f"Παράλειψη εγγραφής {index + 1}/{total_movies} (λείπει το codename).")
             continue
             
-        print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
+        print(f"Επεξεργασία {index + 1}/{total_movies}: {title.strip()}")
 
         try:
             player_params = {
