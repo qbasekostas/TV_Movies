@@ -34,11 +34,10 @@ jobs:
           name: ertflix-playlist
           path: ertflix_playlist.m3u8
 
-      - name: Commit and push if there are changes
+      - name: Commit και push το playlist στο repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
           git add ertflix_playlist.m3u8
-          git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
+          git diff --staged --quiet || git commit -m "Update ertflix_playlist.m3u8"
           git push
