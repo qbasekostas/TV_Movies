@@ -13,14 +13,12 @@ def main():
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    # Αναζήτηση όλων των τίτλων ταινιών (δοκίμασε και άλλα selectors αν δεν βρίσκει)
     movies = set()
-
-    # Πολλές φορές οι τίτλοι υπάρχουν σε στοιχεία όπως <h3>, <span>, <div> με συγκεκριμένες κλάσεις
-    for tag in soup.find_all(["h3", "span", "div"]):
-        text = tag.get_text(strip=True)
-        if len(text) > 3 and ("ταινία" in text.lower() or "movie" in text.lower() or len(text) > 8):
-            movies.add(text)
+    # Πάρε τους τίτλους από το alt των <img>
+    for img in soup.find_all("img", alt=True):
+        title = img["alt"].strip()
+        if title:
+            movies.add(title)
 
     print("Βρέθηκαν τίτλοι:")
     for title in movies:
