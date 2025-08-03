@@ -10,26 +10,29 @@ headers = {
 def main():
     response = requests.get(URL, headers=headers)
     response.raise_for_status()
-
     soup = BeautifulSoup(response.text, "html.parser")
 
-    movies = set()
-    # Πάρε τους τίτλους από το alt των <img>
-    for img in soup.find_all("img", alt=True):
-        title = img["alt"].strip()
-        # Βάζουμε φίλτρο για να μη βάζει logos/site names
-        if title and len(title) > 4 and title.lower() != "ertflix":
-            movies.add(title)
+    movies = []
+    for link in soup.find_all("a", class_="VideoTile__auditionLink___xcDYk", href=True):
+        # Βρες το <img> που είναι μέσα στο <a>
+        img = link.find("img", alt=True)
+        if img and img["alt"].strip():
+            title = img["alt"].strip()
+            href = link["href"].strip()
+            # Φτιάξε το πλήρες link αν χρειάζεται
+            if href.startswith("/"):
+                href = "https://www.ertflix.gr" + href
+            movies.append((title, href))
 
     print("Βρέθηκαν τίτλοι:")
-    for title in movies:
-        print("-", title)
+    for title, url in movies:
+        print("-", title, url)
 
-    # Δημιουργία ertflix_playlist.m3u8 με dummy URLs
+    # Δημιουργία ertflix_playlist.m3u8
     with open("ertflix_playlist.m3u8", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for i, title in enumerate(sorted(movies), 1):
-            f.write(f'#EXTINF:-1,{title}\nhttps://example.com/movie_{i}.mp4\n')
+        for title, url in movies:
+            f.write(f'#EXTINF:-1,{title}\n{url}\n')
 
 if __name__ == "__main__":
     main()
