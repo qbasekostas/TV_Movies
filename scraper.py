@@ -3,8 +3,11 @@ import time
 import json
 
 # --- API Endpoints ---
+# Το ΜΟΝΑΔΙΚΟ API που χρειαζόμαστε για τη λίστα
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
+# Το API για τις μαζικές λεπτομέρειες
 TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
+# Το API για το τελικό stream
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 # --- Σταθερές ---
@@ -26,11 +29,12 @@ def main():
     print("--- Φάση 1: Λήψη όλων των IDs με μία κλήση (limit=1000)... ---")
     
     try:
+        # Οι σωστές παράμετροι, όπως τις βρήκατε εσείς
         params = {
             'platformCodename': 'www',
             'sectionCodename': 'oles-oi-tainies-1',
             'page': 1,
-            'limit': 1000, # Η δική σας, σωστή ανακάλυψη
+            'limit': 1000, # Το κλειδί της επιτυχίας
             'ignoreLimit': 'false',
             '$headers': SPECIAL_HEADERS_PARAM
         }
@@ -38,15 +42,15 @@ def main():
         response.raise_for_status()
         data = response.json()
         
-        # Η ΔΙΚΗ ΣΑΣ, ΣΩΣΤΗ ΔΙΟΡΘΩΣΗ: Διαβάζουμε το JSON με lowercase keys
-        section_content = data.get('sectionContent', {})
-        tiles_with_ids = section_content.get('tilesIds', [])
+        # Διαβάζουμε το JSON με τα σωστά, ΚΕΦΑΛΑΙΑ keys που επιστρέφει αυτό το API
+        section_content = data.get('SectionContent', {})
+        tiles_with_ids = section_content.get('TilesIds', [])
         
         if not tiles_with_ids:
             print("Δεν βρέθηκαν IDs στην απάντηση του API. Τέλος.")
             return
 
-        # Τα κλειδιά μέσα στη λίστα είναι με κεφαλαία ('Id')
+        # Παίρνουμε τα IDs από αυτή τη λίστα
         ids_to_fetch = [tile['Id'] for tile in tiles_with_ids if 'Id' in tile]
         print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται μαζική λήψη λεπτομερειών...")
 
@@ -54,7 +58,7 @@ def main():
         print(f"Σφάλμα κατά τη λήψη της λίστας: {e}")
         return
 
-    # --- ΒΗΜΑ 2: ΜΑΖΙΚΗ ΛΗΨΗ ΛΕΠΤΟΜΕΡΕΙΩΝ ---
+    # --- ΒΗΜΑ 2: ΜΑΖΙΚΗ ΛΗΨΗ ΛΕΠΤΟΜΕΡΕΙΩΝ (ΤΙΤΛΟΙ & ΑΦΙΣΕΣ) ---
     all_movies_with_details = []
     if ids_to_fetch:
         try:
@@ -70,15 +74,17 @@ def main():
             print(f"  -> Σφάλμα δικτύου κατά τη λήψη λεπτομερειών: {e}")
 
     if not all_movies_with_details:
-        print("\nΔεν βρέθηκαν ταινίες για επεξεργασία.")
-        return
-
+        # Αν αποτύχει η λήψη λεπτομερειών, συνεχίζουμε με τα codenames από την πρώτη κλήση
+        print("Προειδοποίηση: Η λήψη λεπτομερειών απέτυχε. Θα χρησιμοποιηθούν τα codenames ως τίτλοι.")
+        all_movies_with_details = tiles_with_ids # Χρησιμοποιούμε την αρχική λίστα
+    
     # --- ΒΗΜΑ 3: ΕΠΕΞΕΡΓΑΣΙΑ ΚΑΙ ΛΗΨΗ STREAM ---
     total_movies = len(all_movies_with_details)
     print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών... ---")
 
     for index, tile in enumerate(all_movies_with_details):
-        codename = tile.get('codename')
+        # Χειριζόμαστε και τις δύο πιθανές δομές απάντησης
+        codename = tile.get('codename') or tile.get('Codename')
         title = tile.get('title', codename or "Unknown Title").strip()
         poster_url = tile.get('poster') or ""
 
@@ -94,13 +100,16 @@ def main():
             player_data = player_resp.json()
             
             stream_url = None
-            # Τα κλειδιά εδώ είναι με κεφαλαία ('MediaFiles', 'Formats', 'Url')
-            if player_data.get("MediaFiles"):
-                for media_file in player_data["MediaFiles"]:
-                    if media_file.get("Formats"):
-                        for file_format in media_file["Formats"]:
-                            if file_format.get("Url", "").endswith(".m3u8"):
-                                stream_url = file_format["Url"]
+            # Το API εδώ επιστρέφει και camelCase και PascalCase, οπότε ελέγχουμε και τα δύο
+            media_files = player_data.get("mediaFiles") or player_data.get("MediaFiles")
+            if media_files:
+                for media_file in media_files:
+                    formats = media_file.get("formats") or media_file.get("Formats")
+                    if formats:
+                        for file_format in formats:
+                            url = file_format.get("url") or file_format.get("Url")
+                            if url and url.endswith(".m3u8"):
+                                stream_url = url
                                 break
                     if stream_url:
                         break
