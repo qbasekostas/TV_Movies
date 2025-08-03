@@ -1,10 +1,13 @@
 name: Scrape ERTFlix Movies
 
 on:
+  # Εκτελείται αυτόματα μία φορά την ημέρα
   schedule:
     - cron: '0 3 * * *'
+  # Επιτρέπει τη χειροκίνητη εκτέλεση από το tab "Actions" του GitHub
   workflow_dispatch:
 
+# Δίνει στο action την άδεια να κάνει 'commit' και 'push' στο αποθετήριο
 permissions:
   contents: write
 
@@ -32,7 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Βεβαιωθείτε ότι το όνομα αρχείου είναι το σωστό
+          # Βεβαιωθείτε ότι αυτό το όνομα ταιριάζει με το OUTPUT_FILE στο scraper.py
           git add ertflix_playlist.m3u8
           git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
           git push
