@@ -1,7 +1,7 @@
 import requests
 import time
 
-URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
+URL = "https://api.app.ertflix.gr/v1/Tile/GetTiles"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
