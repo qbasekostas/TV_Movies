@@ -31,7 +31,6 @@ def main():
         print(f"Σφάλμα στο Βήμα 1: Αποτυχία λήψης της λίστας. {e}")
         return
 
-    # Σύμφωνα με το τελευταίο log, η λίστα είναι μέσα στο 'SectionContent'
     if 'SectionContent' not in list_data:
         print("Μοιραίο σφάλμα: Δεν βρέθηκε το κλειδί 'SectionContent' στην απάντηση του API.")
         print(f"Διαθέσιμα κλειδιά: {list_data.keys()}")
@@ -40,15 +39,12 @@ def main():
     section_content = list_data['SectionContent']
     movie_tiles = []
 
-    # Το API είναι ασυνεπές. Ψάχνουμε για 'Tiles' ή 'tilesIds' μέσα στο 'SectionContent'
-    if 'Tiles' in section_content and section_content['Tiles']:
-        movie_tiles = section_content['Tiles']
-        print("Βρέθηκε λίστα ταινιών στο 'SectionContent.Tiles'")
-    elif 'tilesIds' in section_content and section_content['tilesIds']:
-        movie_tiles = section_content['tilesIds']
-        print("Βρέθηκε λίστα ταινιών στο 'SectionContent.tilesIds'")
+    # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε το σωστό κλειδί 'TilesIds' με κεφαλαίο 'T'
+    if 'TilesIds' in section_content and section_content['TilesIds']:
+        movie_tiles = section_content['TilesIds']
+        print("Επιτυχία: Βρέθηκε η λίστα ταινιών στο 'SectionContent.TilesIds'")
     else:
-        print("Μοιραίο σφάλμα: Δεν βρέθηκε λίστα ταινιών ('Tiles' ή 'tilesIds') μέσα στο 'SectionContent'.")
+        print("Μοιραίο σφάλμα: Δεν βρέθηκε η λίστα ταινιών ('TilesIds') μέσα στο 'SectionContent'.")
         print(f"Διαθέσιμα κλειδιά στο 'SectionContent': {section_content.keys()}")
         return
 
@@ -56,8 +52,9 @@ def main():
     print(f"Βρέθηκαν {total_movies} ταινίες. Έναρξη επεξεργασίας...")
 
     for index, tile in enumerate(movie_tiles):
-        # Χειριζόμαστε την ασυνέπεια στην ονομασία των κλειδιών
-        title = tile.get('Title', tile.get('title', 'Unknown Title')).strip()
+        # Τα κλειδιά εδώ είναι επίσης με κεφαλαίο ('Title', 'Codename')
+        # Το tile.get('Title', ...) είναι για να αποφύγουμε σφάλμα αν λείπει ο τίτλος.
+        title = tile.get('Title', tile.get('codename', 'Unknown Title')).strip()
         codename = tile.get('Codename', tile.get('codename'))
 
         if not codename:
