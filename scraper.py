@@ -3,11 +3,12 @@ import time
 import json
 
 # API Endpoints
-LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
+INITIAL_LOAD_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent" # Για την πρώτη σελίδα
+INFINITE_SCROLL_URL = "https://api.app.ertflix.gr/v1/toplist/GetToplistPage"  # Για όλες τις επόμενες
 
 # Σταθερές
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
@@ -15,71 +16,83 @@ HEADERS = {
 
 def fetch_all_movies():
     """
-    Κάνει κλήση στο API σε βρόχο, ανιχνεύοντας τις επαναλαμβανόμενες σελίδες
-    για να σταματήσει με ασφάλεια όταν τελειώσουν οι μοναδικές ταινίες.
+    Μιμείται τη λειτουργία του "infinite scroll" του ertflix.gr, καλώντας δύο διαφορετικά API.
     """
     all_movies_data = []
-    seen_codenames = set() # Set για να αποθηκεύουμε τα codenames που έχουμε δει
-    current_page = 1
+    
+    # --- ΒΗΜΑ 1: ΛΗΨΗ ΤΗΣ ΠΡΩΤΗΣ ΣΕΛΙΔΑΣ ---
+    print("Βήμα 1: Λήψη πρώτης σελίδας (αρχικό φόρτωμα)...")
+    try:
+        initial_params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1'}
+        response = requests.get(INITIAL_LOAD_URL, params=initial_params, headers=HEADERS, timeout=20)
+        response.raise_for_status()
+        data = response.json()
+        
+        section_content = data.get('SectionContent', {})
+        
+        # Προσθήκη των πρώτων ταινιών στη λίστα
+        initial_tiles = section_content.get('Tiles') or section_content.get('TilesIds', [])
+        all_movies_data.extend(initial_tiles)
+        
+        # ΕΞΑΓΩΓΗ ΤΟΥ ΚΡΙΣΙΜΟΥ ToplistCodename ΓΙΑ ΤΟ SCROLL
+        toplist_codename = section_content.get('ToplistCodename')
+        if not toplist_codename:
+            print("Προειδοποίηση: Δεν βρέθηκε ToplistCodename. Θα ληφθεί μόνο η πρώτη σελίδα.")
+            return all_movies_data
+            
+        print(f"  -> Βρέθηκαν {len(initial_tiles)} ταινίες. Εξαγωγή κωδικού λίστας: '{toplist_codename}'")
 
-    print("Έναρξη λήψης ταινιών (με ανίχνευση επανάληψης)...")
+    except requests.exceptions.RequestException as e:
+        print(f"Σφάλμα κατά τη λήψη της πρώτης σελίδας: {e}")
+        return []
 
+    # --- ΒΗΜΑ 2: ΛΗΨΗ ΤΩΝ ΥΠΟΛΟΙΠΩΝ ΣΕΛΙΔΩΝ (SCROLL) ---
+    print("\nΒήμα 2: Έναρξη λήψης υπόλοιπων σελίδων (προσομοίωση scroll)...")
+    current_page = 2
     while True:
         print(f"Λήψη σελίδας {current_page}...")
-        params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page}
+        scroll_params = {
+            'platformCodename': 'www',
+            'toplistCodename': toplist_codename,
+            'page': current_page
+        }
         
         try:
-            response = requests.get(LIST_API_URL, params=params, headers=HEADERS, timeout=20)
+            response = requests.get(INFINITE_SCROLL_URL, params=scroll_params, headers=HEADERS, timeout=20)
             response.raise_for_status()
             data = response.json()
-
-            section_content = data.get('SectionContent', {})
-            tiles = section_content.get('Tiles') or section_content.get('TilesIds')
             
-            # Αν η σελίδα είναι κενή, σταματάμε (ασφαλής έλεγχος)
-            if not tiles:
-                print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η λήψη.")
-                break
-
-            # Παίρνουμε το codename της πρώτης ταινίας στη νέα σελίδα
-            first_tile_codename = tiles[0].get('Codename') or tiles[0].get('codename')
-
-            # Αν έχουμε ξαναδεί αυτό το codename, σημαίνει ότι το API επαναλαμβάνεται. Σταματάμε.
-            if first_tile_codename in seen_codenames:
-                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η λήψη.")
+            new_tiles = data.get('Tiles', [])
+            
+            # Αν η σελίδα δεν έχει ταινίες, τελειώσαμε.
+            if not new_tiles:
+                print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε το scroll.")
                 break
             
-            # Προσθέτουμε τις νέες, μοναδικές ταινίες στη λίστα και τα codenames στο set
-            new_movies_on_page = []
-            for tile in tiles:
-                codename = tile.get('Codename') or tile.get('codename')
-                if codename not in seen_codenames:
-                    seen_codenames.add(codename)
-                    new_movies_on_page.append(tile)
-
-            all_movies_data.extend(new_movies_on_page)
-            print(f"  -> Βρέθηκαν {len(new_movies_on_page)} νέες ταινίες. Σύνολο: {len(all_movies_data)}")
+            all_movies_data.extend(new_tiles)
+            print(f"  -> Βρέθηκαν {len(new_tiles)} νέες ταινίες. Σύνολο μέχρι στιγμής: {len(all_movies_data)}")
             
             current_page += 1
-            time.sleep(0.2) 
+            time.sleep(0.2)
 
         except requests.exceptions.RequestException as e:
             print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}. Διακοπή.")
-            break 
-
-    print(f"\nΟλοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} μοναδικές ταινίες.")
+            break
+            
     return all_movies_data
 
 def main():
     final_movies_list = []
+    
+    # Το fetch_all_movies πλέον κάνει όλη τη μαγεία
     all_movies_data = fetch_all_movies()
     
     if not all_movies_data:
-        print("Δεν βρέθηκαν ταινίες για επεξεργασία.")
+        print("\nΔεν βρέθηκαν ταινίες για επεξεργασία.")
         return
 
     total_movies = len(all_movies_data)
-    print(f"\nΒήμα 2: Έναρξη επεξεργασίας {total_movies} ταινιών...")
+    print(f"\nΒήμα 3: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL...")
 
     for index, tile in enumerate(all_movies_data):
         codename = tile.get('Codename') or tile.get('codename')
@@ -122,6 +135,7 @@ def main():
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
+    # Δημιουργία του τελικού αρχείου
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
