@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&sectionCodename=oles-oi-tainies-1&tileCount=300"
-DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"  # αυτό που βρήκες
+DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 headers = {
@@ -13,7 +13,17 @@ headers = {
 def get_codename_from_href(href):
     # href: /vod/vod.635976-oups-o-noe-ephuge
     # codename: oups-o-noe-ephuge
-    return href.split('-')[-4:] and '-'.join(href.split('-')[2:]) if 'vod.' in href else href.split('/')[-1]
+    if "vod." in href and "-" in href:
+        return href.split('-')[-4:]
+        # This will return a list of last 4 parts, so join:
+        # e.g. ['oups', 'o', 'noe', 'ephuge']
+    return href.split('/')[-1]
+
+def extract_codename(href):
+    # Improved extraction: get everything after the first '-' after 'vod.'
+    if "vod." in href:
+        return href.split("vod.")[1].split("-")[1:]
+    return href.split("/")[-1]
 
 def main():
     response = requests.get(LIST_URL, headers=headers)
@@ -26,8 +36,12 @@ def main():
         if img and img["alt"].strip():
             title = img["alt"].strip()
             href = link["href"]
-            codename = get_codename_from_href(href)
-            # timestamp in ms
+            # Extract codename
+            if "vod." in href:
+                codename = href.split("vod.")[1].split("-")[1:]
+                codename = "-".join(codename)
+            else:
+                codename = href.split("/")[-1]
             t = int(time.time() * 1000)
             params = {
                 "platformCodename": "www",
