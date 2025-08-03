@@ -4,6 +4,7 @@ import json
 
 # API Endpoints
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
+TILE_DETAIL_API_URL = "https://api.app.ertflix.gr/v1/tile/GetTile"  # API για να πάρουμε τον ΤΙΤΛΟ
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 # Παράμετροι για το αρχικό API call
@@ -22,7 +23,7 @@ HEADERS = {
 def main():
     movies = []
     
-    print("Βήμα 1: Λήψη λίστας ταινιών...")
+    print("Βήμα 1: Λήψη λίστας με τα codenames των ταινιών...")
     try:
         list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=HEADERS, timeout=30)
         list_response.raise_for_status()
@@ -31,39 +32,34 @@ def main():
         print(f"Σφάλμα στο Βήμα 1: Αποτυχία λήψης της λίστας. {e}")
         return
 
-    if 'SectionContent' not in list_data:
-        print("Μοιραίο σφάλμα: Δεν βρέθηκε το κλειδί 'SectionContent' στην απάντηση του API.")
-        print(f"Διαθέσιμα κλειδιά: {list_data.keys()}")
+    if 'SectionContent' not in list_data or 'TilesIds' not in list_data.get('SectionContent', {}):
+        print("Μοιραίο σφάλμα: Δεν βρέθηκε η διαδρομή 'SectionContent.TilesIds' στην απάντηση του API.")
         return
 
-    section_content = list_data['SectionContent']
-    movie_tiles = []
-
-    # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε το σωστό κλειδί 'TilesIds' με κεφαλαίο 'T'
-    if 'TilesIds' in section_content and section_content['TilesIds']:
-        movie_tiles = section_content['TilesIds']
-        print("Επιτυχία: Βρέθηκε η λίστα ταινιών στο 'SectionContent.TilesIds'")
-    else:
-        print("Μοιραίο σφάλμα: Δεν βρέθηκε η λίστα ταινιών ('TilesIds') μέσα στο 'SectionContent'.")
-        print(f"Διαθέσιμα κλειδιά στο 'SectionContent': {section_content.keys()}")
-        return
-
-    total_movies = len(movie_tiles)
+    movie_tiles_info = list_data['SectionContent']['TilesIds']
+    total_movies = len(movie_tiles_info)
     print(f"Βρέθηκαν {total_movies} ταινίες. Έναρξη επεξεργασίας...")
 
-    for index, tile in enumerate(movie_tiles):
-        # Τα κλειδιά εδώ είναι επίσης με κεφαλαίο ('Title', 'Codename')
-        # Το tile.get('Title', ...) είναι για να αποφύγουμε σφάλμα αν λείπει ο τίτλος.
-        title = tile.get('Title', tile.get('codename', 'Unknown Title')).strip()
-        codename = tile.get('Codename', tile.get('codename'))
+    for index, tile_info in enumerate(movie_tiles_info):
+        codename = tile_info.get('codename') or tile_info.get('Codename')
 
         if not codename:
             print(f"Παράλειψη ταινίας {index + 1}/{total_movies} χωρίς codename.")
             continue
             
-        print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
+        print(f"\nΕπεξεργασία {index + 1}/{total_movies}: {codename}")
 
         try:
+            # Βήμα 2: Λήψη του ΤΙΤΛΟΥ κάνοντας νέα κλήση
+            print("  -> Βήμα 2: Λήψη τίτλου...")
+            detail_params = {'platformCodename': 'www', 'codename': codename}
+            detail_resp = requests.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=15)
+            detail_resp.raise_for_status()
+            detail_data = detail_resp.json()
+            title = detail_data.get('Title', codename).strip() # Αν αποτύχει, βάζει το codename
+
+            print(f"  -> Βήμα 3: Λήψη stream URL για την ταινία '{title}'...")
+            # Βήμα 3: Λήψη του stream URL
             player_params = {
                 "platformCodename": "www",
                 "deviceKey": DEVICE_KEY,
@@ -98,7 +94,7 @@ def main():
         except Exception as e:
             print(f"  -> Άγνωστο σφάλμα: {e}")
         
-        time.sleep(0.05)
+        time.sleep(0.1)
 
     if not movies:
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
