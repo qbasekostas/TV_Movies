@@ -1,3 +1,7 @@
+
+**3. `scraper.py`:** Αντικαταστήστε το περιεχόμενό του με την παρακάτω, πιο ανθεκτική έκδοση του κώδικα για Chrome.
+
+```python
 import time
 import json
 import requests
@@ -5,12 +9,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from selenium.webdriver.firefox.service import Service as FirefoxService
-from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.chrome.options import Options
 
 # --- Σταθερές ---
-LIST_URL = "https.www.ertflix.gr/list/movies/oles-oi-tainies-1"
+LIST_URL = "https://www.ertflix.gr/list/movies/oles-oi-tainies-1"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
@@ -21,23 +23,24 @@ HEADERS = {
 
 def get_all_movies_from_hidden_data():
     """
-    Χρησιμοποιεί τη μέθοδο __NEXT_DATA__ με Firefox/GeckoDriver για να πάρει
-    ΟΛΑ τα δεδομένα των ταινιών με μία κίνηση, χωρίς scroll.
+    Χρησιμοποιεί τη μέθοδο __NEXT_DATA__ με Chrome για να πάρει ΟΛΑ τα δεδομένα
+    των ταινιών με μία κίνηση, χωρίς scroll.
     """
-    print("--- Φάση 1: Λήψη των κρυμμένων δεδομένων (__NEXT_DATA__) με Firefox ---")
+    print("--- Φάση 1: Λήψη των κρυμμένων δεδομένων (__NEXT_DATA__) με Chrome ---")
     
-    options = FirefoxOptions()
+    options = Options()
     options.add_argument("--headless")
-    options.set_preference("intl.accept_languages", "el-GR, el")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("user-agent=" + HEADERS["User-Agent"])
+    options.add_argument("window-size=1920,1080")
 
     driver = None
     try:
-        # Χρησιμοποιούμε το webdriver-manager για αυτόματη εγκατάσταση του GeckoDriver
-        service = FirefoxService(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service, options=options)
+        driver = webdriver.Chrome(options=options)
         driver.get(LIST_URL)
 
-        # Περιμένουμε να εμφανιστεί το κρυφό script tag
+        print("Αναμονή για το <script> με τα δεδομένα της σελίδας...")
         data_script_element = WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.ID, "__NEXT_DATA__"))
         )
@@ -45,7 +48,6 @@ def get_all_movies_from_hidden_data():
         json_data_str = data_script_element.get_attribute('innerHTML')
         data = json.loads(json_data_str)
         
-        # Πλοήγηση μέσα στο JSON για να βρούμε τη λίστα με τις ταινίες
         items = data.get('props', {}).get('pageProps', {}).get('page', {}).get('items', [])
         all_movies = []
         for section in items:
@@ -61,7 +63,14 @@ def get_all_movies_from_hidden_data():
             return None
 
     except Exception as e:
-        print(f"  -> Σφάλμα κατά τη διαδικασία του Selenium: {e}")
+        print(f"  -> Σφάλμα κατά τη διαδικασία του Selenium.")
+        # Προσπαθούμε να πάρουμε ένα screenshot για να δούμε τι πήγε στραβά
+        try:
+            driver.save_screenshot("debug_screenshot.png")
+            print("  -> Αποθηκεύτηκε screenshot: debug_screenshot.png")
+        except:
+            pass
+        print(f"  -> Λεπτομέρειες σφάλματος: {e}")
         return None
     finally:
         if driver:
