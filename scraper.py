@@ -1,7 +1,3 @@
-
-**3. `scraper.py`:** Αντικαταστήστε το περιεχόμενό του με την παρακάτω, πιο ανθεκτική έκδοση του κώδικα για Chrome.
-
-```python
 import time
 import json
 import requests
@@ -64,7 +60,6 @@ def get_all_movies_from_hidden_data():
 
     except Exception as e:
         print(f"  -> Σφάλμα κατά τη διαδικασία του Selenium.")
-        # Προσπαθούμε να πάρουμε ένα screenshot για να δούμε τι πήγε στραβά
         try:
             driver.save_screenshot("debug_screenshot.png")
             print("  -> Αποθηκεύτηκε screenshot: debug_screenshot.png")
