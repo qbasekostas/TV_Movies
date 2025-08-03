@@ -56,11 +56,16 @@ def main():
                 # Συνήθως το .m3u8 είναι κάπου στο response, π.χ.:
                 # data['sources'][0]['src']
                 stream_url = None
-                if "sources" in data and data["sources"]:
-                    for source in data["sources"]:
-                        if "src" in source and source["src"].endswith(".m3u8"):
-                            stream_url = source["src"]
-                            break
+                if "MediaFiles" in data and data.get("MediaFiles"):
+                    for media_file in data["MediaFiles"]:
+                        if "Formats" in media_file and media_file.get("Formats"):
+                            for file_format in media_file["Formats"]:
+                                # Συνήθως το Type 2 είναι HLS (m3u8)
+                                if "Url" in file_format and file_format["Url"].endswith(".m3u8"):
+                                    stream_url = file_format["Url"]
+                                    break  # Βρέθηκε, έξοδος από τον εσωτερικό βρόχο
+                        if stream_url:
+                            break  # Βρέθηκε, έξοδος από τον εξωτερικό βρόχο
                 if stream_url:
                     movies.append((title, stream_url))
                     print(f"OK: {title} | {stream_url}")
