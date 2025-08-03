@@ -1,106 +1,113 @@
-import requests
 import time
+import requests
 import json
-
-# --- API Endpoints ---
-# Το ΜΟΝΑΔΙΚΟ API που χρειαζόμαστε για τη λίστα
-LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-# Το API για τις μαζικές λεπτομέρειες
-TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
-# Το API για το τελικό stream
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from bs4 import BeautifulSoup
 
 # --- Σταθερές ---
+URL = "https://www.ertflix.gr/list/movies/oles-oi-tainies-1"
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "Referer": "https://www.ertflix.gr/"
 }
-SPECIAL_HEADERS_PARAM = json.dumps({
-    "X-Api-Date-Format": "iso",
-    "X-Api-Camel-Case": "true"
-})
+
+def get_all_movies_with_selenium():
+    """
+    Χρησιμοποιεί το Selenium για να ανοίξει τη σελίδα, να κάνει scroll μέχρι το τέλος
+    και να επιστρέψει τον πλήρη HTML κώδικα.
+    """
+    print("--- Φάση 1: Εκκίνηση browser και scroll για φόρτωση όλων των ταινιών ---")
+    
+    # Ρυθμίσεις για να τρέχει το Selenium χωρίς να ανοίγει παράθυρο (headless)
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("user-agent=" + HEADERS["User-Agent"])
+
+    # Προσπαθούμε να βρούμε αυτόματα το chromedriver, αν όχι, πρέπει να οριστεί η διαδρομή
+    try:
+        driver = webdriver.Chrome(options=chrome_options)
+    except Exception as e:
+        print(f"Σφάλμα εκκίνησης Selenium: {e}")
+        print("Βεβαιωθείτε ότι το chromedriver είναι εγκατεστημένο και προσβάσιμο στο PATH σας.")
+        return None
+
+    driver.get(URL)
+    time.sleep(5) # Περιμένουμε να φορτώσει η αρχική σελίδα
+
+    last_height = driver.execute_script("return document.body.scrollHeight")
+    
+    while True:
+        print("Κάνοντας scroll προς τα κάτω...")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(3) # Περιμένουμε να φορτώσουν οι νέες ταινίες
+        
+        new_height = driver.execute_script("return document.body.scrollHeight")
+        if new_height == last_height:
+            print("Φτάσαμε στο τέλος της σελίδας. Ολοκληρώθηκε το scroll.")
+            break
+        last_height = new_height
+
+    html_content = driver.page_source
+    driver.quit()
+    
+    return html_content
 
 def main():
     final_playlist = []
-    
-    # --- ΒΗΜΑ 1: ΛΗΨΗ ΟΛΩΝ ΤΩΝ ΤΑΙΝΙΩΝ ΜΕ ΜΙΑ ΚΛΗΣΗ (Η ΣΩΣΤΗ ΜΕΘΟΔΟΣ) ---
-    print("--- Φάση 1: Λήψη όλων των IDs με μία κλήση (limit=1000)... ---")
-    
-    try:
-        # Οι σωστές παράμετροι, όπως τις βρήκατε εσείς
-        params = {
-            'platformCodename': 'www',
-            'sectionCodename': 'oles-oi-tainies-1',
-            'page': 1,
-            'limit': 1000, # Το κλειδί της επιτυχίας
-            'ignoreLimit': 'false',
-            '$headers': SPECIAL_HEADERS_PARAM
-        }
-        response = requests.get(LIST_API_URL, params=params, headers=HEADERS, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        
-        # Διαβάζουμε το JSON με τα σωστά, ΚΕΦΑΛΑΙΑ keys που επιστρέφει αυτό το API
-        section_content = data.get('SectionContent', {})
-        tiles_with_ids = section_content.get('TilesIds', [])
-        
-        if not tiles_with_ids:
-            print("Δεν βρέθηκαν IDs στην απάντηση του API. Τέλος.")
-            return
 
-        # Παίρνουμε τα IDs από αυτή τη λίστα
-        ids_to_fetch = [tile['Id'] for tile in tiles_with_ids if 'Id' in tile]
-        print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται μαζική λήψη λεπτομερειών...")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Σφάλμα κατά τη λήψη της λίστας: {e}")
+    # Βήμα 1: Παίρνουμε τον πλήρη HTML κώδικα
+    full_html = get_all_movies_with_selenium()
+    
+    if not full_html:
+        print("\nΑποτυχία λήψης του HTML. Τερματισμός.")
         return
 
-    # --- ΒΗΜΑ 2: ΜΑΖΙΚΗ ΛΗΨΗ ΛΕΠΤΟΜΕΡΕΙΩΝ (ΤΙΤΛΟΙ & ΑΦΙΣΕΣ) ---
-    all_movies_with_details = []
-    if ids_to_fetch:
-        try:
-            details_payload = {"ids": ids_to_fetch}
-            details_params = {'$headers': SPECIAL_HEADERS_PARAM}
-            details_response = requests.post(TILE_DETAILS_URL, params=details_params, json=details_payload, headers=HEADERS, timeout=30)
-            if details_response.status_code == 200:
-                all_movies_with_details = details_response.json()
-                print(f"  -> Επιτυχής λήψη λεπτομερειών για {len(all_movies_with_details)} ταινίες.")
-            else:
-                print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
-        except requests.exceptions.RequestException as e:
-            print(f"  -> Σφάλμα δικτύου κατά τη λήψη λεπτομερειών: {e}")
-
-    if not all_movies_with_details:
-        # Αν αποτύχει η λήψη λεπτομερειών, συνεχίζουμε με τα codenames από την πρώτη κλήση
-        print("Προειδοποίηση: Η λήψη λεπτομερειών απέτυχε. Θα χρησιμοποιηθούν τα codenames ως τίτλοι.")
-        all_movies_with_details = tiles_with_ids # Χρησιμοποιούμε την αρχική λίστα
+    # Βήμα 2: Επεξεργασία του HTML για να βρούμε τις ταινίες
+    print("\n--- Φάση 2: Επεξεργασία HTML για εξαγωγή πληροφοριών ---")
+    soup = BeautifulSoup(full_html, "html.parser")
     
-    # --- ΒΗΜΑ 3: ΕΠΕΞΕΡΓΑΣΙΑ ΚΑΙ ΛΗΨΗ STREAM ---
-    total_movies = len(all_movies_with_details)
-    print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών... ---")
+    # Βρίσκουμε όλους τους συνδέσμους που οδηγούν σε ταινίες
+    movie_links = soup.select('a[href*="/vod/vod."]')
+    total_movies = len(movie_links)
+    print(f"Βρέθηκαν {total_movies} ταινίες στη σελίδα.")
 
-    for index, tile in enumerate(all_movies_with_details):
-        # Χειριζόμαστε και τις δύο πιθανές δομές απάντησης
-        codename = tile.get('codename') or tile.get('Codename')
-        title = tile.get('title', codename or "Unknown Title").strip()
-        poster_url = tile.get('poster') or ""
+    if total_movies == 0:
+        print("Δεν βρέθηκαν σύνδεσμοι ταινιών. Πιθανόν η δομή της σελίδας άλλαξε.")
+        return
 
-        if not codename:
-            continue
-            
-        print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
-
+    # Βήμα 3: Λήψη του stream URL για κάθε ταινία
+    print(f"\n--- Φάση 3: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
+    for index, link in enumerate(movie_links):
         try:
+            img_tag = link.find("img")
+            if not img_tag:
+                continue
+
+            title = img_tag.get("alt", "Unknown Title").strip()
+            poster_url = img_tag.get("src", "")
+            href = link.get("href", "")
+            
+            # Εξαγωγή του codename από το href
+            if "vod." in href and "-" in href:
+                codename = href.split("-", 1)[1]
+            else:
+                continue # Παράλειψη αν δεν βρεθεί σωστό codename
+            
+            print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
+
             player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
             player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
             stream_url = None
-            # Το API εδώ επιστρέφει και camelCase και PascalCase, οπότε ελέγχουμε και τα δύο
             media_files = player_data.get("mediaFiles") or player_data.get("MediaFiles")
             if media_files:
                 for media_file in media_files:
@@ -119,12 +126,13 @@ def main():
                 print(f"  -> Επιτυχία!")
             else:
                 print(f"  -> Δεν βρέθηκε stream.")
+        
         except Exception as e:
-            print(f"  -> Σφάλμα: {e}")
+            print(f"  -> Σφάλμα κατά την επεξεργασία του συνδέσμου {link.get('href', '')}: {e}")
         
         time.sleep(0.05)
 
-    # --- ΒΗΜΑ 4: ΔΗΜΙΟΥΡΓΙΑ ΑΡΧΕΙΟΥ ---
+    # Βήμα 4: Δημιουργία αρχείου
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
