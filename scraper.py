@@ -4,7 +4,6 @@ import json
 
 # --- API Endpoints ---
 PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-TILE_DETAIL_API_URL = "https://api.app.ertflix.gr/v1/tile/GetTile"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 # --- Σταθερές ---
@@ -64,7 +63,6 @@ def fetch_codenames_from_category(session, section_codename):
 
 def main():
     final_playlist = []
-    # Χρησιμοποιούμε ένα dict για να αποθηκεύουμε το codename και την πρώτη κατηγορία που το βρήκαμε
     all_codenames_map = {} 
 
     session = requests.Session()
@@ -78,7 +76,6 @@ def main():
             print("  -> Δεν βρέθηκαν νέες ταινίες.")
             continue
         
-        # Προσθέτουμε τα νέα codenames στο κεντρικό map
         new_added = 0
         for codename in codenames_in_category:
             if codename not in all_codenames_map:
@@ -94,22 +91,11 @@ def main():
     print(f"\n--- Φάση 2: Βρέθηκαν {total_movies} μοναδικές ταινίες. Έναρξη επεξεργασίας... ---")
 
     for index, (codename, group_title) in enumerate(all_codenames_map.items()):
-        print(f"Επεξεργασία {index + 1}/{total_movies}: {codename}")
+        # Χρησιμοποιούμε το codename ως τίτλο. Είναι η μόνη αξιόπιστη λύση.
         title = codename
-        poster_url = ""
+        print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
         try:
-            # Λήψη λεπτομερειών (Τίτλος, Αφίσα)
-            detail_params = {'platformCodename': 'www', 'codename': codename}
-            detail_resp = session.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=10)
-            if detail_resp.status_code == 200:
-                detail_data = detail_resp.json()
-                title = detail_data.get('Title', codename).strip()
-                poster_url = detail_data.get('Poster', '')
-                print(f"  -> Βρέθηκε τίτλος: '{title}'")
-            else:
-                 print(f"  -> Δεν βρέθηκαν λεπτομέρειες τίτλου (Σφάλμα: {detail_resp.status_code}).")
-
             # Λήψη stream URL
             player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
             player_resp = session.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
@@ -130,7 +116,7 @@ def main():
                     if stream_url: break
             
             if stream_url:
-                final_playlist.append({'title': title, 'stream_url': stream_url, 'poster_url': poster_url, 'group_title': group_title})
+                final_playlist.append({'title': title, 'stream_url': stream_url, 'group_title': group_title})
                 print(f"  -> Επιτυχής λήψη stream!")
 
         except Exception as e:
@@ -143,8 +129,8 @@ def main():
             sorted_playlist = sorted(final_playlist, key=lambda x: (x['group_title'], x['title']))
             for movie in sorted_playlist:
                 group_tag = f'group-title="{movie["group_title"]}"'
-                logo_tag = f'tvg-logo="{movie["poster_url"]}"' if movie["poster_url"] else ""
-                info_line = f'#EXTINF:-1 {group_tag} {logo_tag},{movie["title"]}\n'
+                # Δεν προσθέτουμε αφίσα, αφού δεν την έχουμε αξιόπιστα
+                info_line = f'#EXTINF:-1 {group_tag},{movie["title"]}\n'
                 url_line = f'{movie["stream_url"]}\n'
                 f.write(info_line)
                 f.write(url_line)
