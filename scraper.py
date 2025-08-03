@@ -5,10 +5,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 
 # --- Σταθερές ---
-LIST_URL = "https://www.ertflix.gr/list/movies/oles-oi-tainies-1"
+LIST_URL = "https.www.ertflix.gr/list/movies/oles-oi-tainies-1"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
@@ -19,20 +21,20 @@ HEADERS = {
 
 def get_all_movies_from_hidden_data():
     """
-    Χρησιμοποιεί τη μέθοδο __NEXT_DATA__ για να πάρει ΟΛΑ τα δεδομένα των ταινιών
-    με μία κίνηση, χωρίς scroll, όπως ακριβώς βρήκατε.
+    Χρησιμοποιεί τη μέθοδο __NEXT_DATA__ με Firefox/GeckoDriver για να πάρει
+    ΟΛΑ τα δεδομένα των ταινιών με μία κίνηση, χωρίς scroll.
     """
-    print("--- Φάση 1: Λήψη των κρυμμένων δεδομένων (__NEXT_DATA__) ---")
+    print("--- Φάση 1: Λήψη των κρυμμένων δεδομένων (__NEXT_DATA__) με Firefox ---")
     
-    options = Options()
+    options = FirefoxOptions()
     options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("user-agent=" + HEADERS["User-Agent"])
+    options.set_preference("intl.accept_languages", "el-GR, el")
 
     driver = None
     try:
-        driver = webdriver.Chrome(options=options)
+        # Χρησιμοποιούμε το webdriver-manager για αυτόματη εγκατάσταση του GeckoDriver
+        service = FirefoxService(GeckoDriverManager().install())
+        driver = webdriver.Firefox(service=service, options=options)
         driver.get(LIST_URL)
 
         # Περιμένουμε να εμφανιστεί το κρυφό script tag
@@ -47,7 +49,6 @@ def get_all_movies_from_hidden_data():
         items = data.get('props', {}).get('pageProps', {}).get('page', {}).get('items', [])
         all_movies = []
         for section in items:
-            # Βρίσκουμε την ενότητα 'oles-oi-tainies-1'
             if section.get('sectionCode') == 'oles-oi-tainies-1':
                 all_movies = section.get('items', [])
                 break
@@ -69,7 +70,6 @@ def get_all_movies_from_hidden_data():
 def main():
     final_playlist = []
     
-    # Βήμα 1: Παίρνουμε ΟΛΕΣ τις ταινίες με τη μέθοδο __NEXT_DATA__
     all_movies_data = get_all_movies_from_hidden_data()
     
     if not all_movies_data:
@@ -80,7 +80,6 @@ def main():
     print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
 
     for index, movie_data in enumerate(all_movies_data):
-        # Παίρνουμε τα δεδομένα από το JSON που ήδη έχουμε
         codename = movie_data.get('codename')
         title = movie_data.get('title', codename or "Unknown Title").strip()
         poster_url = movie_data.get('poster', '')
@@ -91,7 +90,6 @@ def main():
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
         try:
-            # Βήμα 2: Παίρνουμε το stream URL με το codename που ήδη έχουμε
             player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
             player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
@@ -120,7 +118,6 @@ def main():
         
         time.sleep(0.05)
 
-    # Βήμα 3: Δημιουργία αρχείου
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
