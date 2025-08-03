@@ -2,14 +2,15 @@ import requests
 import time
 import json
 
-# --- API Endpoints ---
-PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
+# --- API Endpoints (Όπως τα βρήκατε εσείς) ---
+PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent" # Για τις σελίδες με τα IDs
+TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles" # Για τους ελληνικούς τίτλους & αφίσες
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent" # Για το τελικό stream
 
 # --- Σταθερές ---
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
+# Τα headers που χρησιμοποιεί ο browser, όπως φαίνονται στα URL σας
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "X-Api-Date-Format": "iso",
@@ -18,17 +19,16 @@ HEADERS = {
 
 def fetch_all_movie_details():
     """
-    Μαζεύει τα IDs από όλες τις σελίδες, αλλά σταματάει αμέσως μόλις
-    ανιχνεύσει ότι το API έχει αρχίσει να επαναλαμβάνεται.
+    Μιμείται την πραγματική διαδικασία: παίρνει τις σελίδες με τα IDs και μετά
+    ζητάει μαζικά τις λεπτομέρειες (τίτλους, αφίσες).
     """
     all_movies = []
-    seen_ids = set() # Set για να θυμόμαστε τα IDs που έχουμε δει
     current_page = 1
 
-    print("--- Φάση 1: Συλλογή IDs από όλες τις σελίδες (με ανίχνευση επανάληψης) ---")
+    print("--- Φάση 1: Συλλογή IDs και Λεπτομερειών ανά σελίδα ---")
     while True:
         print(f"Λήψη σελίδας {current_page}...")
-        page_params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page}
+        page_params = {'platformCodename': 'www', 'sectionCodename': 'oles-oi-tainies-1', 'page': current_page, 'limit': 40}
         
         try:
             response = requests.get(PAGINATION_URL, params=page_params, headers=HEADERS, timeout=20)
@@ -38,32 +38,28 @@ def fetch_all_movie_details():
             section_content = page_data.get('sectionContent', {})
             tiles_with_ids = section_content.get('tilesIds', [])
             
+            # Αν η σελίδα δεν έχει IDs, τελειώσαμε.
             if not tiles_with_ids:
-                print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή IDs.")
+                print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή.")
                 break
             
-            # Παίρνουμε τα IDs από αυτή τη σελίδα που ΔΕΝ έχουμε ξαναδεί
-            new_ids_on_page = [tile['id'] for tile in tiles_with_ids if 'id' in tile and tile['id'] not in seen_ids]
+            # Παίρνουμε τα IDs από αυτή τη σελίδα
+            ids_to_fetch = [tile['id'] for tile in tiles_with_ids if 'id' in tile]
+            print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται λήψη των λεπτομερειών τους...")
 
-            # Αν δεν βρέθηκε κανένα νέο ID, σημαίνει ότι η σελίδα είναι επανάληψη. Σταματάμε.
-            if not new_ids_on_page:
-                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή IDs.")
-                break
+            # --- Λήψη Τίτλων & Εικόνων για τη συγκεκριμένη σελίδα ---
+            if ids_to_fetch:
+                # Το payload για το POST request στο GetTiles
+                details_payload = {"ids": ids_to_fetch}
+                # Σημείωση: το header Content-Type προστίθεται αυτόματα από τη βιβλιοθήκη requests όταν χρησιμοποιούμε το json=...
+                details_response = requests.post(TILE_DETAILS_URL, json=details_payload, headers=HEADERS, timeout=20)
+                if details_response.status_code == 200:
+                    detailed_tiles = details_response.json()
+                    all_movies.extend(detailed_tiles)
+                    print(f"  -> Επιτυχής λήψη λεπτομερειών. Σύνολο ταινιών μέχρι στιγμής: {len(all_movies)}")
+                else:
+                    print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
             
-            print(f"  -> Βρέθηκαν {len(new_ids_on_page)} νέα, μοναδικά IDs. Γίνεται λήψη των λεπτομερειών τους...")
-
-            # --- Φάση 2: Λήψη Τίτλων & Εικόνων για τα ΝΕΑ IDs ---
-            details_payload = {"Ids": new_ids_on_page}
-            details_response = requests.post(TILE_DETAILS_URL, json=details_payload, headers=HEADERS, timeout=20)
-            if details_response.status_code == 200:
-                detailed_tiles = details_response.json()
-                all_movies.extend(detailed_tiles)
-                # Προσθέτουμε τα νέα IDs στο set για να τα θυμόμαστε
-                seen_ids.update(new_ids_on_page)
-                print(f"  -> Επιτυχής λήψη λεπτομερειών. Σύνολο ταινιών μέχρι στιγμής: {len(all_movies)}")
-            else:
-                 print(f"  -> Σφάλμα κατά τη λήψη λεπτομερειών: {details_response.status_code}")
-
             current_page += 1
             time.sleep(0.2)
 
@@ -76,7 +72,7 @@ def fetch_all_movie_details():
 def main():
     final_playlist = []
     
-    # Βήμα 1 & 2: Παίρνουμε μια πλήρη λίστα με όλες τις ταινίες και τις λεπτομέρειές τους
+    # Βήμα 1 & 2 συνδυασμένα: Παίρνουμε μια πλήρη λίστα με όλες τις ταινίες και τις λεπτομέρειές τους
     all_movies_with_details = fetch_all_movie_details()
     
     if not all_movies_with_details:
@@ -84,9 +80,10 @@ def main():
         return
 
     total_movies = len(all_movies_with_details)
-    print(f"\n--- Φάση 3: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
+    print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
 
     for index, tile in enumerate(all_movies_with_details):
+        # Τα κλειδιά είναι με μικρά γράμματα λόγω του 'X-Api-Camel-Case': true
         codename = tile.get('codename')
         title = tile.get('title', codename or "Unknown Title").strip()
         poster_url = tile.get('poster') or ""
@@ -103,6 +100,7 @@ def main():
             player_data = player_resp.json()
             
             stream_url = None
+            # Τα κλειδιά εδώ είναι επίσης με μικρά γράμματα
             if player_data.get("mediaFiles"):
                 for media_file in player_data["mediaFiles"]:
                     if media_file.get("formats"):
@@ -127,7 +125,7 @@ def main():
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
-    # Βήμα 4: Δημιουργία του αρχείου M3U
+    # Βήμα 3: Δημιουργία του αρχείου M3U
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
