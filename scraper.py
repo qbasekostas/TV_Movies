@@ -3,7 +3,7 @@ import time
 import json
 
 # API endpoint που βρέθηκε στο screenshot σας. Αυτό είναι το σωστό.
-LIST_API_URL = "https://api.app.ertflix.gr/v1/section/GetSectionContent"
+LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
 # Οι παράμετροι που θα στείλουμε μαζί με το URL
 LIST_API_PARAMS = {
     'platformCodename': 'www',
