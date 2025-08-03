@@ -18,10 +18,10 @@ HEADERS = {
 def fetch_all_movie_codenames():
     """
     Μαζεύει ΟΛΑ τα codenames από όλες τις σελίδες, σταματώντας με ασφάλεια
-    όταν ανιχνεύσει ότι το API επαναλαμβάνεται.
+    όταν ανιχνεύσει ότι το API έχει αρχίσει να επαναλαμβάνεται.
     """
     all_codenames = []
-    seen_ids = set()
+    seen_ids = set() # Η "ασφάλεια" μας για να μην κολλήσουμε ποτέ
     current_page = 1
 
     print("--- Φάση 1: Συλλογή όλων των codenames (με ανίχνευση επανάληψης) ---")
@@ -41,21 +41,23 @@ def fetch_all_movie_codenames():
                 print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η συλλογή.")
                 break
             
-            # Έλεγχος για επανάληψη
-            first_id = tiles_with_ids[0].get('Id')
-            if first_id in seen_ids:
-                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή.")
+            # Έλεγχος για επανάληψη. Παίρνουμε το ID του πρώτου αντικειμένου.
+            first_id_on_page = tiles_with_ids[0].get('Id')
+            if first_id_on_page in seen_ids:
+                print(f"Εντοπίστηκε επανάληψη στη σελίδα {current_page}. Ολοκληρώθηκε η συλλογή με ασφάλεια.")
                 break
                 
             # Προσθήκη των νέων codenames
+            new_codenames_found = 0
             for tile in tiles_with_ids:
                 tile_id = tile.get('Id')
                 codename = tile.get('Codename')
                 if tile_id and codename and tile_id not in seen_ids:
                     seen_ids.add(tile_id)
                     all_codenames.append(codename)
+                    new_codenames_found += 1
 
-            print(f"  -> Βρέθηκαν {len(tiles_with_ids)} εγγραφές. Σύνολο μοναδικών codenames: {len(all_codenames)}")
+            print(f"  -> Βρέθηκαν {new_codenames_found} νέα, μοναδικά codenames. Σύνολο: {len(all_codenames)}")
             current_page += 1
             time.sleep(0.2)
 
@@ -84,7 +86,7 @@ def main():
         poster_url = ""
 
         try:
-            # Βήμα 2α: Λήψη λεπτομερειών για ΚΑΘΕ ταινία ξεχωριστά
+            # Βήμα 2α: Λήψη λεπτομερειών για ΚΑΘΕ ταινία ξεχωριστά (Αξιόπιστη Μέθοδος)
             detail_params = {'platformCodename': 'www', 'codename': codename}
             detail_resp = requests.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=10)
             if detail_resp.status_code == 200:
