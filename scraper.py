@@ -7,11 +7,13 @@ DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 
 HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Accept": "application/json",
     "Content-Type": "application/json;charset=utf-8",
     "X-Api-Date-Format": "iso",
-    "X-Api-Camel-Case": "true",
-    "User-Agent": "Mozilla/5.0"
+    "X-Api-Camel-Case": "true"
 }
+
 
 def fetch_tiles():
     all_tiles = []
