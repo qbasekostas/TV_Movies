@@ -15,17 +15,16 @@ HEADERS = {
 
 def fetch_all_movies():
     """
-    Κάνει κλήση στο API, χειρίζεται τη σελιδοποίηση (pagination) και επιστρέφει
-    μια πλήρη λίστα με όλες τις ταινίες από όλες τις σελίδες.
+    Κάνει κλήση στο API σε έναν βρόχο, ζητώντας συνεχώς την επόμενη σελίδα
+    μέχρι το API να επιστρέψει μια κενή λίστα, εξασφαλίζοντας ότι παίρνουμε τα πάντα.
     """
     all_movies_data = []
     current_page = 1
-    total_pages = 1 
 
-    print("Έναρξη λήψης ταινιών από το API (με υποστήριξη σελιδοποίησης)...")
+    print("Έναρξη λήψης ταινιών από το API (μέθοδος συνεχόμενων σελίδων)...")
 
-    while current_page <= total_pages:
-        print(f"Λήψη σελίδας {current_page}/{total_pages}...")
+    while True:
+        print(f"Λήψη σελίδας {current_page}...")
         
         params = {
             'platformCodename': 'www',
@@ -40,25 +39,25 @@ def fetch_all_movies():
 
             section_content = data.get('SectionContent', {})
             
-            # ΔΙΟΡΘΩΣΗ: Χρησιμοποιούμε 'pagination' και 'totalPages' με μικρά γράμματα
-            if current_page == 1:
-                pagination_info = section_content.get('pagination', {})
-                total_pages = pagination_info.get('totalPages', 1)
-                print(f"Εντοπίστηκαν συνολικά {total_pages} σελίδες.")
-
-            # Το API είναι ασυνεπές, ψάχνουμε για 'Tiles' ή 'TilesIds'
+            # Βρίσκουμε τη λίστα ταινιών, όπου κι αν βρίσκεται
             tiles = section_content.get('Tiles') or section_content.get('TilesIds')
-            if tiles:
-                all_movies_data.extend(tiles)
+            
+            # Αν η σελίδα δεν έχει ταινίες (είναι κενή), σταματάμε τον βρόχο.
+            if not tiles:
+                print(f"Η σελίδα {current_page} είναι κενή. Ολοκληρώθηκε η λήψη.")
+                break
+            
+            all_movies_data.extend(tiles)
+            print(f"  -> Βρέθηκαν {len(tiles)} ταινίες. Σύνολο μέχρι στιγμής: {len(all_movies_data)}")
             
             current_page += 1
             time.sleep(0.2) 
 
         except requests.exceptions.RequestException as e:
-            print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}")
+            print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}. Διακοπή.")
             break 
 
-    print(f"Ολοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} εγγραφές ταινιών.")
+    print(f"\nΟλοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} εγγραφές ταινιών.")
     return all_movies_data
 
 def main():
@@ -80,7 +79,6 @@ def main():
         poster_url = tile.get('Poster') or ""
 
         if not codename:
-            print(f"Παράλειψη εγγραφής {index + 1}/{total_movies} (λείπει το codename).")
             continue
             
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title.strip()}")
@@ -121,7 +119,7 @@ def main():
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
-    # Βήμα 3: Δημιουργία του αρχείου M3U με τις νέες πληροφορίες
+    # Βήμα 3: Δημιουργία του αρχείου M3U
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
