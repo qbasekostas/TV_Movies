@@ -1,6 +1,8 @@
 import requests
 import time
 import json
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
 # --- API Endpoints ---
 PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
@@ -13,36 +15,53 @@ OUTPUT_FILE = "ertflix_playlist.m3u8"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
-# Η κρίσιμη παράμετρος '$headers' που έλειπε
 SPECIAL_HEADERS_PARAM = json.dumps({
     "X-Api-Date-Format": "iso",
     "X-Api-Camel-Case": "true"
 })
 
+def requests_retry_session(
+    retries=3,
+    backoff_factor=0.3,
+    status_forcelist=(500, 502, 504),
+    session=None,
+):
+    """Δημιουργεί ένα session που κάνει αυτόματη επανάληψη σε περίπτωση σφάλματος."""
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
+
 def fetch_all_movie_codenames():
     """
-    Μαζεύει ΟΛΑ τα codenames, στέλνοντας τη σωστή παράμετρο '$headers'
-    και σταματώντας με ασφάλεια όταν ανιχνεύσει επανάληψη.
+    Μαζεύει ΟΛΑ τα codenames από όλες τις σελίδες, σταματώντας με ασφάλεια
+    όταν ανιχνεύσει ότι το API έχει αρχίσει να επαναλαμβάνεται.
     """
     all_codenames = []
     seen_ids = set()
     current_page = 1
+    session = requests_retry_session()
 
-    print("--- Φάση 1: Συλλογή όλων των codenames (Σωστή Μέθοδος) ---")
+    print("--- Φάση 1: Συλλογή όλων των codenames (Ανθεκτική Μέθοδος) ---")
     while True:
         print(f"Λήψη σελίδας {current_page}...")
         
         page_params = {
             'platformCodename': 'www',
             'sectionCodename': 'oles-oi-tainies-1',
-            'page': current_page,
-            'limit': 40,
-            'ignoreLimit': 'false',
-            '$headers': SPECIAL_HEADERS_PARAM # Η κρίσιμη προσθήκη
+            'page': current_page
         }
         
         try:
-            response = requests.get(PAGINATION_URL, params=page_params, headers=HEADERS, timeout=20)
+            response = session.get(PAGINATION_URL, params=page_params, headers=HEADERS, timeout=20)
             response.raise_for_status()
             page_data = response.json()
 
@@ -66,8 +85,7 @@ def fetch_all_movie_codenames():
                     seen_ids.add(tile_id)
                     all_codenames.append(codename)
                     new_codenames_found += 1
-            
-            # Αν δεν βρέθηκε κανένα νέο codename, τότε είναι επανάληψη
+
             if new_codenames_found == 0:
                 print(f"Εντοπίστηκε επανάληψη (όλα τα IDs της σελίδας υπάρχουν ήδη). Ολοκληρώθηκε η συλλογή.")
                 break
@@ -76,7 +94,7 @@ def fetch_all_movie_codenames():
             current_page += 1
             time.sleep(0.2)
 
-        except requests.exceptions.RequestException as e:
+        except Exception as e:
             print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}. Διακοπή.")
             break 
             
@@ -84,6 +102,7 @@ def fetch_all_movie_codenames():
 
 def main():
     final_playlist = []
+    session = requests_retry_session()
     
     all_codenames = fetch_all_movie_codenames()
     
@@ -100,30 +119,28 @@ def main():
         poster_url = ""
 
         try:
-            # Λήψη λεπτομερειών (Αξιόπιστη Μέθοδος)
             detail_params = {'platformCodename': 'www', 'codename': codename, '$headers': SPECIAL_HEADERS_PARAM}
-            detail_resp = requests.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=10)
+            detail_resp = session.get(TILE_DETAIL_API_URL, params=detail_params, headers=HEADERS, timeout=10)
             if detail_resp.status_code == 200:
                 detail_data = detail_resp.json()
-                title = detail_data.get('title', codename).strip() # Το API επιστρέφει μικρά γράμματα εδώ
+                title = detail_data.get('title', codename).strip()
                 poster_url = detail_data.get('poster', '')
                 print(f"  -> Βρέθηκε τίτλος: '{title}'")
             else:
                  print(f"  -> Δεν βρέθηκαν λεπτομέρειες τίτλου (Σφάλμα: {detail_resp.status_code}).")
 
-            # Λήψη stream URL
-            player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000), '$headers': SPECIAL_HEADERS_PARAM}
-            player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
+            player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
+            player_resp = session.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
             stream_url = None
-            if player_data.get("mediaFiles"):
-                for media_file in player_data["mediaFiles"]:
-                    if media_file.get("formats"):
-                        for file_format in media_file["formats"]:
-                            if file_format.get("url", "").endswith(".m3u8"):
-                                stream_url = file_format["url"]
+            if player_data.get("MediaFiles"):
+                for media_file in player_data["MediaFiles"]:
+                    if media_file.get("Formats"):
+                        for file_format in media_file["Formats"]:
+                            if file_format.get("Url", "").endswith(".m3u8"):
+                                stream_url = file_format["Url"]
                                 break
                     if stream_url:
                         break
