@@ -3,11 +3,8 @@ import time
 import json
 
 # --- API Endpoints ---
-# Το ΜΟΝΑΔΙΚΟ API που χρειαζόμαστε για τη λίστα
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-# Το API για τις μαζικές λεπτομέρειες
 TILE_DETAILS_URL = "https://api.app.ertflix.gr/v2/Tile/GetTiles"
-# Το API για το τελικό stream
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
 # --- Σταθερές ---
@@ -25,16 +22,15 @@ SPECIAL_HEADERS_PARAM = json.dumps({
 def main():
     final_playlist = []
     
-    # --- ΒΗΜΑ 1: ΛΗΨΗ ΟΛΩΝ ΤΩΝ ΤΑΙΝΙΩΝ ΜΕ ΜΙΑ ΚΛΗΣΗ ---
-    print("--- Φάση 1: Λήψη όλων των ταινιών με μία κλήση (limit=1000)... ---")
+    # --- ΒΗΜΑ 1: ΛΗΨΗ ΟΛΩΝ ΤΩΝ ΤΑΙΝΙΩΝ ΜΕ ΜΙΑ ΚΛΗΣΗ (Η ΣΩΣΤΗ ΜΕΘΟΔΟΣ) ---
+    print("--- Φάση 1: Λήψη όλων των IDs με μία κλήση (limit=1000)... ---")
     
     try:
-        # Οι σωστές παράμετροι, όπως τις βρήκατε εσείς
         params = {
             'platformCodename': 'www',
             'sectionCodename': 'oles-oi-tainies-1',
             'page': 1,
-            'limit': 1000, # Το κλειδί της επιτυχίας
+            'limit': 1000, # Η δική σας, σωστή ανακάλυψη
             'ignoreLimit': 'false',
             '$headers': SPECIAL_HEADERS_PARAM
         }
@@ -42,13 +38,15 @@ def main():
         response.raise_for_status()
         data = response.json()
         
-        section_content = data.get('SectionContent', {})
-        tiles_with_ids = section_content.get('TilesIds', [])
+        # Η ΔΙΚΗ ΣΑΣ, ΣΩΣΤΗ ΔΙΟΡΘΩΣΗ: Διαβάζουμε το JSON με lowercase keys
+        section_content = data.get('sectionContent', {})
+        tiles_with_ids = section_content.get('tilesIds', [])
         
         if not tiles_with_ids:
-            print("Δεν βρέθηκαν ταινίες στην απάντηση του API. Τέλος.")
+            print("Δεν βρέθηκαν IDs στην απάντηση του API. Τέλος.")
             return
 
+        # Τα κλειδιά μέσα στη λίστα είναι με κεφαλαία ('Id')
         ids_to_fetch = [tile['Id'] for tile in tiles_with_ids if 'Id' in tile]
         print(f"  -> Βρέθηκαν {len(ids_to_fetch)} IDs. Γίνεται μαζική λήψη λεπτομερειών...")
 
@@ -96,12 +94,13 @@ def main():
             player_data = player_resp.json()
             
             stream_url = None
-            if player_data.get("mediaFiles"):
-                for media_file in player_data["mediaFiles"]:
-                    if media_file.get("formats"):
-                        for file_format in media_file["formats"]:
-                            if file_format.get("url", "").endswith(".m3u8"):
-                                stream_url = file_format["url"]
+            # Τα κλειδιά εδώ είναι με κεφαλαία ('MediaFiles', 'Formats', 'Url')
+            if player_data.get("MediaFiles"):
+                for media_file in player_data["MediaFiles"]:
+                    if media_file.get("Formats"):
+                        for file_format in media_file["Formats"]:
+                            if file_format.get("Url", "").endswith(".m3u8"):
+                                stream_url = file_format["Url"]
                                 break
                     if stream_url:
                         break
