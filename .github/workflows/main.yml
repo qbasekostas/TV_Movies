@@ -1,13 +1,10 @@
 name: Scrape ERTFlix Movies
 
 on:
-  # Εκτελείται αυτόματα μία φορά την ημέρα
   schedule:
     - cron: '0 3 * * *'
-  # Επιτρέπει τη χειροκίνητη εκτέλεση από το tab "Actions" του GitHub
   workflow_dispatch:
 
-# Δίνει στο action την άδεια να κάνει 'commit' και 'push' στο αποθετήριο
 permissions:
   contents: write
 
@@ -28,6 +25,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # --- ΝΕΑ ΒΗΜΑΤΑ ΓΙΑ ΤΟ SELENIUM ---
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install ChromeDriver
+        run: |
+          CHROME_DRIVER_VERSION=$(curl -sS https://storage.googleapis.com/chrome-for-testing-public/LATEST_RELEASE_STABLE)
+          wget -q https://storage.googleapis.com/chrome-for-testing-public/${CHROME_DRIVER_VERSION}/linux64/chromedriver-linux64.zip
+          unzip chromedriver-linux64.zip
+          sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+      # --- ΤΕΛΟΣ ΝΕΩΝ ΒΗΜΑΤΩΝ ---
+
       - name: Run scraper
         run: python scraper.py
 
@@ -35,7 +46,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Βεβαιωθείτε ότι αυτό το όνομα ταιριάζει με το OUTPUT_FILE στο scraper.py
           git add ertflix_playlist.m3u8
-          git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
-          git push
+          git diff --staged --quiet || (git commit -m "Update ERTFlix movie playlist" && git push)
