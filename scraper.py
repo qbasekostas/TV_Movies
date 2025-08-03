@@ -2,11 +2,11 @@ import requests
 import time
 import json
 
-# API Endpoints - Αυτά είναι σωστά.
+# API Endpoints
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
-# Παράμετροι για το αρχικό API call - Σωστοί.
+# Παράμετροι για το αρχικό API call
 LIST_API_PARAMS = {
     'platformCodename': 'www',
     'sectionCodename': 'oles-oi-tainies-1'
@@ -24,29 +24,41 @@ def main():
     
     print("Βήμα 1: Λήψη λίστας ταινιών...")
     try:
-        list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=HEADERS, timeout=20)
+        list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=HEADERS, timeout=30)
         list_response.raise_for_status()
         list_data = list_response.json()
     except Exception as e:
         print(f"Σφάλμα στο Βήμα 1: Αποτυχία λήψης της λίστας. {e}")
         return
 
-    # ΔΙΟΡΘΩΜΕΝΗ ΔΙΑΔΡΟΜΗ: Ψάχνουμε απευθείας για το κλειδί 'Tiles'
-    if 'Tiles' not in list_data or not list_data['Tiles']:
-        print("Σφάλμα: Η δομή του JSON έχει αλλάξει. Δεν βρέθηκε το κλειδί 'Tiles'.")
-        # Εκτυπώνουμε τα διαθέσιμα κλειδιά για μελλοντική διερεύνηση
-        print(f"Διαθέσιμα κλειδιά στο JSON: {list_data.keys()}")
+    # Σύμφωνα με το τελευταίο log, η λίστα είναι μέσα στο 'SectionContent'
+    if 'SectionContent' not in list_data:
+        print("Μοιραίο σφάλμα: Δεν βρέθηκε το κλειδί 'SectionContent' στην απάντηση του API.")
+        print(f"Διαθέσιμα κλειδιά: {list_data.keys()}")
         return
 
-    movie_tiles = list_data['Tiles']
+    section_content = list_data['SectionContent']
+    movie_tiles = []
+
+    # Το API είναι ασυνεπές. Ψάχνουμε για 'Tiles' ή 'tilesIds' μέσα στο 'SectionContent'
+    if 'Tiles' in section_content and section_content['Tiles']:
+        movie_tiles = section_content['Tiles']
+        print("Βρέθηκε λίστα ταινιών στο 'SectionContent.Tiles'")
+    elif 'tilesIds' in section_content and section_content['tilesIds']:
+        movie_tiles = section_content['tilesIds']
+        print("Βρέθηκε λίστα ταινιών στο 'SectionContent.tilesIds'")
+    else:
+        print("Μοιραίο σφάλμα: Δεν βρέθηκε λίστα ταινιών ('Tiles' ή 'tilesIds') μέσα στο 'SectionContent'.")
+        print(f"Διαθέσιμα κλειδιά στο 'SectionContent': {section_content.keys()}")
+        return
+
     total_movies = len(movie_tiles)
     print(f"Βρέθηκαν {total_movies} ταινίες. Έναρξη επεξεργασίας...")
 
-    # Ο βρόχος επεξεργάζεται τα δεδομένα από το 'Tiles'
     for index, tile in enumerate(movie_tiles):
-        # Τα κλειδιά είναι με κεφαλαίο πρώτο γράμμα ('Title', 'Codename')
-        title = tile.get('Title', 'Unknown Title').strip()
-        codename = tile.get('Codename')
+        # Χειριζόμαστε την ασυνέπεια στην ονομασία των κλειδιών
+        title = tile.get('Title', tile.get('title', 'Unknown Title')).strip()
+        codename = tile.get('Codename', tile.get('codename'))
 
         if not codename:
             print(f"Παράλειψη ταινίας {index + 1}/{total_movies} χωρίς codename.")
@@ -55,14 +67,13 @@ def main():
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
         try:
-            # Βήμα 2: Λήψη του stream URL (δεν χρειάζεται πλέον βήμα για τον τίτλο)
             player_params = {
                 "platformCodename": "www",
                 "deviceKey": DEVICE_KEY,
                 "codename": codename,
                 "t": int(time.time() * 1000)
             }
-            player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=10)
+            player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
@@ -82,16 +93,15 @@ def main():
                 print(f"  -> Επιτυχία!")
             else:
                 print(f"  -> Δεν βρέθηκε stream.")
-
         except requests.exceptions.HTTPError as e:
-             if e.response.status_code == 404:
+             if e.response and e.response.status_code == 404:
                 print(f"  -> Δεν είναι πλέον διαθέσιμο (404).")
              else:
                 print(f"  -> Σφάλμα HTTP: {e}")
         except Exception as e:
             print(f"  -> Άγνωστο σφάλμα: {e}")
         
-        time.sleep(0.05) # Μικρή καθυστέρηση
+        time.sleep(0.05)
 
     if not movies:
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
