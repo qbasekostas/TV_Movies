@@ -6,12 +6,6 @@ import json
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 
-# Παράμετροι για το αρχικό API call
-LIST_API_PARAMS = {
-    'platformCodename': 'www',
-    'sectionCodename': 'oles-oi-tainies-1'
-}
-
 # Σταθερές
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
@@ -19,41 +13,82 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
 
+def fetch_all_movies():
+    """
+    Κάνει κλήση στο API, χειρίζεται τη σελιδοποίηση (pagination) και επιστρέφει
+    μια πλήρη λίστα με όλες τις ταινίες από όλες τις σελίδες.
+    """
+    all_movies_data = []
+    current_page = 1
+    total_pages = 1 # Αρχικοποιούμε με 1, θα ενημερωθεί στην πρώτη κλήση
+
+    print("Έναρξη λήψης ταινιών από το API (με υποστήριξη σελιδοποίησης)...")
+
+    while current_page <= total_pages:
+        print(f"Λήψη σελίδας {current_page}/{total_pages}...")
+        
+        params = {
+            'platformCodename': 'www',
+            'sectionCodename': 'oles-oi-tainies-1',
+            'page': current_page
+        }
+        
+        try:
+            response = requests.get(LIST_API_URL, params=params, headers=HEADERS, timeout=20)
+            response.raise_for_status()
+            data = response.json()
+
+            # Βρίσκουμε τα περιεχόμενα και ενημερώνουμε το σύνολο των σελίδων
+            section_content = data.get('SectionContent', {})
+            
+            # Ενημέρωση του total_pages από το πεδίο pagination (μόνο μία φορά)
+            if current_page == 1:
+                pagination = section_content.get('Pagination', {})
+                total_pages = pagination.get('TotalPages', 1)
+                print(f"Εντοπίστηκαν συνολικά {total_pages} σελίδες.")
+
+            # Το API είναι ασυνεπές, ψάχνουμε για 'Tiles' ή 'TilesIds'
+            if 'Tiles' in section_content and section_content['Tiles']:
+                all_movies_data.extend(section_content['Tiles'])
+            elif 'TilesIds' in section_content and section_content['TilesIds']:
+                 all_movies_data.extend(section_content['TilesIds'])
+            
+            current_page += 1
+            time.sleep(0.2) # Μικρή παύση μεταξύ των κλήσεων
+
+        except requests.exceptions.RequestException as e:
+            print(f"Σφάλμα κατά τη λήψη της σελίδας {current_page}: {e}")
+            break # Σταματάμε αν υπάρξει σφάλμα
+
+    print(f"Ολοκληρώθηκε η λήψη. Συνολικά βρέθηκαν {len(all_movies_data)} εγγραφές ταινιών.")
+    return all_movies_data
+
 def main():
-    movies = []
+    final_movies_list = []
     
-    print("Βήμα 1: Λήψη λίστας ταινιών...")
-    try:
-        list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=HEADERS, timeout=30)
-        list_response.raise_for_status()
-        list_data = list_response.json()
-    except Exception as e:
-        print(f"Σφάλμα στο Βήμα 1: Αποτυχία λήψης της λίστας. {e}")
+    # Βήμα 1: Λήψη ΟΛΩΝ των ταινιών από όλες τις σελίδες
+    all_movies_data = fetch_all_movies()
+    
+    if not all_movies_data:
+        print("Δεν βρέθηκαν ταινίες για επεξεργασία.")
         return
 
-    # Βρίσκουμε τη λίστα με τα codenames στο 'SectionContent.TilesIds'
-    if 'SectionContent' not in list_data or 'TilesIds' not in list_data.get('SectionContent', {}):
-        print("Μοιραίο σφάλμα: Δεν βρέθηκε η διαδρομή 'SectionContent.TilesIds' στην απάντηση του API.")
-        return
+    total_movies = len(all_movies_data)
+    print(f"\nΒήμα 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL...")
 
-    movie_tiles_info = list_data['SectionContent']['TilesIds']
-    total_movies = len(movie_tiles_info)
-    print(f"Βρέθηκαν {total_movies} ταινίες. Έναρξη επεξεργασίας...")
-
-    for index, tile_info in enumerate(movie_tiles_info):
-        # Παίρνουμε το codename. Αυτό είναι το μόνο που χρειαζόμαστε από εδώ.
-        codename = tile_info.get('codename') or tile_info.get('Codename')
+    for index, tile in enumerate(all_movies_data):
+        # Παίρνουμε τα δεδομένα με τρόπο που να χειρίζεται τις ασυνέπειες του API
+        codename = tile.get('Codename') or tile.get('codename')
+        title = tile.get('Title') or codename # Αν δεν υπάρχει τίτλος, βάζει το codename
+        poster_url = tile.get('Poster') or "" # Παίρνουμε την αφίσα, αν υπάρχει
 
         if not codename:
-            print(f"Παράλειψη ταινίας {index + 1}/{total_movies} χωρίς codename.")
+            print(f"Παράλειψη εγγραφής {index + 1}/{total_movies} (λείπει το codename).")
             continue
-        
-        # Προσωρινός τίτλος θα είναι το ίδιο το codename
-        title = codename
+            
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
         try:
-            # Βήμα 2: Λήψη του stream URL. Δεν προσπαθούμε πλέον να πάρουμε τον τίτλο από άλλο API.
             player_params = {
                 "platformCodename": "www",
                 "deviceKey": DEVICE_KEY,
@@ -76,30 +111,27 @@ def main():
                         break
 
             if stream_url:
-                movies.append((title, stream_url))
+                final_movies_list.append({'title': title.strip(), 'stream_url': stream_url, 'poster_url': poster_url})
                 print(f"  -> Επιτυχία!")
             else:
                 print(f"  -> Δεν βρέθηκε stream.")
-        except requests.exceptions.HTTPError as e:
-             if e.response and e.response.status_code == 404:
-                print(f"  -> Δεν είναι πλέον διαθέσιμο (404).")
-             else:
-                print(f"  -> Σφάλμα HTTP: {e}")
         except Exception as e:
-            print(f"  -> Άγνωστο σφάλμα: {e}")
+            print(f"  -> Σφάλμα κατά τη λήψη του stream: {e}")
         
         time.sleep(0.05)
 
-    if not movies:
+    if not final_movies_list:
         print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
+    # Βήμα 3: Δημιουργία του αρχείου M3U με τις νέες πληροφορίες
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            for title, url in movies:
-                f.write(f'#EXTINF:-1,{title}\n{url}\n')
-        print(f"\nΤο αρχείο {OUTPUT_FILE} δημιουργήθηκε/ενημερώθηκε με επιτυχία με {len(movies)} ταινίες!")
+            for movie in final_movies_list:
+                logo_tag = f'tvg-logo="{movie["poster_url"]}"' if movie["poster_url"] else ""
+                f.write(f'#EXTINF:-1 {logo_tag},{movie["title"]}\n{movie["stream_url"]}\n')
+        print(f"\nΤο αρχείο {OUTPUT_FILE} δημιουργήθηκε με επιτυχία με {len(final_movies_list)} ταινίες!")
     except IOError as e:
         print(f"\nΣφάλμα: Αποτυχία εγγραφής στο αρχείο: {e}")
 
