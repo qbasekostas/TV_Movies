@@ -2,66 +2,72 @@ import requests
 import time
 import json
 
-# API endpoint που βρέθηκε στο screenshot σας. Αυτό είναι το σωστό.
+# API Endpoints
 LIST_API_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-# Οι παράμετροι που θα στείλουμε μαζί με το URL
+TILE_API_URL = "https://api.app.ertflix.gr/v1/tile/GetTile" # Νέο API για τη λήψη του τίτλου
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
+
+# Παράμετροι για το αρχικό API call
 LIST_API_PARAMS = {
     'platformCodename': 'www',
     'sectionCodename': 'oles-oi-tainies-1'
 }
 
-# Αυτά παραμένουν τα ίδια
+# Σταθερές
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
-
-headers = {
+HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 }
 
 def main():
     movies = []
     
-    print("Λήψη λίστας ταινιών από το API της ERTFLIX (μέθοδος GetSectionContent)...")
+    print("Βήμα 1: Λήψη λίστας με τα codenames των ταινιών...")
     try:
-        # Κάνουμε την κλήση στο σωστό API με τις παραμέτρους του
-        list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=headers, timeout=20)
+        list_response = requests.get(LIST_API_URL, params=LIST_API_PARAMS, headers=HEADERS, timeout=20)
         list_response.raise_for_status()
         list_data = list_response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Σφάλμα: Αποτυχία λήψης της λίστας ταινιών από το API. {e}")
-        return
-    except json.JSONDecodeError:
-        print("Σφάλμα: Η απάντηση από το API λίστας ταινιών δεν ήταν έγκυρο JSON.")
+    except Exception as e:
+        print(f"Σφάλμα στο Βήμα 1: Αποτυχία λήψης της λίστας. {e}")
         return
 
-    # Η λίστα ταινιών βρίσκεται μέσα στο αντικείμενο 'Section', στο κλειδί 'Tiles'
-    if 'Section' not in list_data or 'Tiles' not in list_data['Section']:
-        print("Δεν βρέθηκαν ταινίες ('Tiles') στην απάντηση του API. Η δομή μπορεί να έχει αλλάξει.")
+    # Σωστή διαδρομή στο JSON, σύμφωνα με την απάντησή σας
+    if 'sectionContent' not in list_data or 'tilesIds' not in list_data['sectionContent']:
+        print("Σφάλμα: Η δομή του JSON έχει αλλάξει. Δεν βρέθηκε το 'sectionContent.tilesIds'.")
         return
 
-    movie_tiles = list_data['Section']['Tiles']
-    print(f"Βρέθηκαν {len(movie_tiles)} ταινίες. Έναρξη επεξεργασίας...")
+    movie_tiles = list_data['sectionContent']['tilesIds']
+    total_movies = len(movie_tiles)
+    print(f"Βρέθηκαν {total_movies} ταινίες. Έναρξη επεξεργασίας...")
 
-    for tile in movie_tiles:
-        title = tile.get('Title', 'Unknown Title').strip()
-        # Το codename βρίσκεται στο πεδίο 'Codename'
-        codename = tile.get('Codename')
-
+    # Ο βρόχος τώρα επεξεργάζεται τα δεδομένα από το 'tilesIds'
+    for index, tile_info in enumerate(movie_tiles):
+        codename = tile_info.get('codename')
         if not codename:
-            print(f"INFO: Παράλειψη '{title}' καθώς δεν έχει codename.")
             continue
 
-        t = int(time.time() * 1000)
-        params = {
-            "platformCodename": "www",
-            "deviceKey": DEVICE_KEY,
-            "codename": codename,
-            "t": t
-        }
+        print(f"\nΕπεξεργασία ταινίας {index + 1}/{total_movies}: {codename}")
         
         try:
-            player_resp = requests.get(PLAYER_API_URL, params=params, headers=headers, timeout=10)
+            # Βήμα 2: Λήψη του τίτλου της ταινίας
+            print("  Βήμα 2: Λήψη τίτλου...")
+            tile_params = {'platformCodename': 'www', 'codename': codename}
+            tile_resp = requests.get(TILE_API_URL, params=tile_params, headers=HEADERS, timeout=10)
+            tile_resp.raise_for_status()
+            title_data = tile_resp.json()
+            title = title_data.get('Title', codename).strip() # Αν δεν βρεθεί τίτλος, χρησιμοποιούμε το codename
+            print(f"  OK: Ο τίτλος είναι '{title}'")
+
+            # Βήμα 3: Λήψη του stream URL
+            print("  Βήμα 3: Λήψη stream URL...")
+            player_params = {
+                "platformCodename": "www",
+                "deviceKey": DEVICE_KEY,
+                "codename": codename,
+                "t": int(time.time() * 1000)
+            }
+            player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=10)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
@@ -78,21 +84,19 @@ def main():
 
             if stream_url:
                 movies.append((title, stream_url))
-                print(f"OK: {title}")
+                print(f"  ΕΠΙΤΥΧΙΑ: Βρέθηκε το stream για την ταινία '{title}'.")
             else:
-                print(f"NO STREAM: {title}")
-        except requests.exceptions.HTTPError as http_err:
-            if http_err.response.status_code == 404:
-                print(f"INFO: Το περιεχόμενο για '{title}' δεν είναι πλέον διαθέσιμο (404).")
-            else:
-                print(f"HTTP ERROR for {title}: {http_err}")
+                print(f"  ΣΦΑΛΜΑ: Δεν βρέθηκε stream για την ταινία '{title}'.")
+
+        except requests.exceptions.RequestException as e:
+            print(f"  ΣΦΑΛΜΑ ΔΙΚΤΥΟΥ για το codename '{codename}': {e}")
         except Exception as e:
-            print(f"GENERIC ERROR for {title}: {e}")
+            print(f"  ΓΕΝΙΚΟ ΣΦΑΛΜΑ για το codename '{codename}': {e}")
         
-        time.sleep(0.1)
+        time.sleep(0.1) # Μικρή καθυστέρηση για να μην μπλοκαριστούμε
 
     if not movies:
-        print("\nΔεν βρέθηκαν ταινίες με έγκυρο stream.")
+        print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες με έγκυρο stream.")
         return
 
     try:
