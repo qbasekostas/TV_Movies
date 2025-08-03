@@ -1,12 +1,15 @@
-import requests
 import time
 import json
-
-# --- API Endpoints ---
-PAGINATION_URL = "https://api.app.ertflix.gr/v1/InsysGoPage/GetSectionContent"
-PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
+import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 
 # --- Σταθερές ---
+LIST_URL = "https://www.ertflix.gr/list/movies/oles-oi-tainies-1"
+PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
 HEADERS = {
@@ -14,91 +17,83 @@ HEADERS = {
     "Referer": "https://www.ertflix.gr/"
 }
 
-# Οι κατηγορίες που εσείς βρήκατε
-CATEGORIES = {
-    "Κωμωδίες": "komodies-1", "Ρομαντικές": "romantikes", "Περιπέτειες": "peripeteies-1",
-    "Δραματικές": "dramatikes", "Θρίλερ": "copy-of-thriler", "Βιογραφίες": "biographies-1",
-    "Σινεφίλ": "sinephil", "Ελληνικός Κινηματογράφος": "ellenikos-kinematographos",
-    "Μικρές Ιστορίες": "mikres-istories", "Παιδικές Ταινίες": "paidikes-tainies-1"
-}
-
-def fetch_codenames_from_category(session, section_codename):
-    """Παίρνει ΟΛΑ τα codenames από μια κατηγορία, χειριζόμενο τη σελιδοποίηση με ασφάλεια."""
-    category_codenames = []
-    seen_ids = set()
-    current_page = 1
+def get_all_movies_from_hidden_data():
+    """
+    Χρησιμοποιεί τη μέθοδο __NEXT_DATA__ για να πάρει ΟΛΑ τα δεδομένα των ταινιών
+    με μία κίνηση, χωρίς scroll, όπως ακριβώς βρήκατε.
+    """
+    print("--- Φάση 1: Λήψη των κρυμμένων δεδομένων (__NEXT_DATA__) ---")
     
-    while True:
-        page_params = {'platformCodename': 'www', 'sectionCodename': section_codename, 'page': current_page}
-        try:
-            response = session.get(PAGINATION_URL, params=page_params, headers=HEADERS, timeout=20)
-            response.raise_for_status()
-            page_data = response.json()
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("user-agent=" + HEADERS["User-Agent"])
 
-            section_content = page_data.get('SectionContent', {})
-            tiles_with_ids = section_content.get('TilesIds', [])
-            
-            if not tiles_with_ids: break
-            
-            first_id = tiles_with_ids[0].get('Id')
-            if first_id in seen_ids: break # Ανιχνεύτηκε επανάληψη
+    driver = None
+    try:
+        driver = webdriver.Chrome(options=options)
+        driver.get(LIST_URL)
 
-            new_found = 0
-            for tile in tiles_with_ids:
-                tile_id = tile.get('Id')
-                codename = tile.get('Codename')
-                if tile_id and codename and tile_id not in seen_ids:
-                    seen_ids.add(tile_id)
-                    category_codenames.append(codename)
-                    new_found += 1
-            
-            if new_found == 0: break # Διπλή ασφάλεια
+        # Περιμένουμε να εμφανιστεί το κρυφό script tag
+        data_script_element = WebDriverWait(driver, 20).until(
+            EC.presence_of_element_located((By.ID, "__NEXT_DATA__"))
+        )
+        
+        json_data_str = data_script_element.get_attribute('innerHTML')
+        data = json.loads(json_data_str)
+        
+        # Πλοήγηση μέσα στο JSON για να βρούμε τη λίστα με τις ταινίες
+        items = data.get('props', {}).get('pageProps', {}).get('page', {}).get('items', [])
+        all_movies = []
+        for section in items:
+            # Βρίσκουμε την ενότητα 'oles-oi-tainies-1'
+            if section.get('sectionCode') == 'oles-oi-tainies-1':
+                all_movies = section.get('items', [])
+                break
+        
+        if all_movies:
+            print(f"  -> Επιτυχία! Βρέθηκαν {len(all_movies)} ταινίες στα αρχικά δεδομένα.")
+            return all_movies
+        else:
+            print("  -> Δεν βρέθηκαν ταινίες στα αρχικά δεδομένα.")
+            return None
 
-            current_page += 1
-            time.sleep(0.1)
-        except requests.exceptions.RequestException:
-            break
-            
-    return category_codenames
+    except Exception as e:
+        print(f"  -> Σφάλμα κατά τη διαδικασία του Selenium: {e}")
+        return None
+    finally:
+        if driver:
+            driver.quit()
 
 def main():
     final_playlist = []
-    all_codenames_map = {} 
-
-    session = requests.Session()
-
-    print("--- Φάση 1: Έναρξη σάρωσης όλων των κατηγοριών για codenames ---")
-    for category_name, section_codename in CATEGORIES.items():
-        print(f"\n>>> Σάρωση κατηγορίας: {category_name}")
-        codenames_in_category = fetch_codenames_from_category(session, section_codename)
-        
-        if not codenames_in_category:
-            print("  -> Δεν βρέθηκαν νέες ταινίες.")
-            continue
-        
-        new_added = 0
-        for codename in codenames_in_category:
-            if codename not in all_codenames_map:
-                all_codenames_map[codename] = category_name # Αποθηκεύουμε την πρώτη κατηγορία
-                new_added +=1
-        print(f"  -> Βρέθηκαν {len(codenames_in_category)} ταινίες. Προστέθηκαν {new_added} νέες.")
     
-    total_movies = len(all_codenames_map)
-    if not total_movies:
-        print("\nΗ διαδικασία ολοκληρώθηκε, αλλά δεν βρέθηκαν ταινίες.")
+    # Βήμα 1: Παίρνουμε ΟΛΕΣ τις ταινίες με τη μέθοδο __NEXT_DATA__
+    all_movies_data = get_all_movies_from_hidden_data()
+    
+    if not all_movies_data:
+        print("\nΔεν βρέθηκαν ταινίες για επεξεργασία. Τερματισμός.")
         return
 
-    print(f"\n--- Φάση 2: Βρέθηκαν {total_movies} μοναδικές ταινίες. Έναρξη επεξεργασίας... ---")
+    total_movies = len(all_movies_data)
+    print(f"\n--- Φάση 2: Έναρξη επεξεργασίας {total_movies} ταινιών για λήψη stream URL ---")
 
-    for index, (codename, group_title) in enumerate(all_codenames_map.items()):
-        # Χρησιμοποιούμε το codename ως τίτλο. Είναι η μόνη αξιόπιστη λύση.
-        title = codename
+    for index, movie_data in enumerate(all_movies_data):
+        # Παίρνουμε τα δεδομένα από το JSON που ήδη έχουμε
+        codename = movie_data.get('codename')
+        title = movie_data.get('title', codename or "Unknown Title").strip()
+        poster_url = movie_data.get('poster', '')
+
+        if not codename:
+            continue
+            
         print(f"Επεξεργασία {index + 1}/{total_movies}: {title}")
 
         try:
-            # Λήψη stream URL
+            # Βήμα 2: Παίρνουμε το stream URL με το codename που ήδη έχουμε
             player_params = {"platformCodename": "www", "deviceKey": DEVICE_KEY, "codename": codename, "t": int(time.time() * 1000)}
-            player_resp = session.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
+            player_resp = requests.get(PLAYER_API_URL, params=player_params, headers=HEADERS, timeout=15)
             player_resp.raise_for_status()
             player_data = player_resp.json()
             
@@ -116,25 +111,26 @@ def main():
                     if stream_url: break
             
             if stream_url:
-                final_playlist.append({'title': title, 'stream_url': stream_url, 'group_title': group_title})
-                print(f"  -> Επιτυχής λήψη stream!")
-
+                final_playlist.append({'title': title, 'stream_url': stream_url, 'poster_url': poster_url})
+                print(f"  -> Επιτυχία!")
+            else:
+                print(f"  -> Δεν βρέθηκε stream.")
         except Exception as e:
             print(f"  -> Σφάλμα: {e}")
+        
         time.sleep(0.05)
 
+    # Βήμα 3: Δημιουργία αρχείου
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            sorted_playlist = sorted(final_playlist, key=lambda x: (x['group_title'], x['title']))
-            for movie in sorted_playlist:
-                group_tag = f'group-title="{movie["group_title"]}"'
-                # Δεν προσθέτουμε αφίσα, αφού δεν την έχουμε αξιόπιστα
-                info_line = f'#EXTINF:-1 {group_tag},{movie["title"]}\n'
+            for movie in final_playlist:
+                logo_tag = f'tvg-logo="{movie["poster_url"]}"' if movie["poster_url"] else ""
+                info_line = f'#EXTINF:-1 {logo_tag},{movie["title"]}\n'
                 url_line = f'{movie["stream_url"]}\n'
                 f.write(info_line)
                 f.write(url_line)
-        print(f"\nΤο αρχείο {OUTPUT_FILE} δημιουργήθηκε με επιτυχία με {len(final_playlist)} μοναδικές ταινίες!")
+        print(f"\nΤο αρχείο {OUTPUT_FILE} δημιουργήθηκε με επιτυχία με {len(final_playlist)} ταινίες!")
     except IOError as e:
         print(f"\nΣφάλμα εγγραφής στο αρχείο: {e}")
 
