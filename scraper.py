@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
 # --- Σταθερές ---
-URL = "https://www.ertflix.gr/list/movies/oles-oi-tainies-1"
+URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1"
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
 DEVICE_KEY = "12b9a6425e59ec1fcee9acb0e7fba4f3"
 OUTPUT_FILE = "ertflix_playlist.m3u8"
