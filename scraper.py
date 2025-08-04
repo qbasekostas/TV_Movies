@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # --- Ρυθμίσεις που ταιριάζουν με το .yml σου ---
-LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1"
+LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies§ionCodename=oles-oi-tainies-1"
 OUTPUT_M3U_FILE = "ertflix_playlist.m3u8" 
 # ---------------------------------------------
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
@@ -29,11 +29,13 @@ def get_movie_list_with_selenium():
     print(">>> ΜΕΡΟΣ 1: Selenium/Chrome - Έναρξη για τη συλλογή της λίστας...")
     
     options = ChromeOptions()
-    options.add_argument("--headless") # Headless mode για Chrome
+    options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
-    options.set_preference("intl.accept_languages", "el-GR, el")
+    # --- Η ΣΩΣΤΗ ΡΥΘΜΙΣΗ ΓΛΩΣΣΑΣ ΓΙΑ CHROME ---
+    options.add_argument("--lang=el")
+    # ---------------------------------------------
 
     driver = None
     try:
@@ -51,7 +53,6 @@ def get_movie_list_with_selenium():
         except TimeoutException:
             pass
         
-        # (Η λογική του scroll παραμένει ίδια, είναι επιτυχημένη)
         scroll_attempts = 0
         while scroll_attempts < 35:
             last_height = driver.execute_script("return document.body.scrollHeight")
@@ -125,7 +126,7 @@ def main():
                                 if url.endswith(".m3u8") and "/output1/" not in url:
                                     final_url = url
                                     break
-                                elif url.endswith(".mpd") and not final_url: # Παίρνουμε το mpd μόνο αν δεν έχουμε βρει καλό m3u8
+                                elif url.endswith(".mpd") and not final_url:
                                     final_url = url
                         if final_url and ".m3u8" in final_url:
                             break
