@@ -1,10 +1,13 @@
-name: Scrape ERTFlix Movies (Java)
+name: Scrape ERTFlix Movies
 
 on:
+  # Εκτελείται αυτόματα μία φορά την ημέρα
   schedule:
     - cron: '0 3 * * *'
+  # Επιτρέπει τη χειροκίνητη εκτέλεση από το tab "Actions" του GitHub
   workflow_dispatch:
 
+# Δίνει στο action την άδεια να κάνει 'commit' και 'push' στο αποθετήριο
 permissions:
   contents: write
 
@@ -15,22 +18,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 11
-        uses: actions/setup-java@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          java-version: '11'
-          distribution: 'temurin'
+          python-version: '3.10'
 
-      - name: Build with Maven
-        run: mvn clean package
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Run scraper
-        # Το όνομα του αρχείου .jar καθορίζεται από το pom.xml
-        run: java -jar target/ertflix-scraper-1.0-SNAPSHOT-jar-with-dependencies.jar
+        run: python scraper.py
 
       - name: Commit and push if there are changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Βεβαιωθείτε ότι αυτό το όνομα ταιριάζει με το OUTPUT_FILE στο scraper.py
           git add ertflix_playlist.m3u8
-          git diff --staged --quiet || (git commit -m "Update ERTFlix movie playlist" && git push)
+          git diff --staged --quiet || git commit -m "Update ERTFlix movie playlist"
+          git push
