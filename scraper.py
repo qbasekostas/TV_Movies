@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # --- Ρυθμίσεις που ταιριάζουν με το .yml σου ---
-LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies§ionCodename=oles-oi-tainies-1"
+LIST_URL = "https://www.ertflix.gr/list?pageCodename=movies&backUrl=/show/movies&sectionCodename=oles-oi-tainies-1"
 OUTPUT_M3U_FILE = "ertflix_playlist.m3u8" 
 # ---------------------------------------------
 PLAYER_API_URL = "https://api.app.ertflix.gr/v1/Player/AcquireContent"
