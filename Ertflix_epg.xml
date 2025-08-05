@@ -1,1 +1,2027 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="Ertflix Scraper">
+  <channel id="ertflix.bullet-train-1">
+    <display-name lang="el">Bullet Train</display-name>
+  </channel>
+  <channel id="ertflix.e-musteriodes-kuria-me-ta-maura">
+    <display-name lang="el">Η Μυστηριώδης Κυρία με τα Μαύρα</display-name>
+  </channel>
+  <channel id="ertflix.kautos-orizontas">
+    <display-name lang="el">Καυτός Ορίζοντας</display-name>
+  </channel>
+  <channel id="ertflix.mediterraneo-o-nomos-tes-thalassas-1">
+    <display-name lang="el">Mediterraneo: Ο Νόμος της Θάλασσας</display-name>
+  </channel>
+  <channel id="ertflix.episeme-summetokhe-1">
+    <display-name lang="el">Επίσημη Συμμετοχή</display-name>
+  </channel>
+  <channel id="ertflix.oups-o-noe-ephuge">
+    <display-name lang="el">Ουπς! Ο Νώε Έφυγε...</display-name>
+  </channel>
+  <channel id="ertflix.asterix-to-mustiko-tou-magikou-zomou-1">
+    <display-name lang="el">Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού</display-name>
+  </channel>
+  <channel id="ertflix.o-kaluteros-1">
+    <display-name lang="el">Ο Καλύτερος</display-name>
+  </channel>
+  <channel id="ertflix.the-duke-1">
+    <display-name lang="el">The Duke</display-name>
+  </channel>
+  <channel id="ertflix.o-drapetes-1">
+    <display-name lang="el">Ο Δραπέτης</display-name>
+  </channel>
+  <channel id="ertflix.to-paikhnidi-tes-mollu-1">
+    <display-name lang="el">Το Παιχνίδι της Μόλλυ</display-name>
+  </channel>
+  <channel id="ertflix.o-mpatler-1">
+    <display-name lang="el">Ο Μπάτλερ   </display-name>
+  </channel>
+  <channel id="ertflix.thauma">
+    <display-name lang="el">Θαύμα</display-name>
+  </channel>
+  <channel id="ertflix.to-khrusaphi-tou-renou-2">
+    <display-name lang="el">Το Χρυσάφι του Ρήνου</display-name>
+  </channel>
+  <channel id="ertflix.sto-aerodromio">
+    <display-name lang="el">Στο Αεροδρόμιο</display-name>
+  </channel>
+  <channel id="ertflix.escape-from-pretoria">
+    <display-name lang="el">Escape from Pretoria</display-name>
+  </channel>
+  <channel id="ertflix.ypo-to-meden">
+    <display-name lang="el">Υπό το Μηδέν</display-name>
+  </channel>
+  <channel id="ertflix.to-kalokairi-tou-85">
+    <display-name lang="el">Το Καλοκαίρι του &#x27;85</display-name>
+  </channel>
+  <channel id="ertflix.tigres-1">
+    <display-name lang="el">Τίγρης</display-name>
+  </channel>
+  <channel id="ertflix.o-touristas-1">
+    <display-name lang="el">Ο Τουρίστας</display-name>
+  </channel>
+  <channel id="ertflix.e-arpakhte">
+    <display-name lang="el">Η Αρπαχτή</display-name>
+  </channel>
+  <channel id="ertflix.anamnese-1">
+    <display-name lang="el">Ανάμνηση</display-name>
+  </channel>
+  <channel id="ertflix.semeio-uperokhes-1">
+    <display-name lang="el">Σημείο Υπεροχής </display-name>
+  </channel>
+  <channel id="ertflix.mustikos-praktoras-sarp-epikheirese-mazoretes">
+    <display-name lang="el">Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες</display-name>
+  </channel>
+  <channel id="ertflix.oria-antokhes-1">
+    <display-name lang="el">Όρια Αντοχής  </display-name>
+  </channel>
+  <channel id="ertflix.to-bankouber">
+    <display-name lang="el">Το Βανκούβερ</display-name>
+  </channel>
+  <channel id="ertflix.angry-birds-e-tainia-1">
+    <display-name lang="el">Angry Birds: Η Ταινία 2</display-name>
+  </channel>
+  <channel id="ertflix.e-summathetria">
+    <display-name lang="el">Η Συμμαθήτρια </display-name>
+  </channel>
+  <channel id="ertflix.ta-phterougismata">
+    <display-name lang="el">Tα Φτερουγίσματα </display-name>
+  </channel>
+  <channel id="ertflix.taxidi-me-ton-drako-mou-1">
+    <display-name lang="el">Ταξίδι με τον Δράκο μου</display-name>
+  </channel>
+  <channel id="ertflix.ola-gia-ta-lephta-1">
+    <display-name lang="el">Όλα για τα Λεφτά  </display-name>
+  </channel>
+  <channel id="ertflix.t-apomeinaria-mias-meras">
+    <display-name lang="el">Τ&#x27; Απομεινάρια μιας Μέρας   </display-name>
+  </channel>
+  <channel id="ertflix.fury-1">
+    <display-name lang="el">Fury</display-name>
+  </channel>
+  <channel id="ertflix.hitch-o-metr-tou-zeugaromatos-1">
+    <display-name lang="el">Hitch, ο Μετρ του Ζευγαρώματος </display-name>
+  </channel>
+  <channel id="ertflix.district-1">
+    <display-name lang="el">District 9</display-name>
+  </channel>
+  <channel id="ertflix.epta-khronia-sto-thibet">
+    <display-name lang="el">Επτά Χρόνια στο Θιβέτ   </display-name>
+  </channel>
+  <channel id="ertflix.parti-gunaikon-1">
+    <display-name lang="el">Πάρτι Γυναικών  </display-name>
+  </channel>
+  <channel id="ertflix.moneyball-1">
+    <display-name lang="el">Moneyball</display-name>
+  </channel>
+  <channel id="ertflix.our-friend-1">
+    <display-name lang="el">Our Friend</display-name>
+  </channel>
+  <channel id="ertflix.mikra-athoa-psemata-2">
+    <display-name lang="el">Μικρά Αθώα Ψέματα 2</display-name>
+  </channel>
+  <channel id="ertflix.django-o-timoros-1">
+    <display-name lang="el">Django, ο Τιμωρός</display-name>
+  </channel>
+  <channel id="ertflix.o-maphiozos-tes-diplanes-portas-movie">
+    <display-name lang="el">Ο Μαφιόζος της Διπλανής Πόρτας   </display-name>
+  </channel>
+  <channel id="ertflix.kapote-sto-mexiko-1">
+    <display-name lang="el">Κάποτε στο Μεξικό   </display-name>
+  </channel>
+  <channel id="ertflix.enas-anthropos-pou-ton-elegan-otto-1">
+    <display-name lang="el">Ένας Άνθρωπος που τον Έλεγαν Όττο</display-name>
+  </channel>
+  <channel id="ertflix.words-on-bathroom-walls-1">
+    <display-name lang="el">Words on Bathroom Walls</display-name>
+  </channel>
+  <channel id="ertflix.okhi-mono-philoi">
+    <display-name lang="el">Όχι Μόνο Φίλοι</display-name>
+  </channel>
+  <channel id="ertflix.ksenodokheio-gia-terata-4-teratometamorphoseis">
+    <display-name lang="el">Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις</display-name>
+  </channel>
+  <channel id="ertflix.to-koritsi-pou-aphesa-piso-1">
+    <display-name lang="el">Το Κορίτσι που Άφησα Πίσω   </display-name>
+  </channel>
+  <channel id="ertflix.o-gkriniares-1">
+    <display-name lang="el">Ο Γκρινιάρης</display-name>
+  </channel>
+  <channel id="ertflix.aniketoi-protathletes-1">
+    <display-name lang="el">Ανίκητοι Πρωταθλητές</display-name>
+  </channel>
+  <channel id="ertflix.skoteine-aletheia-1">
+    <display-name lang="el">Σκοτεινή Αλήθεια</display-name>
+  </channel>
+  <channel id="ertflix.thruloi-tou-pathous-1">
+    <display-name lang="el">Θρύλοι του Πάθους</display-name>
+  </channel>
+  <channel id="ertflix.khapia-sphaires-kai-2000000-lires">
+    <display-name lang="el">Χάπια, Σφαίρες και 2.000.000 Λίρες</display-name>
+  </channel>
+  <channel id="ertflix.blue-valentine-1">
+    <display-name lang="el">Blue Valentine</display-name>
+  </channel>
+  <channel id="ertflix.khtupemenos-apo-erota-1">
+    <display-name lang="el">Χτυπημένος από Έρωτα  </display-name>
+  </channel>
+  <channel id="ertflix.400-milia-agapes-1">
+    <display-name lang="el">400 Μίλια Αγάπης  </display-name>
+  </channel>
+  <channel id="ertflix.khoris-dolo-2">
+    <display-name lang="el">Χωρίς Δόλο</display-name>
+  </channel>
+  <channel id="ertflix.lail-o-philos-mou-o-krokodeilos-1">
+    <display-name lang="el">Λάιλ, ο Φίλος μου ο Κροκόδειλος </display-name>
+  </channel>
+  <channel id="ertflix.ena-thauma-apo-ton-ourano-1">
+    <display-name lang="el">Ένα Θαύμα από τον Ουρανό</display-name>
+  </channel>
+  <channel id="ertflix.my-dog-stupid-1">
+    <display-name lang="el">My Dog Stupid</display-name>
+  </channel>
+  <channel id="ertflix.oi-mpatsoi-tou-kholigount-1">
+    <display-name lang="el">Οι Μπάτσοι του Χόλιγουντ</display-name>
+  </channel>
+  <channel id="ertflix.inferno-1">
+    <display-name lang="el">Inferno   </display-name>
+  </channel>
+  <channel id="ertflix.to-alogo-ton-oneiron-1">
+    <display-name lang="el">Το Άλογο των Ονείρων</display-name>
+  </channel>
+  <channel id="ertflix.yomeddine-1">
+    <display-name lang="el">Yomeddine</display-name>
+  </channel>
+  <channel id="ertflix.asanser-gia-2">
+    <display-name lang="el">Ασανσέρ για 2</display-name>
+  </channel>
+  <channel id="ertflix.e-epaule-me-ta-mustika-1">
+    <display-name lang="el">Η Έπαυλη με τα Μυστικά</display-name>
+  </channel>
+  <channel id="ertflix.hotel-artemis-1">
+    <display-name lang="el">Hotel Artemis</display-name>
+  </channel>
+  <channel id="ertflix.think-like-a-dog-1">
+    <display-name lang="el">Think Like a Dog</display-name>
+  </channel>
+  <channel id="ertflix.blue-jean">
+    <display-name lang="el">Blue Jean</display-name>
+  </channel>
+  <channel id="ertflix.to-noema-tou-augoustou-mikres-istories">
+    <display-name lang="el">Το Νόημα του Αυγούστου</display-name>
+  </channel>
+  <channel id="ertflix.to-kanonas-tes-siopes">
+    <display-name lang="el">Ο Κανόνας της Σιωπής</display-name>
+  </channel>
+  <channel id="ertflix.amugdale">
+    <display-name lang="el">Αμυγδαλή </display-name>
+  </channel>
+  <channel id="ertflix.kalokairines-diakopes">
+    <display-name lang="el">Διακοπές Καλοκαιρινές</display-name>
+  </channel>
+  <channel id="ertflix.ti-kolumpaei-kai-gelaei">
+    <display-name lang="el">Τι Κολυμπάει και Γελάει;</display-name>
+  </channel>
+  <channel id="ertflix.o-muthos-tes-limnes-2">
+    <display-name lang="el">Ο Μύθος της Λίμνης</display-name>
+  </channel>
+  <channel id="ertflix.osiki">
+    <display-name lang="el">Οσίκι</display-name>
+  </channel>
+  <channel id="ertflix.magma">
+    <display-name lang="el">Μάγμα</display-name>
+  </channel>
+  <channel id="ertflix.ora-gia-serph-1">
+    <display-name lang="el">Ώρα για Σερφ </display-name>
+  </channel>
+  <channel id="ertflix.the-amazing-spider-man-3">
+    <display-name lang="el">The Amazing Spider-Man 2</display-name>
+  </channel>
+  <channel id="ertflix.zombieland-diple-bole-1">
+    <display-name lang="el">Zombieland: Διπλή Βολή   </display-name>
+  </channel>
+  <channel id="ertflix.tzitzipogko">
+    <display-name lang="el">Τζιτζιπόνγκο</display-name>
+  </channel>
+  <channel id="ertflix.mpoemike-psukhe">
+    <display-name lang="el">Μποέμικη Ψυχή</display-name>
+  </channel>
+  <channel id="ertflix.tigers-are-not-afraid-1">
+    <display-name lang="el">Tigers Are Not Afraid</display-name>
+  </channel>
+  <channel id="ertflix.10-emeres-khoris-mama">
+    <display-name lang="el">10 Ημέρες Χωρίς Μαμά</display-name>
+  </channel>
+  <channel id="ertflix.einai-grousouzia-na-deis-te-nuphe-prin-ton-gamo">
+    <display-name lang="el">Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο</display-name>
+  </channel>
+  <channel id="ertflix.pilala">
+    <display-name lang="el">Πιλάλα</display-name>
+  </channel>
+  <channel id="ertflix.nouar-protzekt">
+    <display-name lang="el">Νουάρ Πρότζεκτ</display-name>
+  </channel>
+  <channel id="ertflix.made-in-italy-1">
+    <display-name lang="el">Made in Italy </display-name>
+  </channel>
+  <channel id="ertflix.to-telos-tes-diadromes-1">
+    <display-name lang="el">Το Τέλος της Διαδρομής</display-name>
+  </channel>
+  <channel id="ertflix.o-gios-mou">
+    <display-name lang="el">Ο Γιος μου</display-name>
+  </channel>
+  <channel id="ertflix.oikogeneiake-eutukhia-ae">
+    <display-name lang="el">Οικογενειακή Eυτυχία Α.Ε.</display-name>
+  </channel>
+  <channel id="ertflix.falling-1">
+    <display-name lang="el">Falling</display-name>
+  </channel>
+  <channel id="ertflix.ektos-epokhes">
+    <display-name lang="el">Εκτός Εποχής</display-name>
+  </channel>
+  <channel id="ertflix.khlorio-1">
+    <display-name lang="el">Χλώριο</display-name>
+  </channel>
+  <channel id="ertflix.mikro-mou-ponu-1">
+    <display-name lang="el">Μικρό μου Πόνυ</display-name>
+  </channel>
+  <channel id="ertflix.to-parelthon-tes-ouna-1">
+    <display-name lang="el">Το Παρελθόν της Ούνα</display-name>
+  </channel>
+  <channel id="ertflix.late-night-1">
+    <display-name lang="el">Late Night</display-name>
+  </channel>
+  <channel id="ertflix.land">
+    <display-name lang="el">Land</display-name>
+  </channel>
+  <channel id="ertflix.glukia-apodrase">
+    <display-name lang="el">Γλυκιά Απόδραση</display-name>
+  </channel>
+  <channel id="ertflix.travel-express">
+    <display-name lang="el">Travel Express</display-name>
+  </channel>
+  <channel id="ertflix.san-kalo-koritsi">
+    <display-name lang="el">Σαν Καλό Κορίτσι</display-name>
+  </channel>
+  <channel id="ertflix.khalaroste-kurie-alen">
+    <display-name lang="el">Χαλαρώστε Κύριε Αλέν!</display-name>
+  </channel>
+  <channel id="ertflix.konan-o-barbaros-1">
+    <display-name lang="el">Κόναν ο Βάρβαρος</display-name>
+  </channel>
+  <channel id="ertflix.put-grandma-in-the-freezer">
+    <display-name lang="el">Βάλε τη Γιαγιά στο Ψυγείο</display-name>
+  </channel>
+  <channel id="ertflix.e-teleutaia-nukhta-tou-phranko-amore-1">
+    <display-name lang="el">Η Τελευταία Νύχτα του Φράνκο Αμόρε</display-name>
+  </channel>
+  <channel id="ertflix.my-generation">
+    <display-name lang="el">My Generation</display-name>
+  </channel>
+  <channel id="ertflix.to-dodekato-euaggelio">
+    <display-name lang="el">Το Δωδέκατο Ευαγγέλιο</display-name>
+  </channel>
+  <channel id="ertflix.to-kalokairi-pou-parateresa-gia-prote-phora-ton-elio-na-duei">
+    <display-name lang="el">Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει </display-name>
+  </channel>
+  <channel id="ertflix.ta-paidia-ton-allon-1">
+    <display-name lang="el">Τα Παιδιά των Άλλων </display-name>
+  </channel>
+  <channel id="ertflix.mama-apo-to-pouthena">
+    <display-name lang="el">Μαμά από το Πουθενά </display-name>
+  </channel>
+  <channel id="ertflix.mia-istoria-tes-poles">
+    <display-name lang="el">Μια Ιστορία της Πόλης</display-name>
+  </channel>
+  <channel id="ertflix.mrs-lowry-son">
+    <display-name lang="el">Mrs Lowry &amp; Son</display-name>
+  </channel>
+  <channel id="ertflix.giorte-tes-meteras">
+    <display-name lang="el">Γιορτή της Μητέρας</display-name>
+  </channel>
+  <channel id="ertflix.tully-ta-paidia-einai-eutukhia-1">
+    <display-name lang="el">Tully: Tα Παιδιά Είναι Ευτυχία;  </display-name>
+  </channel>
+  <channel id="ertflix.to-taxidi-1">
+    <display-name lang="el">Το Ταξίδι</display-name>
+  </channel>
+  <channel id="ertflix.tele-augoustou">
+    <display-name lang="el">Τέλη Αυγούστου </display-name>
+  </channel>
+  <channel id="ertflix.ola-gia-te-metera-mou-1">
+    <display-name lang="el">Όλα για τη Μητέρα μου   </display-name>
+  </channel>
+  <channel id="ertflix.miss-violence">
+    <display-name lang="el">Miss Violence</display-name>
+  </channel>
+  <channel id="ertflix.beautiful-people">
+    <display-name lang="el">Beautiful People </display-name>
+  </channel>
+  <channel id="ertflix.e-omorphotere-epokhe">
+    <display-name lang="el"> Η Ομορφότερη Εποχή</display-name>
+  </channel>
+  <channel id="ertflix.se-aute-te-khora-den-exere-kaneis-na-klaiei-1">
+    <display-name lang="el">Σ&#x27; Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει</display-name>
+  </channel>
+  <channel id="ertflix.oi-athooi-1">
+    <display-name lang="el">Οι Αθώοι</display-name>
+  </channel>
+  <channel id="ertflix.apate-se-mauro-phonto-1">
+    <display-name lang="el">Απάτη σε Μαύρο Φόντο</display-name>
+  </channel>
+  <channel id="ertflix.kokkinos-sunagermos-1">
+    <display-name lang="el">Κόκκινος Συναγερμός</display-name>
+  </channel>
+  <channel id="ertflix.the-drone">
+    <display-name lang="el">The Drone</display-name>
+  </channel>
+  <channel id="ertflix.inside-1">
+    <display-name lang="el">Inside</display-name>
+  </channel>
+  <channel id="ertflix.oi-agnostoi-athenaioi">
+    <display-name lang="el">Οι Άγνωστοι Αθηναίοι</display-name>
+  </channel>
+  <channel id="ertflix.ena-ologramma-gia-ton-basilia-1">
+    <display-name lang="el">Ένα Ολόγραμμα για τον Βασιλιά</display-name>
+  </channel>
+  <channel id="ertflix.o-klephtes">
+    <display-name lang="el">Ο Κλέφτης</display-name>
+  </channel>
+  <channel id="ertflix.khoris-agape-2">
+    <display-name lang="el">Χωρίς Aγάπη</display-name>
+  </channel>
+  <channel id="ertflix.lebiathan-1">
+    <display-name lang="el">Λεβιάθαν</display-name>
+  </channel>
+  <channel id="ertflix.megalo-taxidi-tes-meras-ste-nukhta">
+    <display-name lang="el">Μεγάλο Ταξίδι της Μέρας στη Νύχτα</display-name>
+  </channel>
+  <channel id="ertflix.hachiko-e-istoria-enos-skulou-1">
+    <display-name lang="el">Hachiko: Η Ιστορία ενός Σκύλου</display-name>
+  </channel>
+  <channel id="ertflix.etoimoi">
+    <display-name lang="el">Έτοιμοι</display-name>
+  </channel>
+  <channel id="ertflix.khoulieta-1">
+    <display-name lang="el">Χουλιέτα</display-name>
+  </channel>
+  <channel id="ertflix.pinokio-1">
+    <display-name lang="el">Πινόκιο</display-name>
+  </channel>
+  <channel id="ertflix.philoi-gia-panta">
+    <display-name lang="el">Φίλοι για Πάντα</display-name>
+  </channel>
+  <channel id="ertflix.klephtes-me-philotimo">
+    <display-name lang="el">Ένας Κλέφτης... Με Φιλότιμο</display-name>
+  </channel>
+  <channel id="ertflix.o-tukhodioktes-tou-parisiou">
+    <display-name lang="el">Ο Τυχοδιώκτης του Παρισιού</display-name>
+  </channel>
+  <channel id="ertflix.foxtrot">
+    <display-name lang="el">Foxtrot</display-name>
+  </channel>
+  <channel id="ertflix.asterix-kai-obelix-ste-bretania-1">
+    <display-name lang="el">Αστερίξ και Οβελίξ στη Βρετανία</display-name>
+  </channel>
+  <channel id="ertflix.o-megalos-philikos-gigantas">
+    <display-name lang="el">Ο Μεγάλος Φιλικός Γίγαντας</display-name>
+  </channel>
+  <channel id="ertflix.me-to-kephali-psela">
+    <display-name lang="el">Με το Κεφάλι Ψηλά</display-name>
+  </channel>
+  <channel id="ertflix.ti-sunebe-ste-deutera-1">
+    <display-name lang="el">Τι Συνέβη στη Δευτέρα</display-name>
+  </channel>
+  <channel id="ertflix.treis-eukhes-gia-te-stakhtopouta-1">
+    <display-name lang="el">Τρεις Ευχές για τη Σταχτοπούτα</display-name>
+  </channel>
+  <channel id="ertflix.gkogken">
+    <display-name lang="el">Γκωγκέν</display-name>
+  </channel>
+  <channel id="ertflix.e-prosbole">
+    <display-name lang="el">Η Προσβολή</display-name>
+  </channel>
+  <channel id="ertflix.men-enokhleite-parakalo">
+    <display-name lang="el">Μην Ενοχλείτε, Παρακαλώ</display-name>
+  </channel>
+  <channel id="ertflix.happy-end">
+    <display-name lang="el">Happy End</display-name>
+  </channel>
+  <channel id="ertflix.tetarte-445">
+    <display-name lang="el">Τετάρτη 04:45</display-name>
+  </channel>
+  <channel id="ertflix.to-rantebou-tes-kuriakes">
+    <display-name lang="el">Το Ραντεβού της Κυριακής</display-name>
+  </channel>
+  <channel id="ertflix.skhetika-me-ton-basile">
+    <display-name lang="el">Σχετικά με τον Βασίλη</display-name>
+  </channel>
+  <channel id="ertflix.mia-thalassa-apo-dentra">
+    <display-name lang="el">Μια Θάλασσα από Δέντρα</display-name>
+  </channel>
+  <channel id="ertflix.duo-meres-mia-nukhta">
+    <display-name lang="el">Δύο Μέρες, Μία Νύχτα</display-name>
+  </channel>
+  <channel id="ertflix.e-mera-tes-bastiles">
+    <display-name lang="el">Η Mέρα της Βαστίλης</display-name>
+  </channel>
+  <channel id="ertflix.katse-phronima-1">
+    <display-name lang="el">Κάτσε Φρόνιμα </display-name>
+  </channel>
+  <channel id="ertflix.o-theios-tes-bioletas">
+    <display-name lang="el">Ο Θείος της Βιολέτας</display-name>
+  </channel>
+  <channel id="ertflix.ta-khrusa-mas-khronia">
+    <display-name lang="el">Τα Χρυσά μας Χρόνια</display-name>
+  </channel>
+  <channel id="ertflix.palirroia">
+    <display-name lang="el">Παλίρροια</display-name>
+  </channel>
+  <channel id="ertflix.kerdizontas-tis-kardies-ton-andron-1">
+    <display-name lang="el">Κερδίζοντας τις Καρδιές των Ανδρών</display-name>
+  </channel>
+  <channel id="ertflix.e-prigkipissa-alani-1">
+    <display-name lang="el">Η Πριγκίπισσα Αλάνι</display-name>
+  </channel>
+  <channel id="ertflix.firebug">
+    <display-name lang="el">Firebug</display-name>
+  </channel>
+  <channel id="ertflix.claw-machine">
+    <display-name lang="el">Claw Machine </display-name>
+  </channel>
+  <channel id="ertflix.pantingkton-2">
+    <display-name lang="el">Πάντινγκτον 2</display-name>
+  </channel>
+  <channel id="ertflix.emily">
+    <display-name lang="el">Emily</display-name>
+  </channel>
+  <channel id="ertflix.telephonese-sten-tzein-1">
+    <display-name lang="el">Τηλεφώνησε στην Τζέιν</display-name>
+  </channel>
+  <channel id="ertflix.to-tukhero-panteloni">
+    <display-name lang="el">Το Τυχερό Παντελόνι</display-name>
+  </channel>
+  <channel id="ertflix.allothi-gia-pantremenous">
+    <display-name lang="el">Άλλοθι για Παντρεμένους</display-name>
+  </channel>
+  <channel id="ertflix.to-akroteri-tes-bias-1">
+    <display-name lang="el">Το Ακρωτήρι της Βίας</display-name>
+  </channel>
+  <channel id="ertflix.e-diple-opse-tes-epanastases">
+    <display-name lang="el">Η Διπλή Όψη της Επανάστασης</display-name>
+  </channel>
+  <channel id="ertflix.e-makhe-tes-epikrateses-1">
+    <display-name lang="el">Η Μάχη της Επικράτησης</display-name>
+  </channel>
+  <channel id="ertflix.oi-uperephanoi">
+    <display-name lang="el">	Οι Υπερήφανοι		</display-name>
+  </channel>
+  <channel id="ertflix.karagkiozes-o-adikemenos-tes-zoes">
+    <display-name lang="el">Καραγκιόζης: Ο Αδικημένος της Ζωής</display-name>
+  </channel>
+  <channel id="ertflix.chuck-e-istoria-tou-pragmatikou-rocky-balboa">
+    <display-name lang="el">Chuck: Η Ιστορία του Πραγματικού Rocky Balboa</display-name>
+  </channel>
+  <channel id="ertflix.eroika">
+    <display-name lang="el">Ερόϊκα</display-name>
+  </channel>
+  <channel id="ertflix.oti-lampei-einai-khrusos">
+    <display-name lang="el">Ό,τι Λάμπει Είναι Χρυσός</display-name>
+  </channel>
+  <channel id="ertflix.adikos-kosmos">
+    <display-name lang="el">Άδικος Κόσμος</display-name>
+  </channel>
+  <channel id="ertflix.giakari-47">
+    <display-name lang="el">Γιάκαρι</display-name>
+  </channel>
+  <channel id="ertflix.to-prasino-biblio">
+    <display-name lang="el">Το Πράσινο Βιβλίο</display-name>
+  </channel>
+  <channel id="ertflix.antirresias-suneideses-1">
+    <display-name lang="el">Αντιρρησίας Συνείδησης</display-name>
+  </channel>
+  <channel id="ertflix.pabaroti">
+    <display-name lang="el">Παβαρότι</display-name>
+  </channel>
+  <channel id="ertflix.monsters-and-men">
+    <display-name lang="el">Monsters and Men</display-name>
+  </channel>
+  <channel id="ertflix.finding-steve-mcqueen">
+    <display-name lang="el">Finding Steve McQueen</display-name>
+  </channel>
+  <channel id="ertflix.despoinis-tzoulia">
+    <display-name lang="el">Δεσποινίς Τζούλια</display-name>
+  </channel>
+  <channel id="ertflix.e-skone-pou-pephtei">
+    <display-name lang="el">Η Σκόνη που Πέφτει</display-name>
+  </channel>
+  <channel id="ertflix.tzaki-kai-rain">
+    <display-name lang="el">Τζάκι και Ράιαν</display-name>
+  </channel>
+  <channel id="ertflix.metretes-karton">
+    <display-name lang="el">Μετρητής Καρτών</display-name>
+  </channel>
+  <channel id="ertflix.the-kiss">
+    <display-name lang="el">The Kiss</display-name>
+  </channel>
+  <channel id="ertflix.to-diastema-anamesa-mas">
+    <display-name lang="el">Το Διάστημα Ανάμεσά μας</display-name>
+  </channel>
+  <channel id="ertflix.e-liakada-mesa-mou-1">
+    <display-name lang="el">Η Λιακάδα Μέσα μου</display-name>
+  </channel>
+  <channel id="ertflix.anekplerotos-gamos">
+    <display-name lang="el">Ανεκπλήρωτος Γάμος</display-name>
+  </channel>
+  <channel id="ertflix.mepos-eisai-o-tupos-mou">
+    <display-name lang="el">Μήπως Είσαι ο Τύπος μου;</display-name>
+  </channel>
+  <channel id="ertflix.apallou">
+    <display-name lang="el">Apallou</display-name>
+  </channel>
+  <channel id="ertflix.maure-lista">
+    <display-name lang="el">Μαύρη Λίστα</display-name>
+  </channel>
+  <channel id="ertflix.e-agglia-mou-anekei">
+    <display-name lang="el">Η Αγγλία μού Ανήκει</display-name>
+  </channel>
+  <channel id="ertflix.best-sellers">
+    <display-name lang="el">Best Sellers</display-name>
+  </channel>
+  <channel id="ertflix.flag-day">
+    <display-name lang="el">Flag Day</display-name>
+  </channel>
+  <channel id="ertflix.kathemerine-ergasime">
+    <display-name lang="el"> Καθημερινή Εργάσιμη</display-name>
+  </channel>
+  <channel id="ertflix.khrusopsaro">
+    <display-name lang="el">Χρυσόψαρο</display-name>
+  </channel>
+  <channel id="ertflix.phusarmonika-man-mikres-istories">
+    <display-name lang="el">Φυσαρμόνικα Μαν</display-name>
+  </channel>
+  <channel id="ertflix.roz-bouno-1">
+    <display-name lang="el">Ροζ Βουνό</display-name>
+  </channel>
+  <channel id="ertflix.seawolf">
+    <display-name lang="el">Seawolf</display-name>
+  </channel>
+  <channel id="ertflix.khartinoi-aetoi">
+    <display-name lang="el">Χάρτινοι Αετοί</display-name>
+  </channel>
+  <channel id="ertflix.khera-strategou">
+    <display-name lang="el">Χήρα Στρατηγού</display-name>
+  </channel>
+  <channel id="ertflix.largo">
+    <display-name lang="el">Largo</display-name>
+  </channel>
+  <channel id="ertflix.memory-reloaded">
+    <display-name lang="el">Memory Reloaded</display-name>
+  </channel>
+  <channel id="ertflix.kineta-stoikheia-tou-antrea-siadema">
+    <display-name lang="el">Κινητά Στοιχεία</display-name>
+  </channel>
+  <channel id="ertflix.apokhairetontas">
+    <display-name lang="el">Αποχαιρετώντας</display-name>
+  </channel>
+  <channel id="ertflix.ela-na-sou-po">
+    <display-name lang="el">Έλα να σου Πω...</display-name>
+  </channel>
+  <channel id="ertflix.ugraerio">
+    <display-name lang="el">Υγραέριο</display-name>
+  </channel>
+  <channel id="ertflix.13-1-1">
+    <display-name lang="el">13 1/2</display-name>
+  </channel>
+  <channel id="ertflix.lou-lena">
+    <display-name lang="el">Λου &amp; Λένα</display-name>
+  </channel>
+  <channel id="ertflix.meden-thetiko">
+    <display-name lang="el">Μηδέν Θετικό </display-name>
+  </channel>
+  <channel id="ertflix.to-perasma">
+    <display-name lang="el">Το Πέρασμα </display-name>
+  </channel>
+  <channel id="ertflix.lethe">
+    <display-name lang="el">Λήθη </display-name>
+  </channel>
+  <channel id="ertflix.mia-mera-ste-sagkae">
+    <display-name lang="el">Μια Μέρα στη Σαγκάη</display-name>
+  </channel>
+  <channel id="ertflix.blackbird-1">
+    <display-name lang="el">Blackbird</display-name>
+  </channel>
+  <channel id="ertflix.e-anazetese-2">
+    <display-name lang="el">Η Αναζήτηση</display-name>
+  </channel>
+  <channel id="ertflix.miles-davis-birth-of-the-cool">
+    <display-name lang="el">Miles Davis: Birth of the Cool </display-name>
+  </channel>
+  <channel id="ertflix.lasi-gurna-spiti">
+    <display-name lang="el">Λάσι, Γύρνα Σπίτι</display-name>
+  </channel>
+  <channel id="ertflix.ailo-o-mikros-eroas">
+    <display-name lang="el">Αϊλό: Ο Μικρός Ήρωας</display-name>
+  </channel>
+  <channel id="ertflix.e-kale-suzugos-1">
+    <display-name lang="el">Η Καλή Σύζυγος</display-name>
+  </channel>
+  <channel id="ertflix.power-rangers">
+    <display-name lang="el">Power Rangers</display-name>
+  </channel>
+  <channel id="ertflix.tha-ertho-konta-sou-siga-siga-1">
+    <display-name lang="el">Θα Έρθω Κοντά σου Σιγά-Σιγά</display-name>
+  </channel>
+  <channel id="ertflix.hotel-kentauros">
+    <display-name lang="el">Hotel Κένταυρος</display-name>
+  </channel>
+  <channel id="ertflix.emploke">
+    <display-name lang="el">Εμπλοκή</display-name>
+  </channel>
+  <channel id="ertflix.aerolin">
+    <display-name lang="el">Αερολίν</display-name>
+  </channel>
+  <channel id="ertflix.o-paradeisos-epese-ste-ge">
+    <display-name lang="el">Ο Παράδεισος Έπεσε στη Γη </display-name>
+  </channel>
+  <channel id="ertflix.e-poluthrona-sto-pezodromio-1">
+    <display-name lang="el">Η Πολυθρόνα στο Πεζοδρόμιο</display-name>
+  </channel>
+  <channel id="ertflix.diabase">
+    <display-name lang="el">Διάβαση</display-name>
+  </channel>
+  <channel id="ertflix.man-wanted">
+    <display-name lang="el">Man Wanted</display-name>
+  </channel>
+  <channel id="ertflix.o-kaluteros-philos-mou">
+    <display-name lang="el">Ο Καλύτερος Φίλος μου</display-name>
+  </channel>
+  <channel id="ertflix.wonder-wheel-1">
+    <display-name lang="el">Wonder Wheel</display-name>
+  </channel>
+  <channel id="ertflix.e-megale-nukhta-tes-napoles-1">
+    <display-name lang="el">Η Μεγάλη Νύχτα της Νάπολης</display-name>
+  </channel>
+  <channel id="ertflix.aftersun">
+    <display-name lang="el">Aftersun</display-name>
+  </channel>
+  <channel id="ertflix.dalida">
+    <display-name lang="el">Dalida</display-name>
+  </channel>
+  <channel id="ertflix.e-geuse-tes-apistias">
+    <display-name lang="el">Η Γεύση της Απιστίας</display-name>
+  </channel>
+  <channel id="ertflix.e-epomene-apostole">
+    <display-name lang="el">Η Επόμενη Αποστολή</display-name>
+  </channel>
+  <channel id="ertflix.to-mustiko-ton-marompooun">
+    <display-name lang="el">Το Μυστικό των Μάρομποουν</display-name>
+  </channel>
+  <channel id="ertflix.to-paramuthi-ton-paramuthion">
+    <display-name lang="el">Το Παραμύθι των Παραμυθιών</display-name>
+  </channel>
+  <channel id="ertflix.the-last-face">
+    <display-name lang="el">The Last Face</display-name>
+  </channel>
+  <channel id="ertflix.aspro-pato-1">
+    <display-name lang="el">Άσπρο Πάτο</display-name>
+  </channel>
+  <channel id="ertflix.niote-1">
+    <display-name lang="el">Νιότη</display-name>
+  </channel>
+  <channel id="ertflix.oi-ekkentrikoi">
+    <display-name lang="el">Οι Εκκεντρικοί</display-name>
+  </channel>
+  <channel id="ertflix.o-prodotes">
+    <display-name lang="el">Ο Προδότης</display-name>
+  </channel>
+  <channel id="ertflix.rantebou-ekei-psela">
+    <display-name lang="el">Ραντεβού Εκεί Ψηλά</display-name>
+  </channel>
+  <channel id="ertflix.meta-ton-gamo-1">
+    <display-name lang="el">Μετά τον Γάμο</display-name>
+  </channel>
+  <channel id="ertflix.ethnike-odos-mias-ragismenes-kardias">
+    <display-name lang="el">Εθνική Οδός μιας Ραγισμένης Καρδιάς</display-name>
+  </channel>
+  <channel id="ertflix.phos-ek-photos-1">
+    <display-name lang="el">Φῶς ἐκ Φωτός</display-name>
+  </channel>
+  <channel id="ertflix.o-tenoros-1">
+    <display-name lang="el">Ο Τενόρος</display-name>
+  </channel>
+  <channel id="ertflix.to-klamp-ton-khorismenon">
+    <display-name lang="el">Το Κλαμπ των Χωρισμένων</display-name>
+  </channel>
+  <channel id="ertflix.ola-pegan-kala">
+    <display-name lang="el">Όλα Πήγαν Καλά</display-name>
+  </channel>
+  <channel id="ertflix.leophoros-patesion">
+    <display-name lang="el">Λεωφόρος Πατησίων</display-name>
+  </channel>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.bullet-train-1">
+    <title lang="el">Bullet Train</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/bullet-train/bullet-train-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-musteriodes-kuria-me-ta-maura">
+    <title lang="el">Η Μυστηριώδης Κυρία με τα Μαύρα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-notorious-landlady/notoriuslandlady-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kautos-orizontas">
+    <title lang="el">Καυτός Ορίζοντας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/burning-horizon/burning-horizon-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mediterraneo-o-nomos-tes-thalassas-1">
+    <title lang="el">Mediterraneo: Ο Νόμος της Θάλασσας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mediterraneo-the-low-of-the-sea/mediterraneo-the-law-of-the-sea-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.episeme-summetokhe-1">
+    <title lang="el">Επίσημη Συμμετοχή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/official-competition/official-competition-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oups-o-noe-ephuge">
+    <title lang="el">Ουπς! Ο Νώε Έφυγε...</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/paidika/oops-noah-is-gone/oops-noah-is-gone-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.asterix-to-mustiko-tou-magikou-zomou-1">
+    <title lang="el">Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/asterix-the-secret-of-th-magic-potion-magiqu/asterix-the-secret-of-the-magic-potion-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-kaluteros-1">
+    <title lang="el">Ο Καλύτερος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-natural/the-natural-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.the-duke-1">
+    <title lang="el">The Duke</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-duke/the-duke-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-drapetes-1">
+    <title lang="el">Ο Δραπέτης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/o-drapetis-1967/o-drapetis-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-paikhnidi-tes-mollu-1">
+    <title lang="el">Το Παιχνίδι της Μόλλυ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mollys-game/mollys-game-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-mpatler-1">
+    <title lang="el">Ο Μπάτλερ   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/lee-daniels-the-butler/lee-daniels-the-butler-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.thauma">
+    <title lang="el">Θαύμα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/wonder/wonder-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-khrusaphi-tou-renou-2">
+    <title lang="el">Το Χρυσάφι του Ρήνου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/rheingold/rheingold-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.sto-aerodromio">
+    <title lang="el">Στο Αεροδρόμιο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/sto-aerodromio/sto-aerodromio-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.escape-from-pretoria">
+    <title lang="el">Escape from Pretoria</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/escape-from-pretoria/escape-from-pretoria-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ypo-to-meden">
+    <title lang="el">Υπό το Μηδέν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-frozen-ground/thefrozenground-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-kalokairi-tou-85">
+    <title lang="el">Το Καλοκαίρι του &#x27;85</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/summer-of-85/summer-of-85-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tigres-1">
+    <title lang="el">Τίγρης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tiger/tigru-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-touristas-1">
+    <title lang="el">Ο Τουρίστας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-tourist-n/the-tourist-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-arpakhte">
+    <title lang="el">Η Αρπαχτή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/snatch/snatch-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.anamnese-1">
+    <title lang="el">Ανάμνηση</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/anamnissi/memoria-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.semeio-uperokhes-1">
+    <title lang="el">Σημείο Υπεροχής </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/vantage-point/vantage-point-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mustikos-praktoras-sarp-epikheirese-mazoretes">
+    <title lang="el">Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/man-of-the-house/man-of-the-house-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oria-antokhes-1">
+    <title lang="el">Όρια Αντοχής  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/vertical-limit/vertical-limit-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-bankouber">
+    <title lang="el">Το Βανκούβερ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/vancouver/to-vancouver-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.angry-birds-e-tainia-1">
+    <title lang="el">Angry Birds: Η Ταινία 2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/angry-birds-2/the-angry-birds-2-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-summathetria">
+    <title lang="el">Η Συμμαθήτρια </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/i-simathitria-new/symathitria-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ta-phterougismata">
+    <title lang="el">Tα Φτερουγίσματα </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/fly-away-home/fly-away-home-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.taxidi-me-ton-drako-mou-1">
+    <title lang="el">Ταξίδι με τον Δράκο μου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/dragon-rider/dragon-rider-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ola-gia-ta-lephta-1">
+    <title lang="el">Όλα για τα Λεφτά  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/two-for-the-money/two-for-the-money-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.t-apomeinaria-mias-meras">
+    <title lang="el">Τ&#x27; Απομεινάρια μιας Μέρας   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-remains-of-the-day/the-remains-of-the-day-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.fury-1">
+    <title lang="el">Fury</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/fury/fury-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.hitch-o-metr-tou-zeugaromatos-1">
+    <title lang="el">Hitch, ο Μετρ του Ζευγαρώματος </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hitch/hitch-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.district-1">
+    <title lang="el">District 9</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/district-9/district9-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.epta-khronia-sto-thibet">
+    <title lang="el">Επτά Χρόνια στο Θιβέτ   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/seven-years-in-tibet/seven-years-in-tibet-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.parti-gunaikon-1">
+    <title lang="el">Πάρτι Γυναικών  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/rough-night/rough-night-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.moneyball-1">
+    <title lang="el">Moneyball</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/moneyball/moneyball-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.our-friend-1">
+    <title lang="el">Our Friend</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/our-friend/our-friend-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mikra-athoa-psemata-2">
+    <title lang="el">Μικρά Αθώα Ψέματα 2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/little-white-lies/little-white-lies-2-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.django-o-timoros-1">
+    <title lang="el">Django, ο Τιμωρός</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/django-unchained/django-unchained-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-maphiozos-tes-diplanes-portas-movie">
+    <title lang="el">Ο Μαφιόζος της Διπλανής Πόρτας   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-whole-nine-yards/the-whole-nine-yards-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kapote-sto-mexiko-1">
+    <title lang="el">Κάποτε στο Μεξικό   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/once-upon-a-time-in-mexico/once-upon-a-time-in-mexico-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.enas-anthropos-pou-ton-elegan-otto-1">
+    <title lang="el">Ένας Άνθρωπος που τον Έλεγαν Όττο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-man-called-otto/amancalledotto-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.words-on-bathroom-walls-1">
+    <title lang="el">Words on Bathroom Walls</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/words-on-bathroom-walls/words-on-bathroom-walls-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.okhi-mono-philoi">
+    <title lang="el">Όχι Μόνο Φίλοι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/friends-with-benefits/friends-with-benefits-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ksenodokheio-gia-terata-4-teratometamorphoseis">
+    <title lang="el">Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ksenodokheio-gia-terata-4-teratometamorphoseis/hotel-transylvania-4-transformania-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-koritsi-pou-aphesa-piso-1">
+    <title lang="el">Το Κορίτσι που Άφησα Πίσω   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/girl-interrupted/girl-interrupted-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-gkriniares-1">
+    <title lang="el">Ο Γκρινιάρης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/wizardstale/wizardstale-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.aniketoi-protathletes-1">
+    <title lang="el">Ανίκητοι Πρωταθλητές</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/when-the-game-stands-tall/when-the-game-stands-tall-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.skoteine-aletheia-1">
+    <title lang="el">Σκοτεινή Αλήθεια</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/dark-truth/a-dark-truth-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.thruloi-tou-pathous-1">
+    <title lang="el">Θρύλοι του Πάθους</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/legends-of-th-fall/legends-of-the-fall-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khapia-sphaires-kai-2000000-lires">
+    <title lang="el">Χάπια, Σφαίρες και 2.000.000 Λίρες</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/layer-cake/layercake-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.blue-valentine-1">
+    <title lang="el">Blue Valentine</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/blue-valentine/blue-valentine-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khtupemenos-apo-erota-1">
+    <title lang="el">Χτυπημένος από Έρωτα  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/punch-drunk-love/punch-drunk-love-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.400-milia-agapes-1">
+    <title lang="el">400 Μίλια Αγάπης  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-dogs-way-home/a-dogs-way-home-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khoris-dolo-2">
+    <title lang="el">Χωρίς Δόλο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/absence-of-malice/absence-of-malice-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.lail-o-philos-mou-o-krokodeilos-1">
+    <title lang="el">Λάιλ, ο Φίλος μου ο Κροκόδειλος </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/lyle-lyle-crocodile/lyle-lyle-crocodile-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ena-thauma-apo-ton-ourano-1">
+    <title lang="el">Ένα Θαύμα από τον Ουρανό</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/penguin-bloom/penguin-bloom-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.my-dog-stupid-1">
+    <title lang="el">My Dog Stupid</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/my-stupid-dog/mydogstupid-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oi-mpatsoi-tou-kholigount-1">
+    <title lang="el">Οι Μπάτσοι του Χόλιγουντ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hollywood-homicide/hollywood-homicide-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.inferno-1">
+    <title lang="el">Inferno   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/inferno/inferno-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-alogo-ton-oneiron-1">
+    <title lang="el">Το Άλογο των Ονείρων</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/dream-horse/dream-horse-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.yomeddine-1">
+    <title lang="el">Yomeddine</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/yomeddine/yomeddine-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.asanser-gia-2">
+    <title lang="el">Ασανσέρ για 2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/5flightsup/5flightsup-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-epaule-me-ta-mustika-1">
+    <title lang="el">Η Έπαυλη με τα Μυστικά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/la-quietud/la-quietud-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.hotel-artemis-1">
+    <title lang="el">Hotel Artemis</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hotel-artemis/hotelartemis-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.think-like-a-dog-1">
+    <title lang="el">Think Like a Dog</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/think-like-a-dog/thinklikeadog-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.blue-jean">
+    <title lang="el">Blue Jean</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/blue-jean/bluejean-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-noema-tou-augoustou-mikres-istories">
+    <title lang="el">Το Νόημα του Αυγούστου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mikres-istories-to-nohma-tou-aygoustou/to-nohma-toy-aygoustou-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-kanonas-tes-siopes">
+    <title lang="el">Ο Κανόνας της Σιωπής</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-company-you-keep/thecompanyyoukeep-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.amugdale">
+    <title lang="el">Αμυγδαλή </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/amygdala/amygdala-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kalokairines-diakopes">
+    <title lang="el">Διακοπές Καλοκαιρινές</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/diakopes-kalokairines/diakopeskalokairines-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ti-kolumpaei-kai-gelaei">
+    <title lang="el">Τι Κολυμπάει και Γελάει;</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/what-swims-and-laughs-new/what-swims-and-laughs-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-muthos-tes-limnes-2">
+    <title lang="el">Ο Μύθος της Λίμνης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-water-horse/the-water-horse-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.osiki">
+    <title lang="el">Οσίκι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/osiki/osiki-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.magma">
+    <title lang="el">Μάγμα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/magma/magma-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ora-gia-serph-1">
+    <title lang="el">Ώρα για Σερφ </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/surfs-up/surfsup-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.the-amazing-spider-man-3">
+    <title lang="el">The Amazing Spider-Man 2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-amazing-spider-man-2/the-amazing-spider-man-2-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.zombieland-diple-bole-1">
+    <title lang="el">Zombieland: Διπλή Βολή   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/zombieland-double-tap/zombielanddt-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tzitzipogko">
+    <title lang="el">Τζιτζιπόνγκο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tzitzipongo/tzitzipongo-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mpoemike-psukhe">
+    <title lang="el">Μποέμικη Ψυχή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/djam/djam-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tigers-are-not-afraid-1">
+    <title lang="el">Tigers Are Not Afraid</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tigers-are-not-afraid/tigers-are-not-afraid-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.10-emeres-khoris-mama">
+    <title lang="el">10 Ημέρες Χωρίς Μαμά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ten-days-without-mum-10/10dayswithoutmum-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.einai-grousouzia-na-deis-te-nuphe-prin-ton-gamo">
+    <title lang="el">Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/einai-grousouzia/grousouzianadeistinyfi-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.pilala">
+    <title lang="el">Πιλάλα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/pilala/pilala-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.nouar-protzekt">
+    <title lang="el">Νουάρ Πρότζεκτ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-noir-project/the-noir-project-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.made-in-italy-1">
+    <title lang="el">Made in Italy </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/made-in-italy/madeinitaly-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-telos-tes-diadromes-1">
+    <title lang="el">Το Τέλος της Διαδρομής</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/end-of-sentence/end-of-sentence-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-gios-mou">
+    <title lang="el">Ο Γιος μου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/my-son/myson-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oikogeneiake-eutukhia-ae">
+    <title lang="el">Οικογενειακή Eυτυχία Α.Ε.</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/family-romance/family-romance-llc-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.falling-1">
+    <title lang="el">Falling</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/falling/falling-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ektos-epokhes">
+    <title lang="el">Εκτός Εποχής</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ektos-epoxis/ektos-epoxis-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khlorio-1">
+    <title lang="el">Χλώριο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/chlorine/chlorine-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mikro-mou-ponu-1">
+    <title lang="el">Μικρό μου Πόνυ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/my-little-pony/my-little-pony-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-parelthon-tes-ouna-1">
+    <title lang="el">Το Παρελθόν της Ούνα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/una/una-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.late-night-1">
+    <title lang="el">Late Night</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/late-night/late-night-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.land">
+    <title lang="el">Land</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/land/land-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.glukia-apodrase">
+    <title lang="el">Γλυκιά Απόδραση</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/comme-un-avion/come-un-avion-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.travel-express">
+    <title lang="el">Travel Express</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/travel-express/travelexpress-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.san-kalo-koritsi">
+    <title lang="el">Σαν Καλό Κορίτσι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-good-girl/the-good-girl-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khalaroste-kurie-alen">
+    <title lang="el">Χαλαρώστε Κύριε Αλέν!</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-man-in-a-hurry/a-man-in-a-hurry-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.konan-o-barbaros-1">
+    <title lang="el">Κόναν ο Βάρβαρος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/conan-the-barbarian/conanthebarbarian-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.put-grandma-in-the-freezer">
+    <title lang="el">Βάλε τη Γιαγιά στο Ψυγείο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/put-grandma-in-the-freezer/put-grandma-in-the-freezer-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-teleutaia-nukhta-tou-phranko-amore-1">
+    <title lang="el">Η Τελευταία Νύχτα του Φράνκο Αμόρε</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-last-night-of-amore/the-last-night-of-amore-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.my-generation">
+    <title lang="el">My Generation</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/my-generation/mygeneration-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-dodekato-euaggelio">
+    <title lang="el">Το Δωδέκατο Ευαγγέλιο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/to-dodekato-evangelio/to12oevaggelio-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-kalokairi-pou-parateresa-gia-prote-phora-ton-elio-na-duei">
+    <title lang="el">Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/to-kalokairi-pou-paratirisa-gia-proti-fora/tkpppfthnd-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ta-paidia-ton-allon-1">
+    <title lang="el">Τα Παιδιά των Άλλων </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/other-peoples-children/other-peoples-children-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mama-apo-to-pouthena">
+    <title lang="el">Μαμά από το Πουθενά </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/momo/momo-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mia-istoria-tes-poles">
+    <title lang="el">Μια Ιστορία της Πόλης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/istanbul-story/instabulstory-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mrs-lowry-son">
+    <title lang="el">Mrs Lowry &amp; Son</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mrs-lowry-n-son/mrslowryson-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.giorte-tes-meteras">
+    <title lang="el">Γιορτή της Μητέρας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mothers-day/mothers-day-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tully-ta-paidia-einai-eutukhia-1">
+    <title lang="el">Tully: Tα Παιδιά Είναι Ευτυχία;  </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tully/tully-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-taxidi-1">
+    <title lang="el">Το Ταξίδι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/charter/charter-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tele-augoustou">
+    <title lang="el">Τέλη Αυγούστου </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/teli-augoustou/teli-augoustou-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ola-gia-te-metera-mou-1">
+    <title lang="el">Όλα για τη Μητέρα μου   </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/all-about-my-mother/all-about-my-mother-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.miss-violence">
+    <title lang="el">Miss Violence</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/miss-violence/missviolence-new-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.beautiful-people">
+    <title lang="el">Beautiful People </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/beatiful-people/beautifulpeople-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-omorphotere-epokhe">
+    <title lang="el"> Η Ομορφότερη Εποχή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/la-belle-saison/la-belle-saison-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.se-aute-te-khora-den-exere-kaneis-na-klaiei-1">
+    <title lang="el">Σ&#x27; Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/s-auti-ti-xwra-den-iksere-kaneis-na-klaiei/s-afti-tin-xora-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oi-athooi-1">
+    <title lang="el">Οι Αθώοι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-innocents/the-innocents-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.apate-se-mauro-phonto-1">
+    <title lang="el">Απάτη σε Μαύρο Φόντο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/carbon/carbon-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kokkinos-sunagermos-1">
+    <title lang="el">Κόκκινος Συναγερμός</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-doorman/thedoorman-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.the-drone">
+    <title lang="el">The Drone</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-drone/the-drone-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.inside-1">
+    <title lang="el">Inside</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/inside/inside-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oi-agnostoi-athenaioi">
+    <title lang="el">Οι Άγνωστοι Αθηναίοι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-unknown-athenians/the-unknown-athenians-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ena-ologramma-gia-ton-basilia-1">
+    <title lang="el">Ένα Ολόγραμμα για τον Βασιλιά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-hologram-for-the-king/a-hologram-for-the-king-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-klephtes">
+    <title lang="el">Ο Κλέφτης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-thife/the-thief-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khoris-agape-2">
+    <title lang="el">Χωρίς Aγάπη</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/loveless/loveless-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.lebiathan-1">
+    <title lang="el">Λεβιάθαν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/leviathan/leviathan-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.megalo-taxidi-tes-meras-ste-nukhta">
+    <title lang="el">Μεγάλο Ταξίδι της Μέρας στη Νύχτα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/long-days-journey-into-the-night/long-days-journey-into-night-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.hachiko-e-istoria-enos-skulou-1">
+    <title lang="el">Hachiko: Η Ιστορία ενός Σκύλου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hachico/hachi-a-dogs-tale-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.etoimoi">
+    <title lang="el">Έτοιμοι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ready/ready-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khoulieta-1">
+    <title lang="el">Χουλιέτα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/julieta/julieta-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.pinokio-1">
+    <title lang="el">Πινόκιο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/pinocchio/pinocchio-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.philoi-gia-panta">
+    <title lang="el">Φίλοι για Πάντα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/belle-sebastian/bellesebastian3-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.klephtes-me-philotimo">
+    <title lang="el">Ένας Κλέφτης... Με Φιλότιμο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/enas-kleftis-me-filotimo/enaskleftismefilotimo-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-tukhodioktes-tou-parisiou">
+    <title lang="el">Ο Τυχοδιώκτης του Παρισιού</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-emperor-of-paris/the-emperor-of-paris-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.foxtrot">
+    <title lang="el">Foxtrot</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/foxtrot-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.asterix-kai-obelix-ste-bretania-1">
+    <title lang="el">Αστερίξ και Οβελίξ στη Βρετανία</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/asterix-and-obelix-god-save-britannia/asterix-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-megalos-philikos-gigantas">
+    <title lang="el">Ο Μεγάλος Φιλικός Γίγαντας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-bfg-the-big-friendly-giant/thebfg-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.me-to-kephali-psela">
+    <title lang="el">Με το Κεφάλι Ψηλά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/la-tete-haute/la-tete-haute-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ti-sunebe-ste-deutera-1">
+    <title lang="el">Τι Συνέβη στη Δευτέρα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/what-happened-to-monday/whathappenedtomonday-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.treis-eukhes-gia-te-stakhtopouta-1">
+    <title lang="el">Τρεις Ευχές για τη Σταχτοπούτα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/three-wishes-cindirella/three-wishes-for-cinderella-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.gkogken">
+    <title lang="el">Γκωγκέν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/gauguin/gauguin-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-prosbole">
+    <title lang="el">Η Προσβολή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-insult/new/the-insult-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.men-enokhleite-parakalo">
+    <title lang="el">Μην Ενοχλείτε, Παρακαλώ</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/une-heure-de-tranquillite/new/une-heure-de-tranquillite-ertflix-poster2.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.happy-end">
+    <title lang="el">Happy End</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/happy-end/happy-end-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tetarte-445">
+    <title lang="el">Τετάρτη 04:45</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tetarti-04-45/tetarti-4-45-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-rantebou-tes-kuriakes">
+    <title lang="el">Το Ραντεβού της Κυριακής</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/to-rantevou-tis-kirakis-new/to-rantevou-tis-kyriakis-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.skhetika-me-ton-basile">
+    <title lang="el">Σχετικά με τον Βασίλη</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/sxetika-me-ton-vasili/sxetika-me-ton-vasili-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mia-thalassa-apo-dentra">
+    <title lang="el">Μια Θάλασσα από Δέντρα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-sea-of-trees/the-sea-of-trees-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.duo-meres-mia-nukhta">
+    <title lang="el">Δύο Μέρες, Μία Νύχτα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/two-days-one-night/2days1night-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-mera-tes-bastiles">
+    <title lang="el">Η Mέρα της Βαστίλης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/bastille-day/bastilleday-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.katse-phronima-1">
+    <title lang="el">Κάτσε Φρόνιμα </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-english-teacher/theenglishteacher-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-theios-tes-bioletas">
+    <title lang="el">Ο Θείος της Βιολέτας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/o-theios-tis-violetas/o-theios-ths-violettas-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ta-khrusa-mas-khronia">
+    <title lang="el">Τα Χρυσά μας Χρόνια</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/my-golden-days/my-golden-days-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.palirroia">
+    <title lang="el">Παλίρροια</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/flux/flux-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kerdizontas-tis-kardies-ton-andron-1">
+    <title lang="el">Κερδίζοντας τις Καρδιές των Ανδρών</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/charming-the-hearts-of-men/charming-the-hearts-of-men-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-prigkipissa-alani-1">
+    <title lang="el">Η Πριγκίπισσα Αλάνι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/pils-adventures/pils-adventures-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.firebug">
+    <title lang="el">Firebug</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/firebug/firebug-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.claw-machine">
+    <title lang="el">Claw Machine </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/claw-machine/claw-machine-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.pantingkton-2">
+    <title lang="el">Πάντινγκτον 2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/paddington-2/paddington2-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.emily">
+    <title lang="el">Emily</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/emily/emily-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.telephonese-sten-tzein-1">
+    <title lang="el">Τηλεφώνησε στην Τζέιν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/call-jane/call-jane-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-tukhero-panteloni">
+    <title lang="el">Το Τυχερό Παντελόνι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/to-tyxero-panteloni/to-tyxero-pantaloni-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.allothi-gia-pantremenous">
+    <title lang="el">Άλλοθι για Παντρεμένους</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/alibi/alibi-com-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-akroteri-tes-bias-1">
+    <title lang="el">Το Ακρωτήρι της Βίας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/zulu/zulu-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-diple-opse-tes-epanastases">
+    <title lang="el">Η Διπλή Όψη της Επανάστασης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/september-of-shiraz/septembersofshiraz-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-makhe-tes-epikrateses-1">
+    <title lang="el">Η Μάχη της Επικράτησης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-current-war/the-current-war-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oi-uperephanoi">
+    <title lang="el">	Οι Υπερήφανοι		</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/oi-yperifanoi/oi-yperifanoi-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.karagkiozes-o-adikemenos-tes-zoes">
+    <title lang="el">Καραγκιόζης: Ο Αδικημένος της Ζωής</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/karagiozis-oi-adikimenoi-tis-zwhs/karagiozis-oi-adikimenoi-tis-zwis-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.chuck-e-istoria-tou-pragmatikou-rocky-balboa">
+    <title lang="el">Chuck: Η Ιστορία του Πραγματικού Rocky Balboa</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/chuck/chuck-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.eroika">
+    <title lang="el">Ερόϊκα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/eroika/eroika-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oti-lampei-einai-khrusos">
+    <title lang="el">Ό,τι Λάμπει Είναι Χρυσός</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.adikos-kosmos">
+    <title lang="el">Άδικος Κόσμος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/adikos-kosmos/adikos-kosmos-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.giakari-47">
+    <title lang="el">Γιάκαρι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/yakari/yakari-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-prasino-biblio">
+    <title lang="el">Το Πράσινο Βιβλίο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/green-book/green-book-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.antirresias-suneideses-1">
+    <title lang="el">Αντιρρησίας Συνείδησης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hacksaw-ride/hacksaw-ridge-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.pabaroti">
+    <title lang="el">Παβαρότι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/pavarotti-2019/pavarotti-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.monsters-and-men">
+    <title lang="el">Monsters and Men</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/monsters-and-men/monsters-and-men-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.finding-steve-mcqueen">
+    <title lang="el">Finding Steve McQueen</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/finding-steve-mcqueen/finding-steve-mcqueen-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.despoinis-tzoulia">
+    <title lang="el">Δεσποινίς Τζούλια</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/miss-julie/missjulie-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-skone-pou-pephtei">
+    <title lang="el">Η Σκόνη που Πέφτει</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/i-skoni-pou-peftei/h-skonh-pou-peftei-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tzaki-kai-rain">
+    <title lang="el">Τζάκι και Ράιαν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/jackie-and-ryan/jackie-ryan-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.metretes-karton">
+    <title lang="el">Μετρητής Καρτών</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-card-number/the-card-counter-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.the-kiss">
+    <title lang="el">The Kiss</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-kiss/the-kiss-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-diastema-anamesa-mas">
+    <title lang="el">Το Διάστημα Ανάμεσά μας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-space-between-us/the-space-between-us-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-liakada-mesa-mou-1">
+    <title lang="el">Η Λιακάδα Μέσα μου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/let-the-sunshine-in/letthesunshinein-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.anekplerotos-gamos">
+    <title lang="el">Ανεκπλήρωτος Γάμος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/on-chesil-beach/on-chesil-beach-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mepos-eisai-o-tupos-mou">
+    <title lang="el">Μήπως Είσαι ο Τύπος μου;</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/not-my-type/not-my-type-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.apallou">
+    <title lang="el">Apallou</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/apallou/apallou-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.maure-lista">
+    <title lang="el">Μαύρη Λίστα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/black-book/black-book-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-agglia-mou-anekei">
+    <title lang="el">Η Αγγλία μού Ανήκει</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/england-is-mine/england-is-mine-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.best-sellers">
+    <title lang="el">Best Sellers</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/best-sellers/best-sellers-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.flag-day">
+    <title lang="el">Flag Day</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/flag-day/flag-day-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kathemerine-ergasime">
+    <title lang="el"> Καθημερινή Εργάσιμη</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/kathimerinh-ergasimh/working-day-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khrusopsaro">
+    <title lang="el">Χρυσόψαρο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/goldfish/goldfish-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.phusarmonika-man-mikres-istories">
+    <title lang="el">Φυσαρμόνικα Μαν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/harmonica-man/harmonica-man-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.roz-bouno-1">
+    <title lang="el">Ροζ Βουνό</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/pink-mountain/pink-mountain-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.seawolf">
+    <title lang="el">Seawolf</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/seawolf/seawolf-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khartinoi-aetoi">
+    <title lang="el">Χάρτινοι Αετοί</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hartinoi-aetoi-new/xartinoi-aetoi-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.khera-strategou">
+    <title lang="el">Χήρα Στρατηγού</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/xhra-strathgou-new/xira-stratigou-ertflix-poster-new.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.largo">
+    <title lang="el">Largo</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/largo/largo-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.memory-reloaded">
+    <title lang="el">Memory Reloaded</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/memory-reloaded/memory-reloaded-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.kineta-stoikheia-tou-antrea-siadema">
+    <title lang="el">Κινητά Στοιχεία</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/kinita-stoixeia-new/kinhta-stoixeia-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.apokhairetontas">
+    <title lang="el">Αποχαιρετώντας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/apoxairetwntas/apoxeretontas-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ela-na-sou-po">
+    <title lang="el">Έλα να σου Πω...</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ela-na-sou-pw/ela-na-sou-po-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ugraerio">
+    <title lang="el">Υγραέριο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ygraerio/ygraerio-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.13-1-1">
+    <title lang="el">13 1/2</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/13-1-2/13miso-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.lou-lena">
+    <title lang="el">Λου &amp; Λένα</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/lou-and-lena/lou-lena-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.meden-thetiko">
+    <title lang="el">Μηδέν Θετικό </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/miden-thetiko/0-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-perasma">
+    <title lang="el">Το Πέρασμα </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/to-perasma/to-perasma-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.lethe">
+    <title lang="el">Λήθη </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/lithi/lithi-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.mia-mera-ste-sagkae">
+    <title lang="el">Μια Μέρα στη Σαγκάη</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/mia-mera-stin-sangai/mia-mera-sth-shanghai-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.blackbird-1">
+    <title lang="el">Blackbird</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/blackbird/blackbird-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-anazetese-2">
+    <title lang="el">Η Αναζήτηση</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-song-of-names/the-song-of-names-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.miles-davis-birth-of-the-cool">
+    <title lang="el">Miles Davis: Birth of the Cool </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/xena-docs/miles-davis-birth-of-the-cool/miles-davis-birth-of-the-cool-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.lasi-gurna-spiti">
+    <title lang="el">Λάσι, Γύρνα Σπίτι</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/lassie-come-home/lassie-come-home-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ailo-o-mikros-eroas">
+    <title lang="el">Αϊλό: Ο Μικρός Ήρωας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/ailos-journey/ailos-journey-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-kale-suzugos-1">
+    <title lang="el">Η Καλή Σύζυγος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/how-to-be-a-good-wife/howtobegoodwife-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.power-rangers">
+    <title lang="el">Power Rangers</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/power-rangers/power-ranger-ertflix-poster.png?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.tha-ertho-konta-sou-siga-siga-1">
+    <title lang="el">Θα Έρθω Κοντά σου Σιγά-Σιγά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/rolling-to-you/rolling2u-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.hotel-kentauros">
+    <title lang="el">Hotel Κένταυρος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/hotel-kentavros/hotel-centaur-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.emploke">
+    <title lang="el">Εμπλοκή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/emploki/imbroglio-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.aerolin">
+    <title lang="el">Αερολίν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/aerolin/aerolin-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-paradeisos-epese-ste-ge">
+    <title lang="el">Ο Παράδεισος Έπεσε στη Γη </title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/it-must-be-heavean/it-must-be-heaven-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-poluthrona-sto-pezodromio-1">
+    <title lang="el">Η Πολυθρόνα στο Πεζοδρόμιο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/i-polythrona-sto-pezodromio/the-armchair-on-the-pavement-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.diabase">
+    <title lang="el">Διάβαση</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/diavasi/diabash-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.man-wanted">
+    <title lang="el">Man Wanted</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/man-wanted/man-wanted-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-kaluteros-philos-mou">
+    <title lang="el">Ο Καλύτερος Φίλος μου</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-dogs-purpose/a-dogs-purpose-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.wonder-wheel-1">
+    <title lang="el">Wonder Wheel</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/wonder-wheel/wonder-wheel-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-megale-nukhta-tes-napoles-1">
+    <title lang="el">Η Μεγάλη Νύχτα της Νάπολης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/la-paranza-dei-bambini/la-paranza-dei-bambini-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.aftersun">
+    <title lang="el">Aftersun</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/aftersun/aftersun-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.dalida">
+    <title lang="el">Dalida</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/dalida/dalida-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-geuse-tes-apistias">
+    <title lang="el">Η Γεύση της Απιστίας</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/a-taste-of-hunger/a-taste-of-hunger-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.e-epomene-apostole">
+    <title lang="el">Η Επόμενη Αποστολή</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/proxima/proxima-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-mustiko-ton-marompooun">
+    <title lang="el">Το Μυστικό των Μάρομποουν</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/marrowbone/marrowbone-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-paramuthi-ton-paramuthion">
+    <title lang="el">Το Παραμύθι των Παραμυθιών</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tale-of-tales/tale-of-tales-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.the-last-face">
+    <title lang="el">The Last Face</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-last-face/the-last-face-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.aspro-pato-1">
+    <title lang="el">Άσπρο Πάτο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/another-round/another-round-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.niote-1">
+    <title lang="el">Νιότη</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/nioti/youth-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.oi-ekkentrikoi">
+    <title lang="el">Οι Εκκεντρικοί</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/riders-of-justice/ridersofjustice-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-prodotes">
+    <title lang="el">Ο Προδότης</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/the-traitor/the-traitor-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.rantebou-ekei-psela">
+    <title lang="el">Ραντεβού Εκεί Ψηλά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/see-you-up-there/au-revoir-la-haut-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.meta-ton-gamo-1">
+    <title lang="el">Μετά τον Γάμο</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/after-the-wedding/after-the-wedding-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ethnike-odos-mias-ragismenes-kardias">
+    <title lang="el">Εθνική Οδός μιας Ραγισμένης Καρδιάς</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/highway-of-a-broken-heart/highway-of-a-broken-heart-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.phos-ek-photos-1">
+    <title lang="el">Φῶς ἐκ Φωτός</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/light-of-light/light-of-light-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.o-tenoros-1">
+    <title lang="el">Ο Τενόρος</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/tenor/tenor-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.to-klamp-ton-khorismenon">
+    <title lang="el">Το Κλαμπ των Χωρισμένων</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/divorce-club/divorce-club-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.ola-pegan-kala">
+    <title lang="el">Όλα Πήγαν Καλά</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/everything-went-fine/everything-went-fine-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+  <programme start="20250805214153 +0000" stop="20250806214153 +0000" channel="ertflix.leophoros-patesion">
+    <title lang="el">Λεωφόρος Πατησίων</title>
+    <desc lang="el">Η πλοκή δεν είναι διαθέσιμη.</desc>
+    <icon src="https://files2.app.ertflix.gr/files/movies/loeforos-patision/patisionav-ertflix-poster.jpg?m=crop&w=570&h=854" />
+  </programme>
+</tv>
