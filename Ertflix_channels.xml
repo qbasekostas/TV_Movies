@@ -1,1 +1,759 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="Ertflix Scraper - Channels">
+  <channel id="ertflix.tzoulitzoulia1">
+    <display-name lang="el">Τζούλι &amp; Τζούλια</display-name>
+  </channel>
+  <channel id="ertflix.bullettrain1">
+    <display-name lang="el">Bullet Train</display-name>
+  </channel>
+  <channel id="ertflix.emusteriodeskuriametamaura">
+    <display-name lang="el">Η Μυστηριώδης Κυρία με τα Μαύρα</display-name>
+  </channel>
+  <channel id="ertflix.kautosorizontas">
+    <display-name lang="el">Καυτός Ορίζοντας</display-name>
+  </channel>
+  <channel id="ertflix.mediterraneoonomostesthalassas1">
+    <display-name lang="el">Mediterraneo: Ο Νόμος της Θάλασσας</display-name>
+  </channel>
+  <channel id="ertflix.episemesummetokhe1">
+    <display-name lang="el">Επίσημη Συμμετοχή</display-name>
+  </channel>
+  <channel id="ertflix.oupsonoeephuge">
+    <display-name lang="el">Ουπς! Ο Νώε Έφυγε...</display-name>
+  </channel>
+  <channel id="ertflix.asterixtomustikotoumagikouzomou1">
+    <display-name lang="el">Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού</display-name>
+  </channel>
+  <channel id="ertflix.okaluteros1">
+    <display-name lang="el">Ο Καλύτερος</display-name>
+  </channel>
+  <channel id="ertflix.theduke1">
+    <display-name lang="el">The Duke</display-name>
+  </channel>
+  <channel id="ertflix.odrapetes1">
+    <display-name lang="el">Ο Δραπέτης</display-name>
+  </channel>
+  <channel id="ertflix.topaikhniditesmollu1">
+    <display-name lang="el">Το Παιχνίδι της Μόλλυ</display-name>
+  </channel>
+  <channel id="ertflix.ompatler1">
+    <display-name lang="el">Ο Μπάτλερ   </display-name>
+  </channel>
+  <channel id="ertflix.thauma">
+    <display-name lang="el">Θαύμα</display-name>
+  </channel>
+  <channel id="ertflix.tokhrusaphitourenou2">
+    <display-name lang="el">Το Χρυσάφι του Ρήνου</display-name>
+  </channel>
+  <channel id="ertflix.stoaerodromio">
+    <display-name lang="el">Στο Αεροδρόμιο</display-name>
+  </channel>
+  <channel id="ertflix.escapefrompretoria">
+    <display-name lang="el">Escape from Pretoria</display-name>
+  </channel>
+  <channel id="ertflix.ypotomeden">
+    <display-name lang="el">Υπό το Μηδέν</display-name>
+  </channel>
+  <channel id="ertflix.tokalokairitou85">
+    <display-name lang="el">Το Καλοκαίρι του &#x27;85</display-name>
+  </channel>
+  <channel id="ertflix.tigres1">
+    <display-name lang="el">Τίγρης</display-name>
+  </channel>
+  <channel id="ertflix.otouristas1">
+    <display-name lang="el">Ο Τουρίστας</display-name>
+  </channel>
+  <channel id="ertflix.earpakhte">
+    <display-name lang="el">Η Αρπαχτή</display-name>
+  </channel>
+  <channel id="ertflix.semeiouperokhes1">
+    <display-name lang="el">Σημείο Υπεροχής </display-name>
+  </channel>
+  <channel id="ertflix.mustikospraktorassarpepikheiresemazoretes">
+    <display-name lang="el">Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες</display-name>
+  </channel>
+  <channel id="ertflix.oriaantokhes1">
+    <display-name lang="el">Όρια Αντοχής  </display-name>
+  </channel>
+  <channel id="ertflix.tobankouber">
+    <display-name lang="el">Το Βανκούβερ</display-name>
+  </channel>
+  <channel id="ertflix.angrybirdsetainia1">
+    <display-name lang="el">Angry Birds: Η Ταινία 2</display-name>
+  </channel>
+  <channel id="ertflix.esummathetria">
+    <display-name lang="el">Η Συμμαθήτρια </display-name>
+  </channel>
+  <channel id="ertflix.taphterougismata">
+    <display-name lang="el">Tα Φτερουγίσματα </display-name>
+  </channel>
+  <channel id="ertflix.taxidimetondrakomou1">
+    <display-name lang="el">Ταξίδι με τον Δράκο μου</display-name>
+  </channel>
+  <channel id="ertflix.olagiatalephta1">
+    <display-name lang="el">Όλα για τα Λεφτά  </display-name>
+  </channel>
+  <channel id="ertflix.tapomeinariamiasmeras">
+    <display-name lang="el">Τ&#x27; Απομεινάρια μιας Μέρας   </display-name>
+  </channel>
+  <channel id="ertflix.fury1">
+    <display-name lang="el">Fury</display-name>
+  </channel>
+  <channel id="ertflix.hitchometrtouzeugaromatos1">
+    <display-name lang="el">Hitch, ο Μετρ του Ζευγαρώματος </display-name>
+  </channel>
+  <channel id="ertflix.district1">
+    <display-name lang="el">District 9</display-name>
+  </channel>
+  <channel id="ertflix.eptakhroniastothibet">
+    <display-name lang="el">Επτά Χρόνια στο Θιβέτ   </display-name>
+  </channel>
+  <channel id="ertflix.partigunaikon1">
+    <display-name lang="el">Πάρτι Γυναικών  </display-name>
+  </channel>
+  <channel id="ertflix.moneyball1">
+    <display-name lang="el">Moneyball</display-name>
+  </channel>
+  <channel id="ertflix.ourfriend1">
+    <display-name lang="el">Our Friend</display-name>
+  </channel>
+  <channel id="ertflix.mikraathoapsemata2">
+    <display-name lang="el">Μικρά Αθώα Ψέματα 2</display-name>
+  </channel>
+  <channel id="ertflix.djangootimoros1">
+    <display-name lang="el">Django, ο Τιμωρός</display-name>
+  </channel>
+  <channel id="ertflix.omaphiozostesdiplanesportasmovie">
+    <display-name lang="el">Ο Μαφιόζος της Διπλανής Πόρτας   </display-name>
+  </channel>
+  <channel id="ertflix.kapotestomexiko1">
+    <display-name lang="el">Κάποτε στο Μεξικό   </display-name>
+  </channel>
+  <channel id="ertflix.enasanthropospoutoneleganotto1">
+    <display-name lang="el">Ένας Άνθρωπος που τον Έλεγαν Όττο</display-name>
+  </channel>
+  <channel id="ertflix.wordsonbathroomwalls1">
+    <display-name lang="el">Words on Bathroom Walls</display-name>
+  </channel>
+  <channel id="ertflix.okhimonophiloi">
+    <display-name lang="el">Όχι Μόνο Φίλοι</display-name>
+  </channel>
+  <channel id="ertflix.ksenodokheiogiaterata4teratometamorphoseis">
+    <display-name lang="el">Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις</display-name>
+  </channel>
+  <channel id="ertflix.tokoritsipouaphesapiso1">
+    <display-name lang="el">Το Κορίτσι που Άφησα Πίσω   </display-name>
+  </channel>
+  <channel id="ertflix.ogkriniares1">
+    <display-name lang="el">Ο Γκρινιάρης</display-name>
+  </channel>
+  <channel id="ertflix.aniketoiprotathletes1">
+    <display-name lang="el">Ανίκητοι Πρωταθλητές</display-name>
+  </channel>
+  <channel id="ertflix.skoteinealetheia1">
+    <display-name lang="el">Σκοτεινή Αλήθεια</display-name>
+  </channel>
+  <channel id="ertflix.thruloitoupathous1">
+    <display-name lang="el">Θρύλοι του Πάθους</display-name>
+  </channel>
+  <channel id="ertflix.khapiasphaireskai2000000lires">
+    <display-name lang="el">Χάπια, Σφαίρες και 2.000.000 Λίρες</display-name>
+  </channel>
+  <channel id="ertflix.bluevalentine1">
+    <display-name lang="el">Blue Valentine</display-name>
+  </channel>
+  <channel id="ertflix.khtupemenosapoerota1">
+    <display-name lang="el">Χτυπημένος από Έρωτα  </display-name>
+  </channel>
+  <channel id="ertflix.400miliaagapes1">
+    <display-name lang="el">400 Μίλια Αγάπης  </display-name>
+  </channel>
+  <channel id="ertflix.khorisdolo2">
+    <display-name lang="el">Χωρίς Δόλο</display-name>
+  </channel>
+  <channel id="ertflix.lailophilosmouokrokodeilos1">
+    <display-name lang="el">Λάιλ, ο Φίλος μου ο Κροκόδειλος </display-name>
+  </channel>
+  <channel id="ertflix.enathaumaapotonourano1">
+    <display-name lang="el">Ένα Θαύμα από τον Ουρανό</display-name>
+  </channel>
+  <channel id="ertflix.mydogstupid1">
+    <display-name lang="el">My Dog Stupid</display-name>
+  </channel>
+  <channel id="ertflix.oimpatsoitoukholigount1">
+    <display-name lang="el">Οι Μπάτσοι του Χόλιγουντ</display-name>
+  </channel>
+  <channel id="ertflix.inferno1">
+    <display-name lang="el">Inferno   </display-name>
+  </channel>
+  <channel id="ertflix.toalogotononeiron1">
+    <display-name lang="el">Το Άλογο των Ονείρων</display-name>
+  </channel>
+  <channel id="ertflix.yomeddine1">
+    <display-name lang="el">Yomeddine</display-name>
+  </channel>
+  <channel id="ertflix.asansergia2">
+    <display-name lang="el">Ασανσέρ για 2</display-name>
+  </channel>
+  <channel id="ertflix.eepaulemetamustika1">
+    <display-name lang="el">Η Έπαυλη με τα Μυστικά</display-name>
+  </channel>
+  <channel id="ertflix.hotelartemis1">
+    <display-name lang="el">Hotel Artemis</display-name>
+  </channel>
+  <channel id="ertflix.thinklikeadog1">
+    <display-name lang="el">Think Like a Dog</display-name>
+  </channel>
+  <channel id="ertflix.bluejean">
+    <display-name lang="el">Blue Jean</display-name>
+  </channel>
+  <channel id="ertflix.tonoematouaugoustoumikresistories">
+    <display-name lang="el">Το Νόημα του Αυγούστου</display-name>
+  </channel>
+  <channel id="ertflix.tokanonastessiopes">
+    <display-name lang="el">Ο Κανόνας της Σιωπής</display-name>
+  </channel>
+  <channel id="ertflix.amugdale">
+    <display-name lang="el">Αμυγδαλή </display-name>
+  </channel>
+  <channel id="ertflix.kalokairinesdiakopes">
+    <display-name lang="el">Διακοπές Καλοκαιρινές</display-name>
+  </channel>
+  <channel id="ertflix.tikolumpaeikaigelaei">
+    <display-name lang="el">Τι Κολυμπάει και Γελάει;</display-name>
+  </channel>
+  <channel id="ertflix.omuthosteslimnes2">
+    <display-name lang="el">Ο Μύθος της Λίμνης</display-name>
+  </channel>
+  <channel id="ertflix.osiki">
+    <display-name lang="el">Οσίκι</display-name>
+  </channel>
+  <channel id="ertflix.magma">
+    <display-name lang="el">Μάγμα</display-name>
+  </channel>
+  <channel id="ertflix.oragiaserph1">
+    <display-name lang="el">Ώρα για Σερφ </display-name>
+  </channel>
+  <channel id="ertflix.theamazingspiderman3">
+    <display-name lang="el">The Amazing Spider-Man 2</display-name>
+  </channel>
+  <channel id="ertflix.tzitzipogko">
+    <display-name lang="el">Τζιτζιπόνγκο</display-name>
+  </channel>
+  <channel id="ertflix.mpoemikepsukhe">
+    <display-name lang="el">Μποέμικη Ψυχή</display-name>
+  </channel>
+  <channel id="ertflix.tigersarenotafraid1">
+    <display-name lang="el">Tigers Are Not Afraid</display-name>
+  </channel>
+  <channel id="ertflix.10emereskhorismama">
+    <display-name lang="el">10 Ημέρες Χωρίς Μαμά</display-name>
+  </channel>
+  <channel id="ertflix.einaigrousouzianadeistenupheprintongamo">
+    <display-name lang="el">Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο</display-name>
+  </channel>
+  <channel id="ertflix.pilala">
+    <display-name lang="el">Πιλάλα</display-name>
+  </channel>
+  <channel id="ertflix.nouarprotzekt">
+    <display-name lang="el">Νουάρ Πρότζεκτ</display-name>
+  </channel>
+  <channel id="ertflix.madeinitaly1">
+    <display-name lang="el">Made in Italy </display-name>
+  </channel>
+  <channel id="ertflix.totelostesdiadromes1">
+    <display-name lang="el">Το Τέλος της Διαδρομής</display-name>
+  </channel>
+  <channel id="ertflix.ogiosmou">
+    <display-name lang="el">Ο Γιος μου</display-name>
+  </channel>
+  <channel id="ertflix.oikogeneiakeeutukhiaae">
+    <display-name lang="el">Οικογενειακή Eυτυχία Α.Ε.</display-name>
+  </channel>
+  <channel id="ertflix.falling1">
+    <display-name lang="el">Falling</display-name>
+  </channel>
+  <channel id="ertflix.ektosepokhes">
+    <display-name lang="el">Εκτός Εποχής</display-name>
+  </channel>
+  <channel id="ertflix.khlorio1">
+    <display-name lang="el">Χλώριο</display-name>
+  </channel>
+  <channel id="ertflix.mikromouponu1">
+    <display-name lang="el">Μικρό μου Πόνυ</display-name>
+  </channel>
+  <channel id="ertflix.toparelthontesouna1">
+    <display-name lang="el">Το Παρελθόν της Ούνα</display-name>
+  </channel>
+  <channel id="ertflix.latenight1">
+    <display-name lang="el">Late Night</display-name>
+  </channel>
+  <channel id="ertflix.land">
+    <display-name lang="el">Land</display-name>
+  </channel>
+  <channel id="ertflix.glukiaapodrase">
+    <display-name lang="el">Γλυκιά Απόδραση</display-name>
+  </channel>
+  <channel id="ertflix.travelexpress">
+    <display-name lang="el">Travel Express</display-name>
+  </channel>
+  <channel id="ertflix.sankalokoritsi">
+    <display-name lang="el">Σαν Καλό Κορίτσι</display-name>
+  </channel>
+  <channel id="ertflix.khalarostekuriealen">
+    <display-name lang="el">Χαλαρώστε Κύριε Αλέν!</display-name>
+  </channel>
+  <channel id="ertflix.konanobarbaros1">
+    <display-name lang="el">Κόναν ο Βάρβαρος</display-name>
+  </channel>
+  <channel id="ertflix.putgrandmainthefreezer">
+    <display-name lang="el">Βάλε τη Γιαγιά στο Ψυγείο</display-name>
+  </channel>
+  <channel id="ertflix.eteleutaianukhtatouphrankoamore1">
+    <display-name lang="el">Η Τελευταία Νύχτα του Φράνκο Αμόρε</display-name>
+  </channel>
+  <channel id="ertflix.mygeneration">
+    <display-name lang="el">My Generation</display-name>
+  </channel>
+  <channel id="ertflix.tododekatoeuaggelio">
+    <display-name lang="el">Το Δωδέκατο Ευαγγέλιο</display-name>
+  </channel>
+  <channel id="ertflix.tokalokairipouparateresagiaprotephoratonelionaduei">
+    <display-name lang="el">Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει </display-name>
+  </channel>
+  <channel id="ertflix.tapaidiatonallon1">
+    <display-name lang="el">Τα Παιδιά των Άλλων </display-name>
+  </channel>
+  <channel id="ertflix.mamaapotopouthena">
+    <display-name lang="el">Μαμά από το Πουθενά </display-name>
+  </channel>
+  <channel id="ertflix.miaistoriatespoles">
+    <display-name lang="el">Μια Ιστορία της Πόλης</display-name>
+  </channel>
+  <channel id="ertflix.mrslowryson">
+    <display-name lang="el">Mrs Lowry &amp; Son</display-name>
+  </channel>
+  <channel id="ertflix.giortetesmeteras">
+    <display-name lang="el">Γιορτή της Μητέρας</display-name>
+  </channel>
+  <channel id="ertflix.tullytapaidiaeinaieutukhia1">
+    <display-name lang="el">Tully: Tα Παιδιά Είναι Ευτυχία;  </display-name>
+  </channel>
+  <channel id="ertflix.totaxidi1">
+    <display-name lang="el">Το Ταξίδι</display-name>
+  </channel>
+  <channel id="ertflix.teleaugoustou">
+    <display-name lang="el">Τέλη Αυγούστου </display-name>
+  </channel>
+  <channel id="ertflix.olagiatemeteramou1">
+    <display-name lang="el">Όλα για τη Μητέρα μου   </display-name>
+  </channel>
+  <channel id="ertflix.missviolence">
+    <display-name lang="el">Miss Violence</display-name>
+  </channel>
+  <channel id="ertflix.beautifulpeople">
+    <display-name lang="el">Beautiful People </display-name>
+  </channel>
+  <channel id="ertflix.eomorphotereepokhe">
+    <display-name lang="el"> Η Ομορφότερη Εποχή</display-name>
+  </channel>
+  <channel id="ertflix.seautetekhoradenexerekaneisnaklaiei1">
+    <display-name lang="el">Σ&#x27; Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει</display-name>
+  </channel>
+  <channel id="ertflix.oiathooi1">
+    <display-name lang="el">Οι Αθώοι</display-name>
+  </channel>
+  <channel id="ertflix.apatesemaurophonto1">
+    <display-name lang="el">Απάτη σε Μαύρο Φόντο</display-name>
+  </channel>
+  <channel id="ertflix.kokkinossunagermos1">
+    <display-name lang="el">Κόκκινος Συναγερμός</display-name>
+  </channel>
+  <channel id="ertflix.thedrone">
+    <display-name lang="el">The Drone</display-name>
+  </channel>
+  <channel id="ertflix.inside1">
+    <display-name lang="el">Inside</display-name>
+  </channel>
+  <channel id="ertflix.oiagnostoiathenaioi">
+    <display-name lang="el">Οι Άγνωστοι Αθηναίοι</display-name>
+  </channel>
+  <channel id="ertflix.enaologrammagiatonbasilia1">
+    <display-name lang="el">Ένα Ολόγραμμα για τον Βασιλιά</display-name>
+  </channel>
+  <channel id="ertflix.oklephtes">
+    <display-name lang="el">Ο Κλέφτης</display-name>
+  </channel>
+  <channel id="ertflix.khorisagape2">
+    <display-name lang="el">Χωρίς Aγάπη</display-name>
+  </channel>
+  <channel id="ertflix.lebiathan1">
+    <display-name lang="el">Λεβιάθαν</display-name>
+  </channel>
+  <channel id="ertflix.megalotaxiditesmerasstenukhta">
+    <display-name lang="el">Μεγάλο Ταξίδι της Μέρας στη Νύχτα</display-name>
+  </channel>
+  <channel id="ertflix.hachikoeistoriaenosskulou1">
+    <display-name lang="el">Hachiko: Η Ιστορία ενός Σκύλου</display-name>
+  </channel>
+  <channel id="ertflix.etoimoi">
+    <display-name lang="el">Έτοιμοι</display-name>
+  </channel>
+  <channel id="ertflix.khoulieta1">
+    <display-name lang="el">Χουλιέτα</display-name>
+  </channel>
+  <channel id="ertflix.pinokio1">
+    <display-name lang="el">Πινόκιο</display-name>
+  </channel>
+  <channel id="ertflix.philoigiapanta">
+    <display-name lang="el">Φίλοι για Πάντα</display-name>
+  </channel>
+  <channel id="ertflix.klephtesmephilotimo">
+    <display-name lang="el">Ένας Κλέφτης... Με Φιλότιμο</display-name>
+  </channel>
+  <channel id="ertflix.otukhodioktestouparisiou">
+    <display-name lang="el">Ο Τυχοδιώκτης του Παρισιού</display-name>
+  </channel>
+  <channel id="ertflix.foxtrot">
+    <display-name lang="el">Foxtrot</display-name>
+  </channel>
+  <channel id="ertflix.asterixkaiobelixstebretania1">
+    <display-name lang="el">Αστερίξ και Οβελίξ στη Βρετανία</display-name>
+  </channel>
+  <channel id="ertflix.omegalosphilikosgigantas">
+    <display-name lang="el">Ο Μεγάλος Φιλικός Γίγαντας</display-name>
+  </channel>
+  <channel id="ertflix.metokephalipsela">
+    <display-name lang="el">Με το Κεφάλι Ψηλά</display-name>
+  </channel>
+  <channel id="ertflix.tisunebestedeutera1">
+    <display-name lang="el">Τι Συνέβη στη Δευτέρα</display-name>
+  </channel>
+  <channel id="ertflix.treiseukhesgiatestakhtopouta1">
+    <display-name lang="el">Τρεις Ευχές για τη Σταχτοπούτα</display-name>
+  </channel>
+  <channel id="ertflix.gkogken">
+    <display-name lang="el">Γκωγκέν</display-name>
+  </channel>
+  <channel id="ertflix.eprosbole">
+    <display-name lang="el">Η Προσβολή</display-name>
+  </channel>
+  <channel id="ertflix.menenokhleiteparakalo">
+    <display-name lang="el">Μην Ενοχλείτε, Παρακαλώ</display-name>
+  </channel>
+  <channel id="ertflix.happyend">
+    <display-name lang="el">Happy End</display-name>
+  </channel>
+  <channel id="ertflix.tetarte445">
+    <display-name lang="el">Τετάρτη 04:45</display-name>
+  </channel>
+  <channel id="ertflix.torantebouteskuriakes">
+    <display-name lang="el">Το Ραντεβού της Κυριακής</display-name>
+  </channel>
+  <channel id="ertflix.skhetikametonbasile">
+    <display-name lang="el">Σχετικά με τον Βασίλη</display-name>
+  </channel>
+  <channel id="ertflix.miathalassaapodentra">
+    <display-name lang="el">Μια Θάλασσα από Δέντρα</display-name>
+  </channel>
+  <channel id="ertflix.duomeresmianukhta">
+    <display-name lang="el">Δύο Μέρες, Μία Νύχτα</display-name>
+  </channel>
+  <channel id="ertflix.emeratesbastiles">
+    <display-name lang="el">Η Mέρα της Βαστίλης</display-name>
+  </channel>
+  <channel id="ertflix.katsephronima1">
+    <display-name lang="el">Κάτσε Φρόνιμα </display-name>
+  </channel>
+  <channel id="ertflix.otheiostesbioletas">
+    <display-name lang="el">Ο Θείος της Βιολέτας</display-name>
+  </channel>
+  <channel id="ertflix.takhrusamaskhronia">
+    <display-name lang="el">Τα Χρυσά μας Χρόνια</display-name>
+  </channel>
+  <channel id="ertflix.palirroia">
+    <display-name lang="el">Παλίρροια</display-name>
+  </channel>
+  <channel id="ertflix.kerdizontastiskardiestonandron1">
+    <display-name lang="el">Κερδίζοντας τις Καρδιές των Ανδρών</display-name>
+  </channel>
+  <channel id="ertflix.eprigkipissaalani1">
+    <display-name lang="el">Η Πριγκίπισσα Αλάνι</display-name>
+  </channel>
+  <channel id="ertflix.firebug">
+    <display-name lang="el">Firebug</display-name>
+  </channel>
+  <channel id="ertflix.clawmachine">
+    <display-name lang="el">Claw Machine </display-name>
+  </channel>
+  <channel id="ertflix.pantingkton2">
+    <display-name lang="el">Πάντινγκτον 2</display-name>
+  </channel>
+  <channel id="ertflix.emily">
+    <display-name lang="el">Emily</display-name>
+  </channel>
+  <channel id="ertflix.telephonesestentzein1">
+    <display-name lang="el">Τηλεφώνησε στην Τζέιν</display-name>
+  </channel>
+  <channel id="ertflix.totukheropanteloni">
+    <display-name lang="el">Το Τυχερό Παντελόνι</display-name>
+  </channel>
+  <channel id="ertflix.allothigiapantremenous">
+    <display-name lang="el">Άλλοθι για Παντρεμένους</display-name>
+  </channel>
+  <channel id="ertflix.toakroteritesbias1">
+    <display-name lang="el">Το Ακρωτήρι της Βίας</display-name>
+  </channel>
+  <channel id="ertflix.edipleopsetesepanastases">
+    <display-name lang="el">Η Διπλή Όψη της Επανάστασης</display-name>
+  </channel>
+  <channel id="ertflix.emakhetesepikrateses1">
+    <display-name lang="el">Η Μάχη της Επικράτησης</display-name>
+  </channel>
+  <channel id="ertflix.oiuperephanoi">
+    <display-name lang="el">	Οι Υπερήφανοι		</display-name>
+  </channel>
+  <channel id="ertflix.karagkiozesoadikemenosteszoes">
+    <display-name lang="el">Καραγκιόζης: Ο Αδικημένος της Ζωής</display-name>
+  </channel>
+  <channel id="ertflix.chuckeistoriatoupragmatikourockybalboa">
+    <display-name lang="el">Chuck: Η Ιστορία του Πραγματικού Rocky Balboa</display-name>
+  </channel>
+  <channel id="ertflix.eroika">
+    <display-name lang="el">Ερόϊκα</display-name>
+  </channel>
+  <channel id="ertflix.otilampeieinaikhrusos">
+    <display-name lang="el">Ό,τι Λάμπει Είναι Χρυσός</display-name>
+  </channel>
+  <channel id="ertflix.adikoskosmos">
+    <display-name lang="el">Άδικος Κόσμος</display-name>
+  </channel>
+  <channel id="ertflix.giakari47">
+    <display-name lang="el">Γιάκαρι</display-name>
+  </channel>
+  <channel id="ertflix.toprasinobiblio">
+    <display-name lang="el">Το Πράσινο Βιβλίο</display-name>
+  </channel>
+  <channel id="ertflix.antirresiassuneideses1">
+    <display-name lang="el">Αντιρρησίας Συνείδησης</display-name>
+  </channel>
+  <channel id="ertflix.pabaroti">
+    <display-name lang="el">Παβαρότι</display-name>
+  </channel>
+  <channel id="ertflix.monstersandmen">
+    <display-name lang="el">Monsters and Men</display-name>
+  </channel>
+  <channel id="ertflix.findingstevemcqueen">
+    <display-name lang="el">Finding Steve McQueen</display-name>
+  </channel>
+  <channel id="ertflix.despoinistzoulia">
+    <display-name lang="el">Δεσποινίς Τζούλια</display-name>
+  </channel>
+  <channel id="ertflix.eskonepoupephtei">
+    <display-name lang="el">Η Σκόνη που Πέφτει</display-name>
+  </channel>
+  <channel id="ertflix.tzakikairain">
+    <display-name lang="el">Τζάκι και Ράιαν</display-name>
+  </channel>
+  <channel id="ertflix.metreteskarton">
+    <display-name lang="el">Μετρητής Καρτών</display-name>
+  </channel>
+  <channel id="ertflix.thekiss">
+    <display-name lang="el">The Kiss</display-name>
+  </channel>
+  <channel id="ertflix.todiastemaanamesamas">
+    <display-name lang="el">Το Διάστημα Ανάμεσά μας</display-name>
+  </channel>
+  <channel id="ertflix.eliakadamesamou1">
+    <display-name lang="el">Η Λιακάδα Μέσα μου</display-name>
+  </channel>
+  <channel id="ertflix.anekplerotosgamos">
+    <display-name lang="el">Ανεκπλήρωτος Γάμος</display-name>
+  </channel>
+  <channel id="ertflix.meposeisaiotuposmou">
+    <display-name lang="el">Μήπως Είσαι ο Τύπος μου;</display-name>
+  </channel>
+  <channel id="ertflix.apallou">
+    <display-name lang="el">Apallou</display-name>
+  </channel>
+  <channel id="ertflix.maurelista">
+    <display-name lang="el">Μαύρη Λίστα</display-name>
+  </channel>
+  <channel id="ertflix.eaggliamouanekei">
+    <display-name lang="el">Η Αγγλία μού Ανήκει</display-name>
+  </channel>
+  <channel id="ertflix.bestsellers">
+    <display-name lang="el">Best Sellers</display-name>
+  </channel>
+  <channel id="ertflix.flagday">
+    <display-name lang="el">Flag Day</display-name>
+  </channel>
+  <channel id="ertflix.kathemerineergasime">
+    <display-name lang="el"> Καθημερινή Εργάσιμη</display-name>
+  </channel>
+  <channel id="ertflix.khrusopsaro">
+    <display-name lang="el">Χρυσόψαρο</display-name>
+  </channel>
+  <channel id="ertflix.phusarmonikamanmikresistories">
+    <display-name lang="el">Φυσαρμόνικα Μαν</display-name>
+  </channel>
+  <channel id="ertflix.rozbouno1">
+    <display-name lang="el">Ροζ Βουνό</display-name>
+  </channel>
+  <channel id="ertflix.seawolf">
+    <display-name lang="el">Seawolf</display-name>
+  </channel>
+  <channel id="ertflix.khartinoiaetoi">
+    <display-name lang="el">Χάρτινοι Αετοί</display-name>
+  </channel>
+  <channel id="ertflix.kherastrategou">
+    <display-name lang="el">Χήρα Στρατηγού</display-name>
+  </channel>
+  <channel id="ertflix.largo">
+    <display-name lang="el">Largo</display-name>
+  </channel>
+  <channel id="ertflix.memoryreloaded">
+    <display-name lang="el">Memory Reloaded</display-name>
+  </channel>
+  <channel id="ertflix.kinetastoikheiatouantreasiadema">
+    <display-name lang="el">Κινητά Στοιχεία</display-name>
+  </channel>
+  <channel id="ertflix.apokhairetontas">
+    <display-name lang="el">Αποχαιρετώντας</display-name>
+  </channel>
+  <channel id="ertflix.elanasoupo">
+    <display-name lang="el">Έλα να σου Πω...</display-name>
+  </channel>
+  <channel id="ertflix.ugraerio">
+    <display-name lang="el">Υγραέριο</display-name>
+  </channel>
+  <channel id="ertflix.1311">
+    <display-name lang="el">13 1/2</display-name>
+  </channel>
+  <channel id="ertflix.loulena">
+    <display-name lang="el">Λου &amp; Λένα</display-name>
+  </channel>
+  <channel id="ertflix.medenthetiko">
+    <display-name lang="el">Μηδέν Θετικό </display-name>
+  </channel>
+  <channel id="ertflix.toperasma">
+    <display-name lang="el">Το Πέρασμα </display-name>
+  </channel>
+  <channel id="ertflix.lethe">
+    <display-name lang="el">Λήθη </display-name>
+  </channel>
+  <channel id="ertflix.miamerastesagkae">
+    <display-name lang="el">Μια Μέρα στη Σαγκάη</display-name>
+  </channel>
+  <channel id="ertflix.blackbird1">
+    <display-name lang="el">Blackbird</display-name>
+  </channel>
+  <channel id="ertflix.eanazetese2">
+    <display-name lang="el">Η Αναζήτηση</display-name>
+  </channel>
+  <channel id="ertflix.milesdavisbirthofthecool">
+    <display-name lang="el">Miles Davis: Birth of the Cool </display-name>
+  </channel>
+  <channel id="ertflix.lasigurnaspiti">
+    <display-name lang="el">Λάσι, Γύρνα Σπίτι</display-name>
+  </channel>
+  <channel id="ertflix.ailoomikroseroas">
+    <display-name lang="el">Αϊλό: Ο Μικρός Ήρωας</display-name>
+  </channel>
+  <channel id="ertflix.ekalesuzugos1">
+    <display-name lang="el">Η Καλή Σύζυγος</display-name>
+  </channel>
+  <channel id="ertflix.powerrangers">
+    <display-name lang="el">Power Rangers</display-name>
+  </channel>
+  <channel id="ertflix.thaerthokontasousigasiga1">
+    <display-name lang="el">Θα Έρθω Κοντά σου Σιγά-Σιγά</display-name>
+  </channel>
+  <channel id="ertflix.hotelkentauros">
+    <display-name lang="el">Hotel Κένταυρος</display-name>
+  </channel>
+  <channel id="ertflix.emploke">
+    <display-name lang="el">Εμπλοκή</display-name>
+  </channel>
+  <channel id="ertflix.aerolin">
+    <display-name lang="el">Αερολίν</display-name>
+  </channel>
+  <channel id="ertflix.oparadeisosepesestege">
+    <display-name lang="el">Ο Παράδεισος Έπεσε στη Γη </display-name>
+  </channel>
+  <channel id="ertflix.epoluthronastopezodromio1">
+    <display-name lang="el">Η Πολυθρόνα στο Πεζοδρόμιο</display-name>
+  </channel>
+  <channel id="ertflix.diabase">
+    <display-name lang="el">Διάβαση</display-name>
+  </channel>
+  <channel id="ertflix.manwanted">
+    <display-name lang="el">Man Wanted</display-name>
+  </channel>
+  <channel id="ertflix.okaluterosphilosmou">
+    <display-name lang="el">Ο Καλύτερος Φίλος μου</display-name>
+  </channel>
+  <channel id="ertflix.wonderwheel1">
+    <display-name lang="el">Wonder Wheel</display-name>
+  </channel>
+  <channel id="ertflix.emegalenukhtatesnapoles1">
+    <display-name lang="el">Η Μεγάλη Νύχτα της Νάπολης</display-name>
+  </channel>
+  <channel id="ertflix.aftersun">
+    <display-name lang="el">Aftersun</display-name>
+  </channel>
+  <channel id="ertflix.dalida">
+    <display-name lang="el">Dalida</display-name>
+  </channel>
+  <channel id="ertflix.egeusetesapistias">
+    <display-name lang="el">Η Γεύση της Απιστίας</display-name>
+  </channel>
+  <channel id="ertflix.eepomeneapostole">
+    <display-name lang="el">Η Επόμενη Αποστολή</display-name>
+  </channel>
+  <channel id="ertflix.tomustikotonmarompooun">
+    <display-name lang="el">Το Μυστικό των Μάρομποουν</display-name>
+  </channel>
+  <channel id="ertflix.toparamuthitonparamuthion">
+    <display-name lang="el">Το Παραμύθι των Παραμυθιών</display-name>
+  </channel>
+  <channel id="ertflix.thelastface">
+    <display-name lang="el">The Last Face</display-name>
+  </channel>
+  <channel id="ertflix.aspropato1">
+    <display-name lang="el">Άσπρο Πάτο</display-name>
+  </channel>
+  <channel id="ertflix.niote1">
+    <display-name lang="el">Νιότη</display-name>
+  </channel>
+  <channel id="ertflix.oiekkentrikoi">
+    <display-name lang="el">Οι Εκκεντρικοί</display-name>
+  </channel>
+  <channel id="ertflix.oprodotes">
+    <display-name lang="el">Ο Προδότης</display-name>
+  </channel>
+  <channel id="ertflix.rantebouekeipsela">
+    <display-name lang="el">Ραντεβού Εκεί Ψηλά</display-name>
+  </channel>
+  <channel id="ertflix.metatongamo1">
+    <display-name lang="el">Μετά τον Γάμο</display-name>
+  </channel>
+  <channel id="ertflix.ethnikeodosmiasragismeneskardias">
+    <display-name lang="el">Εθνική Οδός μιας Ραγισμένης Καρδιάς</display-name>
+  </channel>
+  <channel id="ertflix.phosekphotos1">
+    <display-name lang="el">Φῶς ἐκ Φωτός</display-name>
+  </channel>
+  <channel id="ertflix.otenoros1">
+    <display-name lang="el">Ο Τενόρος</display-name>
+  </channel>
+  <channel id="ertflix.toklamptonkhorismenon">
+    <display-name lang="el">Το Κλαμπ των Χωρισμένων</display-name>
+  </channel>
+  <channel id="ertflix.olapegankala">
+    <display-name lang="el">Όλα Πήγαν Καλά</display-name>
+  </channel>
+  <channel id="ertflix.leophorospatesion">
+    <display-name lang="el">Λεωφόρος Πατησίων</display-name>
+  </channel>
+</tv>
