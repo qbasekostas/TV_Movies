@@ -1,503 +1,754 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/qbasekostas/TV_Movies/refs/heads/main/Ertflix_epg.xml.gz"
-#EXTINF:-1 tvg-id="ertflix.battleoftheclasses1" tvg-logo="https://files2.app.ertflix.gr/files/movies/battle-of-the-classes/la-lutte-des-classes-ertflix-poster.jpg?m=crop&w=570&h=854",Battle of the Classes (2019)
-#SERVICE 5002:0:1:3E8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbattle-of-the-classes%2Fbattle-of-the-classes%2Findex.m3u8:Battle of the Classes
-#EXTINF:-1 tvg-id="ertflix.tzoulitzoulia1" tvg-logo="https://files2.app.ertflix.gr/files/movies/julie-julia/julie-julia-ertflix-poster.jpg?m=crop&w=570&h=854",Τζούλι & Τζούλια (2009)
-#SERVICE 5002:0:1:3E9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fjulie-julia-ms-drm-n%2Fjulie-julia-ms-drm-n%2Fplaylist.m3u8:Τζούλι & Τζούλια
-#EXTINF:-1 tvg-id="ertflix.bullettrain1" tvg-logo="https://files2.app.ertflix.gr/files/movies/bullet-train/bullet-train-ertflix-poster.png?m=crop&w=570&h=854",Bullet Train (2022)
-#SERVICE 5002:0:1:3EA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbullet-train-drm-n%2Fbullet-train-drm-n%2Fplaylist.m3u8:Bullet Train
-#EXTINF:-1 tvg-id="ertflix.emusteriodeskuriametamaura" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-notorious-landlady/notoriuslandlady-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μυστηριώδης Κυρία με τα Μαύρα (1962)
-#SERVICE 5002:0:1:3EB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fnotorious-landlady-drm-n%2Fnotorious-landlady-drm-n%2Fplaylist.m3u8:Η Μυστηριώδης Κυρία με τα Μαύρα
-#EXTINF:-1 tvg-id="ertflix.kautosorizontas" tvg-logo="https://files2.app.ertflix.gr/files/movies/burning-horizon/burning-horizon-ertflix-poster.jpg?m=crop&w=570&h=854",Καυτός Ορίζοντας
-#SERVICE 5002:0:1:3EC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fkautos-orizontas-mikres-istories%2Fkautos-orizontas-mikres-istories%2Findex.m3u8:Καυτός Ορίζοντας
-#EXTINF:-1 tvg-id="ertflix.mediterraneoonomostesthalassas1" tvg-logo="https://files2.app.ertflix.gr/files/movies/mediterraneo-the-low-of-the-sea/mediterraneo-the-law-of-the-sea-ertflix-poster.jpg?m=crop&w=570&h=854",Mediterraneo: Ο Νόμος της Θάλασσας (2021)
-#SERVICE 5002:0:1:3ED:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmediterraneo-the-law-of-the-sea%2Fmediterraneo-the-law-of-the-sea%2Findex.m3u8:Mediterraneo: Ο Νόμος της Θάλασσας
-#EXTINF:-1 tvg-id="ertflix.episemesummetokhe1" tvg-logo="https://files2.app.ertflix.gr/files/movies/official-competition/official-competition-ertflix-poster.jpg?m=crop&w=570&h=854",Επίσημη Συμμετοχή (2021)
-#SERVICE 5002:0:1:3EE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fofficial-competition%2Fofficial-competition%2Findex.m3u8:Επίσημη Συμμετοχή
-#EXTINF:-1 tvg-id="ertflix.oupsonoeephuge" tvg-logo="https://files2.app.ertflix.gr/files/paidika/oops-noah-is-gone/oops-noah-is-gone-ertflix-poster.jpg?m=crop&w=570&h=854",Ουπς! Ο Νώε Έφυγε... (2015)
-#SERVICE 5002:0:1:3EF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Foops-noah-is-gone%2Foops-noah-is-gone%2Findex.m3u8:Ουπς! Ο Νώε Έφυγε...
-#EXTINF:-1 tvg-id="ertflix.asterixtomustikotoumagikouzomou1" tvg-logo="https://files2.app.ertflix.gr/files/movies/asterix-the-secret-of-th-magic-potion-magiqu/asterix-the-secret-of-the-magic-potion-ertflix-poster.jpg?m=crop&w=570&h=854",Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού
-#SERVICE 5002:0:1:3F0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fasterix-the-secret-of-the-magic-potion%2Fasterix-the-secret-of-the-magic-potion%2Findex.m3u8:Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού
-#EXTINF:-1 tvg-id="ertflix.okaluteros1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-natural/the-natural-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Καλύτερος (2025)
-#SERVICE 5002:0:1:3F1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Foutput1%2Fthe-natural%2Fthe-natural%2Fplaylist.m3u8:Ο Καλύτερος
-#EXTINF:-1 tvg-id="ertflix.theduke1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-duke/the-duke-ertflix-poster.jpg?m=crop&w=570&h=854",The Duke (2021)
-#SERVICE 5002:0:1:3F2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Foutput1%2Fthe-duke%2Fthe-duke%2Fplaylist.m3u8:The Duke
-#EXTINF:-1 tvg-id="ertflix.odrapetes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/o-drapetis-1967/o-drapetis-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Δραπέτης (1991)
-#SERVICE 5002:0:1:3F3:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fo-drapetis%2Fo-drapetis%2Findex.m3u8:Ο Δραπέτης
-#EXTINF:-1 tvg-id="ertflix.topaikhniditesmollu1" tvg-logo="https://files2.app.ertflix.gr/files/movies/mollys-game/mollys-game-ertflix-poster.png?m=crop&w=570&h=854",Το Παιχνίδι της Μόλλυ (2017)
-#SERVICE 5002:0:1:3F4:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmollys-game%2Fmollys-game%2Findex.m3u8:Το Παιχνίδι της Μόλλυ
-#EXTINF:-1 tvg-id="ertflix.ompatler1" tvg-logo="https://files2.app.ertflix.gr/files/movies/lee-daniels-the-butler/lee-daniels-the-butler-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μπάτλερ    (2013)
-#SERVICE 5002:0:1:3F5:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flee-daniel-is-the-butler%2Flee-daniel-is-the-butler%2Findex.m3u8:Ο Μπάτλερ   
-#EXTINF:-1 tvg-id="ertflix.thauma" tvg-logo="https://files2.app.ertflix.gr/files/movies/wonder/wonder-ertflix-poster.jpg?m=crop&w=570&h=854",Θαύμα (2025)
-#SERVICE 5002:0:1:3F6:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fwonder%2Fwonder%2Findex.m3u8:Θαύμα
-#EXTINF:-1 tvg-id="ertflix.tokhrusaphitourenou2" tvg-logo="https://files2.app.ertflix.gr/files/movies/rheingold/rheingold-ertflix-poster.jpg?m=crop&w=570&h=854",Το Χρυσάφι του Ρήνου (2022)
-#SERVICE 5002:0:1:3F7:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Frhinegold%2Frhinegold%2Findex.m3u8:Το Χρυσάφι του Ρήνου
-#EXTINF:-1 tvg-id="ertflix.stoaerodromio" tvg-logo="https://files2.app.ertflix.gr/files/movies/sto-aerodromio/sto-aerodromio-ertflix-poster.jpg?m=crop&w=570&h=854",Στο Αεροδρόμιο (2021)
-#SERVICE 5002:0:1:3F8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsto-aedromio%2Fsto-aedromio%2Findex.m3u8:Στο Αεροδρόμιο
-#EXTINF:-1 tvg-id="ertflix.escapefrompretoria" tvg-logo="https://files2.app.ertflix.gr/files/movies/escape-from-pretoria/escape-from-pretoria-ertflix-poster.jpg?m=crop&w=570&h=854",Escape from Pretoria (2020)
-#SERVICE 5002:0:1:3F9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fescape-from-pretoria%2Fescape-from-pretoria%2Findex.m3u8:Escape from Pretoria
-#EXTINF:-1 tvg-id="ertflix.ypotomeden" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-frozen-ground/thefrozenground-ertflix-poster.jpg?m=crop&w=570&h=854",Υπό το Μηδέν (1930)
-#SERVICE 5002:0:1:3FA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffrozen-ground%2Ffrozen-ground%2Findex.m3u8:Υπό το Μηδέν
-#EXTINF:-1 tvg-id="ertflix.tokalokairitou85" tvg-logo="https://files2.app.ertflix.gr/files/movies/summer-of-85/summer-of-85-ertflix-poster.jpg?m=crop&w=570&h=854",Το Καλοκαίρι του '85 (2020)
-#SERVICE 5002:0:1:3FB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsummer-of-85%2Fsummer-of-85%2Findex.m3u8:Το Καλοκαίρι του '85
-#EXTINF:-1 tvg-id="ertflix.tigres1" tvg-logo="https://files2.app.ertflix.gr/files/movies/tiger/tigru-ertflix-poster.jpg?m=crop&w=570&h=854",Τίγρης (2024)
-#SERVICE 5002:0:1:3FC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftiger%2Ftiger%2Findex.m3u8:Τίγρης
-#EXTINF:-1 tvg-id="ertflix.otouristas1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-tourist-n/the-tourist-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τουρίστας (2010)
-#SERVICE 5002:0:1:3FD:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-tourist%2Fthe-tourist%2Fplaylist.m3u8:Ο Τουρίστας
-#EXTINF:-1 tvg-id="ertflix.earpakhte" tvg-logo="https://files2.app.ertflix.gr/files/movies/snatch/snatch-ertflix-poster.jpg?m=crop&w=570&h=854",Η Αρπαχτή (2000)
-#SERVICE 5002:0:1:3FE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsnatch-new2%2Fsnatch-new2%2Fplaylist.m3u8:Η Αρπαχτή
-#EXTINF:-1 tvg-id="ertflix.semeiouperokhes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/vantage-point/vantage-point-ertflix-poster.jpg?m=crop&w=570&h=854",Σημείο Υπεροχής  (2008)
-#SERVICE 5002:0:1:3FF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fvantage_point%2Fvantage_point%2Fplaylist.m3u8:Σημείο Υπεροχής 
-#EXTINF:-1 tvg-id="ertflix.mustikospraktorassarpepikheiresemazoretes" tvg-logo="https://files2.app.ertflix.gr/files/movies/man-of-the-house/man-of-the-house-ertflix-poster.jpg?m=crop&w=570&h=854",Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες
-#SERVICE 5002:0:1:400:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fman-of-the-house-2005%2Fman-of-the-house-2005%2Fplaylist.m3u8:Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες
-#EXTINF:-1 tvg-id="ertflix.oriaantokhes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/vertical-limit/vertical-limit-ertflix-poster.jpg?m=crop&w=570&h=854",Όρια Αντοχής   (2000)
-#SERVICE 5002:0:1:401:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fvertical-limit%2Fvertical-limit%2Fplaylist.m3u8:Όρια Αντοχής  
-#EXTINF:-1 tvg-id="ertflix.tobankouber" tvg-logo="https://files2.app.ertflix.gr/files/movies/vancouver/to-vancouver-ertflix-poster.png?m=crop&w=570&h=854",Το Βανκούβερ (2021)
-#SERVICE 5002:0:1:402:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-vancouver-n%2Fto-vancouver-n%2Findex.m3u8:Το Βανκούβερ
-#EXTINF:-1 tvg-id="ertflix.angrybirdsetainia1" tvg-logo="https://files2.app.ertflix.gr/files/movies/angry-birds-2/the-angry-birds-2-ertflix-poster.png?m=crop&w=570&h=854",Angry Birds: Η Ταινία 2 (2019)
-#SERVICE 5002:0:1:403:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fangry-birds_2%2Fangry-birds_2%2Fplaylist.m3u8:Angry Birds: Η Ταινία 2
-#EXTINF:-1 tvg-id="ertflix.esummathetria" tvg-logo="https://files2.app.ertflix.gr/files/movies/i-simathitria-new/symathitria-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Συμμαθήτρια  (2021)
-#SERVICE 5002:0:1:404:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fi-shmathitria%2Fi-shmathitria%2Findex.m3u8:Η Συμμαθήτρια 
-#EXTINF:-1 tvg-id="ertflix.taphterougismata" tvg-logo="https://files2.app.ertflix.gr/files/movies/fly-away-home/fly-away-home-ertflix-poster.jpg?m=crop&w=570&h=854",Tα Φτερουγίσματα 
-#SERVICE 5002:0:1:405:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffly-away-home-new%2Ffly-away-home-new%2Fplaylist.m3u8:Tα Φτερουγίσματα 
-#EXTINF:-1 tvg-id="ertflix.taxidimetondrakomou1" tvg-logo="https://files2.app.ertflix.gr/files/movies/dragon-rider/dragon-rider-ertflix-poster.jpg?m=crop&w=570&h=854",Ταξίδι με τον Δράκο μου (2020)
-#SERVICE 5002:0:1:406:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdragon-rider%2Fdragon-rider%2Findex.m3u8:Ταξίδι με τον Δράκο μου
-#EXTINF:-1 tvg-id="ertflix.olagiatalephta1" tvg-logo="https://files2.app.ertflix.gr/files/movies/two-for-the-money/two-for-the-money-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα για τα Λεφτά   (2005)
-#SERVICE 5002:0:1:407:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftwo-for-the-money%2Ftwo-for-the-money%2Fplaylist.m3u8:Όλα για τα Λεφτά  
-#EXTINF:-1 tvg-id="ertflix.tapomeinariamiasmeras" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-remains-of-the-day/the-remains-of-the-day-ertflix-poster.jpg?m=crop&w=570&h=854",Τ' Απομεινάρια μιας Μέρας    (1993)
-#SERVICE 5002:0:1:408:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fremains-of-the-day%2Fremains-of-the-day%2Fplaylist.m3u8:Τ' Απομεινάρια μιας Μέρας   
-#EXTINF:-1 tvg-id="ertflix.fury1" tvg-logo="https://files2.app.ertflix.gr/files/movies/fury/fury-ertflix-poster.png?m=crop&w=570&h=854",Fury (2014)
-#SERVICE 5002:0:1:409:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffury%2Ffury%2Fplaylist.m3u8:Fury
-#EXTINF:-1 tvg-id="ertflix.hitchometrtouzeugaromatos1" tvg-logo="https://files2.app.ertflix.gr/files/movies/hitch/hitch-ertflix-poster.png?m=crop&w=570&h=854",Hitch, ο Μετρ του Ζευγαρώματος  (2005)
-#SERVICE 5002:0:1:40A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhitch%2Fhitch%2Fplaylist.m3u8:Hitch, ο Μετρ του Ζευγαρώματος 
-#EXTINF:-1 tvg-id="ertflix.district1" tvg-logo="https://files2.app.ertflix.gr/files/movies/district-9/district9-ertflix-poster.png?m=crop&w=570&h=854",District 9 (2009)
-#SERVICE 5002:0:1:40B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdistrict-9%2Fdistrict-9%2Fplaylist.m3u8:District 9
-#EXTINF:-1 tvg-id="ertflix.eptakhroniastothibet" tvg-logo="https://files2.app.ertflix.gr/files/movies/seven-years-in-tibet/seven-years-in-tibet-ertflix-poster.jpg?m=crop&w=570&h=854",Επτά Χρόνια στο Θιβέτ    (1997)
-#SERVICE 5002:0:1:40C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fseven-years-in-tibet%2Fseven-years-in-tibet%2Fplaylist.m3u8:Επτά Χρόνια στο Θιβέτ   
-#EXTINF:-1 tvg-id="ertflix.partigunaikon1" tvg-logo="https://files2.app.ertflix.gr/files/movies/rough-night/rough-night-ertflix-poster.png?m=crop&w=570&h=854",Πάρτι Γυναικών   (2017)
-#SERVICE 5002:0:1:40D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Frought-night%2Frought-night%2Fplaylist.m3u8:Πάρτι Γυναικών  
-#EXTINF:-1 tvg-id="ertflix.moneyball1" tvg-logo="https://files2.app.ertflix.gr/files/movies/moneyball/moneyball-ertflix-poster.png?m=crop&w=570&h=854",Moneyball (2011)
-#SERVICE 5002:0:1:40E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmoneyball%2Fmoneyball%2Fplaylist.m3u8:Moneyball
-#EXTINF:-1 tvg-id="ertflix.ourfriend1" tvg-logo="https://files2.app.ertflix.gr/files/movies/our-friend/our-friend-ertflix-poster.jpg?m=crop&w=570&h=854",Our Friend (2019)
-#SERVICE 5002:0:1:40F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Four-friend-n%2Four-friend-n%2Findex.m3u8:Our Friend
-#EXTINF:-1 tvg-id="ertflix.mikraathoapsemata2" tvg-logo="https://files2.app.ertflix.gr/files/movies/little-white-lies/little-white-lies-2-ertflix-poster.jpg?m=crop&w=570&h=854",Μικρά Αθώα Ψέματα 2 (2019)
-#SERVICE 5002:0:1:410:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flittle-white-lies%2Flittle-white-lies%2Findex.m3u8:Μικρά Αθώα Ψέματα 2
-#EXTINF:-1 tvg-id="ertflix.djangootimoros1" tvg-logo="https://files2.app.ertflix.gr/files/movies/django-unchained/django-unchained-ertflix-poster.jpg?m=crop&w=570&h=854",Django, ο Τιμωρός (2012)
-#SERVICE 5002:0:1:411:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdjango-unchained-n%2Fdjango-unchained-n%2Fplaylist.m3u8:Django, ο Τιμωρός
-#EXTINF:-1 tvg-id="ertflix.omaphiozostesdiplanesportasmovie" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-whole-nine-yards/the-whole-nine-yards-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μαφιόζος της Διπλανής Πόρτας    (2000)
-#SERVICE 5002:0:1:412:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fwhole-nine-yards%2Fwhole-nine-yards%2Fplaylist.m3u8:Ο Μαφιόζος της Διπλανής Πόρτας   
-#EXTINF:-1 tvg-id="ertflix.kapotestomexiko1" tvg-logo="https://files2.app.ertflix.gr/files/movies/once-upon-a-time-in-mexico/once-upon-a-time-in-mexico-ertflix-poster.jpg?m=crop&w=570&h=854",Κάποτε στο Μεξικό    (2003)
-#SERVICE 5002:0:1:413:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fonce-upon-a-time-in-mexico%2Fonce-upon-a-time-in-mexico%2Fplaylist.m3u8:Κάποτε στο Μεξικό   
-#EXTINF:-1 tvg-id="ertflix.enasanthropospoutoneleganotto1" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-man-called-otto/amancalledotto-ertflix-poster.jpg?m=crop&w=570&h=854",Ένας Άνθρωπος που τον Έλεγαν Όττο (2022)
-#SERVICE 5002:0:1:414:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-man-called-otto-NEW%2Fa-man-called-otto-NEW%2Fplaylist.m3u8:Ένας Άνθρωπος που τον Έλεγαν Όττο
-#EXTINF:-1 tvg-id="ertflix.wordsonbathroomwalls1" tvg-logo="https://files2.app.ertflix.gr/files/movies/words-on-bathroom-walls/words-on-bathroom-walls-ertflix-poster.jpg?m=crop&w=570&h=854",Words on Bathroom Walls (2020)
-#SERVICE 5002:0:1:415:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fwords-on-bathroom-wall%2Fwords-on-bathroom-wall%2Fplaylist.m3u8:Words on Bathroom Walls
-#EXTINF:-1 tvg-id="ertflix.okhimonophiloi" tvg-logo="https://files2.app.ertflix.gr/files/movies/friends-with-benefits/friends-with-benefits-ertflix-poster.jpg?m=crop&w=570&h=854",Όχι Μόνο Φίλοι (2011)
-#SERVICE 5002:0:1:416:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffriends-with-benefits%2Ffriends-with-benefits%2Fplaylist.m3u8:Όχι Μόνο Φίλοι
-#EXTINF:-1 tvg-id="ertflix.ksenodokheiogiaterata4teratometamorphoseis" tvg-logo="https://files2.app.ertflix.gr/files/movies/ksenodokheio-gia-terata-4-teratometamorphoseis/hotel-transylvania-4-transformania-ertflix-poster.jpg?m=crop&w=570&h=854",Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις (2022)
-#SERVICE 5002:0:1:417:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2FHotel-Transylvania-4-Transformania%2FHotel-Transylvania-4-Transformania%2Fplaylist.m3u8:Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις
-#EXTINF:-1 tvg-id="ertflix.tokoritsipouaphesapiso1" tvg-logo="https://files2.app.ertflix.gr/files/movies/girl-interrupted/girl-interrupted-ertflix-poster.jpg?m=crop&w=570&h=854",Το Κορίτσι που Άφησα Πίσω    (1999)
-#SERVICE 5002:0:1:418:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fgirl-interrupted%2Fgirl-interrupted%2Fplaylist.m3u8:Το Κορίτσι που Άφησα Πίσω   
-#EXTINF:-1 tvg-id="ertflix.ogkriniares1" tvg-logo="https://files2.app.ertflix.gr/files/wizardstale/wizardstale-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Γκρινιάρης (2018)
-#SERVICE 5002:0:1:419:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-wizards-tale-n%2Fa-wizards-tale-n%2Findex.m3u8:Ο Γκρινιάρης
-#EXTINF:-1 tvg-id="ertflix.aniketoiprotathletes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/when-the-game-stands-tall/when-the-game-stands-tall-ertflix-poster.jpg?m=crop&w=570&h=854",Ανίκητοι Πρωταθλητές (2014)
-#SERVICE 5002:0:1:41A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Foutput1%2Fwhen-the-game-stands-tall%2Fwhen-the-game-stands-tall%2Fplaylist.m3u8:Ανίκητοι Πρωταθλητές
-#EXTINF:-1 tvg-id="ertflix.skoteinealetheia1" tvg-logo="https://files2.app.ertflix.gr/files/movies/dark-truth/a-dark-truth-ertflix-poster.jpg?m=crop&w=570&h=854",Σκοτεινή Αλήθεια
-#SERVICE 5002:0:1:41B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdark-truth%2Fdark-truth%2Fplaylist.m3u8:Σκοτεινή Αλήθεια
-#EXTINF:-1 tvg-id="ertflix.thruloitoupathous1" tvg-logo="https://files2.app.ertflix.gr/files/movies/legends-of-th-fall/legends-of-the-fall-ertflix-poster.jpg?m=crop&w=570&h=854",Θρύλοι του Πάθους (1994)
-#SERVICE 5002:0:1:41C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flegends-of-the-fall%2Flegends-of-the-fall%2Fplaylist.m3u8:Θρύλοι του Πάθους
-#EXTINF:-1 tvg-id="ertflix.khapiasphaireskai2000000lires" tvg-logo="https://files2.app.ertflix.gr/files/movies/layer-cake/layercake-ertflix-poster.jpg?m=crop&w=570&h=854",Χάπια, Σφαίρες και 2.000.000 Λίρες (2004)
-#SERVICE 5002:0:1:41D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flayer-cake%2Flayer-cake%2Fplaylist.m3u8:Χάπια, Σφαίρες και 2.000.000 Λίρες
-#EXTINF:-1 tvg-id="ertflix.bluevalentine1" tvg-logo="https://files2.app.ertflix.gr/files/movies/blue-valentine/blue-valentine-ertflix-poster.png?m=crop&w=570&h=854",Blue Valentine (2010)
-#SERVICE 5002:0:1:41E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fblue-valentine%2Fblue-valentine%2Fplaylist.m3u8:Blue Valentine
-#EXTINF:-1 tvg-id="ertflix.khtupemenosapoerota1" tvg-logo="https://files2.app.ertflix.gr/files/movies/punch-drunk-love/punch-drunk-love-ertflix-poster.jpg?m=crop&w=570&h=854",Χτυπημένος από Έρωτα   (2002)
-#SERVICE 5002:0:1:41F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpunch-drunk-love%2Fpunch-drunk-love%2Fplaylist.m3u8:Χτυπημένος από Έρωτα  
-#EXTINF:-1 tvg-id="ertflix.400miliaagapes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-dogs-way-home/a-dogs-way-home-ertflix-poster.jpg?m=crop&w=570&h=854",400 Μίλια Αγάπης   (2019)
-#SERVICE 5002:0:1:420:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdogs-way-home%2Fdogs-way-home%2Fplaylist.m3u8:400 Μίλια Αγάπης  
-#EXTINF:-1 tvg-id="ertflix.khorisdolo2" tvg-logo="https://files2.app.ertflix.gr/files/movies/absence-of-malice/absence-of-malice-ertflix-poster.jpg?m=crop&w=570&h=854",Χωρίς Δόλο (1981)
-#SERVICE 5002:0:1:421:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Foutput1%2Fabsence-of-malice-n%2Fabsence-of-malice-n%2Fplaylist.m3u8:Χωρίς Δόλο
-#EXTINF:-1 tvg-id="ertflix.lailophilosmouokrokodeilos1" tvg-logo="https://files2.app.ertflix.gr/files/movies/lyle-lyle-crocodile/lyle-lyle-crocodile-ertflix-poster.jpg?m=crop&w=570&h=854",Λάιλ, ο Φίλος μου ο Κροκόδειλος  (2022)
-#SERVICE 5002:0:1:422:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flyle-lyle-crocodile%2Flyle-lyle-crocodile%2Fplaylist.m3u8:Λάιλ, ο Φίλος μου ο Κροκόδειλος 
-#EXTINF:-1 tvg-id="ertflix.enathaumaapotonourano1" tvg-logo="https://files2.app.ertflix.gr/files/movies/penguin-bloom/penguin-bloom-ertflix-poster.png?m=crop&w=570&h=854",Ένα Θαύμα από τον Ουρανό (2021)
-#SERVICE 5002:0:1:423:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpenguin-bloom%2Fpenguin-bloom%2Findex.m3u8:Ένα Θαύμα από τον Ουρανό
-#EXTINF:-1 tvg-id="ertflix.mydogstupid1" tvg-logo="https://files2.app.ertflix.gr/files/movies/my-stupid-dog/mydogstupid-ertflix-poster.jpg?m=crop&w=570&h=854",My Dog Stupid (2019)
-#SERVICE 5002:0:1:424:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmy-dog-stupid%2Fmy-dog-stupid%2Findex.m3u8:My Dog Stupid
-#EXTINF:-1 tvg-id="ertflix.oimpatsoitoukholigount1" tvg-logo="https://files2.app.ertflix.gr/files/movies/hollywood-homicide/hollywood-homicide-ertflix-poster-new.jpg?m=crop&w=570&h=854",Οι Μπάτσοι του Χόλιγουντ
-#SERVICE 5002:0:1:425:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhollywood-homicide%2Fhollywood-homicide%2Fplaylist.m3u8:Οι Μπάτσοι του Χόλιγουντ
-#EXTINF:-1 tvg-id="ertflix.inferno1" tvg-logo="https://files2.app.ertflix.gr/files/movies/inferno/inferno-ertflix-poster.jpg?m=crop&w=570&h=854",Inferno    (2022)
-#SERVICE 5002:0:1:426:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Finferno%2Finferno%2Fplaylist.m3u8:Inferno   
-#EXTINF:-1 tvg-id="ertflix.toalogotononeiron1" tvg-logo="https://files2.app.ertflix.gr/files/movies/dream-horse/dream-horse-ertflix-poster.jpg?m=crop&w=570&h=854",Το Άλογο των Ονείρων (2021)
-#SERVICE 5002:0:1:427:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdream-horse%2Fdream-horse%2Fplaylist.m3u8:Το Άλογο των Ονείρων
-#EXTINF:-1 tvg-id="ertflix.yomeddine1" tvg-logo="https://files2.app.ertflix.gr/files/movies/yomeddine/yomeddine-ertflix-poster.jpg?m=crop&w=570&h=854",Yomeddine (2018)
-#SERVICE 5002:0:1:428:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fyomeddine%2Fyomeddine%2Findex.m3u8:Yomeddine
-#EXTINF:-1 tvg-id="ertflix.asansergia2" tvg-logo="https://files2.app.ertflix.gr/files/movies/5flightsup/5flightsup-ertflix-poster.jpg?m=crop&w=570&h=854",Ασανσέρ για 2
-#SERVICE 5002:0:1:429:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffive-flights-up-n%2Ffive-flights-up-n%2Findex.m3u8:Ασανσέρ για 2
-#EXTINF:-1 tvg-id="ertflix.eepaulemetamustika1" tvg-logo="https://files2.app.ertflix.gr/files/movies/la-quietud/la-quietud-ertflix-poster.jpg?m=crop&w=570&h=854",Η Έπαυλη με τα Μυστικά (2018)
-#SERVICE 5002:0:1:42A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fla-quietud%2Fla-quietud%2Findex.m3u8:Η Έπαυλη με τα Μυστικά
-#EXTINF:-1 tvg-id="ertflix.hotelartemis1" tvg-logo="https://files2.app.ertflix.gr/files/movies/hotel-artemis/hotelartemis-ertflix-poster.jpg?m=crop&w=570&h=854",Hotel Artemis (2018)
-#SERVICE 5002:0:1:42B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhotel-artemis%2Fhotel-artemis%2Findex.m3u8:Hotel Artemis
-#EXTINF:-1 tvg-id="ertflix.thinklikeadog1" tvg-logo="https://files2.app.ertflix.gr/files/movies/think-like-a-dog/thinklikeadog-ertflix-poster.jpg?m=crop&w=570&h=854",Think Like a Dog (2020)
-#SERVICE 5002:0:1:42C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthink-like-a-dog%2Fthink-like-a-dog%2Findex.m3u8:Think Like a Dog
-#EXTINF:-1 tvg-id="ertflix.bluejean" tvg-logo="https://files2.app.ertflix.gr/files/movies/blue-jean/bluejean-ertflix-poster.jpg?m=crop&w=570&h=854",Blue Jean (2023)
-#SERVICE 5002:0:1:42D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fblue-jean%2Fblue-jean%2Findex.m3u8:Blue Jean
-#EXTINF:-1 tvg-id="ertflix.tonoematouaugoustoumikresistories" tvg-logo="https://files2.app.ertflix.gr/files/movies/mikres-istories-to-nohma-tou-aygoustou/to-nohma-toy-aygoustou-ertflix-poster.jpg?m=crop&w=570&h=854",Το Νόημα του Αυγούστου (2020)
-#SERVICE 5002:0:1:42E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-nohma-tou-augoustou-n%2Fto-nohma-tou-augoustou-n%2Findex.m3u8:Το Νόημα του Αυγούστου
-#EXTINF:-1 tvg-id="ertflix.tokanonastessiopes" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-company-you-keep/thecompanyyoukeep-ertflix-poster-new.jpg?m=crop&w=570&h=854",Ο Κανόνας της Σιωπής (2012)
-#SERVICE 5002:0:1:42F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-company-you-keep%2Fthe-company-you-keep%2Findex.m3u8:Ο Κανόνας της Σιωπής
-#EXTINF:-1 tvg-id="ertflix.amugdale" tvg-logo="https://files2.app.ertflix.gr/files/movies/amygdala/amygdala-poster-new.jpg?m=crop&w=570&h=854",Αμυγδαλή  (2021)
-#SERVICE 5002:0:1:430:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Famigdali%2Famigdali%2Findex.m3u8:Αμυγδαλή 
-#EXTINF:-1 tvg-id="ertflix.kalokairinesdiakopes" tvg-logo="https://files2.app.ertflix.gr/files/movies/diakopes-kalokairines/diakopeskalokairines-ertflix-poster-new.jpg?m=crop&w=570&h=854",Διακοπές Καλοκαιρινές (2006)
-#SERVICE 5002:0:1:431:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdiakopes-kalokairines%2Fdiakopes-kalokairines%2Findex.m3u8:Διακοπές Καλοκαιρινές
-#EXTINF:-1 tvg-id="ertflix.tikolumpaeikaigelaei" tvg-logo="https://files2.app.ertflix.gr/files/movies/what-swims-and-laughs-new/what-swims-and-laughs-ertflix-poster-new.jpg?m=crop&w=570&h=854",Τι Κολυμπάει και Γελάει; (2003)
-#SERVICE 5002:0:1:432:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fti-kolympaei-kai-gelaei%2Fti-kolympaei-kai-gelaei%2Findex.m3u8:Τι Κολυμπάει και Γελάει;
-#EXTINF:-1 tvg-id="ertflix.omuthosteslimnes2" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-water-horse/the-water-horse-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μύθος της Λίμνης (2007)
-#SERVICE 5002:0:1:433:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fwater-horse-n%2Fwater-horse-n%2Fplaylist.m3u8:Ο Μύθος της Λίμνης
-#EXTINF:-1 tvg-id="ertflix.osiki" tvg-logo="https://files2.app.ertflix.gr/files/movies/osiki/osiki-ertflix-poster.jpg?m=crop&w=570&h=854",Οσίκι (2009)
-#SERVICE 5002:0:1:434:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fosiki%2Fosiki%2Findex.m3u8:Οσίκι
-#EXTINF:-1 tvg-id="ertflix.magma" tvg-logo="https://files2.app.ertflix.gr/files/movies/magma/magma-ertflix-poster.jpg?m=crop&w=570&h=854",Μάγμα (2022)
-#SERVICE 5002:0:1:435:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmagma%2Fmagma%2Findex.m3u8:Μάγμα
-#EXTINF:-1 tvg-id="ertflix.oragiaserph1" tvg-logo="https://files2.app.ertflix.gr/files/movies/surfs-up/surfsup-ertflix-poster.jpg?m=crop&w=570&h=854",Ώρα για Σερφ  (2007)
-#SERVICE 5002:0:1:436:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsurfs-up%2Fsurfs-up%2Fplaylist.m3u8:Ώρα για Σερφ 
-#EXTINF:-1 tvg-id="ertflix.tzitzipogko" tvg-logo="https://files2.app.ertflix.gr/files/movies/tzitzipongo/tzitzipongo-ertflix-poster.jpg?m=crop&w=570&h=854",Τζιτζιπόνγκο (2022)
-#SERVICE 5002:0:1:437:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftzitzipongo%2Ftzitzipongo%2Findex.m3u8:Τζιτζιπόνγκο
-#EXTINF:-1 tvg-id="ertflix.mpoemikepsukhe" tvg-logo="https://files2.app.ertflix.gr/files/movies/djam/djam-ertflix-poster.jpg?m=crop&w=570&h=854",Μποέμικη Ψυχή (2017)
-#SERVICE 5002:0:1:438:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdjam%2Fdjam%2Findex.m3u8:Μποέμικη Ψυχή
-#EXTINF:-1 tvg-id="ertflix.tigersarenotafraid1" tvg-logo="https://files2.app.ertflix.gr/files/movies/tigers-are-not-afraid/tigers-are-not-afraid-ertflix-poster.jpg?m=crop&w=570&h=854",Tigers Are Not Afraid (2017)
-#SERVICE 5002:0:1:439:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftigers-are-not-afraid-vuelven%2Ftigers-are-not-afraid-vuelven%2Findex.m3u8:Tigers Are Not Afraid
-#EXTINF:-1 tvg-id="ertflix.10emereskhorismama" tvg-logo="https://files2.app.ertflix.gr/files/movies/ten-days-without-mum-10/10dayswithoutmum-ertflix-poster.jpg?m=crop&w=570&h=854",10 Ημέρες Χωρίς Μαμά (2020)
-#SERVICE 5002:0:1:43A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdix-jours-sans-maman%2Fdix-jours-sans-maman%2Findex.m3u8:10 Ημέρες Χωρίς Μαμά
-#EXTINF:-1 tvg-id="ertflix.einaigrousouzianadeistenupheprintongamo" tvg-logo="https://files2.app.ertflix.gr/files/movies/einai-grousouzia/grousouzianadeistinyfi-ertflix-poster-new.jpg?m=crop&w=570&h=854",Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο
-#SERVICE 5002:0:1:43B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Feinai-grousouzia%2Feinai-grousouzia%2Findex.m3u8:Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο
-#EXTINF:-1 tvg-id="ertflix.pilala" tvg-logo="https://files2.app.ertflix.gr/files/movies/pilala/pilala-ertflix-poster.jpg?m=crop&w=570&h=854",Πιλάλα (2004)
-#SERVICE 5002:0:1:43C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fvodext%2Fdefault%2Fpilala-mikrofilm%2Fpilala-mikrofilm%2Findex.m3u8:Πιλάλα
-#EXTINF:-1 tvg-id="ertflix.nouarprotzekt" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-noir-project/the-noir-project-ertflix-poster.jpg?m=crop&w=570&h=854",Νουάρ Πρότζεκτ
-#SERVICE 5002:0:1:43D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-noir-project%2Fthe-noir-project%2Findex.m3u8:Νουάρ Πρότζεκτ
-#EXTINF:-1 tvg-id="ertflix.madeinitaly1" tvg-logo="https://files2.app.ertflix.gr/files/movies/made-in-italy/madeinitaly-ertflix-poster.jpg?m=crop&w=570&h=854",Made in Italy  (2008)
-#SERVICE 5002:0:1:43E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmade-in-italy-new%2Fmade-in-italy-new%2Findex.m3u8:Made in Italy 
-#EXTINF:-1 tvg-id="ertflix.totelostesdiadromes1" tvg-logo="https://files2.app.ertflix.gr/files/movies/end-of-sentence/end-of-sentence-ertflix-poster.jpg?m=crop&w=570&h=854",Το Τέλος της Διαδρομής (2015)
-#SERVICE 5002:0:1:43F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fend-of-sentence%2Fend-of-sentence%2Findex.m3u8:Το Τέλος της Διαδρομής
-#EXTINF:-1 tvg-id="ertflix.ogiosmou" tvg-logo="https://files2.app.ertflix.gr/files/movies/my-son/myson-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Γιος μου (2017)
-#SERVICE 5002:0:1:440:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmy-son%2Fmy-son%2Findex.m3u8:Ο Γιος μου
-#EXTINF:-1 tvg-id="ertflix.oikogeneiakeeutukhiaae" tvg-logo="https://files2.app.ertflix.gr/files/movies/family-romance/family-romance-llc-ertflix-poster.jpg?m=crop&w=570&h=854",Οικογενειακή Eυτυχία Α.Ε.
-#SERVICE 5002:0:1:441:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffamily-romance%2Ffamily-romance%2Findex.m3u8:Οικογενειακή Eυτυχία Α.Ε.
-#EXTINF:-1 tvg-id="ertflix.falling1" tvg-logo="https://files2.app.ertflix.gr/files/movies/falling/falling-ertflix-poster.jpg?m=crop&w=570&h=854",Falling (2020)
-#SERVICE 5002:0:1:442:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffalling%2Ffalling%2Findex.m3u8:Falling
-#EXTINF:-1 tvg-id="ertflix.ektosepokhes" tvg-logo="https://files2.app.ertflix.gr/files/movies/ektos-epoxis/ektos-epoxis-ertflix-poster.jpg?m=crop&w=570&h=854",Εκτός Εποχής
-#SERVICE 5002:0:1:443:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fektos-epoxis%2Fektos-epoxis%2Findex.m3u8:Εκτός Εποχής
-#EXTINF:-1 tvg-id="ertflix.khlorio1" tvg-logo="https://files2.app.ertflix.gr/files/movies/chlorine/chlorine-ertflix-poster.jpg?m=crop&w=570&h=854",Χλώριο (2022)
-#SERVICE 5002:0:1:444:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fchlorio-chlorine-mikres-istories%2Fchlorio-chlorine-mikres-istories%2Findex.m3u8:Χλώριο
-#EXTINF:-1 tvg-id="ertflix.mikromouponu1" tvg-logo="https://files2.app.ertflix.gr/files/movies/my-little-pony/my-little-pony-ertflix-poster.jpg?m=crop&w=570&h=854",Μικρό μου Πόνυ (2013)
-#SERVICE 5002:0:1:445:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmy-little-pony-n%2Fmy-little-pony-n%2Findex.m3u8:Μικρό μου Πόνυ
-#EXTINF:-1 tvg-id="ertflix.toparelthontesouna1" tvg-logo="https://files2.app.ertflix.gr/files/movies/una/una-ertflix-poster.jpg?m=crop&w=570&h=854",Το Παρελθόν της Ούνα (2017)
-#SERVICE 5002:0:1:446:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Funa%2Funa%2Findex.m3u8:Το Παρελθόν της Ούνα
-#EXTINF:-1 tvg-id="ertflix.latenight1" tvg-logo="https://files2.app.ertflix.gr/files/movies/late-night/late-night-ertflix-poster.jpg?m=crop&w=570&h=854",Late Night (2021)
-#SERVICE 5002:0:1:447:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flate-night%2Flate-night%2Fplaylist.m3u8:Late Night
-#EXTINF:-1 tvg-id="ertflix.land" tvg-logo="https://files2.app.ertflix.gr/files/movies/land/land-ertflix-poster.jpg?m=crop&w=570&h=854",Land (2021)
-#SERVICE 5002:0:1:448:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fland-n%2Fland-n%2Findex.m3u8:Land
-#EXTINF:-1 tvg-id="ertflix.glukiaapodrase" tvg-logo="https://files2.app.ertflix.gr/files/movies/comme-un-avion/come-un-avion-ertflix-poster.png?m=crop&w=570&h=854",Γλυκιά Απόδραση (2015)
-#SERVICE 5002:0:1:449:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcomme-un-avion-n%2Fcomme-un-avion-n%2Findex.m3u8:Γλυκιά Απόδραση
-#EXTINF:-1 tvg-id="ertflix.travelexpress" tvg-logo="https://files2.app.ertflix.gr/files/movies/travel-express/travelexpress-ertflix-poster.jpg?m=crop&w=570&h=854",Travel Express (2013)
-#SERVICE 5002:0:1:44A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftravel-express%2Ftravel-express%2Findex.m3u8:Travel Express
-#EXTINF:-1 tvg-id="ertflix.sankalokoritsi" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-good-girl/the-good-girl-ertflix-poster.jpg?m=crop&w=570&h=854",Σαν Καλό Κορίτσι
-#SERVICE 5002:0:1:44B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-good-girl%2Fthe-good-girl%2Findex.m3u8:Σαν Καλό Κορίτσι
-#EXTINF:-1 tvg-id="ertflix.khalarostekuriealen" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-man-in-a-hurry/a-man-in-a-hurry-ertflix-poster.jpg?m=crop&w=570&h=854",Χαλαρώστε Κύριε Αλέν! (2018)
-#SERVICE 5002:0:1:44C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fun-homme-presse-a-man-in-a-hurry%2Fun-homme-presse-a-man-in-a-hurry%2Findex.m3u8:Χαλαρώστε Κύριε Αλέν!
-#EXTINF:-1 tvg-id="ertflix.konanobarbaros1" tvg-logo="https://files2.app.ertflix.gr/files/movies/conan-the-barbarian/conanthebarbarian-ertflix-poster.jpg?m=crop&w=570&h=854",Κόναν ο Βάρβαρος (1982)
-#SERVICE 5002:0:1:44D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fconan-the-barbarian%2Fconan-the-barbarian%2Findex.m3u8:Κόναν ο Βάρβαρος
-#EXTINF:-1 tvg-id="ertflix.putgrandmainthefreezer" tvg-logo="https://files2.app.ertflix.gr/files/movies/put-grandma-in-the-freezer/put-grandma-in-the-freezer-ertflix-poster.jpg?m=crop&w=570&h=854",Βάλε τη Γιαγιά στο Ψυγείο (2018)
-#SERVICE 5002:0:1:44E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fput-grandma-in-the-freezer%2Fput-grandma-in-the-freezer%2Findex.m3u8:Βάλε τη Γιαγιά στο Ψυγείο
-#EXTINF:-1 tvg-id="ertflix.eteleutaianukhtatouphrankoamore1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-last-night-of-amore/the-last-night-of-amore-ertflix-poster.jpg?m=crop&w=570&h=854",Η Τελευταία Νύχτα του Φράνκο Αμόρε (2023)
-#SERVICE 5002:0:1:44F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flast-night-of-amore%2Flast-night-of-amore%2Findex.m3u8:Η Τελευταία Νύχτα του Φράνκο Αμόρε
-#EXTINF:-1 tvg-id="ertflix.mygeneration" tvg-logo="https://files2.app.ertflix.gr/files/movies/my-generation/mygeneration-ertflix-poster.jpg?m=crop&w=570&h=854",My Generation (2010)
-#SERVICE 5002:0:1:450:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmy-generation%2Fmy-generation%2Findex.m3u8:My Generation
-#EXTINF:-1 tvg-id="ertflix.tododekatoeuaggelio" tvg-logo="https://files2.app.ertflix.gr/files/movies/to-dodekato-evangelio/to12oevaggelio-ertflix-poster-new.jpg?m=crop&w=570&h=854",Το Δωδέκατο Ευαγγέλιο (2023)
-#SERVICE 5002:0:1:451:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-dodekato-evaggelio-mikres-istories-n%2Fto-dodekato-evaggelio-mikres-istories-n%2Findex.m3u8:Το Δωδέκατο Ευαγγέλιο
-#EXTINF:-1 tvg-id="ertflix.tokalokairipouparateresagiaprotephoratonelionaduei" tvg-logo="https://files2.app.ertflix.gr/files/movies/to-kalokairi-pou-paratirisa-gia-proti-fora/tkpppfthnd-ertflix-poster.jpg?m=crop&w=570&h=854",Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει  (2023)
-#SERVICE 5002:0:1:452:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei%2Fto-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei%2Findex.m3u8:Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει 
-#EXTINF:-1 tvg-id="ertflix.tapaidiatonallon1" tvg-logo="https://files2.app.ertflix.gr/files/movies/other-peoples-children/other-peoples-children-ertflix-poster.jpg?m=crop&w=570&h=854",Τα Παιδιά των Άλλων 
-#SERVICE 5002:0:1:453:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fother-peoples-children%2Fother-peoples-children%2Findex.m3u8:Τα Παιδιά των Άλλων 
-#EXTINF:-1 tvg-id="ertflix.mamaapotopouthena" tvg-logo="https://files2.app.ertflix.gr/files/movies/momo/momo-ertflix-poster.jpg?m=crop&w=570&h=854",Μαμά από το Πουθενά  (2017)
-#SERVICE 5002:0:1:454:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmomo-finding-mom%2Fmomo-finding-mom%2Findex.m3u8:Μαμά από το Πουθενά 
-#EXTINF:-1 tvg-id="ertflix.miaistoriatespoles" tvg-logo="https://files2.app.ertflix.gr/files/movies/istanbul-story/instabulstory-ertflix-poster.jpg?m=crop&w=570&h=854",Μια Ιστορία της Πόλης (2016)
-#SERVICE 5002:0:1:455:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Finstabul-story%2Finstabul-story%2Findex.m3u8:Μια Ιστορία της Πόλης
-#EXTINF:-1 tvg-id="ertflix.mrslowryson" tvg-logo="https://files2.app.ertflix.gr/files/movies/mrs-lowry-n-son/mrslowryson-ertflix-poster.jpg?m=crop&w=570&h=854",Mrs Lowry & Son (2019)
-#SERVICE 5002:0:1:456:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmrs-lowry-n-son%2Fmrs-lowry-n-son%2Findex.m3u8:Mrs Lowry & Son
-#EXTINF:-1 tvg-id="ertflix.giortetesmeteras" tvg-logo="https://files2.app.ertflix.gr/files/movies/mothers-day/mothers-day-ertflix-poster.jpg?m=crop&w=570&h=854",Γιορτή της Μητέρας (2016)
-#SERVICE 5002:0:1:457:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmothers-day%2Fmothers-day%2Findex.m3u8:Γιορτή της Μητέρας
-#EXTINF:-1 tvg-id="ertflix.tullytapaidiaeinaieutukhia1" tvg-logo="https://files2.app.ertflix.gr/files/movies/tully/tully-ertflix-poster.jpg?m=crop&w=570&h=854",Tully: Tα Παιδιά Είναι Ευτυχία;  
-#SERVICE 5002:0:1:458:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftully%2Ftully%2Findex.m3u8:Tully: Tα Παιδιά Είναι Ευτυχία;  
-#EXTINF:-1 tvg-id="ertflix.totaxidi1" tvg-logo="https://files2.app.ertflix.gr/files/movies/charter/charter-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ταξίδι (1962)
-#SERVICE 5002:0:1:459:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcharter%2Fcharter%2Findex.m3u8:Το Ταξίδι
-#EXTINF:-1 tvg-id="ertflix.teleaugoustou" tvg-logo="https://files2.app.ertflix.gr/files/movies/teli-augoustou/teli-augoustou-ertflix-poster.jpg?m=crop&w=570&h=854",Τέλη Αυγούστου  (2023)
-#SERVICE 5002:0:1:45A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fteli-augoustou%2Fteli-augoustou%2Findex.m3u8:Τέλη Αυγούστου 
-#EXTINF:-1 tvg-id="ertflix.olagiatemeteramou1" tvg-logo="https://files2.app.ertflix.gr/files/movies/all-about-my-mother/all-about-my-mother-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα για τη Μητέρα μου    (1999)
-#SERVICE 5002:0:1:45B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fall-about-my-mother%2Fall-about-my-mother%2Findex.m3u8:Όλα για τη Μητέρα μου   
-#EXTINF:-1 tvg-id="ertflix.missviolence" tvg-logo="https://files2.app.ertflix.gr/files/movies/miss-violence/missviolence-new-ertflix-poster-new.jpg?m=crop&w=570&h=854",Miss Violence (2013)
-#SERVICE 5002:0:1:45C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmiss-violence%2Fmiss-violence%2Findex.m3u8:Miss Violence
-#EXTINF:-1 tvg-id="ertflix.beautifulpeople" tvg-logo="https://files2.app.ertflix.gr/files/movies/beatiful-people/beautifulpeople-ertflix-poster.jpg?m=crop&w=570&h=854",Beautiful People  (2001)
-#SERVICE 5002:0:1:45D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbeautiful-people%2Fbeautiful-people%2Findex.m3u8:Beautiful People 
-#EXTINF:-1 tvg-id="ertflix.eomorphotereepokhe" tvg-logo="https://files2.app.ertflix.gr/files/movies/la-belle-saison/la-belle-saison-ertflix-poster.jpg?m=crop&w=570&h=854", Η Ομορφότερη Εποχή (2015)
-#SERVICE 5002:0:1:45E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fvodext%2Fdefault%2Fbelle-saison%2Fbelle-saison%2Findex.m3u8: Η Ομορφότερη Εποχή
-#EXTINF:-1 tvg-id="ertflix.seautetekhoradenexerekaneisnaklaiei1" tvg-logo="https://files2.app.ertflix.gr/files/movies/s-auti-ti-xwra-den-iksere-kaneis-na-klaiei/s-afti-tin-xora-ertflix-poster.png?m=crop&w=570&h=854",Σ' Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει (2018)
-#SERVICE 5002:0:1:45F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fvodext%2Fdefault%2Fse-auti-ti-xwra-kaneis-den-iksere-na-klaiei%2Fse-auti-ti-xwra-kaneis-den-iksere-na-klaiei%2Findex.m3u8:Σ' Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει
-#EXTINF:-1 tvg-id="ertflix.oiathooi1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-innocents/the-innocents-ertflix-poster.jpg?m=crop&w=570&h=854",Οι Αθώοι (2010)
-#SERVICE 5002:0:1:460:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Foi_athooi_bin%2Foi_athooi_bin%2Findex.m3u8:Οι Αθώοι
-#EXTINF:-1 tvg-id="ertflix.apatesemaurophonto1" tvg-logo="https://files2.app.ertflix.gr/files/movies/carbon/carbon-ertflix-poster.jpg?m=crop&w=570&h=854",Απάτη σε Μαύρο Φόντο (2017)
-#SERVICE 5002:0:1:461:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcarbon%2Fcarbon%2Findex.m3u8:Απάτη σε Μαύρο Φόντο
-#EXTINF:-1 tvg-id="ertflix.kokkinossunagermos1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-doorman/thedoorman-ertflix-poster.jpg?m=crop&w=570&h=854",Κόκκινος Συναγερμός (2021)
-#SERVICE 5002:0:1:462:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-doorman%2Fthe-doorman%2Findex.m3u8:Κόκκινος Συναγερμός
-#EXTINF:-1 tvg-id="ertflix.thedrone" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-drone/the-drone-ertflix-poster.jpg?m=crop&w=570&h=854",The Drone (2019)
-#SERVICE 5002:0:1:463:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-drone%2Fthe-drone%2Findex.m3u8:The Drone
-#EXTINF:-1 tvg-id="ertflix.inside1" tvg-logo="https://files2.app.ertflix.gr/files/movies/inside/inside-ertflix-poster.jpg?m=crop&w=570&h=854",Inside (2016)
-#SERVICE 5002:0:1:464:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Finside%2Finside%2Findex.m3u8:Inside
-#EXTINF:-1 tvg-id="ertflix.oiagnostoiathenaioi" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-unknown-athenians/the-unknown-athenians-ertflix-poster.jpg?m=crop&w=570&h=854",Οι Άγνωστοι Αθηναίοι (2020)
-#SERVICE 5002:0:1:465:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-unknown-athenians%2Fthe-unknown-athenians%2Findex.m3u8:Οι Άγνωστοι Αθηναίοι
-#EXTINF:-1 tvg-id="ertflix.enaologrammagiatonbasilia1" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-hologram-for-the-king/a-hologram-for-the-king-ertflix-poster.jpg?m=crop&w=570&h=854",Ένα Ολόγραμμα για τον Βασιλιά (2016)
-#SERVICE 5002:0:1:466:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-hologram-for-the-king%2Fa-hologram-for-the-king%2Findex.m3u8:Ένα Ολόγραμμα για τον Βασιλιά
-#EXTINF:-1 tvg-id="ertflix.oklephtes" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-thife/the-thief-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Κλέφτης (2023)
-#SERVICE 5002:0:1:467:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fo-kleftis%2Fo-kleftis%2Findex.m3u8:Ο Κλέφτης
-#EXTINF:-1 tvg-id="ertflix.khorisagape2" tvg-logo="https://files2.app.ertflix.gr/files/movies/loveless/loveless-ertflix-poster.jpg?m=crop&w=570&h=854",Χωρίς Aγάπη
-#SERVICE 5002:0:1:468:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Floveless%2Floveless%2Findex.m3u8:Χωρίς Aγάπη
-#EXTINF:-1 tvg-id="ertflix.lebiathan1" tvg-logo="https://files2.app.ertflix.gr/files/movies/leviathan/leviathan-ertflix-poster.jpg?m=crop&w=570&h=854",Λεβιάθαν
-#SERVICE 5002:0:1:469:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fleviathan%2Fleviathan%2Findex.m3u8:Λεβιάθαν
-#EXTINF:-1 tvg-id="ertflix.megalotaxiditesmerasstenukhta" tvg-logo="https://files2.app.ertflix.gr/files/movies/long-days-journey-into-the-night/long-days-journey-into-night-ertflix-poster.jpg?m=crop&w=570&h=854",Μεγάλο Ταξίδι της Μέρας στη Νύχτα
-#SERVICE 5002:0:1:46A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flong-day-s-journey-into-night%2Flong-day-s-journey-into-night%2Findex.m3u8:Μεγάλο Ταξίδι της Μέρας στη Νύχτα
-#EXTINF:-1 tvg-id="ertflix.hachikoeistoriaenosskulou1" tvg-logo="https://files2.app.ertflix.gr/files/movies/hachico/hachi-a-dogs-tale-ertflix-poster.jpg?m=crop&w=570&h=854",Hachiko: Η Ιστορία ενός Σκύλου (2009)
-#SERVICE 5002:0:1:46B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhachi-a-dogs-tale%2Fhachi-a-dogs-tale%2Findex.m3u8:Hachiko: Η Ιστορία ενός Σκύλου
-#EXTINF:-1 tvg-id="ertflix.etoimoi" tvg-logo="https://files2.app.ertflix.gr/files/movies/ready/ready-ertflix-poster.jpg?m=crop&w=570&h=854",Έτοιμοι (2023)
-#SERVICE 5002:0:1:46C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fetoimoi%2Fetoimoi%2Findex.m3u8:Έτοιμοι
-#EXTINF:-1 tvg-id="ertflix.khoulieta1" tvg-logo="https://files2.app.ertflix.gr/files/movies/julieta/julieta-ertflix-poster.jpg?m=crop&w=570&h=854",Χουλιέτα
-#SERVICE 5002:0:1:46D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fjulieta%2Fjulieta%2Findex.m3u8:Χουλιέτα
-#EXTINF:-1 tvg-id="ertflix.pinokio1" tvg-logo="https://files2.app.ertflix.gr/files/movies/pinocchio/pinocchio-ertflix-poster.jpg?m=crop&w=570&h=854",Πινόκιο (1940)
-#SERVICE 5002:0:1:46E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpinocchio%2Fpinocchio%2Findex.m3u8:Πινόκιο
-#EXTINF:-1 tvg-id="ertflix.philoigiapanta" tvg-logo="https://files2.app.ertflix.gr/files/movies/belle-sebastian/bellesebastian3-ertflix-poster.jpg?m=crop&w=570&h=854",Φίλοι για Πάντα (2009)
-#SERVICE 5002:0:1:46F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbelle-en-sebastien-3%2Fbelle-en-sebastien-3%2Findex.m3u8:Φίλοι για Πάντα
-#EXTINF:-1 tvg-id="ertflix.klephtesmephilotimo" tvg-logo="https://files2.app.ertflix.gr/files/movies/enas-kleftis-me-filotimo/enaskleftismefilotimo-ertflix-poster.jpg?m=crop&w=570&h=854",Ένας Κλέφτης... Με Φιλότιμο (1968)
-#SERVICE 5002:0:1:470:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fkleftis-me-filotimo%2Fkleftis-me-filotimo%2Findex.m3u8:Ένας Κλέφτης... Με Φιλότιμο
-#EXTINF:-1 tvg-id="ertflix.otukhodioktestouparisiou" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-emperor-of-paris/the-emperor-of-paris-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τυχοδιώκτης του Παρισιού (2018)
-#SERVICE 5002:0:1:471:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-emperor-of-paris%2Fthe-emperor-of-paris%2Findex.m3u8:Ο Τυχοδιώκτης του Παρισιού
-#EXTINF:-1 tvg-id="ertflix.foxtrot" tvg-logo="https://files2.app.ertflix.gr/files/movies/foxtrot-ertflix-poster.jpg?m=crop&w=570&h=854",Foxtrot (1988)
-#SERVICE 5002:0:1:472:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffoxtrot%2Ffoxtrot%2Findex.m3u8:Foxtrot
-#EXTINF:-1 tvg-id="ertflix.asterixkaiobelixstebretania1" tvg-logo="https://files2.app.ertflix.gr/files/movies/asterix-and-obelix-god-save-britannia/asterix-ertflix-poster.jpg?m=crop&w=570&h=854",Αστερίξ και Οβελίξ στη Βρετανία (2012)
-#SERVICE 5002:0:1:473:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fasterix-and-obelix-god-save-britannia%2Fasterix-and-obelix-god-save-britannia%2Findex.m3u8:Αστερίξ και Οβελίξ στη Βρετανία
-#EXTINF:-1 tvg-id="ertflix.omegalosphilikosgigantas" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-bfg-the-big-friendly-giant/thebfg-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μεγάλος Φιλικός Γίγαντας (2016)
-#SERVICE 5002:0:1:474:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-big-friendly-giant%2Fthe-big-friendly-giant%2Findex.m3u8:Ο Μεγάλος Φιλικός Γίγαντας
-#EXTINF:-1 tvg-id="ertflix.metokephalipsela" tvg-logo="https://files2.app.ertflix.gr/files/movies/la-tete-haute/la-tete-haute-ertflix-poster.jpg?m=crop&w=570&h=854",Με το Κεφάλι Ψηλά (2004)
-#SERVICE 5002:0:1:475:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fla-tete-haute%2Fla-tete-haute%2Findex.m3u8:Με το Κεφάλι Ψηλά
-#EXTINF:-1 tvg-id="ertflix.tisunebestedeutera1" tvg-logo="https://files2.app.ertflix.gr/files/movies/what-happened-to-monday/whathappenedtomonday-ertflix-poster.jpg?m=crop&w=570&h=854",Τι Συνέβη στη Δευτέρα (2017)
-#SERVICE 5002:0:1:476:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fti_synevh_th_deftera_for_web%2Fti_synevh_th_deftera_for_web%2Findex.m3u8:Τι Συνέβη στη Δευτέρα
-#EXTINF:-1 tvg-id="ertflix.treiseukhesgiatestakhtopouta1" tvg-logo="https://files2.app.ertflix.gr/files/movies/three-wishes-cindirella/three-wishes-for-cinderella-ertflix-poster.jpg?m=crop&w=570&h=854",Τρεις Ευχές για τη Σταχτοπούτα (2021)
-#SERVICE 5002:0:1:477:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthree-wishes-for-cinderella%2Fthree-wishes-for-cinderella%2Findex.m3u8:Τρεις Ευχές για τη Σταχτοπούτα
-#EXTINF:-1 tvg-id="ertflix.gkogken" tvg-logo="https://files2.app.ertflix.gr/files/movies/gauguin/gauguin-ertflix-poster-new.jpg?m=crop&w=570&h=854",Γκωγκέν (2017)
-#SERVICE 5002:0:1:478:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fgauguin%2Fgauguin%2Findex.m3u8:Γκωγκέν
-#EXTINF:-1 tvg-id="ertflix.eprosbole" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-insult/new/the-insult-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Προσβολή (2017)
-#SERVICE 5002:0:1:479:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-insult-n%2Fthe-insult-n%2Findex.m3u8:Η Προσβολή
-#EXTINF:-1 tvg-id="ertflix.menenokhleiteparakalo" tvg-logo="https://files2.app.ertflix.gr/files/movies/une-heure-de-tranquillite/new/une-heure-de-tranquillite-ertflix-poster2.jpg?m=crop&w=570&h=854",Μην Ενοχλείτε, Παρακαλώ (2014)
-#SERVICE 5002:0:1:47A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fune-heure-de-tranquilite-n%2Fune-heure-de-tranquilite-n%2Findex.m3u8:Μην Ενοχλείτε, Παρακαλώ
-#EXTINF:-1 tvg-id="ertflix.happyend" tvg-logo="https://files2.app.ertflix.gr/files/movies/happy-end/happy-end-ertflix-poster-new.jpg?m=crop&w=570&h=854",Happy End (1989)
-#SERVICE 5002:0:1:47B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhappy-end-n%2Fhappy-end-n%2Findex.m3u8:Happy End
-#EXTINF:-1 tvg-id="ertflix.tetarte445" tvg-logo="https://files2.app.ertflix.gr/files/movies/tetarti-04-45/tetarti-4-45-ertflix-poster.jpg?m=crop&w=570&h=854",Τετάρτη 04:45 (2015)
-#SERVICE 5002:0:1:47C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftetarti-04-45%2Ftetarti-04-45%2Findex.m3u8:Τετάρτη 04:45
-#EXTINF:-1 tvg-id="ertflix.torantebouteskuriakes" tvg-logo="https://files2.app.ertflix.gr/files/movies/to-rantevou-tis-kirakis-new/to-rantevou-tis-kyriakis-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ραντεβού της Κυριακής (1960)
-#SERVICE 5002:0:1:47D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-rantevou-tis-kyriakis%2Fto-rantevou-tis-kyriakis%2Findex.m3u8:Το Ραντεβού της Κυριακής
-#EXTINF:-1 tvg-id="ertflix.skhetikametonbasile" tvg-logo="https://files2.app.ertflix.gr/files/movies/sxetika-me-ton-vasili/sxetika-me-ton-vasili-ertflix-poster.jpg?m=crop&w=570&h=854",Σχετικά με τον Βασίλη (1986)
-#SERVICE 5002:0:1:47E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsxetika-me-ton-basilh%2Fsxetika-me-ton-basilh%2Findex.m3u8:Σχετικά με τον Βασίλη
-#EXTINF:-1 tvg-id="ertflix.miathalassaapodentra" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-sea-of-trees/the-sea-of-trees-ertflix-poster.jpg?m=crop&w=570&h=854",Μια Θάλασσα από Δέντρα (2016)
-#SERVICE 5002:0:1:47F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsea-of-trees%2Fsea-of-trees%2Findex.m3u8:Μια Θάλασσα από Δέντρα
-#EXTINF:-1 tvg-id="ertflix.duomeresmianukhta" tvg-logo="https://files2.app.ertflix.gr/files/movies/two-days-one-night/2days1night-ertflix-poster.jpg?m=crop&w=570&h=854",Δύο Μέρες, Μία Νύχτα
-#SERVICE 5002:0:1:480:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftwo-days-one-night%2Ftwo-days-one-night%2Findex.m3u8:Δύο Μέρες, Μία Νύχτα
-#EXTINF:-1 tvg-id="ertflix.emeratesbastiles" tvg-logo="https://files2.app.ertflix.gr/files/movies/bastille-day/bastilleday-ertflix-poster.jpg?m=crop&w=570&h=854",Η Mέρα της Βαστίλης
-#SERVICE 5002:0:1:481:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbastille-day%2Fbastille-day%2Findex.m3u8:Η Mέρα της Βαστίλης
-#EXTINF:-1 tvg-id="ertflix.katsephronima1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-english-teacher/theenglishteacher-ertflix-poster.jpg?m=crop&w=570&h=854",Κάτσε Φρόνιμα  (2013)
-#SERVICE 5002:0:1:482:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-english-teacher%2Fthe-english-teacher%2Findex.m3u8:Κάτσε Φρόνιμα 
-#EXTINF:-1 tvg-id="ertflix.otheiostesbioletas" tvg-logo="https://files2.app.ertflix.gr/files/movies/o-theios-tis-violetas/o-theios-ths-violettas-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Θείος της Βιολέτας (1957)
-#SERVICE 5002:0:1:483:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fo-theios-tis-violetas%2Fo-theios-tis-violetas%2Findex.m3u8:Ο Θείος της Βιολέτας
-#EXTINF:-1 tvg-id="ertflix.takhrusamaskhronia" tvg-logo="https://files2.app.ertflix.gr/files/movies/my-golden-days/my-golden-days-ertflix-poster.jpg?m=crop&w=570&h=854",Τα Χρυσά μας Χρόνια (2015)
-#SERVICE 5002:0:1:484:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmy-golden-days%2Fmy-golden-days%2Findex.m3u8:Τα Χρυσά μας Χρόνια
-#EXTINF:-1 tvg-id="ertflix.palirroia" tvg-logo="https://files2.app.ertflix.gr/files/movies/flux/flux-ertflix-poster.jpg?m=crop&w=570&h=854",Παλίρροια (2012)
-#SERVICE 5002:0:1:485:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpaliria-3n%2Fpaliria-3n%2Findex.m3u8:Παλίρροια
-#EXTINF:-1 tvg-id="ertflix.kerdizontastiskardiestonandron1" tvg-logo="https://files2.app.ertflix.gr/files/movies/charming-the-hearts-of-men/charming-the-hearts-of-men-ertflix-poster.jpg?m=crop&w=570&h=854",Κερδίζοντας τις Καρδιές των Ανδρών (2021)
-#SERVICE 5002:0:1:486:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcharming-the-hearts-of-men%2Fcharming-the-hearts-of-men%2Findex.m3u8:Κερδίζοντας τις Καρδιές των Ανδρών
-#EXTINF:-1 tvg-id="ertflix.eprigkipissaalani1" tvg-logo="https://files2.app.ertflix.gr/files/movies/pils-adventures/pils-adventures-ertflix-poster.jpg?m=crop&w=570&h=854",Η Πριγκίπισσα Αλάνι (2021)
-#SERVICE 5002:0:1:487:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpils-adventures%2Fpils-adventures%2Findex.m3u8:Η Πριγκίπισσα Αλάνι
-#EXTINF:-1 tvg-id="ertflix.firebug" tvg-logo="https://files2.app.ertflix.gr/files/movies/firebug/firebug-ertflix-poster.jpg?m=crop&w=570&h=854",Firebug (2023)
-#SERVICE 5002:0:1:488:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffirebug-n%2Ffirebug-n%2Findex.m3u8:Firebug
-#EXTINF:-1 tvg-id="ertflix.clawmachine" tvg-logo="https://files2.app.ertflix.gr/files/movies/claw-machine/claw-machine-ertflix-poster.jpg?m=crop&w=570&h=854",Claw Machine  (2021)
-#SERVICE 5002:0:1:489:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fclaw-maghine%2Fclaw-maghine%2Findex.m3u8:Claw Machine 
-#EXTINF:-1 tvg-id="ertflix.pantingkton2" tvg-logo="https://files2.app.ertflix.gr/files/movies/paddington-2/paddington2-ertflix-poster.jpg?m=crop&w=570&h=854",Πάντινγκτον 2 (2017)
-#SERVICE 5002:0:1:48A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Foutput1%2Fpaddington-2%2Fpaddington-2%2Fplaylist.m3u8:Πάντινγκτον 2
-#EXTINF:-1 tvg-id="ertflix.emily" tvg-logo="https://files2.app.ertflix.gr/files/movies/emily/emily-ertflix-poster.jpg?m=crop&w=570&h=854",Emily (2022)
-#SERVICE 5002:0:1:48B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Femily%2Femily%2Findex.m3u8:Emily
-#EXTINF:-1 tvg-id="ertflix.telephonesestentzein1" tvg-logo="https://files2.app.ertflix.gr/files/movies/call-jane/call-jane-ertflix-poster.jpg?m=crop&w=570&h=854",Τηλεφώνησε στην Τζέιν (2022)
-#SERVICE 5002:0:1:48C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcall-jane%2Fcall-jane%2Findex.m3u8:Τηλεφώνησε στην Τζέιν
-#EXTINF:-1 tvg-id="ertflix.totukheropanteloni" tvg-logo="https://files2.app.ertflix.gr/files/movies/to-tyxero-panteloni/to-tyxero-pantaloni-ertflix-poster.jpg?m=crop&w=570&h=854",Το Τυχερό Παντελόνι (1963)
-#SERVICE 5002:0:1:48D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fvodext%2Fdefault%2Ftyxero-panteloni%2Ftyxero-panteloni%2Findex.m3u8:Το Τυχερό Παντελόνι
-#EXTINF:-1 tvg-id="ertflix.allothigiapantremenous" tvg-logo="https://files2.app.ertflix.gr/files/movies/alibi/alibi-com-ertflix-poster.jpg?m=crop&w=570&h=854",Άλλοθι για Παντρεμένους (2016)
-#SERVICE 5002:0:1:48E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Falibi%2Falibi%2Findex.m3u8:Άλλοθι για Παντρεμένους
-#EXTINF:-1 tvg-id="ertflix.toakroteritesbias1" tvg-logo="https://files2.app.ertflix.gr/files/movies/zulu/zulu-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ακρωτήρι της Βίας (2013)
-#SERVICE 5002:0:1:48F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fzulu%2Fzulu%2Findex.m3u8:Το Ακρωτήρι της Βίας
-#EXTINF:-1 tvg-id="ertflix.edipleopsetesepanastases" tvg-logo="https://files2.app.ertflix.gr/files/movies/september-of-shiraz/septembersofshiraz-ertflix-poster.jpg?m=crop&w=570&h=854",Η Διπλή Όψη της Επανάστασης
-#SERVICE 5002:0:1:490:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fseptemberes-of-shiraz%2Fseptemberes-of-shiraz%2Findex.m3u8:Η Διπλή Όψη της Επανάστασης
-#EXTINF:-1 tvg-id="ertflix.emakhetesepikrateses1" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-current-war/the-current-war-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μάχη της Επικράτησης (2018)
-#SERVICE 5002:0:1:491:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-current-war%2Fthe-current-war%2Findex.m3u8:Η Μάχη της Επικράτησης
-#EXTINF:-1 tvg-id="ertflix.oiuperephanoi" tvg-logo="https://files2.app.ertflix.gr/files/movies/oi-yperifanoi/oi-yperifanoi-ertflix-poster.jpg?m=crop&w=570&h=854",	Οι Υπερήφανοι		 (1962)
-#SERVICE 5002:0:1:492:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Foi-yperifanoi%2Foi-yperifanoi%2Findex.m3u8:	Οι Υπερήφανοι		
-#EXTINF:-1 tvg-id="ertflix.karagkiozesoadikemenosteszoes" tvg-logo="https://files2.app.ertflix.gr/files/movies/karagiozis-oi-adikimenoi-tis-zwhs/karagiozis-oi-adikimenoi-tis-zwis-ertflix-poster.jpg?m=crop&w=570&h=854",Καραγκιόζης: Ο Αδικημένος της Ζωής (1959)
-#SERVICE 5002:0:1:493:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fkaragiozis-oi-adikimenoi-tis-zwis%2Fkaragiozis-oi-adikimenoi-tis-zwis%2Findex.m3u8:Καραγκιόζης: Ο Αδικημένος της Ζωής
-#EXTINF:-1 tvg-id="ertflix.chuckeistoriatoupragmatikourockybalboa" tvg-logo="https://files2.app.ertflix.gr/files/movies/chuck/chuck-ertflix-poster.jpg?m=crop&w=570&h=854",Chuck: Η Ιστορία του Πραγματικού Rocky Balboa (2017)
-#SERVICE 5002:0:1:494:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fchuck-i-istoria-tou-pragmatikou-rocky-balboa%2Fchuck-i-istoria-tou-pragmatikou-rocky-balboa%2Findex.m3u8:Chuck: Η Ιστορία του Πραγματικού Rocky Balboa
-#EXTINF:-1 tvg-id="ertflix.eroika" tvg-logo="https://files2.app.ertflix.gr/files/movies/eroika/eroika-ertflix-poster.jpg?m=crop&w=570&h=854",Ερόϊκα
-#SERVICE 5002:0:1:495:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Feroika%2Feroika%2Findex.m3u8:Ερόϊκα
-#EXTINF:-1 tvg-id="ertflix.otilampeieinaikhrusos" tvg-logo="https://files2.app.ertflix.gr/files/movies/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos-ertflix-poster.jpg?m=crop&w=570&h=854",Ό,τι Λάμπει Είναι Χρυσός (1966)
-#SERVICE 5002:0:1:496:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Foti-lampei-einai-xrysos%2Foti-lampei-einai-xrysos%2Findex.m3u8:Ό,τι Λάμπει Είναι Χρυσός
-#EXTINF:-1 tvg-id="ertflix.adikoskosmos" tvg-logo="https://files2.app.ertflix.gr/files/movies/adikos-kosmos/adikos-kosmos-ertflix-poster.jpg?m=crop&w=570&h=854",Άδικος Κόσμος (2012)
-#SERVICE 5002:0:1:497:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fadikos-kosmos%2Fadikos-kosmos%2Findex.m3u8:Άδικος Κόσμος
-#EXTINF:-1 tvg-id="ertflix.giakari47" tvg-logo="https://files2.app.ertflix.gr/files/movies/yakari/yakari-ertflix-poster.jpg?m=crop&w=570&h=854",Γιάκαρι (2020)
-#SERVICE 5002:0:1:498:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fyakari-movie%2Fyakari-movie%2Findex.m3u8:Γιάκαρι
-#EXTINF:-1 tvg-id="ertflix.toprasinobiblio" tvg-logo="https://files2.app.ertflix.gr/files/movies/green-book/green-book-ertflix-poster.jpg?m=crop&w=570&h=854",Το Πράσινο Βιβλίο (2018)
-#SERVICE 5002:0:1:499:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fgreen-book%2Fgreen-book%2Findex.m3u8:Το Πράσινο Βιβλίο
-#EXTINF:-1 tvg-id="ertflix.antirresiassuneideses1" tvg-logo="https://files2.app.ertflix.gr/files/movies/hacksaw-ride/hacksaw-ridge-ertflix-poster.jpg?m=crop&w=570&h=854",Αντιρρησίας Συνείδησης (2016)
-#SERVICE 5002:0:1:49A:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhacksaw-ridge%2Fhacksaw-ridge%2Findex.m3u8:Αντιρρησίας Συνείδησης
-#EXTINF:-1 tvg-id="ertflix.pabaroti" tvg-logo="https://files2.app.ertflix.gr/files/movies/pavarotti-2019/pavarotti-ertflix-poster.jpg?m=crop&w=570&h=854",Παβαρότι (2019)
-#SERVICE 5002:0:1:49B:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpavarotti-n%2Fpavarotti-n%2Findex.m3u8:Παβαρότι
-#EXTINF:-1 tvg-id="ertflix.monstersandmen" tvg-logo="https://files2.app.ertflix.gr/files/movies/monsters-and-men/monsters-and-men-ertflix-poster.jpg?m=crop&w=570&h=854",Monsters and Men (2018)
-#SERVICE 5002:0:1:49C:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmonsters-and-men-n%2Fmonsters-and-men-n%2Findex.m3u8:Monsters and Men
-#EXTINF:-1 tvg-id="ertflix.findingstevemcqueen" tvg-logo="https://files2.app.ertflix.gr/files/movies/finding-steve-mcqueen/finding-steve-mcqueen-ertflix-poster.jpg?m=crop&w=570&h=854",Finding Steve McQueen (2019)
-#SERVICE 5002:0:1:49D:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffinding-steve-mcqueen%2Ffinding-steve-mcqueen%2Findex.m3u8:Finding Steve McQueen
-#EXTINF:-1 tvg-id="ertflix.despoinistzoulia" tvg-logo="https://files2.app.ertflix.gr/files/movies/miss-julie/missjulie-ertflix-poster.jpg?m=crop&w=570&h=854",Δεσποινίς Τζούλια
-#SERVICE 5002:0:1:49E:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmiss-julie%2Fmiss-julie%2Findex.m3u8:Δεσποινίς Τζούλια
-#EXTINF:-1 tvg-id="ertflix.eskonepoupephtei" tvg-logo="https://files2.app.ertflix.gr/files/movies/i-skoni-pou-peftei/h-skonh-pou-peftei-ertflix-poster.jpg?m=crop&w=570&h=854",Η Σκόνη που Πέφτει (2004)
-#SERVICE 5002:0:1:49F:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fskoni-pou-peftei%2Fskoni-pou-peftei%2Findex.m3u8:Η Σκόνη που Πέφτει
-#EXTINF:-1 tvg-id="ertflix.tzakikairain" tvg-logo="https://files2.app.ertflix.gr/files/movies/jackie-and-ryan/jackie-ryan-ertflix-poster.jpg?m=crop&w=570&h=854",Τζάκι και Ράιαν (2014)
-#SERVICE 5002:0:1:4A0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fjackie-and-rayan%2Fjackie-and-rayan%2Findex.m3u8:Τζάκι και Ράιαν
-#EXTINF:-1 tvg-id="ertflix.metreteskarton" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-card-number/the-card-counter-ertflix-poster.jpg?m=crop&w=570&h=854",Μετρητής Καρτών (2021)
-#SERVICE 5002:0:1:4A1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fcard-counter%2Fcard-counter%2Findex.m3u8:Μετρητής Καρτών
-#EXTINF:-1 tvg-id="ertflix.thekiss" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-kiss/the-kiss-ertflix-poster.jpg?m=crop&w=570&h=854",The Kiss (1900)
-#SERVICE 5002:0:1:4A2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-kiss%2Fthe-kiss%2Findex.m3u8:The Kiss
-#EXTINF:-1 tvg-id="ertflix.todiastemaanamesamas" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-space-between-us/the-space-between-us-ertflix-poster-new.jpg?m=crop&w=570&h=854",Το Διάστημα Ανάμεσά μας (2021)
-#SERVICE 5002:0:1:4A3:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-space-between-us%2Fthe-space-between-us%2Findex.m3u8:Το Διάστημα Ανάμεσά μας
-#EXTINF:-1 tvg-id="ertflix.eliakadamesamou1" tvg-logo="https://files2.app.ertflix.gr/files/movies/let-the-sunshine-in/letthesunshinein-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Λιακάδα Μέσα μου (2017)
-#SERVICE 5002:0:1:4A4:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flet-the-sunsine-n%2Flet-the-sunsine-n%2Findex.m3u8:Η Λιακάδα Μέσα μου
-#EXTINF:-1 tvg-id="ertflix.anekplerotosgamos" tvg-logo="https://files2.app.ertflix.gr/files/movies/on-chesil-beach/on-chesil-beach-ertflix-poster.jpg?m=crop&w=570&h=854",Ανεκπλήρωτος Γάμος (2018)
-#SERVICE 5002:0:1:4A5:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fon-chesil-beach%2Fon-chesil-beach%2Findex.m3u8:Ανεκπλήρωτος Γάμος
-#EXTINF:-1 tvg-id="ertflix.meposeisaiotuposmou" tvg-logo="https://files2.app.ertflix.gr/files/movies/not-my-type/not-my-type-ertflix-poster.jpg?m=crop&w=570&h=854",Μήπως Είσαι ο Τύπος μου; (2014)
-#SERVICE 5002:0:1:4A6:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fnot-my-type%2Fnot-my-type%2Findex.m3u8:Μήπως Είσαι ο Τύπος μου;
-#EXTINF:-1 tvg-id="ertflix.maurelista" tvg-logo="https://files2.app.ertflix.gr/files/movies/black-book/black-book-ertflix-poster.png?m=crop&w=570&h=854",Μαύρη Λίστα (2006)
-#SERVICE 5002:0:1:4A7:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fblack-book%2Fblack-book%2Findex.m3u8:Μαύρη Λίστα
-#EXTINF:-1 tvg-id="ertflix.eaggliamouanekei" tvg-logo="https://files2.app.ertflix.gr/files/movies/england-is-mine/england-is-mine-ertflix-poster.jpg?m=crop&w=570&h=854",Η Αγγλία μού Ανήκει (2017)
-#SERVICE 5002:0:1:4A8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fengland-is-mine%2Fengland-is-mine%2Findex.m3u8:Η Αγγλία μού Ανήκει
-#EXTINF:-1 tvg-id="ertflix.bestsellers" tvg-logo="https://files2.app.ertflix.gr/files/movies/best-sellers/best-sellers-ertflix-poster.jpg?m=crop&w=570&h=854",Best Sellers (2021)
-#SERVICE 5002:0:1:4A9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fbest-sellers%2Fbest-sellers%2Findex.m3u8:Best Sellers
-#EXTINF:-1 tvg-id="ertflix.flagday" tvg-logo="https://files2.app.ertflix.gr/files/movies/flag-day/flag-day-ertflix-poster.jpg?m=crop&w=570&h=854",Flag Day (2021)
-#SERVICE 5002:0:1:4AA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fflag-day%2Fflag-day%2Findex.m3u8:Flag Day
-#EXTINF:-1 tvg-id="ertflix.kathemerineergasime" tvg-logo="https://files2.app.ertflix.gr/files/movies/kathimerinh-ergasimh/working-day-ertflix-poster.jpg?m=crop&w=570&h=854", Καθημερινή Εργάσιμη (2014)
-#SERVICE 5002:0:1:4AB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fkathimerini-ergasimi%2Fkathimerini-ergasimi%2Findex.m3u8: Καθημερινή Εργάσιμη
-#EXTINF:-1 tvg-id="ertflix.khrusopsaro" tvg-logo="https://files2.app.ertflix.gr/files/movies/goldfish/goldfish-ertflix-poster.jpg?m=crop&w=570&h=854",Χρυσόψαρο (2017)
-#SERVICE 5002:0:1:4AC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fgold-fish-xrusopsaro%2Fgold-fish-xrusopsaro%2Findex.m3u8:Χρυσόψαρο
-#EXTINF:-1 tvg-id="ertflix.phusarmonikamanmikresistories" tvg-logo="https://files2.app.ertflix.gr/files/movies/harmonica-man/harmonica-man-ertflix-poster-new.jpg?m=crop&w=570&h=854",Φυσαρμόνικα Μαν (2020)
-#SERVICE 5002:0:1:4AD:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fvodext%2Fdefault%2Fharmonica-man%2Fharmonica-man%2Findex.m3u8:Φυσαρμόνικα Μαν
-#EXTINF:-1 tvg-id="ertflix.rozbouno1" tvg-logo="https://files2.app.ertflix.gr/files/movies/pink-mountain/pink-mountain-ertflix-poster.jpg?m=crop&w=570&h=854",Ροζ Βουνό (2023)
-#SERVICE 5002:0:1:4AE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Froz-vouno%2Froz-vouno%2Findex.m3u8:Ροζ Βουνό
-#EXTINF:-1 tvg-id="ertflix.seawolf" tvg-logo="https://files2.app.ertflix.gr/files/movies/seawolf/seawolf-ertflix-poster.jpg?m=crop&w=570&h=854",Seawolf (2021)
-#SERVICE 5002:0:1:4AF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsea-wolf%2Fsea-wolf%2Findex.m3u8:Seawolf
-#EXTINF:-1 tvg-id="ertflix.khartinoiaetoi" tvg-logo="https://files2.app.ertflix.gr/files/movies/hartinoi-aetoi-new/xartinoi-aetoi-ertflix-poster.jpg?m=crop&w=570&h=854",Χάρτινοι Αετοί (2002)
-#SERVICE 5002:0:1:4B0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhartinoi-aetoi%2Fhartinoi-aetoi%2Findex.m3u8:Χάρτινοι Αετοί
-#EXTINF:-1 tvg-id="ertflix.kherastrategou" tvg-logo="https://files2.app.ertflix.gr/files/movies/xhra-strathgou-new/xira-stratigou-ertflix-poster-new.jpg?m=crop&w=570&h=854",Χήρα Στρατηγού (2008)
-#SERVICE 5002:0:1:4B1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhira-stratigou%2Fhira-stratigou%2Findex.m3u8:Χήρα Στρατηγού
-#EXTINF:-1 tvg-id="ertflix.largo" tvg-logo="https://files2.app.ertflix.gr/files/movies/largo/largo-ertflix-poster.jpg?m=crop&w=570&h=854",Largo (2008)
-#SERVICE 5002:0:1:4B2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flargo%2Flargo%2Findex.m3u8:Largo
-#EXTINF:-1 tvg-id="ertflix.memoryreloaded" tvg-logo="https://files2.app.ertflix.gr/files/movies/memory-reloaded/memory-reloaded-ertflix-poster.jpg?m=crop&w=570&h=854",Memory Reloaded (2013)
-#SERVICE 5002:0:1:4B3:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmemory-reloaded%2Fmemory-reloaded%2Findex.m3u8:Memory Reloaded
-#EXTINF:-1 tvg-id="ertflix.kinetastoikheiatouantreasiadema" tvg-logo="https://files2.app.ertflix.gr/files/movies/kinita-stoixeia-new/kinhta-stoixeia-ertflix-poster.jpg?m=crop&w=570&h=854",Κινητά Στοιχεία (2011)
-#SERVICE 5002:0:1:4B4:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fkinita-stoixeia-microfilm%2Fkinita-stoixeia-microfilm%2Findex.m3u8:Κινητά Στοιχεία
-#EXTINF:-1 tvg-id="ertflix.apokhairetontas" tvg-logo="https://files2.app.ertflix.gr/files/movies/apoxairetwntas/apoxeretontas-ertflix-poster.jpg?m=crop&w=570&h=854",Αποχαιρετώντας (2005)
-#SERVICE 5002:0:1:4B5:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fapoxairetontas%2Fapoxairetontas%2Findex.m3u8:Αποχαιρετώντας
-#EXTINF:-1 tvg-id="ertflix.elanasoupo" tvg-logo="https://files2.app.ertflix.gr/files/movies/ela-na-sou-pw/ela-na-sou-po-ertflix-poster.jpg?m=crop&w=570&h=854",Έλα να σου Πω... (2000)
-#SERVICE 5002:0:1:4B6:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fela-na-sou-pw%2Fela-na-sou-pw%2Findex.m3u8:Έλα να σου Πω...
-#EXTINF:-1 tvg-id="ertflix.ugraerio" tvg-logo="https://files2.app.ertflix.gr/files/movies/ygraerio/ygraerio-ertflix-poster.jpg?m=crop&w=570&h=854",Υγραέριο (2006)
-#SERVICE 5002:0:1:4B7:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fygraerio-n%2Fygraerio-n%2Findex.m3u8:Υγραέριο
-#EXTINF:-1 tvg-id="ertflix.1311" tvg-logo="https://files2.app.ertflix.gr/files/movies/13-1-2/13miso-ertflix-poster.jpg?m=crop&w=570&h=854",13 1/2 (2000)
-#SERVICE 5002:0:1:4B8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdekatriamisi-n%2Fdekatriamisi-n%2Findex.m3u8:13 1/2
-#EXTINF:-1 tvg-id="ertflix.loulena" tvg-logo="https://files2.app.ertflix.gr/files/movies/lou-and-lena/lou-lena-ertflix-poster.jpg?m=crop&w=570&h=854",Λου & Λένα (2003)
-#SERVICE 5002:0:1:4B9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flou-kai-lena%2Flou-kai-lena%2Findex.m3u8:Λου & Λένα
-#EXTINF:-1 tvg-id="ertflix.medenthetiko" tvg-logo="https://files2.app.ertflix.gr/files/movies/miden-thetiko/0-ertflix-poster.jpg?m=crop&w=570&h=854",Μηδέν Θετικό  (2004)
-#SERVICE 5002:0:1:4BA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmiden-thetiko-n%2Fmiden-thetiko-n%2Findex.m3u8:Μηδέν Θετικό 
-#EXTINF:-1 tvg-id="ertflix.toperasma" tvg-logo="https://files2.app.ertflix.gr/files/movies/to-perasma/to-perasma-ertflix-poster.jpg?m=crop&w=570&h=854",Το Πέρασμα  (2022)
-#SERVICE 5002:0:1:4BB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fto-perasma%2Fto-perasma%2Findex.m3u8:Το Πέρασμα 
-#EXTINF:-1 tvg-id="ertflix.lethe" tvg-logo="https://files2.app.ertflix.gr/files/movies/lithi/lithi-ertflix-poster.jpg?m=crop&w=570&h=854",Λήθη  (2009)
-#SERVICE 5002:0:1:4BC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flithi%2Flithi%2Findex.m3u8:Λήθη 
-#EXTINF:-1 tvg-id="ertflix.miamerastesagkae" tvg-logo="https://files2.app.ertflix.gr/files/movies/mia-mera-stin-sangai/mia-mera-sth-shanghai-ertflix-poster.jpg?m=crop&w=570&h=854",Μια Μέρα στη Σαγκάη (2022)
-#SERVICE 5002:0:1:4BD:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-day-in-the-life-of-a-fat-teddy-bear-n%2Fa-day-in-the-life-of-a-fat-teddy-bear-n%2Findex.m3u8:Μια Μέρα στη Σαγκάη
-#EXTINF:-1 tvg-id="ertflix.blackbird1" tvg-logo="https://files2.app.ertflix.gr/files/movies/blackbird/blackbird-ertflix-poster.jpg?m=crop&w=570&h=854",Blackbird (2022)
-#SERVICE 5002:0:1:4BE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fblackbird-silent-heart%2Fblackbird-silent-heart%2Findex.m3u8:Blackbird
-#EXTINF:-1 tvg-id="ertflix.eanazetese2" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-song-of-names/the-song-of-names-ertflix-poster.png?m=crop&w=570&h=854",Η Αναζήτηση
-#SERVICE 5002:0:1:4BF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-song-of-names%2Fthe-song-of-names%2Findex.m3u8:Η Αναζήτηση
-#EXTINF:-1 tvg-id="ertflix.milesdavisbirthofthecool" tvg-logo="https://files2.app.ertflix.gr/files/xena-docs/miles-davis-birth-of-the-cool/miles-davis-birth-of-the-cool-ertflix-poster.jpg?m=crop&w=570&h=854",Miles Davis: Birth of the Cool  (2019)
-#SERVICE 5002:0:1:4C0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmiles-davis-the%20birth-of-cool-n%2Fmiles-davis-the%20birth-of-cool-n%2Findex.m3u8:Miles Davis: Birth of the Cool 
-#EXTINF:-1 tvg-id="ertflix.lasigurnaspiti" tvg-logo="https://files2.app.ertflix.gr/files/movies/lassie-come-home/lassie-come-home-ertflix-poster.jpg?m=crop&w=570&h=854",Λάσι, Γύρνα Σπίτι (2020)
-#SERVICE 5002:0:1:4C1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flassie-come-home%2Flassie-come-home%2Findex.m3u8:Λάσι, Γύρνα Σπίτι
-#EXTINF:-1 tvg-id="ertflix.ailoomikroseroas" tvg-logo="https://files2.app.ertflix.gr/files/movies/ailos-journey/ailos-journey-ertflix-poster.png?m=crop&w=570&h=854",Αϊλό: Ο Μικρός Ήρωας (2018)
-#SERVICE 5002:0:1:4C2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Failo-une-odyssee-en-laponie-ailos-journey%2Failo-une-odyssee-en-laponie-ailos-journey%2Findex.m3u8:Αϊλό: Ο Μικρός Ήρωας
-#EXTINF:-1 tvg-id="ertflix.ekalesuzugos1" tvg-logo="https://files2.app.ertflix.gr/files/movies/how-to-be-a-good-wife/howtobegoodwife-ertflix-poster.jpg?m=crop&w=570&h=854",Η Καλή Σύζυγος (2016)
-#SERVICE 5002:0:1:4C3:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhow-to-be-a-good-wife%2Fhow-to-be-a-good-wife%2Findex.m3u8:Η Καλή Σύζυγος
-#EXTINF:-1 tvg-id="ertflix.powerrangers" tvg-logo="https://files2.app.ertflix.gr/files/movies/power-rangers/power-ranger-ertflix-poster.png?m=crop&w=570&h=854",Power Rangers (2017)
-#SERVICE 5002:0:1:4C4:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fpower-rangers%2Fpower-rangers%2Findex.m3u8:Power Rangers
-#EXTINF:-1 tvg-id="ertflix.thaerthokontasousigasiga1" tvg-logo="https://files2.app.ertflix.gr/files/movies/rolling-to-you/rolling2u-ertflix-poster.jpg?m=crop&w=570&h=854",Θα Έρθω Κοντά σου Σιγά-Σιγά (2018)
-#SERVICE 5002:0:1:4C5:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Frolling-to-you%2Frolling-to-you%2Findex.m3u8:Θα Έρθω Κοντά σου Σιγά-Σιγά
-#EXTINF:-1 tvg-id="ertflix.hotelkentauros" tvg-logo="https://files2.app.ertflix.gr/files/movies/hotel-kentavros/hotel-centaur-ertflix-poster.jpg?m=crop&w=570&h=854",Hotel Κένταυρος (2023)
-#SERVICE 5002:0:1:4C6:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fhotel-kentavos%2Fhotel-kentavos%2Findex.m3u8:Hotel Κένταυρος
-#EXTINF:-1 tvg-id="ertflix.emploke" tvg-logo="https://files2.app.ertflix.gr/files/movies/emploki/imbroglio-ertflix-poster.jpg?m=crop&w=570&h=854",Εμπλοκή (2023)
-#SERVICE 5002:0:1:4C7:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Femploki%2Femploki%2Findex.m3u8:Εμπλοκή
-#EXTINF:-1 tvg-id="ertflix.aerolin" tvg-logo="https://files2.app.ertflix.gr/files/movies/aerolin/aerolin-ertflix-poster.jpg?m=crop&w=570&h=854",Αερολίν (2023)
-#SERVICE 5002:0:1:4C8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Faerolin%2Faerolin%2Findex.m3u8:Αερολίν
-#EXTINF:-1 tvg-id="ertflix.oparadeisosepesestege" tvg-logo="https://files2.app.ertflix.gr/files/movies/it-must-be-heavean/it-must-be-heaven-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Παράδεισος Έπεσε στη Γη  (2019)
-#SERVICE 5002:0:1:4C9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fit-must-be-heaven%2Fit-must-be-heaven%2Findex.m3u8:Ο Παράδεισος Έπεσε στη Γη 
-#EXTINF:-1 tvg-id="ertflix.epoluthronastopezodromio1" tvg-logo="https://files2.app.ertflix.gr/files/movies/i-polythrona-sto-pezodromio/the-armchair-on-the-pavement-ertflix-poster.jpg?m=crop&w=570&h=854",Η Πολυθρόνα στο Πεζοδρόμιο (2023)
-#SERVICE 5002:0:1:4CA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmia-polythrona-sto-pezodromio%2Fmia-polythrona-sto-pezodromio%2Findex.m3u8:Η Πολυθρόνα στο Πεζοδρόμιο
-#EXTINF:-1 tvg-id="ertflix.diabase" tvg-logo="https://files2.app.ertflix.gr/files/movies/diavasi/diabash-ertflix-poster.jpg?m=crop&w=570&h=854",Διάβαση (2023)
-#SERVICE 5002:0:1:4CB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fi-diavasi%2Fi-diavasi%2Findex.m3u8:Διάβαση
-#EXTINF:-1 tvg-id="ertflix.manwanted" tvg-logo="https://files2.app.ertflix.gr/files/movies/man-wanted/man-wanted-ertflix-poster.jpg?m=crop&w=570&h=854",Man Wanted (1922)
-#SERVICE 5002:0:1:4CC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fman-wanted%2Fman-wanted%2Findex.m3u8:Man Wanted
-#EXTINF:-1 tvg-id="ertflix.okaluterosphilosmou" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-dogs-purpose/a-dogs-purpose-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Καλύτερος Φίλος μου (2017)
-#SERVICE 5002:0:1:4CD:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-dogs-purpose%2Fa-dogs-purpose%2Findex.m3u8:Ο Καλύτερος Φίλος μου
-#EXTINF:-1 tvg-id="ertflix.wonderwheel1" tvg-logo="https://files2.app.ertflix.gr/files/movies/wonder-wheel/wonder-wheel-ertflix-poster.jpg?m=crop&w=570&h=854",Wonder Wheel (2017)
-#SERVICE 5002:0:1:4CE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fwonder-wheel-n%2Fwonder-wheel-n%2Findex.m3u8:Wonder Wheel
-#EXTINF:-1 tvg-id="ertflix.emegalenukhtatesnapoles1" tvg-logo="https://files2.app.ertflix.gr/files/movies/la-paranza-dei-bambini/la-paranza-dei-bambini-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μεγάλη Νύχτα της Νάπολης (2019)
-#SERVICE 5002:0:1:4CF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fla-paranza-dei-bambini%2Fla-paranza-dei-bambini%2Findex.m3u8:Η Μεγάλη Νύχτα της Νάπολης
-#EXTINF:-1 tvg-id="ertflix.aftersun" tvg-logo="https://files2.app.ertflix.gr/files/movies/aftersun/aftersun-ertflix-poster.jpg?m=crop&w=570&h=854",Aftersun (2022)
-#SERVICE 5002:0:1:4D0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Faftersun%2Faftersun%2Findex.m3u8:Aftersun
-#EXTINF:-1 tvg-id="ertflix.dalida" tvg-logo="https://files2.app.ertflix.gr/files/movies/dalida/dalida-ertflix-poster.jpg?m=crop&w=570&h=854",Dalida (2005)
-#SERVICE 5002:0:1:4D1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdalida%2Fdalida%2Findex.m3u8:Dalida
-#EXTINF:-1 tvg-id="ertflix.egeusetesapistias" tvg-logo="https://files2.app.ertflix.gr/files/movies/a-taste-of-hunger/a-taste-of-hunger-ertflix-poster.jpg?m=crop&w=570&h=854",Η Γεύση της Απιστίας (2021)
-#SERVICE 5002:0:1:4D2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fa-taste-of-hunger%2Fa-taste-of-hunger%2Findex.m3u8:Η Γεύση της Απιστίας
-#EXTINF:-1 tvg-id="ertflix.eepomeneapostole" tvg-logo="https://files2.app.ertflix.gr/files/movies/proxima/proxima-ertflix-poster.jpg?m=crop&w=570&h=854",Η Επόμενη Αποστολή
-#SERVICE 5002:0:1:4D3:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fproxima%2Fproxima%2Findex.m3u8:Η Επόμενη Αποστολή
-#EXTINF:-1 tvg-id="ertflix.tomustikotonmarompooun" tvg-logo="https://files2.app.ertflix.gr/files/movies/marrowbone/marrowbone-ertflix-poster.jpg?m=crop&w=570&h=854",Το Μυστικό των Μάρομποουν (2017)
-#SERVICE 5002:0:1:4D4:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fmarrowbone%2Fmarrowbone%2Findex.m3u8:Το Μυστικό των Μάρομποουν
-#EXTINF:-1 tvg-id="ertflix.toparamuthitonparamuthion" tvg-logo="https://files2.app.ertflix.gr/files/movies/tale-of-tales/tale-of-tales-ertflix-poster.jpg?m=crop&w=570&h=854",Το Παραμύθι των Παραμυθιών (1979)
-#SERVICE 5002:0:1:4D5:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftale-of-tales%2Ftale-of-tales%2Findex.m3u8:Το Παραμύθι των Παραμυθιών
-#EXTINF:-1 tvg-id="ertflix.thelastface" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-last-face/the-last-face-ertflix-poster.jpg?m=crop&w=570&h=854",The Last Face (2017)
-#SERVICE 5002:0:1:4D6:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Flast-face%2Flast-face%2Findex.m3u8:The Last Face
-#EXTINF:-1 tvg-id="ertflix.aspropato1" tvg-logo="https://files2.app.ertflix.gr/files/movies/another-round/another-round-ertflix-poster.jpg?m=crop&w=570&h=854",Άσπρο Πάτο (2020)
-#SERVICE 5002:0:1:4D7:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fanother-round%2Fanother-round%2Findex.m3u8:Άσπρο Πάτο
-#EXTINF:-1 tvg-id="ertflix.niote1" tvg-logo="https://files2.app.ertflix.gr/files/movies/nioti/youth-ertflix-poster.jpg?m=crop&w=570&h=854",Νιότη (2024)
-#SERVICE 5002:0:1:4D8:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fyouth%2Fyouth%2Findex.m3u8:Νιότη
-#EXTINF:-1 tvg-id="ertflix.oiekkentrikoi" tvg-logo="https://files2.app.ertflix.gr/files/movies/riders-of-justice/ridersofjustice-ertflix-poster.jpg?m=crop&w=570&h=854",Οι Εκκεντρικοί (2020)
-#SERVICE 5002:0:1:4D9:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Friders-of-justice%2Friders-of-justice%2Findex.m3u8:Οι Εκκεντρικοί
-#EXTINF:-1 tvg-id="ertflix.oprodotes" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-traitor/the-traitor-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Προδότης (1967)
-#SERVICE 5002:0:1:4DA:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fthe-traitor%2Fthe-traitor%2Findex.m3u8:Ο Προδότης
-#EXTINF:-1 tvg-id="ertflix.rantebouekeipsela" tvg-logo="https://files2.app.ertflix.gr/files/movies/see-you-up-there/au-revoir-la-haut-ertflix-poster.jpg?m=crop&w=570&h=854",Ραντεβού Εκεί Ψηλά (2017)
-#SERVICE 5002:0:1:4DB:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fsee-you-up-there%2Fsee-you-up-there%2Findex.m3u8:Ραντεβού Εκεί Ψηλά
-#EXTINF:-1 tvg-id="ertflix.metatongamo1" tvg-logo="https://files2.app.ertflix.gr/files/movies/after-the-wedding/after-the-wedding-ertflix-poster.jpg?m=crop&w=570&h=854",Μετά τον Γάμο (2025)
-#SERVICE 5002:0:1:4DC:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fafter-the-wedding%2Fafter-the-wedding%2Findex.m3u8:Μετά τον Γάμο
-#EXTINF:-1 tvg-id="ertflix.ethnikeodosmiasragismeneskardias" tvg-logo="https://files2.app.ertflix.gr/files/movies/highway-of-a-broken-heart/highway-of-a-broken-heart-ertflix-poster.jpg?m=crop&w=570&h=854",Εθνική Οδός μιας Ραγισμένης Καρδιάς (2023)
-#SERVICE 5002:0:1:4DD:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fethniki-odos-mias-ragismenis-kardias%2Fethniki-odos-mias-ragismenis-kardias%2Findex.m3u8:Εθνική Οδός μιας Ραγισμένης Καρδιάς
-#EXTINF:-1 tvg-id="ertflix.phosekphotos1" tvg-logo="https://files2.app.ertflix.gr/files/movies/light-of-light/light-of-light-ertflix-poster.jpg?m=crop&w=570&h=854",Φῶς ἐκ Φωτός (2023)
-#SERVICE 5002:0:1:4DE:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ffws-ek-fwtos-new1%2Ffws-ek-fwtos-new1%2Findex.m3u8:Φῶς ἐκ Φωτός
-#EXTINF:-1 tvg-id="ertflix.otenoros1" tvg-logo="https://files2.app.ertflix.gr/files/movies/tenor/tenor-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τενόρος (2022)
-#SERVICE 5002:0:1:4DF:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Ftenor%2Ftenor%2Findex.m3u8:Ο Τενόρος
-#EXTINF:-1 tvg-id="ertflix.toklamptonkhorismenon" tvg-logo="https://files2.app.ertflix.gr/files/movies/divorce-club/divorce-club-ertflix-poster.jpg?m=crop&w=570&h=854",Το Κλαμπ των Χωρισμένων (2020)
-#SERVICE 5002:0:1:4E0:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fdivorce-club%2Fdivorce-club%2Findex.m3u8:Το Κλαμπ των Χωρισμένων
-#EXTINF:-1 tvg-id="ertflix.olapegankala" tvg-logo="https://files2.app.ertflix.gr/files/movies/everything-went-fine/everything-went-fine-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα Πήγαν Καλά (2021)
-#SERVICE 5002:0:1:4E1:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Feverything-went-fine%2Feverything-went-fine%2Findex.m3u8:Όλα Πήγαν Καλά
-#EXTINF:-1 tvg-id="ertflix.leophorospatesion" tvg-logo="https://files2.app.ertflix.gr/files/movies/loeforos-patision/patisionav-ertflix-poster.jpg?m=crop&w=570&h=854",Λεωφόρος Πατησίων (2018)
-#SERVICE 5002:0:1:4E2:1:1:CCCC0000:0:0:0:https:%2F%2Fmediaserve.ert.gr%2Fbpk-vod%2Fertflix%2Fsww9vzb8ao%2Fleoforos-patision%2Fleoforos-patision%2Findex.m3u8:Λεωφόρος Πατησίων
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tootsie/tootsie-ertflix-poster.png?m=crop&w=570&h=854",Τούτσι   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tootsie-drm-n/tootsie-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/sense-and-sensibility/sense-and-sensibility-ertflix-poster.jpg?m=crop&w=570&h=854",Λογική και Ευαισθησία   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sense-and-sensibility-drm-n/sense-and-sensibility-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/battle-of-the-classes/la-lutte-des-classes-ertflix-poster.jpg?m=crop&w=570&h=854",Battle of the Classes
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/battle-of-the-classes/battle-of-the-classes/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/secret-window/secret-window-ertflix-poster.jpg?m=crop&w=570&h=854",Μυστικό Παράθυρο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/secret-window-drm-n/secret-window-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/blind-date/blind-date-ertflix-poster.jpg?m=crop&w=570&h=854",Ραντεβού στα Τυφλά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/blind-date-drm-n/blind-date-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-bounty-hunter/the-bounty-hunter-ertflix-poster.png?m=crop&w=570&h=854",Επικηρύσσοντας την Πρώην
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-bounty-hunter-drm-n/the-bounty-hunter-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/julie-julia/julie-julia-ertflix-poster.jpg?m=crop&w=570&h=854",Τζούλι & Τζούλια
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/julie-julia-ms-drm-n/julie-julia-ms-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/bullet-train/bullet-train-ertflix-poster.png?m=crop&w=570&h=854",Bullet Train
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/bullet-train-drm-n/bullet-train-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-notorious-landlady/notoriuslandlady-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μυστηριώδης Κυρία με τα Μαύρα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/notorious-landlady-drm-n/notorious-landlady-drm-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/burning-horizon/burning-horizon-ertflix-poster.jpg?m=crop&w=570&h=854",Καυτός Ορίζοντας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kautos-orizontas-mikres-istories/kautos-orizontas-mikres-istories/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mediterraneo-the-low-of-the-sea/mediterraneo-the-law-of-the-sea-ertflix-poster.jpg?m=crop&w=570&h=854",Mediterraneo: Ο Νόμος της Θάλασσας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mediterraneo-the-law-of-the-sea/mediterraneo-the-law-of-the-sea/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/official-competition/official-competition-ertflix-poster.jpg?m=crop&w=570&h=854",Επίσημη Συμμετοχή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/official-competition/official-competition/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/paidika/oops-noah-is-gone/oops-noah-is-gone-ertflix-poster.jpg?m=crop&w=570&h=854",Ουπς! Ο Νώε Έφυγε...
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oops-noah-is-gone/oops-noah-is-gone/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/asterix-the-secret-of-th-magic-potion-magiqu/asterix-the-secret-of-the-magic-potion-ertflix-poster.jpg?m=crop&w=570&h=854",Αστερίξ: Τo Μυστικό του Μαγικού Ζωμού
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/asterix-the-secret-of-the-magic-potion/asterix-the-secret-of-the-magic-potion/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-natural/the-natural-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Καλύτερος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/output1/the-natural/the-natural/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-duke/the-duke-ertflix-poster.jpg?m=crop&w=570&h=854",The Duke
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the_duke_clean/the_duke_clean/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/o-drapetis-1967/o-drapetis-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Δραπέτης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-drapetis/o-drapetis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mollys-game/mollys-game-ertflix-poster.png?m=crop&w=570&h=854",Το Παιχνίδι της Μόλλυ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mollys-game/mollys-game/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/lee-daniels-the-butler/lee-daniels-the-butler-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μπάτλερ   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lee-daniel-is-the-butler/lee-daniel-is-the-butler/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/wonder/wonder-ertflix-poster.jpg?m=crop&w=570&h=854",Θαύμα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/wonder/wonder/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/rheingold/rheingold-ertflix-poster.jpg?m=crop&w=570&h=854",Το Χρυσάφι του Ρήνου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/rhinegold/rhinegold/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/sto-aerodromio/sto-aerodromio-ertflix-poster.jpg?m=crop&w=570&h=854",Στο Αεροδρόμιο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sto-aedromio/sto-aedromio/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/escape-from-pretoria/escape-from-pretoria-ertflix-poster.jpg?m=crop&w=570&h=854",Escape from Pretoria
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/escape-from-pretoria/escape-from-pretoria/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-frozen-ground/thefrozenground-ertflix-poster.jpg?m=crop&w=570&h=854",Υπό το Μηδέν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/frozen-ground/frozen-ground/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/summer-of-85/summer-of-85-ertflix-poster.jpg?m=crop&w=570&h=854",Το Καλοκαίρι του '85
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/summer-of-85/summer-of-85/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tiger/tigru-ertflix-poster.jpg?m=crop&w=570&h=854",Τίγρης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tiger/tiger/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-tourist-n/the-tourist-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τουρίστας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-tourist/the-tourist/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/snatch/snatch-ertflix-poster.jpg?m=crop&w=570&h=854",Η Αρπαχτή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/snatch-new2/snatch-new2/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/vantage-point/vantage-point-ertflix-poster.jpg?m=crop&w=570&h=854",Σημείο Υπεροχής 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/vantage_point/vantage_point/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/man-of-the-house/man-of-the-house-ertflix-poster.jpg?m=crop&w=570&h=854",Μυστικός Πράκτορας Σαρπ: Επιχείρηση Μαζορέτες
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/man-of-the-house-2005/man-of-the-house-2005/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/vertical-limit/vertical-limit-ertflix-poster.jpg?m=crop&w=570&h=854",Όρια Αντοχής  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/vertical-limit/vertical-limit/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/vancouver/to-vancouver-ertflix-poster.png?m=crop&w=570&h=854",Το Βανκούβερ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-vancouver-n/to-vancouver-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/angry-birds-2/the-angry-birds-2-ertflix-poster.png?m=crop&w=570&h=854",Angry Birds: Η Ταινία 2
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/angry-birds_2/angry-birds_2/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/i-simathitria-new/symathitria-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Συμμαθήτρια 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/i-shmathitria/i-shmathitria/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/fly-away-home/fly-away-home-ertflix-poster.jpg?m=crop&w=570&h=854",Tα Φτερουγίσματα 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/fly-away-home-new/fly-away-home-new/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/dragon-rider/dragon-rider-ertflix-poster.jpg?m=crop&w=570&h=854",Ταξίδι με τον Δράκο μου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dragon-rider/dragon-rider/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/two-for-the-money/two-for-the-money-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα για τα Λεφτά  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/two-for-the-money/two-for-the-money/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-remains-of-the-day/the-remains-of-the-day-ertflix-poster.jpg?m=crop&w=570&h=854",Τ' Απομεινάρια μιας Μέρας   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/remains-of-the-day/remains-of-the-day/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/fury/fury-ertflix-poster.png?m=crop&w=570&h=854",Fury
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/fury/fury/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hitch/hitch-ertflix-poster.png?m=crop&w=570&h=854",Hitch, ο Μετρ του Ζευγαρώματος 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hitch/hitch/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/district-9/district9-ertflix-poster.png?m=crop&w=570&h=854",District 9
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/district-9/district-9/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/seven-years-in-tibet/seven-years-in-tibet-ertflix-poster.jpg?m=crop&w=570&h=854",Επτά Χρόνια στο Θιβέτ   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/seven-years-in-tibet/seven-years-in-tibet/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/rough-night/rough-night-ertflix-poster.png?m=crop&w=570&h=854",Πάρτι Γυναικών  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/rought-night/rought-night/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/moneyball/moneyball-ertflix-poster.png?m=crop&w=570&h=854",Moneyball
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/moneyball/moneyball/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/our-friend/our-friend-ertflix-poster.jpg?m=crop&w=570&h=854",Our Friend
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/our-friend-n/our-friend-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/little-white-lies/little-white-lies-2-ertflix-poster.jpg?m=crop&w=570&h=854",Μικρά Αθώα Ψέματα 2
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/little-white-lies/little-white-lies/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/django-unchained/django-unchained-ertflix-poster.jpg?m=crop&w=570&h=854",Django, ο Τιμωρός
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/django-unchained-n/django-unchained-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-whole-nine-yards/the-whole-nine-yards-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μαφιόζος της Διπλανής Πόρτας   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/whole-nine-yards/whole-nine-yards/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/once-upon-a-time-in-mexico/once-upon-a-time-in-mexico-ertflix-poster.jpg?m=crop&w=570&h=854",Κάποτε στο Μεξικό   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/once-upon-a-time-in-mexico/once-upon-a-time-in-mexico/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-man-called-otto/amancalledotto-ertflix-poster.jpg?m=crop&w=570&h=854",Ένας Άνθρωπος που τον Έλεγαν Όττο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-man-called-otto-NEW/a-man-called-otto-NEW/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/words-on-bathroom-walls/words-on-bathroom-walls-ertflix-poster.jpg?m=crop&w=570&h=854",Words on Bathroom Walls
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/words-on-bathroom-wall/words-on-bathroom-wall/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/friends-with-benefits/friends-with-benefits-ertflix-poster.jpg?m=crop&w=570&h=854",Όχι Μόνο Φίλοι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/friends-with-benefits/friends-with-benefits/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ksenodokheio-gia-terata-4-teratometamorphoseis/hotel-transylvania-4-transformania-ertflix-poster.jpg?m=crop&w=570&h=854",Ξενοδοχείο για Τέρατα 4: Τερατομεταμορφώσεις
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/Hotel-Transylvania-4-Transformania/Hotel-Transylvania-4-Transformania/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/girl-interrupted/girl-interrupted-ertflix-poster.jpg?m=crop&w=570&h=854",Το Κορίτσι που Άφησα Πίσω   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/girl-interrupted/girl-interrupted/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/wizardstale/wizardstale-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Γκρινιάρης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-wizards-tale-n/a-wizards-tale-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/when-the-game-stands-tall/when-the-game-stands-tall-ertflix-poster.jpg?m=crop&w=570&h=854",Ανίκητοι Πρωταθλητές
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/output1/when-the-game-stands-tall/when-the-game-stands-tall/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/dark-truth/a-dark-truth-ertflix-poster.jpg?m=crop&w=570&h=854",Σκοτεινή Αλήθεια
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/skoteinh_alhtheia_for_web/skoteinh_alhtheia_for_web/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/legends-of-th-fall/legends-of-the-fall-ertflix-poster.jpg?m=crop&w=570&h=854",Θρύλοι του Πάθους
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/legends-of-the-fall/legends-of-the-fall/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/layer-cake/layercake-ertflix-poster.jpg?m=crop&w=570&h=854",Χάπια, Σφαίρες και 2.000.000 Λίρες
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/layer-cake/layer-cake/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/blue-valentine/blue-valentine-ertflix-poster.png?m=crop&w=570&h=854",Blue Valentine
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/blue-valentine/blue-valentine/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/punch-drunk-love/punch-drunk-love-ertflix-poster.jpg?m=crop&w=570&h=854",Χτυπημένος από Έρωτα  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/xtyphmenos_apo_erota_for_web/xtyphmenos_apo_erota_for_web/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-dogs-way-home/a-dogs-way-home-ertflix-poster.jpg?m=crop&w=570&h=854",400 Μίλια Αγάπης  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dogs-way-home/dogs-way-home/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/absence-of-malice/absence-of-malice-ertflix-poster.jpg?m=crop&w=570&h=854",Χωρίς Δόλο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/output1/absence-of-malice-n/absence-of-malice-n/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/lyle-lyle-crocodile/lyle-lyle-crocodile-ertflix-poster.jpg?m=crop&w=570&h=854",Λάιλ, ο Φίλος μου ο Κροκόδειλος 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lyle-lyle-crocodile/lyle-lyle-crocodile/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/penguin-bloom/penguin-bloom-ertflix-poster.png?m=crop&w=570&h=854",Ένα Θαύμα από τον Ουρανό
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/penguin-bloom/penguin-bloom/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/my-stupid-dog/mydogstupid-ertflix-poster.jpg?m=crop&w=570&h=854",My Dog Stupid
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/my-dog-stupid/my-dog-stupid/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hollywood-homicide/hollywood-homicide-ertflix-poster-new.jpg?m=crop&w=570&h=854",Οι Μπάτσοι του Χόλιγουντ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hollywood-homicide/hollywood-homicide/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/inferno/inferno-ertflix-poster.jpg?m=crop&w=570&h=854",Inferno   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/inferno/inferno/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/dream-horse/dream-horse-ertflix-poster.jpg?m=crop&w=570&h=854",Το Άλογο των Ονείρων
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dream-horse/dream-horse/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/yomeddine/yomeddine-ertflix-poster.jpg?m=crop&w=570&h=854",Yomeddine
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/yomeddine/yomeddine/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/5flightsup/5flightsup-ertflix-poster.jpg?m=crop&w=570&h=854",Ασανσέρ για 2
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/five-flights-up-n/five-flights-up-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/la-quietud/la-quietud-ertflix-poster.jpg?m=crop&w=570&h=854",Η Έπαυλη με τα Μυστικά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/la-quietud/la-quietud/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hotel-artemis/hotelartemis-ertflix-poster.jpg?m=crop&w=570&h=854",Hotel Artemis
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hotel-artemis/hotel-artemis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/think-like-a-dog/thinklikeadog-ertflix-poster.jpg?m=crop&w=570&h=854",Think Like a Dog
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/think-like-a-dog/think-like-a-dog/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/blue-jean/bluejean-ertflix-poster.jpg?m=crop&w=570&h=854",Blue Jean
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/blue-jean/blue-jean/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mikres-istories-to-nohma-tou-aygoustou/to-nohma-toy-aygoustou-ertflix-poster.jpg?m=crop&w=570&h=854",Το Νόημα του Αυγούστου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-nohma-tou-augoustou-n/to-nohma-tou-augoustou-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-company-you-keep/thecompanyyoukeep-ertflix-poster-new.jpg?m=crop&w=570&h=854",Ο Κανόνας της Σιωπής
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-company-you-keep/the-company-you-keep/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/amygdala/amygdala-poster-new.jpg?m=crop&w=570&h=854",Αμυγδαλή 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/amigdali/amigdali/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/diakopes-kalokairines/diakopeskalokairines-ertflix-poster-new.jpg?m=crop&w=570&h=854",Διακοπές Καλοκαιρινές
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/diakopes-kalokairines/diakopes-kalokairines/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/what-swims-and-laughs-new/what-swims-and-laughs-ertflix-poster-new.jpg?m=crop&w=570&h=854",Τι Κολυμπάει και Γελάει;
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ti-kolympaei-kai-gelaei/ti-kolympaei-kai-gelaei/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/osiki/osiki-ertflix-poster.jpg?m=crop&w=570&h=854",Οσίκι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/osiki/osiki/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/magma/magma-ertflix-poster.jpg?m=crop&w=570&h=854",Μάγμα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/magma/magma/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tzitzipongo/tzitzipongo-ertflix-poster.jpg?m=crop&w=570&h=854",Τζιτζιπόνγκο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tzitzipongo/tzitzipongo/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/djam/djam-ertflix-poster.jpg?m=crop&w=570&h=854",Μποέμικη Ψυχή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/djam/djam/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tigers-are-not-afraid/tigers-are-not-afraid-ertflix-poster.jpg?m=crop&w=570&h=854",Tigers Are Not Afraid
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tigers-are-not-afraid-vuelven/tigers-are-not-afraid-vuelven/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ten-days-without-mum-10/10dayswithoutmum-ertflix-poster.jpg?m=crop&w=570&h=854",10 Ημέρες Χωρίς Μαμά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dix-jours-sans-maman/dix-jours-sans-maman/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/einai-grousouzia/grousouzianadeistinyfi-ertflix-poster-new.jpg?m=crop&w=570&h=854",Είναι Γρουσουζιά να Δεις τη Νύφη πριν τον Γάμο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/einai-grousouzia/einai-grousouzia/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/pilala/pilala-ertflix-poster.jpg?m=crop&w=570&h=854",Πιλάλα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/pilala-mikrofilm/pilala-mikrofilm/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-noir-project/the-noir-project-ertflix-poster.jpg?m=crop&w=570&h=854",Νουάρ Πρότζεκτ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-noir-project/the-noir-project/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/made-in-italy/madeinitaly-ertflix-poster.jpg?m=crop&w=570&h=854",Made in Italy 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/made-in-italy-new/made-in-italy-new/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/end-of-sentence/end-of-sentence-ertflix-poster.jpg?m=crop&w=570&h=854",Το Τέλος της Διαδρομής
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/end-of-sentence/end-of-sentence/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/my-son/myson-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Γιος μου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/my-son/my-son/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/family-romance/family-romance-llc-ertflix-poster.jpg?m=crop&w=570&h=854",Οικογενειακή Eυτυχία Α.Ε.
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/family-romance/family-romance/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/falling/falling-ertflix-poster.jpg?m=crop&w=570&h=854",Falling
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/falling/falling/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ektos-epoxis/ektos-epoxis-ertflix-poster.jpg?m=crop&w=570&h=854",Εκτός Εποχής
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ektos-epoxis/ektos-epoxis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/chlorine/chlorine-ertflix-poster.jpg?m=crop&w=570&h=854",Χλώριο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/chlorio-chlorine-mikres-istories/chlorio-chlorine-mikres-istories/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/my-little-pony/my-little-pony-ertflix-poster.jpg?m=crop&w=570&h=854",Μικρό μου Πόνυ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/my-little-pony-n/my-little-pony-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/una/una-ertflix-poster.jpg?m=crop&w=570&h=854",Το Παρελθόν της Ούνα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/una/una/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/land/land-ertflix-poster.jpg?m=crop&w=570&h=854",Land
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/land-n/land-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/comme-un-avion/come-un-avion-ertflix-poster.png?m=crop&w=570&h=854",Γλυκιά Απόδραση
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/comme-un-avion-n/comme-un-avion-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/travel-express/travelexpress-ertflix-poster.jpg?m=crop&w=570&h=854",Travel Express
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/travel-express/travel-express/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-good-girl/the-good-girl-ertflix-poster.jpg?m=crop&w=570&h=854",Σαν Καλό Κορίτσι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-good-girl/the-good-girl/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-man-in-a-hurry/a-man-in-a-hurry-ertflix-poster.jpg?m=crop&w=570&h=854",Χαλαρώστε Κύριε Αλέν!
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/un-homme-presse-a-man-in-a-hurry/un-homme-presse-a-man-in-a-hurry/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/conan-the-barbarian/conanthebarbarian-ertflix-poster.jpg?m=crop&w=570&h=854",Κόναν ο Βάρβαρος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/conan-the-barbarian/conan-the-barbarian/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/put-grandma-in-the-freezer/put-grandma-in-the-freezer-ertflix-poster.jpg?m=crop&w=570&h=854",Βάλε τη Γιαγιά στο Ψυγείο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/put-grandma-in-the-freezer/put-grandma-in-the-freezer/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-last-night-of-amore/the-last-night-of-amore-ertflix-poster.jpg?m=crop&w=570&h=854",Η Τελευταία Νύχτα του Φράνκο Αμόρε
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/last-night-of-amore/last-night-of-amore/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/my-generation/mygeneration-ertflix-poster.jpg?m=crop&w=570&h=854",My Generation
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/my-generation/my-generation/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/to-dodekato-evangelio/to12oevaggelio-ertflix-poster-new.jpg?m=crop&w=570&h=854",Το Δωδέκατο Ευαγγέλιο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-dodekato-evaggelio-mikres-istories-n/to-dodekato-evaggelio-mikres-istories-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/to-kalokairi-pou-paratirisa-gia-proti-fora/tkpppfthnd-ertflix-poster.jpg?m=crop&w=570&h=854",Το Καλοκαίρι που Παρατήρησα για Πρώτη Φορά τον Ήλιο να Δύει 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/to-kalokairi-pou-paratirisa-gia-proti-fora-ton-ilio-na-dyei/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/other-peoples-children/other-peoples-children-ertflix-poster.jpg?m=crop&w=570&h=854",Τα Παιδιά των Άλλων 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/other-peoples-children/other-peoples-children/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/momo/momo-ertflix-poster.jpg?m=crop&w=570&h=854",Μαμά από το Πουθενά 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/momo-finding-mom/momo-finding-mom/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mrs-lowry-n-son/mrslowryson-ertflix-poster.jpg?m=crop&w=570&h=854",Mrs Lowry & Son
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mrs-lowry-n-son/mrs-lowry-n-son/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mothers-day/mothers-day-ertflix-poster.jpg?m=crop&w=570&h=854",Γιορτή της Μητέρας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mothers-day/mothers-day/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tully/tully-ertflix-poster.jpg?m=crop&w=570&h=854",Tully: Tα Παιδιά Είναι Ευτυχία;  
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tully/tully/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/charter/charter-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ταξίδι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/charter/charter/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/teli-augoustou/teli-augoustou-ertflix-poster.jpg?m=crop&w=570&h=854",Τέλη Αυγούστου 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/teli-augoustou/teli-augoustou/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/all-about-my-mother/all-about-my-mother-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα για τη Μητέρα μου   
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/all-about-my-mother/all-about-my-mother/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/miss-violence/missviolence-new-ertflix-poster-new.jpg?m=crop&w=570&h=854",Miss Violence
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miss-violence/miss-violence/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/beatiful-people/beautifulpeople-ertflix-poster.jpg?m=crop&w=570&h=854",Beautiful People 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/beautiful-people/beautiful-people/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/la-belle-saison/la-belle-saison-ertflix-poster.jpg?m=crop&w=570&h=854", Η Ομορφότερη Εποχή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/belle-saison/belle-saison/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/beatiful-people/beautifulpeople-ertflix-poster.jpg?m=crop&w=570&h=854",Beautiful People 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/beautiful-people/beautiful-people/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/la-belle-saison/la-belle-saison-ertflix-poster.jpg?m=crop&w=570&h=854", Η Ομορφότερη Εποχή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/belle-saison/belle-saison/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/s-auti-ti-xwra-den-iksere-kaneis-na-klaiei/s-afti-tin-xora-ertflix-poster.png?m=crop&w=570&h=854",Σ' Αυτή τη Χώρα δεν Ήξερε Κανείς να Κλαίει
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/se-auti-ti-xwra-kaneis-den-iksere-na-klaiei/se-auti-ti-xwra-kaneis-den-iksere-na-klaiei/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/carbon/carbon-ertflix-poster.jpg?m=crop&w=570&h=854",Απάτη σε Μαύρο Φόντο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/carbon/carbon/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-doorman/thedoorman-ertflix-poster.jpg?m=crop&w=570&h=854",Κόκκινος Συναγερμός
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-doorman/the-doorman/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-drone/the-drone-ertflix-poster.jpg?m=crop&w=570&h=854",The Drone
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-drone/the-drone/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/inside/inside-ertflix-poster.jpg?m=crop&w=570&h=854",Inside
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/inside/inside/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-unknown-athenians/the-unknown-athenians-ertflix-poster.jpg?m=crop&w=570&h=854",Οι Άγνωστοι Αθηναίοι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-unknown-athenians/the-unknown-athenians/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-hologram-for-the-king/a-hologram-for-the-king-ertflix-poster.jpg?m=crop&w=570&h=854",Ένα Ολόγραμμα για τον Βασιλιά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-hologram-for-the-king/a-hologram-for-the-king/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-thife/the-thief-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Κλέφτης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-kleftis/o-kleftis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/loveless/loveless-ertflix-poster.jpg?m=crop&w=570&h=854",Χωρίς Aγάπη
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/loveless/loveless/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/leviathan/leviathan-ertflix-poster.jpg?m=crop&w=570&h=854",Λεβιάθαν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/leviathan/leviathan/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/long-days-journey-into-the-night/long-days-journey-into-night-ertflix-poster.jpg?m=crop&w=570&h=854",Μεγάλο Ταξίδι της Μέρας στη Νύχτα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/long-day-s-journey-into-night/long-day-s-journey-into-night/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hachico/hachi-a-dogs-tale-ertflix-poster.jpg?m=crop&w=570&h=854",Hachiko: Η Ιστορία ενός Σκύλου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hachi-a-dogs-tale/hachi-a-dogs-tale/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ready/ready-ertflix-poster.jpg?m=crop&w=570&h=854",Έτοιμοι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/etoimoi/etoimoi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/julieta/julieta-ertflix-poster.jpg?m=crop&w=570&h=854",Χουλιέτα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/julieta/julieta/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/pinocchio/pinocchio-ertflix-poster.jpg?m=crop&w=570&h=854",Πινόκιο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/pinocchio/pinocchio/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/belle-sebastian/bellesebastian3-ertflix-poster.jpg?m=crop&w=570&h=854",Φίλοι για Πάντα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/belle-en-sebastien-3/belle-en-sebastien-3/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/enas-kleftis-me-filotimo/enaskleftismefilotimo-ertflix-poster.jpg?m=crop&w=570&h=854",Ένας Κλέφτης... Με Φιλότιμο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kleftis-me-filotimo/kleftis-me-filotimo/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-emperor-of-paris/the-emperor-of-paris-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τυχοδιώκτης του Παρισιού
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-emperor-of-paris/the-emperor-of-paris/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/foxtrot-ertflix-poster.jpg?m=crop&w=570&h=854",Foxtrot
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/foxtrot/foxtrot/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/asterix-and-obelix-god-save-britannia/asterix-ertflix-poster.jpg?m=crop&w=570&h=854",Αστερίξ και Οβελίξ στη Βρετανία
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/asterix-and-obelix-god-save-britannia/asterix-and-obelix-god-save-britannia/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-bfg-the-big-friendly-giant/thebfg-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Μεγάλος Φιλικός Γίγαντας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-big-friendly-giant/the-big-friendly-giant/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/la-tete-haute/la-tete-haute-ertflix-poster.jpg?m=crop&w=570&h=854",Με το Κεφάλι Ψηλά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/la-tete-haute/la-tete-haute/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/what-happened-to-monday/whathappenedtomonday-ertflix-poster.jpg?m=crop&w=570&h=854",Τι Συνέβη στη Δευτέρα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ti_synevh_th_deftera_for_web/ti_synevh_th_deftera_for_web/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/three-wishes-cindirella/three-wishes-for-cinderella-ertflix-poster.jpg?m=crop&w=570&h=854",Τρεις Ευχές για τη Σταχτοπούτα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/three-wishes-for-cinderella/three-wishes-for-cinderella/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/gauguin/gauguin-ertflix-poster-new.jpg?m=crop&w=570&h=854",Γκωγκέν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/gauguin/gauguin/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-insult/new/the-insult-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Προσβολή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-insult-n/the-insult-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/une-heure-de-tranquillite/new/une-heure-de-tranquillite-ertflix-poster2.jpg?m=crop&w=570&h=854",Μην Ενοχλείτε, Παρακαλώ
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/une-heure-de-tranquilite-n/une-heure-de-tranquilite-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/happy-end/happy-end-ertflix-poster-new.jpg?m=crop&w=570&h=854",Happy End
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/happy-end-n/happy-end-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tetarti-04-45/tetarti-4-45-ertflix-poster.jpg?m=crop&w=570&h=854",Τετάρτη 04:45
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tetarti-04-45/tetarti-04-45/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/to-rantevou-tis-kirakis-new/to-rantevou-tis-kyriakis-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ραντεβού της Κυριακής
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-rantevou-tis-kyriakis/to-rantevou-tis-kyriakis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/sxetika-me-ton-vasili/sxetika-me-ton-vasili-ertflix-poster.jpg?m=crop&w=570&h=854",Σχετικά με τον Βασίλη
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sxetika-me-ton-basilh/sxetika-me-ton-basilh/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-sea-of-trees/the-sea-of-trees-ertflix-poster.jpg?m=crop&w=570&h=854",Μια Θάλασσα από Δέντρα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sea-of-trees/sea-of-trees/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/two-days-one-night/2days1night-ertflix-poster.jpg?m=crop&w=570&h=854",Δύο Μέρες, Μία Νύχτα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/two-days-one-night/two-days-one-night/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/bastille-day/bastilleday-ertflix-poster.jpg?m=crop&w=570&h=854",Η Mέρα της Βαστίλης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/bastille-day/bastille-day/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-english-teacher/theenglishteacher-ertflix-poster.jpg?m=crop&w=570&h=854",Κάτσε Φρόνιμα 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-english-teacher/the-english-teacher/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/o-theios-tis-violetas/o-theios-ths-violettas-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Θείος της Βιολέτας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/o-theios-tis-violetas/o-theios-tis-violetas/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/my-golden-days/my-golden-days-ertflix-poster.jpg?m=crop&w=570&h=854",Τα Χρυσά μας Χρόνια
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/my-golden-days/my-golden-days/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/flux/flux-ertflix-poster.jpg?m=crop&w=570&h=854",Παλίρροια
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/paliria-3n/paliria-3n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/firebug/firebug-ertflix-poster.jpg?m=crop&w=570&h=854",Firebug
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/firebug-n/firebug-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/claw-machine/claw-machine-ertflix-poster.jpg?m=crop&w=570&h=854",Claw Machine 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/claw-maghine/claw-maghine/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/paddington-2/paddington2-ertflix-poster.jpg?m=crop&w=570&h=854",Πάντινγκτον 2
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/output1/paddington-2/paddington-2/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/emily/emily-ertflix-poster.jpg?m=crop&w=570&h=854",Emily
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/emily/emily/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/call-jane/call-jane-ertflix-poster.jpg?m=crop&w=570&h=854",Τηλεφώνησε στην Τζέιν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/call-jane/call-jane/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/to-tyxero-panteloni/to-tyxero-pantaloni-ertflix-poster.jpg?m=crop&w=570&h=854",Το Τυχερό Παντελόνι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/tyxero-panteloni/tyxero-panteloni/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/alibi/alibi-com-ertflix-poster.jpg?m=crop&w=570&h=854",Άλλοθι για Παντρεμένους
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/alibi/alibi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/zulu/zulu-ertflix-poster.jpg?m=crop&w=570&h=854",Το Ακρωτήρι της Βίας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/zulu/zulu/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/september-of-shiraz/septembersofshiraz-ertflix-poster.jpg?m=crop&w=570&h=854",Η Διπλή Όψη της Επανάστασης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/septemberes-of-shiraz/septemberes-of-shiraz/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-current-war/the-current-war-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μάχη της Επικράτησης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-current-war/the-current-war/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/oi-yperifanoi/oi-yperifanoi-ertflix-poster.jpg?m=crop&w=570&h=854",	Οι Υπερήφανοι		
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oi-yperifanoi/oi-yperifanoi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/karagiozis-oi-adikimenoi-tis-zwhs/karagiozis-oi-adikimenoi-tis-zwis-ertflix-poster.jpg?m=crop&w=570&h=854",Καραγκιόζης: Ο Αδικημένος της Ζωής
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/karagiozis-oi-adikimenoi-tis-zwis/karagiozis-oi-adikimenoi-tis-zwis/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/chuck/chuck-ertflix-poster.jpg?m=crop&w=570&h=854",Chuck: Η Ιστορία του Πραγματικού Rocky Balboa
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/chuck-i-istoria-tou-pragmatikou-rocky-balboa/chuck-i-istoria-tou-pragmatikou-rocky-balboa/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/eroika/eroika-ertflix-poster.jpg?m=crop&w=570&h=854",Ερόϊκα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/eroika/eroika/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos-ertflix-poster.jpg?m=crop&w=570&h=854",Ό,τι Λάμπει Είναι Χρυσός
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/oti-lampei-einai-xrysos/oti-lampei-einai-xrysos/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/adikos-kosmos/adikos-kosmos-ertflix-poster.jpg?m=crop&w=570&h=854",Άδικος Κόσμος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/adikos-kosmos/adikos-kosmos/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/yakari/yakari-ertflix-poster.jpg?m=crop&w=570&h=854",Γιάκαρι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/yakari-movie/yakari-movie/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/green-book/green-book-ertflix-poster.jpg?m=crop&w=570&h=854",Το Πράσινο Βιβλίο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/green-book/green-book/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hacksaw-ride/hacksaw-ridge-ertflix-poster.jpg?m=crop&w=570&h=854",Αντιρρησίας Συνείδησης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hacksaw-ridge/hacksaw-ridge/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/pavarotti-2019/pavarotti-ertflix-poster.jpg?m=crop&w=570&h=854",Παβαρότι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/pavarotti-n/pavarotti-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/monsters-and-men/monsters-and-men-ertflix-poster.jpg?m=crop&w=570&h=854",Monsters and Men
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/monsters-and-men-n/monsters-and-men-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/finding-steve-mcqueen/finding-steve-mcqueen-ertflix-poster.jpg?m=crop&w=570&h=854",Finding Steve McQueen
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/finding-steve-mcqueen/finding-steve-mcqueen/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/miss-julie/missjulie-ertflix-poster.jpg?m=crop&w=570&h=854",Δεσποινίς Τζούλια
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miss-julie/miss-julie/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/i-skoni-pou-peftei/h-skonh-pou-peftei-ertflix-poster.jpg?m=crop&w=570&h=854",Η Σκόνη που Πέφτει
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/skoni-pou-peftei/skoni-pou-peftei/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/jackie-and-ryan/jackie-ryan-ertflix-poster.jpg?m=crop&w=570&h=854",Τζάκι και Ράιαν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/jackie-and-rayan/jackie-and-rayan/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-card-number/the-card-counter-ertflix-poster.jpg?m=crop&w=570&h=854",Μετρητής Καρτών
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/card-counter/card-counter/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-kiss/the-kiss-ertflix-poster.jpg?m=crop&w=570&h=854",The Kiss
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-kiss/the-kiss/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-space-between-us/the-space-between-us-ertflix-poster-new.jpg?m=crop&w=570&h=854",Το Διάστημα Ανάμεσά μας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-space-between-us/the-space-between-us/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/let-the-sunshine-in/letthesunshinein-ertflix-poster-new.jpg?m=crop&w=570&h=854",Η Λιακάδα Μέσα μου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/let-the-sunsine-n/let-the-sunsine-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/on-chesil-beach/on-chesil-beach-ertflix-poster.jpg?m=crop&w=570&h=854",Ανεκπλήρωτος Γάμος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/on-chesil-beach/on-chesil-beach/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/not-my-type/not-my-type-ertflix-poster.jpg?m=crop&w=570&h=854",Μήπως Είσαι ο Τύπος μου;
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/not-my-type/not-my-type/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/black-book/black-book-ertflix-poster.png?m=crop&w=570&h=854",Μαύρη Λίστα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/black-book/black-book/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/england-is-mine/england-is-mine-ertflix-poster.jpg?m=crop&w=570&h=854",Η Αγγλία μού Ανήκει
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/england-is-mine/england-is-mine/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/best-sellers/best-sellers-ertflix-poster.jpg?m=crop&w=570&h=854",Best Sellers
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/best-sellers/best-sellers/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/flag-day/flag-day-ertflix-poster.jpg?m=crop&w=570&h=854",Flag Day
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/flag-day/flag-day/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/kathimerinh-ergasimh/working-day-ertflix-poster.jpg?m=crop&w=570&h=854", Καθημερινή Εργάσιμη
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kathimerini-ergasimi/kathimerini-ergasimi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/goldfish/goldfish-ertflix-poster.jpg?m=crop&w=570&h=854",Χρυσόψαρο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/gold-fish-xrusopsaro/gold-fish-xrusopsaro/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/harmonica-man/harmonica-man-ertflix-poster-new.jpg?m=crop&w=570&h=854",Φυσαρμόνικα Μαν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/vodext/default/harmonica-man/harmonica-man/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/pink-mountain/pink-mountain-ertflix-poster.jpg?m=crop&w=570&h=854",Ροζ Βουνό
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/roz-vouno/roz-vouno/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/seawolf/seawolf-ertflix-poster.jpg?m=crop&w=570&h=854",Seawolf
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/sea-wolf/sea-wolf/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hartinoi-aetoi-new/xartinoi-aetoi-ertflix-poster.jpg?m=crop&w=570&h=854",Χάρτινοι Αετοί
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hartinoi-aetoi/hartinoi-aetoi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/xhra-strathgou-new/xira-stratigou-ertflix-poster-new.jpg?m=crop&w=570&h=854",Χήρα Στρατηγού
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hira-stratigou/hira-stratigou/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/largo/largo-ertflix-poster.jpg?m=crop&w=570&h=854",Largo
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/largo/largo/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/memory-reloaded/memory-reloaded-ertflix-poster.jpg?m=crop&w=570&h=854",Memory Reloaded
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/memory-reloaded/memory-reloaded/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/kinita-stoixeia-new/kinhta-stoixeia-ertflix-poster.jpg?m=crop&w=570&h=854",Κινητά Στοιχεία
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/kinita-stoixeia-microfilm/kinita-stoixeia-microfilm/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/apoxairetwntas/apoxeretontas-ertflix-poster.jpg?m=crop&w=570&h=854",Αποχαιρετώντας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/apoxairetontas/apoxairetontas/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ela-na-sou-pw/ela-na-sou-po-ertflix-poster.jpg?m=crop&w=570&h=854",Έλα να σου Πω...
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ela-na-sou-pw/ela-na-sou-pw/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ygraerio/ygraerio-ertflix-poster.jpg?m=crop&w=570&h=854",Υγραέριο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ygraerio-n/ygraerio-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/13-1-2/13miso-ertflix-poster.jpg?m=crop&w=570&h=854",13 1/2
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dekatriamisi-n/dekatriamisi-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/lou-and-lena/lou-lena-ertflix-poster.jpg?m=crop&w=570&h=854",Λου & Λένα
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lou-kai-lena/lou-kai-lena/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/miden-thetiko/0-ertflix-poster.jpg?m=crop&w=570&h=854",Μηδέν Θετικό 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miden-thetiko-n/miden-thetiko-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/to-perasma/to-perasma-ertflix-poster.jpg?m=crop&w=570&h=854",Το Πέρασμα 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/to-perasma/to-perasma/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/lithi/lithi-ertflix-poster.jpg?m=crop&w=570&h=854",Λήθη 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lithi/lithi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/mia-mera-stin-sangai/mia-mera-sth-shanghai-ertflix-poster.jpg?m=crop&w=570&h=854",Μια Μέρα στη Σαγκάη
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-day-in-the-life-of-a-fat-teddy-bear-n/a-day-in-the-life-of-a-fat-teddy-bear-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/blackbird/blackbird-ertflix-poster.jpg?m=crop&w=570&h=854",Blackbird
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/blackbird-silent-heart/blackbird-silent-heart/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-song-of-names/the-song-of-names-ertflix-poster.png?m=crop&w=570&h=854",Η Αναζήτηση
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-song-of-names/the-song-of-names/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/xena-docs/miles-davis-birth-of-the-cool/miles-davis-birth-of-the-cool-ertflix-poster.jpg?m=crop&w=570&h=854",Miles Davis: Birth of the Cool 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/miles-davis-the birth-of-cool-n/miles-davis-the birth-of-cool-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/lassie-come-home/lassie-come-home-ertflix-poster.jpg?m=crop&w=570&h=854",Λάσι, Γύρνα Σπίτι
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/lassie-come-home/lassie-come-home/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/ailos-journey/ailos-journey-ertflix-poster.png?m=crop&w=570&h=854",Αϊλό: Ο Μικρός Ήρωας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ailo-une-odyssee-en-laponie-ailos-journey/ailo-une-odyssee-en-laponie-ailos-journey/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/how-to-be-a-good-wife/howtobegoodwife-ertflix-poster.jpg?m=crop&w=570&h=854",Η Καλή Σύζυγος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/how-to-be-a-good-wife/how-to-be-a-good-wife/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/power-rangers/power-ranger-ertflix-poster.png?m=crop&w=570&h=854",Power Rangers
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/power-rangers/power-rangers/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/rolling-to-you/rolling2u-ertflix-poster.jpg?m=crop&w=570&h=854",Θα Έρθω Κοντά σου Σιγά-Σιγά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/rolling-to-you/rolling-to-you/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/hotel-kentavros/hotel-centaur-ertflix-poster.jpg?m=crop&w=570&h=854",Hotel Κένταυρος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/hotel-kentavos/hotel-kentavos/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/emploki/imbroglio-ertflix-poster.jpg?m=crop&w=570&h=854",Εμπλοκή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/emploki/emploki/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/aerolin/aerolin-ertflix-poster.jpg?m=crop&w=570&h=854",Αερολίν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/aerolin/aerolin/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/it-must-be-heavean/it-must-be-heaven-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Παράδεισος Έπεσε στη Γη 
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/it-must-be-heaven/it-must-be-heaven/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/i-polythrona-sto-pezodromio/the-armchair-on-the-pavement-ertflix-poster.jpg?m=crop&w=570&h=854",Η Πολυθρόνα στο Πεζοδρόμιο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/mia-polythrona-sto-pezodromio/mia-polythrona-sto-pezodromio/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/diavasi/diabash-ertflix-poster.jpg?m=crop&w=570&h=854",Διάβαση
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/i-diavasi/i-diavasi/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/man-wanted/man-wanted-ertflix-poster.jpg?m=crop&w=570&h=854",Man Wanted
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/man-wanted/man-wanted/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-dogs-purpose/a-dogs-purpose-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Καλύτερος Φίλος μου
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-dogs-purpose/a-dogs-purpose/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/wonder-wheel/wonder-wheel-ertflix-poster.jpg?m=crop&w=570&h=854",Wonder Wheel
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/wonder-wheel-n/wonder-wheel-n/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/la-paranza-dei-bambini/la-paranza-dei-bambini-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μεγάλη Νύχτα της Νάπολης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/la-paranza-dei-bambini/la-paranza-dei-bambini/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/aftersun/aftersun-ertflix-poster.jpg?m=crop&w=570&h=854",Aftersun
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/aftersun/aftersun/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/dalida/dalida-ertflix-poster.jpg?m=crop&w=570&h=854",Dalida
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/dalida/dalida/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/a-taste-of-hunger/a-taste-of-hunger-ertflix-poster.jpg?m=crop&w=570&h=854",Η Γεύση της Απιστίας
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/a-taste-of-hunger/a-taste-of-hunger/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/proxima/proxima-ertflix-poster.jpg?m=crop&w=570&h=854",Η Επόμενη Αποστολή
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/proxima/proxima/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/marrowbone/marrowbone-ertflix-poster.jpg?m=crop&w=570&h=854",Το Μυστικό των Μάρομποουν
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/marrowbone/marrowbone/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tale-of-tales/tale-of-tales-ertflix-poster.jpg?m=crop&w=570&h=854",Το Παραμύθι των Παραμυθιών
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tale-of-tales/tale-of-tales/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-last-face/the-last-face-ertflix-poster.jpg?m=crop&w=570&h=854",The Last Face
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/last-face/last-face/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/another-round/another-round-ertflix-poster.jpg?m=crop&w=570&h=854",Άσπρο Πάτο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/another-round/another-round/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/nioti/youth-ertflix-poster.jpg?m=crop&w=570&h=854",Νιότη
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/youth/youth/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/riders-of-justice/ridersofjustice-ertflix-poster.jpg?m=crop&w=570&h=854",Οι Εκκεντρικοί
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/riders-of-justice/riders-of-justice/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/the-traitor/the-traitor-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Προδότης
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/the-traitor/the-traitor/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/see-you-up-there/au-revoir-la-haut-ertflix-poster.jpg?m=crop&w=570&h=854",Ραντεβού Εκεί Ψηλά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/see-you-up-there/see-you-up-there/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/after-the-wedding/after-the-wedding-ertflix-poster.jpg?m=crop&w=570&h=854",Μετά τον Γάμο
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/after-the-wedding/after-the-wedding/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/highway-of-a-broken-heart/highway-of-a-broken-heart-ertflix-poster.jpg?m=crop&w=570&h=854",Εθνική Οδός μιας Ραγισμένης Καρδιάς
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/ethniki-odos-mias-ragismenis-kardias/ethniki-odos-mias-ragismenis-kardias/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/light-of-light/light-of-light-ertflix-poster.jpg?m=crop&w=570&h=854",Φῶς ἐκ Φωτός
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/fws-ek-fwtos-new1/fws-ek-fwtos-new1/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/tenor/tenor-ertflix-poster.jpg?m=crop&w=570&h=854",Ο Τενόρος
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/tenor/tenor/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/divorce-club/divorce-club-ertflix-poster.jpg?m=crop&w=570&h=854",Το Κλαμπ των Χωρισμένων
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/divorce-club/divorce-club/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/everything-went-fine/everything-went-fine-ertflix-poster.jpg?m=crop&w=570&h=854",Όλα Πήγαν Καλά
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/everything-went-fine/everything-went-fine/index.m3u8
+#EXTINF:-1 tvg-logo="https://files2.app.ertflix.gr/files/movies/loeforos-patision/patisionav-ertflix-poster.jpg?m=crop&w=570&h=854",Λεωφόρος Πατησίων
+#EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/leoforos-patision/leoforos-patision/index.m3u8
