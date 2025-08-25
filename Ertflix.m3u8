@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/qbasekostas/TV_Movies/refs/heads/main/Ertflix_epg.xml.gz"
 #EXTINF:-1 tvg-id="E-Megale-Kapsa" tvg-logo="https://files2.app.ertflix.gr/files/movies/the-big-heat/the-big-heat-ertflix-poster.jpg?m=crop&w=570&h=854",Η Μεγάλη Κάψα
 #EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://mediaserve.ert.gr/bpk-vod/ertflix/output1/the-big-heat/the-big-heat/index.m3u8
@@ -737,3 +737,4 @@ https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/everything-went-fine/everyt
 #EXTINF:-1 tvg-id="Leophoros-Patesion" tvg-logo="https://files2.app.ertflix.gr/files/movies/loeforos-patision/patisionav-ertflix-poster.jpg?m=crop&w=570&h=854",Λεωφόρος Πατησίων
 #EXTVLCOPT:user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://mediaserve.ert.gr/bpk-vod/ertflix/sww9vzb8ao/leoforos-patision/leoforos-patision/index.m3u8
+
