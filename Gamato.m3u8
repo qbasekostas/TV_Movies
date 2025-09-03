@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/qbasekostas/TV_Movies/refs/heads/main/Gamato_epg.xml.gz"
 #EXTINF:-1 tvg-id="5002:0:19:112F8:0:0:0:0:0:0" tvg-logo="https://gamatotv.info/wp-content/uploads/2025/09/oumprkO9bThExP8NwxBIBnvBu2v1-200x300.jpg",The Life of Chuck (2025)
 http://s1.gmtcloud.site/video/moviess/TheLifeofChuck2024.mp4?id=0
 #EXTINF:-1 tvg-id="5002:0:19:112E7:0:0:0:0:0:0" tvg-logo="https://gamatotv.info/wp-content/uploads/2025/09/svXVRoRSu6zzFtCzkRsjZS7Lqpd1-200x300.jpg",Nobody 2 (2025)
@@ -37,3 +37,4 @@ http://s1.gmtcloud.site/video/moviess/Fantasy.Football.Ruined.Our.Lives.mp4?id=0
 http://s1.gmtcloud.site/video/moviess/I.Know.What.You.Did.Last.Summer.2025.mp4?id=0
 #EXTINF:-1 tvg-id="5002:0:19:1116F:0:0:0:0:0:0" tvg-logo="https://gamatotv.info/wp-content/uploads/2025/08/qiZqJaq7OQ5QGV4F71JvQcR8p3T1-200x300.jpg",The Thursday Murder Club (2025)
 http://s1.gmtcloud.site/video/moviess/The%20Thursday%20Murder%20Club%202025.mp4?id=0
+
